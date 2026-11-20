@@ -1,0 +1,89 @@
+{
+  "units": "mm",
+  "status": "Nominal prototype. Photos identify component families; no ruler/caliper measurements supplied.",
+  "breadboard": [
+    166,
+    55,
+    10
+  ],
+  "uno_r3": [
+    68.6,
+    53.4,
+    20
+  ],
+  "uno_r4": [
+    68.85,
+    53.34,
+    20
+  ],
+  "main_universal_uno_cradle": [
+    69.2,
+    54,
+    20
+  ],
+  "optional_esp32_reservation": [
+    60,
+    32,
+    18
+  ],
+  "optional_esp32_wiring_clearance": [
+    66,
+    40,
+    5
+  ],
+  "main_usb_shutter_travel": 35,
+  "rgb_led_nominal_body_diameter": 5,
+  "battery_reservation": [
+    30,
+    61,
+    23
+  ],
+  "battery_body_reference": [
+    26.5,
+    48.5,
+    17.5
+  ],
+  "runtime_target_minutes": 60,
+  "power_status": "Common disposable 9V PP3 preferred by user. Architect regulated servo branch and one-hour loaded test unresolved.",
+  "finish": "Single structural colour undecided. Charcoal recommended; stone, forest and bronze shown as alternatives.",
+  "reveal_sensor_centre_xy": [
+    123,
+    117
+  ],
+  "reveal_dome_outer_diameter": 20,
+  "reveal_base_collar_diameter": 24,
+  "reveal_dome_height_above_lid": 11,
+  "reveal_lead_bore_diameter": 1.0,
+  "reveal_lead_pitch_provisional": 2.54,
+  "reveal_default_roof_thickness": 0.4,
+  "reveal_optical_status": "Untested. Thin opaque filament may block light. Test roofs or use clear-film alternative.",
+  "i2c_shutter_opening": [
+    18,
+    12
+  ],
+  "i2c_shutter_travel": 21,
+  "carrier_status": "Replaceable / parameter-adjustable. Actual hole patterns unmeasured; no fixed hole pins installed.",
+  "grip_status": "Tapered oval sections; retain full-size breadboard and PP3 battery reservation. Physical ergonomic fit unverified.",
+  "gate_mechanism": "Recessed portcullis; original nylon horn and captive yoke pin",
+  "gate_drive_recess_mm": 21,
+  "gate_external_height_mm": 40,
+  "gate_lift_mm": 12.12436,
+  "battery_door_skin_vertical_mm": 2.4,
+  "battery_door_recess_mm": 0.15,
+  "battery_external_pad": false,
+  "architect_button_switch_height_above_breadboard_mm": 7.3,
+  "architect_button_rest_gap_mm": 0.15,
+  "architect_button_max_stroke_mm": 0.45,
+  "architect_button_xy_before_mirror": [
+    197,
+    95
+  ],
+  "button_fit_status": "Nominal 12 mm projected-plunger switch; installed actuator height, pin spacing and stroke must be checked on the real breadboard.",
+  "lcd_reference_pcb_bottom_z_mm": 54.6,
+  "lcd_reference_pcb_thickness_mm": 1.6,
+  "lcd_reference_total_height_mm": 8.4,
+  "servo_mounting_ear_span_mm": 32.3,
+  "servo_ear_y_from_bottom_mm": 17,
+  "servo_ear_thickness_mm": 2,
+  "mounting_status": "Screwless edge-capture carriers and quarter-turn keepers. No unverified hole-location pins. Servo ear clearance is provisional."
+}

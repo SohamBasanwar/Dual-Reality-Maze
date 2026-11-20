@@ -1,0 +1,243 @@
+{
+  "duration": 100.58333333333334,
+  "width": 1920,
+  "height": 1080,
+  "fps": 24,
+  "structure": "Peaceful kingdom → solo Architect workshop → solo Explorer ruins → narrated shadows card → attack → kidnapping → King summons → portal → story-led animated title → growing action → Princess curse → all chapters → coming-soon finale → homecoming",
+  "revisionVideoCreditCost": 380,
+  "totalVideoCreditCost": 730,
+  "pixverseCreditsRemaining": 600,
+  "narrator": "ElevenLabs Brian, deep/resonant voice, Eleven v4, existing free allowance",
+  "sourceDisclosure": "Chapters I–III prototype renderer captures are staged. Cinematic previews animate project artwork. Chapters IV–V and final homecoming are planned, labelled coming soon. Six new origin images were generated using the built-in image tool from existing character and comic references; animated in PixVerse V6 and exported Watermark-free.",
+  "kingVoice": "ElevenLabs Bill, Eleven v4, English override, panicked/shaky/pleading, 7.71 seconds; silent PixVerse visual source",
+  "narrationDurations": {
+    "01_two_heroes.mp3": 3.47,
+    "02_cure.mp3": 3,
+    "03_memories.mp3": 2.93,
+    "04_oath.mp3": 3.79,
+    "05_worlds_apart.mp3": 4.44,
+    "06_shadows_came.mp3": 2.93,
+    "07_shape_and_follow.mp3": 4.52,
+    "08_only_beginning.mp3": 3.47
+  },
+  "shots": [
+    {
+      "id": "00_peaceful_kingdom",
+      "file": "C:\\Users\\soham\\Documents\\CS 362\\GP\\trailer-kit\\origin-v4\\generated\\peaceful-kingdom.mp4",
+      "duration": 5,
+      "native": true,
+      "voice": "05_worlds_apart.mp3",
+      "caption": "Before the shadows came… their worlds were far apart.",
+      "cross": 0,
+      "start": 0
+    },
+    {
+      "id": "00_architect_work",
+      "file": "C:\\Users\\soham\\Documents\\CS 362\\GP\\trailer-kit\\origin-v4\\generated\\architect-work.mp4",
+      "duration": 4,
+      "native": true,
+      "label": "THE ARCHITECT · SHAPING THE PATH",
+      "cross": 0.375,
+      "start": 4.625
+    },
+    {
+      "id": "00_explorer_work",
+      "file": "C:\\Users\\soham\\Documents\\CS 362\\GP\\trailer-kit\\origin-v4\\generated\\explorer-work.mp4",
+      "duration": 4,
+      "native": true,
+      "label": "THE EXPLORER · READING THE UNKNOWN",
+      "cross": 0.375,
+      "start": 8.25
+    },
+    {
+      "id": "00_shadows_card",
+      "duration": 4.041666666666667,
+      "card": [
+        "THEN…",
+        "THE SHADOWS CAME."
+      ],
+      "voice": "06_shadows_came.mp3",
+      "cross": 0.375,
+      "start": 11.875
+    },
+    {
+      "id": "00_kingdom_attack",
+      "file": "C:\\Users\\soham\\Documents\\CS 362\\GP\\trailer-kit\\origin-v4\\generated\\kingdom-attack.mp4",
+      "duration": 4.5,
+      "native": true,
+      "cross": 0.125,
+      "start": 15.791666666666668
+    },
+    {
+      "id": "00_princess_taken",
+      "file": "C:\\Users\\soham\\Documents\\CS 362\\GP\\trailer-kit\\origin-v4\\generated\\princess-taken.mp4",
+      "duration": 4,
+      "native": true,
+      "cross": 0.125,
+      "start": 20.166666666666668
+    },
+    {
+      "id": "00_kings_summons",
+      "file": "C:\\Users\\soham\\Documents\\CS 362\\GP\\trailer-kit\\origin-v4\\generated\\kings-summons-urgent.mp4",
+      "duration": 9,
+      "native": false,
+      "king": true,
+      "quote": "“They’ve taken my daughter!”",
+      "sub": "",
+      "cross": 0.375,
+      "start": 23.791666666666668
+    },
+    {
+      "id": "02_portal_surge",
+      "file": "C:\\Users\\soham\\Documents\\CS 362\\GP\\trailer-kit\\full-story-v2\\generated\\opening.mp4",
+      "seek": 2.1,
+      "duration": 2,
+      "native": true,
+      "cross": 0.375,
+      "surge": true,
+      "start": 32.41666666666667
+    },
+    {
+      "id": "03_title_reveal",
+      "duration": 8,
+      "title": true,
+      "voice": "07_shape_and_follow.mp3",
+      "cross": 0.125,
+      "start": 34.29166666666667
+    },
+    {
+      "id": "04_two_heroes",
+      "duration": 4.583333333333333,
+      "card": [
+        "TWO HEROES.",
+        "ONE SHARED FATE."
+      ],
+      "voice": "01_two_heroes.mp3",
+      "cross": 0.375,
+      "start": 41.91666666666667
+    },
+    {
+      "id": "05_maze",
+      "file": "C:\\Users\\soham\\Documents\\CS 362\\GP\\trailer-kit\\clips\\01_maze_and_architect.mp4",
+      "duration": 4,
+      "label": "PROTOTYPE GAMEPLAY",
+      "cross": 0.375,
+      "start": 46.12500000000001
+    },
+    {
+      "id": "06_transformation",
+      "file": "C:\\Users\\soham\\Documents\\CS 362\\GP\\trailer-kit\\clips\\02_architect_transformation.mp4",
+      "duration": 2.25,
+      "cross": 0.125,
+      "start": 50.00000000000001
+    },
+    {
+      "id": "06b_sleeping_princess",
+      "file": "C:\\Users\\soham\\Documents\\CS 362\\GP\\trailer-kit\\full-story-v2\\generated\\prologue.mp4",
+      "duration": 4.5,
+      "native": true,
+      "voice": "08_only_beginning.mp3",
+      "caption": "Rescuing her… was only the beginning.",
+      "cross": 0.375,
+      "start": 51.87500000000001
+    },
+    {
+      "id": "07_cure_card",
+      "duration": 4.125,
+      "card": [
+        "BEYOND THE CLOUDS…",
+        "A CURE."
+      ],
+      "voice": "02_cure.mp3",
+      "cross": 0.375,
+      "start": 56.00000000000001
+    },
+    {
+      "id": "08_sky_gardens",
+      "file": "C:\\Users\\soham\\Documents\\CS 362\\GP\\trailer-kit\\full-story-v2\\generated\\chapter2.mp4",
+      "duration": 5,
+      "native": true,
+      "cross": 0.375,
+      "start": 59.75000000000001
+    },
+    {
+      "id": "09_dragon_flight",
+      "file": "C:\\Users\\soham\\Documents\\CS 362\\GP\\trailer-kit\\clips\\04_dragon_flight.mp4",
+      "duration": 3,
+      "cross": 0.125,
+      "start": 64.625
+    },
+    {
+      "id": "10_memory_card",
+      "duration": 4.041666666666667,
+      "card": [
+        "SOME MEMORIES",
+        "REFUSE TO FADE."
+      ],
+      "voice": "03_memories.mp3",
+      "cross": 0.375,
+      "start": 67.25
+    },
+    {
+      "id": "11_forest",
+      "file": "C:\\Users\\soham\\Documents\\CS 362\\GP\\trailer-kit\\full-story-v2\\generated\\chapter3.mp4",
+      "duration": 5,
+      "native": true,
+      "cross": 0.375,
+      "start": 70.91666666666667
+    },
+    {
+      "id": "12_memory_capture",
+      "file": "C:\\Users\\soham\\Documents\\CS 362\\GP\\trailer-kit\\clips\\06_memory_in_the_jar.mp4",
+      "duration": 2.5,
+      "cross": 0.125,
+      "start": 75.79166666666667
+    },
+    {
+      "id": "13_oath_card",
+      "duration": 4.916666666666667,
+      "card": [
+        "BUT THE OATH…",
+        "IS NOT YET FULFILLED."
+      ],
+      "voice": "04_oath.mp3",
+      "cross": 0.375,
+      "start": 77.91666666666667
+    },
+    {
+      "id": "14_clockwork",
+      "file": "C:\\Users\\soham\\Documents\\CS 362\\GP\\trailer-kit\\full-story-v2\\generated\\chapter4.mp4",
+      "duration": 5,
+      "native": true,
+      "label": "CHAPTER IV · COMING SOON",
+      "cross": 0.375,
+      "start": 82.45833333333334
+    },
+    {
+      "id": "15_final_seal",
+      "file": "C:\\Users\\soham\\Documents\\CS 362\\GP\\trailer-kit\\full-story-v2\\generated\\chapter5.mp4",
+      "duration": 5,
+      "native": true,
+      "label": "CHAPTER V · COMING SOON",
+      "cross": 0.125,
+      "start": 87.33333333333334
+    },
+    {
+      "id": "16_homecoming",
+      "file": "C:\\Users\\soham\\Documents\\CS 362\\GP\\trailer-kit\\full-story-v2\\generated\\homecoming.mp4",
+      "duration": 4,
+      "native": true,
+      "label": "PLANNED STORY CONCLUSION",
+      "cross": 0.375,
+      "start": 91.95833333333334
+    },
+    {
+      "id": "17_end_title",
+      "duration": 5,
+      "title": true,
+      "end": true,
+      "cross": 0.375,
+      "start": 95.58333333333334
+    }
+  ]
+}

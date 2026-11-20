@@ -1,0 +1,157 @@
+{
+  "colour": "green",
+  "led_count": 4,
+  "rgb_isolated": true,
+  "channels": [
+    {
+      "tag": "G1",
+      "path_xy_mm": [
+        [
+          32,
+          35
+        ],
+        [
+          42,
+          20
+        ],
+        [
+          59,
+          14
+        ],
+        [
+          79,
+          14
+        ],
+        [
+          87,
+          14
+        ]
+      ],
+      "led_xy_mm": [
+        42,
+        20
+      ],
+      "led_body_z_mm": [
+        24.2,
+        30.2
+      ],
+      "diffuser_thickness_mm": 0.8,
+      "window_width_mm": 2.5,
+      "well_inner_diameter_mm": 11,
+      "well_outer_diameter_mm": 14,
+      "well_bottom_z_mm": 22.8,
+      "gallery_floor_z_mm": 54
+    },
+    {
+      "tag": "G2",
+      "path_xy_mm": [
+        [
+          202,
+          35
+        ],
+        [
+          192,
+          20
+        ],
+        [
+          175,
+          14
+        ],
+        [
+          155,
+          14
+        ],
+        [
+          147,
+          14
+        ]
+      ],
+      "led_xy_mm": [
+        192,
+        20
+      ],
+      "led_body_z_mm": [
+        24.2,
+        30.2
+      ],
+      "diffuser_thickness_mm": 0.8,
+      "window_width_mm": 2.5,
+      "well_inner_diameter_mm": 11,
+      "well_outer_diameter_mm": 14,
+      "well_bottom_z_mm": 22.8,
+      "gallery_floor_z_mm": 54
+    },
+    {
+      "tag": "G3",
+      "path_xy_mm": [
+        [
+          42,
+          60
+        ],
+        [
+          43,
+          76
+        ],
+        [
+          60,
+          87
+        ],
+        [
+          72,
+          99
+        ]
+      ],
+      "led_xy_mm": [
+        42,
+        60
+      ],
+      "led_body_z_mm": [
+        24.2,
+        30.2
+      ],
+      "diffuser_thickness_mm": 0.8,
+      "window_width_mm": 2.5,
+      "well_inner_diameter_mm": 11,
+      "well_outer_diameter_mm": 14,
+      "well_bottom_z_mm": 22.8,
+      "gallery_floor_z_mm": 52
+    },
+    {
+      "tag": "G4",
+      "path_xy_mm": [
+        [
+          192,
+          60
+        ],
+        [
+          191,
+          76
+        ],
+        [
+          174,
+          87
+        ],
+        [
+          162,
+          99
+        ]
+      ],
+      "led_xy_mm": [
+        192,
+        60
+      ],
+      "led_body_z_mm": [
+        24.2,
+        30.2
+      ],
+      "diffuser_thickness_mm": 0.8,
+      "window_width_mm": 2.5,
+      "well_inner_diameter_mm": 11,
+      "well_outer_diameter_mm": 14,
+      "well_bottom_z_mm": 22.8,
+      "gallery_floor_z_mm": 52
+    }
+  ],
+  "physical_optical_test": false,
+  "uniformity_verified": false
+}

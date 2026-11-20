@@ -1,0 +1,46 @@
+<style>
+.story-screen{position:absolute;inset:0;z-index:8;background:radial-gradient(ellipse at 28% 43%,#20223a,#060916 70%);color:#eddfbe;overflow:hidden}.story-screen[hidden],.cinema-screen[hidden]{display:none}
+.story-screen:after{content:'';position:absolute;inset:1.6%;border:1px solid #8d734150;pointer-events:none}
+.story-top{position:absolute;left:4.5%;top:4.5%;right:4.5%;display:flex;align-items:center;justify-content:space-between;font-size:.9cqw;letter-spacing:.16cqw;text-transform:uppercase;color:#b8a789}
+.story-top button,.cinema-top button{border:1px solid #6a5a40;background:#111321d9;color:#e6c88a;padding:.48cqw .8cqw;font-size:.8cqw;letter-spacing:.05cqw}
+.story-art{position:absolute;left:7.5%;top:12%;width:43%;aspect-ratio:1;display:grid;place-items:center}
+#comicFrame{width:100%;height:100%;aspect-ratio:1;image-rendering:auto;border:2px solid #766747;box-shadow:0 16px 65px #000a}
+.story-copy{position:absolute;left:58%;top:24%;width:35%;height:58%;display:flex;flex-direction:column;justify-content:center}
+.story-kicker{color:#d2ad65;letter-spacing:.23cqw;font-size:.8cqw;text-transform:uppercase;margin-bottom:1.1cqw}
+.story-copy h2{font:normal 3.05cqw/1.06 Georgia;margin:0 0 1.5cqw;color:#ffdf9e}
+.story-copy p{font-size:1.24cqw;line-height:1.6;color:#c9c3d3;margin:0 0 1.1cqw}
+.story-copy blockquote{font:italic 1.5cqw/1.4 Georgia;color:#f5dfae;margin:0 0 1.7cqw;border-left:2px solid #aa854a;padding-left:1cqw}
+.story-next{align-self:flex-start;background:linear-gradient(#443244,#1b182c);border:1px solid #b7985c;color:#ffe1a1;font-size:1cqw;letter-spacing:.08cqw;padding:.8cqw 1.5cqw}
+.story-countdown{width:16cqw;margin-top:1.2cqw;font-size:.8cqw;color:#bbaaca}.story-countdown-track{height:2px;margin-top:.5cqw;background:#73628455}.story-countdown-track i{height:100%;width:100%;display:block;background:linear-gradient(90deg,#9973d2,#e5c483);box-shadow:0 0 7px #c7a0ee}
+.story-bottom{position:absolute;left:4.5%;right:4.5%;bottom:5%;display:flex;justify-content:space-between;align-items:center;font-size:.82cqw;color:#a69bac}.story-bottom button{border:0;background:transparent;color:#c7b79a;font-size:.82cqw;padding:.4cqw}.story-dots{display:flex;gap:.6cqw}.story-dots i{width:.43cqw;height:.43cqw;border:1px solid #8e7650;transform:rotate(45deg)}.story-dots i.active{background:#e6c178;box-shadow:0 0 9px #deb477}
+#storyLoading{position:absolute;inset:0;display:grid;place-items:center;background:#080c1c;z-index:2;font-size:1.3cqw;color:#e6c99c}#storyLoading[hidden]{display:none}
+.cinema-screen{position:absolute;inset:0;z-index:7;pointer-events:none}.cinema-top{position:absolute;top:0;width:100%;height:8%;background:#02040cef;display:flex;align-items:center;justify-content:space-between;padding:0 3.5%;font-size:.8cqw;letter-spacing:.2cqw;color:#9f93a8;text-transform:uppercase}.cinema-top button{pointer-events:auto}
+.explorer-bubble{position:absolute;width:34cqw;padding:1cqw 1.3cqw;background:linear-gradient(135deg,#fff3d8,#e7d3ae);border:2px solid #a98747;border-radius:.8cqw;color:#30243e;box-shadow:0 .5cqw 2cqw #020410aa;transform:translate(-50%,-100%);text-align:center}.explorer-bubble[hidden]{display:none}.explorer-bubble:after{content:'';position:absolute;left:50%;bottom:-.65cqw;width:1cqw;height:1cqw;background:#e7d3ae;border-right:2px solid #a98747;border-bottom:2px solid #a98747;transform:translateX(-50%) rotate(45deg)}.explorer-bubble strong{font-size:.68cqw;letter-spacing:.16cqw;text-transform:uppercase;color:#76502c}.explorer-bubble p{font:1.1cqw/1.4 Georgia;margin:.5cqw 0 .15cqw}.bubble-runes{display:flex;justify-content:center;gap:2.4cqw;margin:.5cqw 0}.bubble-runes[hidden]{display:none}.bubble-runes span{display:grid;gap:.15cqw;font-size:.65cqw;letter-spacing:.08cqw;text-transform:uppercase}.bubble-runes b{display:grid;place-items:center;width:2.7cqw;height:2.7cqw;background:#17203e;border:1px solid currentColor;border-radius:.4cqw;font:2cqw Georgia;box-shadow:0 0 .6cqw #46335766}.bubble-runes i{color:#49374d;font-style:normal}
+.cinema-bottom{position:absolute;bottom:0;left:0;right:0;min-height:15%;background:linear-gradient(transparent,#02040cf2 28%);text-align:center;padding:3% 8% 2%}.cinema-bottom strong{display:block;font-size:.78cqw;letter-spacing:.23cqw;color:#cba96b;text-transform:uppercase;margin-bottom:.6cqw}.cinema-bottom p{font-size:1.5cqw;line-height:1.4;margin:0;color:#f3e2ba;text-shadow:0 2px 8px #000}
+#chapterCard{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:center;align-items:center;background:#050815;opacity:1;transition:opacity .8s;letter-spacing:.12cqw}#chapterCard span{font-size:1cqw;color:#c9a76b;letter-spacing:.45cqw}#chapterCard h2{font:normal 5.5cqw Georgia;font-variant:small-caps;margin:1cqw 0;color:#ffe0a5}#chapterCard p{font-size:1.1cqw;color:#a9a3b9}
+#storyFade{position:absolute;inset:0;z-index:12;background:#050815;opacity:0;pointer-events:none}#storyFade[hidden]{display:none}
+#ending.defeated{z-index:9;background:#02040cf2}#ending.defeated .dialog{width:86%;height:87%;padding:0;position:relative;overflow:hidden;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;background:#080a14}
+#defeatArt{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 40%;image-rendering:auto}#defeatArt[hidden]{display:none}
+#ending.defeated .dialog:after{content:'';position:absolute;inset:0;background:linear-gradient(transparent 32%,#050711a6 56%,#050711f5 78%);pointer-events:none}
+#ending.defeated h2,#ending.defeated p,#ending.defeated button{position:relative;z-index:1}#ending.defeated h2{font-size:3.5cqw;margin:0 0 .5cqw;color:#e2c39e}#ending.defeated p{max-width:65%;font-size:1.1cqw;line-height:1.5;margin:.3cqw 0 1.4cqw}#ending.defeated button{margin-bottom:2.2cqw;font-size:1cqw;padding:.7cqw 1.8cqw}
+.app:has(#ending.defeated:not([hidden])) .footer{visibility:hidden}
+.story-screen.epilogue .story-art{aspect-ratio:1.5;height:28.667cqw;top:24%}.story-screen.epilogue #comicFrame{aspect-ratio:1.5;min-height:0}
+.stage.cinematic .switch,.stage.cinematic .readout,.stage.cinematic .parchment,.stage.cinematic #runeHud{opacity:var(--hud-visibility,0);pointer-events:none}
+.stage.cinematic .toast{opacity:0!important}
+@keyframes comic-enter{from{opacity:.1;transform:translateY(10px) scale(1.015)}to{opacity:1;transform:none}}
+@media(prefers-reduced-motion:reduce){#chapterCard{transition:none}}
+</style>
+<section class="story-screen" id="storyScreen" aria-label="Prologue comic">
+ <div class="story-top"><span>Dual-Reality Maze · The Architect’s Oath</span><div><button id="storyAuto" aria-pressed="true">Auto-play on</button> <button id="openVoices">Voice settings</button> <button id="storyVoice" aria-pressed="true">Voice on</button> <button id="skipStory">Skip to game</button></div></div>
+ <div class="story-art"><canvas id="comicFrame" width="768" height="768" aria-label="Story comic panel"></canvas></div>
+ <div class="story-copy"><div class="story-kicker" id="storyKicker">Prologue</div><h2 id="storyTitle"></h2><p id="storyText"></p><div id="storySpeaker" hidden></div><blockquote id="storyQuote"></blockquote><button class="story-next" id="storyNext">Continue →</button><div class="story-countdown"><span id="storyCountdown" role="timer">Next in 10s</span><div class="story-countdown-track" aria-hidden="true"><i id="storyCountdownFill"></i></div></div></div>
+ <div class="story-bottom"><button id="storyBack">← Previous</button><div id="storyDots" class="story-dots" aria-hidden="true"></div><span id="storyHint">Press either controller button or Enter to continue</span></div>
+ <div id="storyLoading">Opening the kingdom’s chronicle…</div>
+</section>
+<div id="storyFade" aria-hidden="true" hidden></div>
+<section class="cinema-screen" id="cinemaScreen" aria-label="Opening cinematic" hidden>
+ <div class="explorer-bubble" id="explorerBubble" aria-hidden="true" hidden><strong>Explorer</strong><div class="bubble-runes" id="bubbleRunes"><span style="color:#ffca63"><b>☼</b><i>Sun</i></span><span style="color:#bf84ff"><b>☾</b><i>Moon</i></span><span style="color:#55e9ff"><b>✦</b><i>Star</i></span></div><p id="explorerBubbleText"></p></div>
+ <div class="cinema-top"><span>Chapter I · The Maze</span><div class="cinema-buttons"><button id="cinemaVoices">Voice settings</button><button id="skipIntro">Skip cinematic →</button></div></div>
+ <div class="cinema-bottom" aria-live="polite"><strong id="cinemaSpeaker"></strong><p id="cinemaLine"></p></div>
+ <div id="chapterCard"><span>CHAPTER I</span><h2>The Maze</h2><p>Three seals bind the path beyond the veil.</p></div>
+</section>

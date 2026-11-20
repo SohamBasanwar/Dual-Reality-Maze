@@ -1,0 +1,46 @@
+{
+  "revision": 11,
+  "date": "2026-10-31",
+  "status": "Digital prototype checks passed; physical validation required",
+  "installed_printed_parts": 95,
+  "physically_coded_parts": 25,
+  "native_solids_checked": 141,
+  "stl_meshes_checked": 123,
+  "green_led_count": 4,
+  "main_rgb_secondary_shield": true,
+  "main_receiver_codes": 4,
+  "intersection_threshold_mm3": 0.05,
+  "checks_repeated_for_revision11": [
+    "All STL mesh integrity",
+    "All final native solid validity",
+    "Main assembly static and component-envelope intersections",
+    "Main cable shutter travel",
+    "Main indexed adjustment settings",
+    "Main jaw travel",
+    "Main rigid key withdrawal",
+    "New green LED envelopes",
+    "New bezel rigid insertion paths (flexible hooks excluded)",
+    "RGB cap rotation and withdrawal",
+    "Compiled host test of actual fade helper",
+    "Guide links and gallery handler test"
+  ],
+  "inherited_checks": "Explorer and Architect mechanical motion checks from Revision 10; changes there are subtractive identification engravings only. Their current solids and meshes are rechecked.",
+  "physical_fit_verified": false,
+  "optical_uniformity_measured": false,
+  "battery_runtime_measured": false,
+  "firmware_integrated": false,
+  "limits": [
+    "Nominal component dimensions and provisional ESP32 space; actual components not measured.",
+    "Clip strength, support accessibility, material opacity and actual light distribution require the sample prints.",
+    "Rendered glow and browser fading illustrate the intended effect; they are not measured illumination.",
+    "Power driver, spare PWM pin and battery runtime need bench verification.",
+    "A host Arduino stub verifies the helper, not board firmware or library timer coexistence."
+  ],
+  "guide": {
+    "handler_calls_checked": 70,
+    "unique_element_ids": 45,
+    "all_handler_image_paths_exist": true,
+    "live_browser_render_verified": false,
+    "live_browser_limitation": "In-app browser URL policy rejected the file:// protocol."
+  }
+}

@@ -1,0 +1,1481 @@
+{
+  "scope": "Mesh integrity only; physical fit, material strength and print settings unverified.",
+  "checks": [
+    {
+      "file": "prototype-stl\\A01-architect-Base\u2014Soham-Basanwar.stl",
+      "watertight": true,
+      "consistent_winding": true,
+      "positive_volume": true,
+      "bounds_mm": [
+        246.3384343981743,
+        209.37567138671875,
+        42.0
+      ],
+      "faces": 80046
+    },
+    {
+      "file": "prototype-stl\\A02-architect-Lid\u2014Soham-Basanwar.stl",
+      "watertight": true,
+      "consistent_winding": true,
+      "positive_volume": true,
+      "bounds_mm": [
+        240.58779668807983,
+        203.0946021080017,
+        36.46512222290039
+      ],
+      "faces": 40084
+    },
+    {
+      "file": "prototype-stl\\A03-architect-Battery_Door\u2014Soham-Basanwar.stl",
+      "watertight": true,
+      "consistent_winding": true,
+      "positive_volume": true,
+      "bounds_mm": [
+        34.399993896484375,
+        67.5999984741211,
+        7.4156337678432465
+      ],
+      "faces": 13744
+    },
+    {
+      "file": "prototype-stl\\A04-architect-Breadboard_Height_Insert\u2014Soham-Basanwar.stl",
+      "watertight": true,
+      "consistent_winding": true,
+      "positive_volume": true,
+      "bounds_mm": [
+        160.0,
+        49.0,
+        1.8999996185302734
+      ],
+      "faces": 11250
+    },
+    {
+      "file": "prototype-stl\\A05-architect-Breadboard_X_Jaw\u2014Soham-Basanwar.stl",
+      "watertight": true,
+      "consistent_winding": true,
+      "positive_volume": true,
+      "bounds_mm": [
+        17.0,
+        10.0,
+        16.100000381469727
+      ],
+      "faces": 2142
+    },
+    {
+      "file": "prototype-stl\\A06-architect-Breadboard_X_Lock_Key\u2014Soham-Basanwar.stl",
+      "watertight": true,
+      "consistent_winding": true,
+      "positive_volume": true,
+      "bounds_mm": [
+        18.299999237060547,
+        14.800003051757812,
+        2.880000114440918
+      ],
+      "faces": 2142
+    },
+    {
+      "file": "prototype-stl\\A07-architect-Breadboard_Y_Jaw\u2014Soham-Basanwar.stl",
+      "watertight": true,
+      "consistent_winding": true,
+      "positive_volume": true,
+      "bounds_mm": [
+        10.0,
+        17.0,
+        16.100000381469727
+      ],
+      "faces": 2142
+    },
+    {
+      "file": "prototype-stl\\A08-architect-Breadboard_Y_Lock_Key\u2014Soham-Basanwar.stl",
+      "watertight": true,
+      "consistent_winding": true,
+      "positive_volume": true,
+      "bounds_mm": [
+        14.799995422363281,
+        18.300003051757812,
+        2.880000114440918
+      ],
+      "faces": 2142
+    },
+    {
+      "file": "prototype-stl\\A09-architect-Button_Cap\u2014Soham-Basanwar.stl",
+      "watertight": true,
+      "consistent_winding": true,
+      "positive_volume": true,
+      "bounds_mm": [
+        19.99209213256836,
+        19.996047973632812,
+        31.350000381469727
+      ],
+      "faces": 5782
+    },
+    {
+      "file": "prototype-stl\\A10-architect-Button_Contact_Shoe\u2014Soham-Basanwar.stl",
+      "watertight": true,
+      "consistent_winding": true,
+      "positive_volume": true,
+      "bounds_mm": [
+        4.998023986816406,
+        4.9990081787109375,
+        7.100000381469727
+      ],
+      "faces": 384
+    },
+    {
+      "file": "prototype-stl\\A11-architect-Button_Stem_Guide\u2014Soham-Basanwar.stl",
+      "watertight": true,
+      "consistent_winding": true,
+      "positive_volume": true,
+      "bounds_mm": [
+        24.800003051757812,
+        20.199996948242188,
+        22.25
+      ],
+      "faces": 3344
+    },
+    {
+      "file": "prototype-stl\\A12-architect-Emblem_Diffuser\u2014Soham-Basanwar.stl",
+      "watertight": true,
+      "consistent_winding": true,
+      "positive_volume": true,
+      "bounds_mm": [
+        47.57141876220703,
+        48.0,
+        1.2000007629394531
+      ],
+      "faces": 308
+    },
+    {
+      "file": "prototype-stl\\A13-architect-Emblem_Mask\u2014Soham-Basanwar.stl",
+      "watertight": true,
+      "consistent_winding": true,
+      "positive_volume": true,
+      "bounds_mm": [
+        51.97944641113281,
+        51.98971939086914,
+        5.099998474121094
+      ],
+      "faces": 2276
+    },
+    {
+      "file": "prototype-stl\\A14-architect-Gate_Drive_Pin\u2014Soham-Basanwar.stl",
+      "watertight": true,
+      "consistent_winding": true,
+      "positive_volume": true,
+      "bounds_mm": [
+        4.1991729736328125,
+        9.400001525878906,
+        4.198341369628906
+      ],
+      "faces": 1260
+    },
+    {
+      "file": "prototype-stl\\A15-architect-Gate_Frame\u2014Soham-Basanwar.stl",
+      "watertight": true,
+      "consistent_winding": true,
+      "positive_volume": true,
+      "bounds_mm": [
+        46.0,
+        43.0,
+        63.0
+      ],
+      "faces": 4560
+    },
+    {
+      "file": "prototype-stl\\A16-architect-Gate_Panel\u2014Soham-Basanwar.stl",
+      "watertight": true,
+      "consistent_winding": true,
+      "positive_volume": true,
+      "bounds_mm": [
+        34.0,
+        2.1999969482421875,
+        37.0
+      ],
+      "faces": 132
+    },
+    {
+      "file": "prototype-stl\\A17-architect-Gate_Pin_Keeper\u2014Soham-Basanwar.stl",
+      "watertight": true,
+      "consistent_winding": true,
+      "positive_volume": true,
+      "bounds_mm": [
+        4.799751281738281,
+        0.7000007629394531,
+        4.695648193359375
+      ],
+      "faces": 524
+    },
+    {
+      "file": "prototype-stl\\A18-architect-Gate_Shroud\u2014Soham-Basanwar.stl",
+      "watertight": true,
+      "consistent_winding": true,
+      "positive_volume": true,
+      "bounds_mm": [
+        50.0,
+        48.599998474121094,
+        60.5
+      ],
+      "faces": 2470
+    },
+    {
+      "file": "prototype-stl\\A19-architect-I2C_Rear_Keeper\u2014Soham-Basanwar.stl",
+      "watertight": true,
+      "consistent_winding": true,
+      "positive_volume": true,
+      "bounds_mm": [
+        3.600006103515625,
+        11.599999904632568,
+        23.5
+      ],
+      "faces": 24
+    },
+    {
+      "file": "prototype-stl\\A20-architect-I2C_Rear_Shutter\u2014Soham-Basanwar.stl",
+      "watertight": true,
+      "consistent_winding": true,
+      "positive_volume": true,
+      "bounds_mm": [
+        20.0,
+        5.199999809265137,
+        13.400001525878906
+      ],
+      "faces": 3690
+    },
+    {
+      "file": "prototype-stl\\A21-architect-Potentiometer_Keeper\u2014Soham-Basanwar.stl",
+      "watertight": true,
+      "consistent_winding": true,
+      "positive_volume": true,
+      "bounds_mm": [
+        16.093643188476562,
+        18.800003051757812,
+        1.5
+      ],
+      "faces": 680
+    },
+    {
+      "file": "prototype-stl\\A22-architect-RGB_LED_Keeper\u2014Soham-Basanwar.stl",
+      "watertight": true,
+      "consistent_winding": true,
+      "positive_volume": true,
+      "bounds_mm": [
+        11.600006103515625,
+        6.098796844482422,
+        3.0
+      ],
+      "faces": 700
+    },
+    {
+      "file": "prototype-stl\\A23-architect-Servo_Cassette\u2014Soham-Basanwar.stl",
+      "watertight": true,
+      "consistent_winding": true,
+      "positive_volume": true,
+      "bounds_mm": [
+        36.80000305175781,
+        34.0,
+        28.0
+      ],
+      "faces": 3328
+    },
+    {
+      "file": "prototype-stl\\A24-architect-Servo_Fit_Insert\u2014Soham-Basanwar.stl",
+      "watertight": true,
+      "consistent_winding": true,
+      "positive_volume": true,
+      "bounds_mm": [
+        25.199996948242188,
+        29.900001525878906,
+        10.299999237060547
+      ],
+      "faces": 92
+    },
+    {
+      "file": "prototype-stl\\A25-architect-Servo_Retainer\u2014Soham-Basanwar.stl",
+      "watertight": true,
+      "consistent_winding": true,
+      "positive_volume": true,
+      "bounds_mm": [
+        33.60000228881836,
+        8.0,
+        13.099998474121094
+      ],
+      "faces": 76
+    },
+    {
+      "file": "prototype-stl\\A26-architect-UNO_Height_Insert\u2014Soham-Basanwar.stl",
+      "watertight": true,
+      "consistent_winding": true,
+      "positive_volume": true,
+      "bounds_mm": [
+        62.599998474121094,
+        47.400001525878906,
+        1.8999996185302734
+      ],
+      "faces": 12246
+    },
+    {
+      "file": "prototype-stl\\A27-architect-UNO_X_Jaw\u2014Soham-Basanwar.stl",
+      "watertight": true,
+      "consistent_winding": true,
+      "positive_volume": true,
+      "bounds_mm": [
+        17.0,
+        10.0,
+        7.699999809265137
+      ],
+      "faces": 2142
+    },
+    {
+      "file": "prototype-stl\\A28-architect-UNO_X_Lock_Key\u2014Soham-Basanwar.stl",
+      "watertight": true,
+      "consistent_winding": true,
+      "positive_volume": true,
+      "bounds_mm": [
+        18.29999542236328,
+        14.799999237060547,
+        2.880000114440918
+      ],
+      "faces": 2142
+    },
+    {
+      "file": "prototype-stl\\A29-architect-UNO_Y_Jaw\u2014Soham-Basanwar.stl",
+      "watertight": true,
+      "consistent_winding": true,
+      "positive_volume": true,
+      "bounds_mm": [
+        10.0,
+        17.0,
+        7.699999809265137
+      ],
+      "faces": 2142
+    },
+    {
+      "file": "prototype-stl\\A30-architect-UNO_Y_Lock_Key\u2014Soham-Basanwar.stl",
+      "watertight": true,
+      "consistent_winding": true,
+      "positive_volume": true,
+      "bounds_mm": [
+        14.800003051757812,
+        18.300003051757812,
+        2.880000114440918
+      ],
+      "faces": 2142
+    },
+    {
+      "file": "prototype-stl\\E01-explorer-Base\u2014Soham-Basanwar.stl",
+      "watertight": true,
+      "consistent_winding": true,
+      "positive_volume": true,
+      "bounds_mm": [
+        246.3384343981743,
+        209.37567138671875,
+        42.0
+      ],
+      "faces": 79742
+    },
+    {
+      "file": "prototype-stl\\E02-explorer-Lid\u2014Soham-Basanwar.stl",
+      "watertight": true,
+      "consistent_winding": true,
+      "positive_volume": true,
+      "bounds_mm": [
+        240.58779668807983,
+        203.0946021080017,
+        40.8651237487793
+      ],
+      "faces": 39080
+    },
+    {
+      "file": "prototype-stl\\E03-explorer-Battery_Door\u2014Soham-Basanwar.stl",
+      "watertight": true,
+      "consistent_winding": true,
+      "positive_volume": true,
+      "bounds_mm": [
+        34.399993896484375,
+        67.5999984741211,
+        7.4156337678432465
+      ],
+      "faces": 13748
+    },
+    {
+      "file": "prototype-stl\\E04-explorer-Breadboard_Height_Insert\u2014Soham-Basanwar.stl",
+      "watertight": true,
+      "consistent_winding": true,
+      "positive_volume": true,
+      "bounds_mm": [
+        160.0,
+        49.0,
+        1.8999996185302734
+      ],
+      "faces": 11254
+    },
+    {
+      "file": "prototype-stl\\E05-explorer-Breadboard_X_Jaw\u2014Soham-Basanwar.stl",
+      "watertight": true,
+      "consistent_winding": true,
+      "positive_volume": true,
+      "bounds_mm": [
+        17.0,
+        10.0,
+        16.100000381469727
+      ],
+      "faces": 2142
+    },
+    {
+      "file": "prototype-stl\\E06-explorer-Breadboard_X_Lock_Key\u2014Soham-Basanwar.stl",
+      "watertight": true,
+      "consistent_winding": true,
+      "positive_volume": true,
+      "bounds_mm": [
+        18.299999237060547,
+        14.800003051757812,
+        2.880000114440918
+      ],
+      "faces": 2142
+    },
+    {
+      "file": "prototype-stl\\E07-explorer-Breadboard_Y_Jaw\u2014Soham-Basanwar.stl",
+      "watertight": true,
+      "consistent_winding": true,
+      "positive_volume": true,
+      "bounds_mm": [
+        10.0,
+        17.0,
+        16.100000381469727
+      ],
+      "faces": 2142
+    },
+    {
+      "file": "prototype-stl\\E08-explorer-Breadboard_Y_Lock_Key\u2014Soham-Basanwar.stl",
+      "watertight": true,
+      "consistent_winding": true,
+      "positive_volume": true,
+      "bounds_mm": [
+        14.799995422363281,
+        18.300003051757812,
+        2.880000114440918
+      ],
+      "faces": 2142
+    },
+    {
+      "file": "prototype-stl\\E09-explorer-Emblem_Diffuser\u2014Soham-Basanwar.stl",
+      "watertight": true,
+      "consistent_winding": true,
+      "positive_volume": true,
+      "bounds_mm": [
+        47.57141876220703,
+        48.0,
+        1.2000007629394531
+      ],
+      "faces": 308
+    },
+    {
+      "file": "prototype-stl\\E10-explorer-Emblem_Mask\u2014Soham-Basanwar.stl",
+      "watertight": true,
+      "consistent_winding": true,
+      "positive_volume": true,
+      "bounds_mm": [
+        51.97944641113281,
+        51.98971939086914,
+        5.099998474121094
+      ],
+      "faces": 3660
+    },
+    {
+      "file": "prototype-stl\\E11-explorer-I2C_Rear_Keeper\u2014Soham-Basanwar.stl",
+      "watertight": true,
+      "consistent_winding": true,
+      "positive_volume": true,
+      "bounds_mm": [
+        3.600006103515625,
+        11.599999904632568,
+        23.5
+      ],
+      "faces": 24
+    },
+    {
+      "file": "prototype-stl\\E12-explorer-I2C_Rear_Shutter\u2014Soham-Basanwar.stl",
+      "watertight": true,
+      "consistent_winding": true,
+      "positive_volume": true,
+      "bounds_mm": [
+        20.0,
+        5.199999809265137,
+        13.400001525878906
+      ],
+      "faces": 2896
+    },
+    {
+      "file": "prototype-stl\\E13-explorer-Joystick_Carrier\u2014Soham-Basanwar.stl",
+      "watertight": true,
+      "consistent_winding": true,
+      "positive_volume": true,
+      "bounds_mm": [
+        47.19999694824219,
+        38.0,
+        25.899999618530273
+      ],
+      "faces": 4074
+    },
+    {
+      "file": "prototype-stl\\E14-explorer-Joystick_Height_Insert\u2014Soham-Basanwar.stl",
+      "watertight": true,
+      "consistent_winding": true,
+      "positive_volume": true,
+      "bounds_mm": [
+        28.0,
+        20.0,
+        1.9000015258789062
+      ],
+      "faces": 10504
+    },
+    {
+      "file": "prototype-stl\\E15-explorer-Joystick_X_Jaw\u2014Soham-Basanwar.stl",
+      "watertight": true,
+      "consistent_winding": true,
+      "positive_volume": true,
+      "bounds_mm": [
+        17.0,
+        10.0,
+        7.700000762939453
+      ],
+      "faces": 2142
+    },
+    {
+      "file": "prototype-stl\\E16-explorer-Joystick_X_Lock_Key\u2014Soham-Basanwar.stl",
+      "watertight": true,
+      "consistent_winding": true,
+      "positive_volume": true,
+      "bounds_mm": [
+        18.300003051757812,
+        14.80000114440918,
+        2.8799991607666016
+      ],
+      "faces": 2142
+    },
+    {
+      "file": "prototype-stl\\E17-explorer-Joystick_Y_Jaw\u2014Soham-Basanwar.stl",
+      "watertight": true,
+      "consistent_winding": true,
+      "positive_volume": true,
+      "bounds_mm": [
+        10.0,
+        17.0,
+        7.700000762939453
+      ],
+      "faces": 2142
+    },
+    {
+      "file": "prototype-stl\\E18-explorer-Joystick_Y_Lock_Key\u2014Soham-Basanwar.stl",
+      "watertight": true,
+      "consistent_winding": true,
+      "positive_volume": true,
+      "bounds_mm": [
+        14.79998779296875,
+        18.299999237060547,
+        2.8799991607666016
+      ],
+      "faces": 2142
+    },
+    {
+      "file": "prototype-stl\\E19-explorer-RGB_LED_Keeper\u2014Soham-Basanwar.stl",
+      "watertight": true,
+      "consistent_winding": true,
+      "positive_volume": true,
+      "bounds_mm": [
+        11.600006103515625,
+        6.098796844482422,
+        3.0
+      ],
+      "faces": 700
+    },
+    {
+      "file": "prototype-stl\\E20-explorer-Reveal_Dome\u2014Soham-Basanwar.stl",
+      "watertight": true,
+      "consistent_winding": true,
+      "positive_volume": true,
+      "bounds_mm": [
+        22.20000457763672,
+        20.0,
+        10.239810943603516
+      ],
+      "faces": 3806
+    },
+    {
+      "file": "prototype-stl\\E21-explorer-UNO_Height_Insert\u2014Soham-Basanwar.stl",
+      "watertight": true,
+      "consistent_winding": true,
+      "positive_volume": true,
+      "bounds_mm": [
+        62.599998474121094,
+        47.400001525878906,
+        1.8999996185302734
+      ],
+      "faces": 11110
+    },
+    {
+      "file": "prototype-stl\\E22-explorer-UNO_X_Jaw\u2014Soham-Basanwar.stl",
+      "watertight": true,
+      "consistent_winding": true,
+      "positive_volume": true,
+      "bounds_mm": [
+        17.0,
+        10.0,
+        7.699999809265137
+      ],
+      "faces": 2142
+    },
+    {
+      "file": "prototype-stl\\E23-explorer-UNO_X_Lock_Key\u2014Soham-Basanwar.stl",
+      "watertight": true,
+      "consistent_winding": true,
+      "positive_volume": true,
+      "bounds_mm": [
+        18.29999542236328,
+        14.799999237060547,
+        2.880000114440918
+      ],
+      "faces": 2142
+    },
+    {
+      "file": "prototype-stl\\E24-explorer-UNO_Y_Jaw\u2014Soham-Basanwar.stl",
+      "watertight": true,
+      "consistent_winding": true,
+      "positive_volume": true,
+      "bounds_mm": [
+        10.0,
+        17.0,
+        7.699999809265137
+      ],
+      "faces": 2142
+    },
+    {
+      "file": "prototype-stl\\E25-explorer-UNO_Y_Lock_Key\u2014Soham-Basanwar.stl",
+      "watertight": true,
+      "consistent_winding": true,
+      "positive_volume": true,
+      "bounds_mm": [
+        14.800003051757812,
+        18.300003051757812,
+        2.880000114440918
+      ],
+      "faces": 2142
+    },
+    {
+      "file": "prototype-stl\\M01-main-Base\u2014Soham-Basanwar.stl",
+      "watertight": true,
+      "consistent_winding": true,
+      "positive_volume": true,
+      "bounds_mm": [
+        242.0,
+        183.80897521972656,
+        48.0
+      ],
+      "faces": 28196
+    },
+    {
+      "file": "prototype-stl\\M02-main-Lid\u2014Soham-Basanwar.stl",
+      "watertight": true,
+      "consistent_winding": true,
+      "positive_volume": true,
+      "bounds_mm": [
+        227.8833360671997,
+        174.54166555404663,
+        43.000003814697266
+      ],
+      "faces": 50730
+    },
+    {
+      "file": "prototype-stl\\M03-main-Battery_Door\u2014Soham-Basanwar.stl",
+      "watertight": true,
+      "consistent_winding": true,
+      "positive_volume": true,
+      "bounds_mm": [
+        34.399993896484375,
+        67.5999984741211,
+        3.400000035762787
+      ],
+      "faces": 16916
+    },
+    {
+      "file": "prototype-stl\\M04-main-Breadboard_Height_Insert\u2014Soham-Basanwar.stl",
+      "watertight": true,
+      "consistent_winding": true,
+      "positive_volume": true,
+      "bounds_mm": [
+        160.0,
+        49.0,
+        1.8999996185302734
+      ],
+      "faces": 11258
+    },
+    {
+      "file": "prototype-stl\\M05-main-Breadboard_X_Jaw\u2014Soham-Basanwar.stl",
+      "watertight": true,
+      "consistent_winding": true,
+      "positive_volume": true,
+      "bounds_mm": [
+        17.0,
+        10.0,
+        16.100000381469727
+      ],
+      "faces": 2142
+    },
+    {
+      "file": "prototype-stl\\M06-main-Breadboard_X_Lock_Key\u2014Soham-Basanwar.stl",
+      "watertight": true,
+      "consistent_winding": true,
+      "positive_volume": true,
+      "bounds_mm": [
+        18.299999237060547,
+        14.80000114440918,
+        2.880000114440918
+      ],
+      "faces": 2142
+    },
+    {
+      "file": "prototype-stl\\M07-main-Breadboard_Y_Jaw\u2014Soham-Basanwar.stl",
+      "watertight": true,
+      "consistent_winding": true,
+      "positive_volume": true,
+      "bounds_mm": [
+        10.0,
+        17.0,
+        16.100000381469727
+      ],
+      "faces": 2142
+    },
+    {
+      "file": "prototype-stl\\M08-main-Breadboard_Y_Lock_Key\u2014Soham-Basanwar.stl",
+      "watertight": true,
+      "consistent_winding": true,
+      "positive_volume": true,
+      "bounds_mm": [
+        14.800003051757812,
+        18.299999237060547,
+        2.880000114440918
+      ],
+      "faces": 2142
+    },
+    {
+      "file": "prototype-stl\\M09-main-Button_Cap\u2014Soham-Basanwar.stl",
+      "watertight": true,
+      "consistent_winding": true,
+      "positive_volume": true,
+      "bounds_mm": [
+        19.992095947265625,
+        19.99603271484375,
+        13.299999237060547
+      ],
+      "faces": 5564
+    },
+    {
+      "file": "prototype-stl\\M10-main-Buzzer_Keeper\u2014Soham-Basanwar.stl",
+      "watertight": true,
+      "consistent_winding": true,
+      "positive_volume": true,
+      "bounds_mm": [
+        20.400001525878906,
+        22.600006103515625,
+        1.7000007629394531
+      ],
+      "faces": 678
+    },
+    {
+      "file": "prototype-stl\\M11-main-Emblem_Diffuser\u2014Soham-Basanwar.stl",
+      "watertight": true,
+      "consistent_winding": true,
+      "positive_volume": true,
+      "bounds_mm": [
+        47.57141876220703,
+        48.0,
+        1.1999969482421875
+      ],
+      "faces": 308
+    },
+    {
+      "file": "prototype-stl\\M12-main-Emblem_Mask\u2014Soham-Basanwar.stl",
+      "watertight": true,
+      "consistent_winding": true,
+      "positive_volume": true,
+      "bounds_mm": [
+        51.97944641113281,
+        51.989715576171875,
+        5.099998474121094
+      ],
+      "faces": 2636
+    },
+    {
+      "file": "prototype-stl\\M13-main-I2C_Left_Keeper\u2014Soham-Basanwar.stl",
+      "watertight": true,
+      "consistent_winding": true,
+      "positive_volume": true,
+      "bounds_mm": [
+        11.600006103515625,
+        3.600006103515625,
+        29.5
+      ],
+      "faces": 24
+    },
+    {
+      "file": "prototype-stl\\M14-main-I2C_Left_Shutter\u2014Soham-Basanwar.stl",
+      "watertight": true,
+      "consistent_winding": true,
+      "positive_volume": true,
+      "bounds_mm": [
+        5.1999969482421875,
+        20.0,
+        13.400001525878906
+      ],
+      "faces": 2310
+    },
+    {
+      "file": "prototype-stl\\M15-main-I2C_Right_Keeper\u2014Soham-Basanwar.stl",
+      "watertight": true,
+      "consistent_winding": true,
+      "positive_volume": true,
+      "bounds_mm": [
+        11.599999904632568,
+        3.5999984741210938,
+        29.5
+      ],
+      "faces": 24
+    },
+    {
+      "file": "prototype-stl\\M16-main-I2C_Right_Shutter\u2014Soham-Basanwar.stl",
+      "watertight": true,
+      "consistent_winding": true,
+      "positive_volume": true,
+      "bounds_mm": [
+        5.199999809265137,
+        20.0,
+        13.400001525878906
+      ],
+      "faces": 3492
+    },
+    {
+      "file": "prototype-stl\\M17-main-LCD_Carrier\u2014Soham-Basanwar.stl",
+      "watertight": true,
+      "consistent_winding": true,
+      "positive_volume": true,
+      "bounds_mm": [
+        93.80000305175781,
+        48.0,
+        12.0
+      ],
+      "faces": 4130
+    },
+    {
+      "file": "prototype-stl\\M18-main-LCD_Height_Insert\u2014Soham-Basanwar.stl",
+      "watertight": true,
+      "consistent_winding": true,
+      "positive_volume": true,
+      "bounds_mm": [
+        74.60000610351562,
+        30.0,
+        1.8999977111816406
+      ],
+      "faces": 12160
+    },
+    {
+      "file": "prototype-stl\\M19-main-LCD_X_Jaw\u2014Soham-Basanwar.stl",
+      "watertight": true,
+      "consistent_winding": true,
+      "positive_volume": true,
+      "bounds_mm": [
+        17.0,
+        10.0,
+        7.6999969482421875
+      ],
+      "faces": 2142
+    },
+    {
+      "file": "prototype-stl\\M20-main-LCD_X_Lock_Key\u2014Soham-Basanwar.stl",
+      "watertight": true,
+      "consistent_winding": true,
+      "positive_volume": true,
+      "bounds_mm": [
+        18.300003051757812,
+        14.80000114440918,
+        2.8800010681152344
+      ],
+      "faces": 2142
+    },
+    {
+      "file": "prototype-stl\\M21-main-LCD_Y_Jaw\u2014Soham-Basanwar.stl",
+      "watertight": true,
+      "consistent_winding": true,
+      "positive_volume": true,
+      "bounds_mm": [
+        10.0,
+        17.0,
+        7.6999969482421875
+      ],
+      "faces": 2142
+    },
+    {
+      "file": "prototype-stl\\M22-main-LCD_Y_Lock_Key\u2014Soham-Basanwar.stl",
+      "watertight": true,
+      "consistent_winding": true,
+      "positive_volume": true,
+      "bounds_mm": [
+        14.799995422363281,
+        18.299999237060547,
+        2.8800010681152344
+      ],
+      "faces": 2142
+    },
+    {
+      "file": "prototype-stl\\M23-main-Light_G1_Bezel\u2014Soham-Basanwar.stl",
+      "watertight": true,
+      "consistent_winding": true,
+      "positive_volume": true,
+      "bounds_mm": [
+        63.996713638305664,
+        29.99671173095703,
+        7.450004577636719
+      ],
+      "faces": 4932
+    },
+    {
+      "file": "prototype-stl\\M24-main-Light_G1_Diffuser\u2014Soham-Basanwar.stl",
+      "watertight": true,
+      "consistent_winding": true,
+      "positive_volume": true,
+      "bounds_mm": [
+        60.597957611083984,
+        26.597954750061035,
+        0.7999954223632812
+      ],
+      "faces": 404
+    },
+    {
+      "file": "prototype-stl\\M25-main-Light_G2_Bezel\u2014Soham-Basanwar.stl",
+      "watertight": true,
+      "consistent_winding": true,
+      "positive_volume": true,
+      "bounds_mm": [
+        64.0,
+        29.998573303222656,
+        7.450004577636719
+      ],
+      "faces": 4386
+    },
+    {
+      "file": "prototype-stl\\M26-main-Light_G2_Diffuser\u2014Soham-Basanwar.stl",
+      "watertight": true,
+      "consistent_winding": true,
+      "positive_volume": true,
+      "bounds_mm": [
+        60.600006103515625,
+        26.59911060333252,
+        0.7999954223632812
+      ],
+      "faces": 404
+    },
+    {
+      "file": "prototype-stl\\M27-main-Light_G3_Bezel\u2014Soham-Basanwar.stl",
+      "watertight": true,
+      "consistent_winding": true,
+      "positive_volume": true,
+      "bounds_mm": [
+        39.0,
+        47.99941635131836,
+        7.450004577636719
+      ],
+      "faces": 1720
+    },
+    {
+      "file": "prototype-stl\\M28-main-Light_G3_Diffuser\u2014Soham-Basanwar.stl",
+      "watertight": true,
+      "consistent_winding": true,
+      "positive_volume": true,
+      "bounds_mm": [
+        35.599639892578125,
+        44.599639892578125,
+        0.7999954223632812
+      ],
+      "faces": 432
+    },
+    {
+      "file": "prototype-stl\\M29-main-Light_G4_Bezel\u2014Soham-Basanwar.stl",
+      "watertight": true,
+      "consistent_winding": true,
+      "positive_volume": true,
+      "bounds_mm": [
+        39.0,
+        47.999847412109375,
+        7.450004577636719
+      ],
+      "faces": 4920
+    },
+    {
+      "file": "prototype-stl\\M30-main-Light_G4_Diffuser\u2014Soham-Basanwar.stl",
+      "watertight": true,
+      "consistent_winding": true,
+      "positive_volume": true,
+      "bounds_mm": [
+        35.600006103515625,
+        44.59990692138672,
+        0.7999954223632812
+      ],
+      "faces": 440
+    },
+    {
+      "file": "prototype-stl\\M31-main-RGB_Isolation_Cap\u2014Soham-Basanwar.stl",
+      "watertight": true,
+      "consistent_winding": true,
+      "positive_volume": true,
+      "bounds_mm": [
+        21.591461181640625,
+        21.595733642578125,
+        6.400001525878906
+      ],
+      "faces": 4868
+    },
+    {
+      "file": "prototype-stl\\M32-main-RGB_LED_Keeper\u2014Soham-Basanwar.stl",
+      "watertight": true,
+      "consistent_winding": true,
+      "positive_volume": true,
+      "bounds_mm": [
+        11.600006103515625,
+        6.0988006591796875,
+        3.0
+      ],
+      "faces": 700
+    },
+    {
+      "file": "prototype-stl\\M33-main-Switch_Cassette\u2014Soham-Basanwar.stl",
+      "watertight": true,
+      "consistent_winding": true,
+      "positive_volume": true,
+      "bounds_mm": [
+        20.1920166015625,
+        20.196014404296875,
+        12.25
+      ],
+      "faces": 6156
+    },
+    {
+      "file": "prototype-stl\\M34-main-UNO_Height_Insert\u2014Soham-Basanwar.stl",
+      "watertight": true,
+      "consistent_winding": true,
+      "positive_volume": true,
+      "bounds_mm": [
+        63.19999694824219,
+        48.0,
+        1.8999996185302734
+      ],
+      "faces": 11692
+    },
+    {
+      "file": "prototype-stl\\M35-main-UNO_X_Jaw\u2014Soham-Basanwar.stl",
+      "watertight": true,
+      "consistent_winding": true,
+      "positive_volume": true,
+      "bounds_mm": [
+        17.0,
+        10.0,
+        7.699999809265137
+      ],
+      "faces": 2142
+    },
+    {
+      "file": "prototype-stl\\M36-main-UNO_X_Lock_Key\u2014Soham-Basanwar.stl",
+      "watertight": true,
+      "consistent_winding": true,
+      "positive_volume": true,
+      "bounds_mm": [
+        18.29999542236328,
+        14.800003051757812,
+        2.880000114440918
+      ],
+      "faces": 2142
+    },
+    {
+      "file": "prototype-stl\\M37-main-UNO_Y_Jaw\u2014Soham-Basanwar.stl",
+      "watertight": true,
+      "consistent_winding": true,
+      "positive_volume": true,
+      "bounds_mm": [
+        10.0,
+        17.0,
+        7.699999809265137
+      ],
+      "faces": 2142
+    },
+    {
+      "file": "prototype-stl\\M38-main-UNO_Y_Lock_Key\u2014Soham-Basanwar.stl",
+      "watertight": true,
+      "consistent_winding": true,
+      "positive_volume": true,
+      "bounds_mm": [
+        14.800003051757812,
+        18.300003051757812,
+        2.880000114440918
+      ],
+      "faces": 2142
+    },
+    {
+      "file": "prototype-stl\\M39-main-USB_Shutter\u2014Soham-Basanwar.stl",
+      "watertight": true,
+      "consistent_winding": true,
+      "positive_volume": true,
+      "bounds_mm": [
+        32.0,
+        5.199999809265137,
+        21.400001525878906
+      ],
+      "faces": 4656
+    },
+    {
+      "file": "prototype-stl\\M40-main-USB_Shutter_Keeper\u2014Soham-Basanwar.stl",
+      "watertight": true,
+      "consistent_winding": true,
+      "positive_volume": true,
+      "bounds_mm": [
+        3.600006103515625,
+        11.599999904632568,
+        25.200000762939453
+      ],
+      "faces": 24
+    },
+    {
+      "file": "fit-tests\\01-indexed-rail-coupon-Soham-Basanwar.stl",
+      "watertight": true,
+      "consistent_winding": true,
+      "positive_volume": true,
+      "bounds_mm": [
+        29.0,
+        20.799999237060547,
+        4.400000095367432
+      ],
+      "faces": 1082
+    },
+    {
+      "file": "fit-tests\\02-indexed-jaw-coupon-Soham-Basanwar.stl",
+      "watertight": true,
+      "consistent_winding": true,
+      "positive_volume": true,
+      "bounds_mm": [
+        17.0,
+        9.999999999999986,
+        7.699999809265137
+      ],
+      "faces": 2272
+    },
+    {
+      "file": "fit-tests\\03-indexed-key-coupon-Soham-Basanwar.stl",
+      "watertight": true,
+      "consistent_winding": true,
+      "positive_volume": true,
+      "bounds_mm": [
+        18.299999237060547,
+        14.800000190734849,
+        2.880000114440918
+      ],
+      "faces": 2272
+    },
+    {
+      "file": "fit-tests\\M-lighting-G1-coupon-Soham-Basanwar.stl",
+      "watertight": true,
+      "consistent_winding": true,
+      "positive_volume": true,
+      "bounds_mm": [
+        72.0,
+        39.0,
+        43.000003814697266
+      ],
+      "faces": 5902
+    },
+    {
+      "file": "optical-options\\clear-film-frame.stl",
+      "watertight": true,
+      "consistent_winding": true,
+      "positive_volume": true,
+      "bounds_mm": [
+        22.20000457763672,
+        19.970672607421875,
+        10.090320587158203
+      ],
+      "faces": 2288
+    },
+    {
+      "file": "optical-options\\printed-roof-0p4mm.stl",
+      "watertight": true,
+      "consistent_winding": true,
+      "positive_volume": true,
+      "bounds_mm": [
+        22.20000457763672,
+        19.970672607421875,
+        10.239810943603516
+      ],
+      "faces": 2284
+    },
+    {
+      "file": "optical-options\\printed-roof-0p6mm.stl",
+      "watertight": true,
+      "consistent_winding": true,
+      "positive_volume": true,
+      "bounds_mm": [
+        22.20000457763672,
+        19.970672607421875,
+        10.239810943603516
+      ],
+      "faces": 2284
+    },
+    {
+      "file": "optical-options\\printed-roof-0p8mm.stl",
+      "watertight": true,
+      "consistent_winding": true,
+      "positive_volume": true,
+      "bounds_mm": [
+        22.20000457763672,
+        19.970672607421875,
+        10.299999237060547
+      ],
+      "faces": 2284
+    },
+    {
+      "file": "adjustment-options\\architect-Breadboard-height-minus-Soham-Basanwar.stl",
+      "watertight": true,
+      "consistent_winding": true,
+      "positive_volume": true,
+      "bounds_mm": [
+        160.0,
+        49.0,
+        1.3000001907348633
+      ],
+      "faces": 68
+    },
+    {
+      "file": "adjustment-options\\architect-Breadboard-height-plus-Soham-Basanwar.stl",
+      "watertight": true,
+      "consistent_winding": true,
+      "positive_volume": true,
+      "bounds_mm": [
+        160.0,
+        49.0,
+        2.5
+      ],
+      "faces": 68
+    },
+    {
+      "file": "adjustment-options\\architect-button-reach-minus-Soham-Basanwar.stl",
+      "watertight": true,
+      "consistent_winding": true,
+      "positive_volume": true,
+      "bounds_mm": [
+        5.0,
+        5.0,
+        6.5
+      ],
+      "faces": 404
+    },
+    {
+      "file": "adjustment-options\\architect-button-reach-plus-Soham-Basanwar.stl",
+      "watertight": true,
+      "consistent_winding": true,
+      "positive_volume": true,
+      "bounds_mm": [
+        5.0,
+        5.0,
+        7.700000762939453
+      ],
+      "faces": 404
+    },
+    {
+      "file": "adjustment-options\\architect-servo-width-minus-Soham-Basanwar.stl",
+      "watertight": true,
+      "consistent_winding": true,
+      "positive_volume": true,
+      "bounds_mm": [
+        25.199996948242188,
+        29.900001525878906,
+        10.299999237060547
+      ],
+      "faces": 92
+    },
+    {
+      "file": "adjustment-options\\architect-servo-width-plus-Soham-Basanwar.stl",
+      "watertight": true,
+      "consistent_winding": true,
+      "positive_volume": true,
+      "bounds_mm": [
+        25.199996948242188,
+        29.900001525878906,
+        10.299999237060547
+      ],
+      "faces": 92
+    },
+    {
+      "file": "adjustment-options\\architect-UNO-height-minus-Soham-Basanwar.stl",
+      "watertight": true,
+      "consistent_winding": true,
+      "positive_volume": true,
+      "bounds_mm": [
+        62.599998474121094,
+        47.400001525878906,
+        1.3000001907348633
+      ],
+      "faces": 68
+    },
+    {
+      "file": "adjustment-options\\architect-UNO-height-plus-Soham-Basanwar.stl",
+      "watertight": true,
+      "consistent_winding": true,
+      "positive_volume": true,
+      "bounds_mm": [
+        62.599998474121094,
+        47.400001525878906,
+        2.5
+      ],
+      "faces": 68
+    },
+    {
+      "file": "adjustment-options\\explorer-Breadboard-height-minus-Soham-Basanwar.stl",
+      "watertight": true,
+      "consistent_winding": true,
+      "positive_volume": true,
+      "bounds_mm": [
+        160.0,
+        49.0,
+        1.3000001907348633
+      ],
+      "faces": 68
+    },
+    {
+      "file": "adjustment-options\\explorer-Breadboard-height-plus-Soham-Basanwar.stl",
+      "watertight": true,
+      "consistent_winding": true,
+      "positive_volume": true,
+      "bounds_mm": [
+        160.0,
+        49.0,
+        2.5
+      ],
+      "faces": 68
+    },
+    {
+      "file": "adjustment-options\\explorer-Joystick-height-minus-Soham-Basanwar.stl",
+      "watertight": true,
+      "consistent_winding": true,
+      "positive_volume": true,
+      "bounds_mm": [
+        28.0,
+        20.0,
+        1.3000030517578125
+      ],
+      "faces": 68
+    },
+    {
+      "file": "adjustment-options\\explorer-Joystick-height-plus-Soham-Basanwar.stl",
+      "watertight": true,
+      "consistent_winding": true,
+      "positive_volume": true,
+      "bounds_mm": [
+        28.0,
+        20.0,
+        2.5
+      ],
+      "faces": 68
+    },
+    {
+      "file": "adjustment-options\\explorer-UNO-height-minus-Soham-Basanwar.stl",
+      "watertight": true,
+      "consistent_winding": true,
+      "positive_volume": true,
+      "bounds_mm": [
+        62.599998474121094,
+        47.400001525878906,
+        1.3000001907348633
+      ],
+      "faces": 68
+    },
+    {
+      "file": "adjustment-options\\explorer-UNO-height-plus-Soham-Basanwar.stl",
+      "watertight": true,
+      "consistent_winding": true,
+      "positive_volume": true,
+      "bounds_mm": [
+        62.599998474121094,
+        47.400001525878906,
+        2.5
+      ],
+      "faces": 68
+    },
+    {
+      "file": "adjustment-options\\main-Breadboard-height-minus-Soham-Basanwar.stl",
+      "watertight": true,
+      "consistent_winding": true,
+      "positive_volume": true,
+      "bounds_mm": [
+        160.0,
+        49.0,
+        1.3000001907348633
+      ],
+      "faces": 68
+    },
+    {
+      "file": "adjustment-options\\main-Breadboard-height-plus-Soham-Basanwar.stl",
+      "watertight": true,
+      "consistent_winding": true,
+      "positive_volume": true,
+      "bounds_mm": [
+        160.0,
+        49.0,
+        2.5
+      ],
+      "faces": 68
+    },
+    {
+      "file": "adjustment-options\\main-LCD-height-minus-Soham-Basanwar.stl",
+      "watertight": true,
+      "consistent_winding": true,
+      "positive_volume": true,
+      "bounds_mm": [
+        74.60000610351562,
+        30.0,
+        1.2999992370605469
+      ],
+      "faces": 68
+    },
+    {
+      "file": "adjustment-options\\main-LCD-height-plus-Soham-Basanwar.stl",
+      "watertight": true,
+      "consistent_winding": true,
+      "positive_volume": true,
+      "bounds_mm": [
+        74.60000610351562,
+        30.0,
+        2.5
+      ],
+      "faces": 68
+    },
+    {
+      "file": "adjustment-options\\main-UNO-height-minus-Soham-Basanwar.stl",
+      "watertight": true,
+      "consistent_winding": true,
+      "positive_volume": true,
+      "bounds_mm": [
+        63.19999694824219,
+        48.0,
+        1.3000001907348633
+      ],
+      "faces": 68
+    },
+    {
+      "file": "adjustment-options\\main-UNO-height-plus-Soham-Basanwar.stl",
+      "watertight": true,
+      "consistent_winding": true,
+      "positive_volume": true,
+      "bounds_mm": [
+        63.19999694824219,
+        48.0,
+        2.5
+      ],
+      "faces": 68
+    }
+  ]
+}

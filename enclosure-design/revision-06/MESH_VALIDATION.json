@@ -1,0 +1,809 @@
+{
+  "scope": "Mesh integrity only; physical fit, material strength and print settings unverified.",
+  "checks": [
+    {
+      "file": "prototype-stl\\architect-Base.stl",
+      "watertight": true,
+      "consistent_winding": true,
+      "positive_volume": true,
+      "bounds_mm": [
+        246.3384343981743,
+        209.37625122070312,
+        42.0
+      ],
+      "faces": 68064
+    },
+    {
+      "file": "prototype-stl\\architect-Battery_Door.stl",
+      "watertight": true,
+      "consistent_winding": true,
+      "positive_volume": true,
+      "bounds_mm": [
+        34.399993896484375,
+        67.5999984741211,
+        3.400000035762787
+      ],
+      "faces": 604
+    },
+    {
+      "file": "prototype-stl\\architect-Button_Cap.stl",
+      "watertight": true,
+      "consistent_winding": true,
+      "positive_volume": true,
+      "bounds_mm": [
+        20.0,
+        19.970672607421875,
+        13.299999237060547
+      ],
+      "faces": 1006
+    },
+    {
+      "file": "prototype-stl\\architect-Emblem_Diffuser.stl",
+      "watertight": true,
+      "consistent_winding": true,
+      "positive_volume": true,
+      "bounds_mm": [
+        47.57141876220703,
+        47.93202590942383,
+        1.2000007629394531
+      ],
+      "faces": 236
+    },
+    {
+      "file": "prototype-stl\\architect-Emblem_Mask.stl",
+      "watertight": true,
+      "consistent_winding": true,
+      "positive_volume": true,
+      "bounds_mm": [
+        52.0,
+        51.923736572265625,
+        5.099998474121094
+      ],
+      "faces": 1692
+    },
+    {
+      "file": "prototype-stl\\architect-Gate_Drive_Pin.stl",
+      "watertight": true,
+      "consistent_winding": true,
+      "positive_volume": true,
+      "bounds_mm": [
+        4.193840026855469,
+        9.400001525878906,
+        4.1999969482421875
+      ],
+      "faces": 924
+    },
+    {
+      "file": "prototype-stl\\architect-Gate_Frame.stl",
+      "watertight": true,
+      "consistent_winding": true,
+      "positive_volume": true,
+      "bounds_mm": [
+        46.0,
+        43.0,
+        63.0
+      ],
+      "faces": 1208
+    },
+    {
+      "file": "prototype-stl\\architect-Gate_Panel.stl",
+      "watertight": true,
+      "consistent_winding": true,
+      "positive_volume": true,
+      "bounds_mm": [
+        34.0,
+        2.200000762939453,
+        29.0
+      ],
+      "faces": 112
+    },
+    {
+      "file": "prototype-stl\\architect-Gate_Pin_Keeper.stl",
+      "watertight": true,
+      "consistent_winding": true,
+      "positive_volume": true,
+      "bounds_mm": [
+        4.7964324951171875,
+        0.7000007629394531,
+        4.695648193359375
+      ],
+      "faces": 384
+    },
+    {
+      "file": "prototype-stl\\architect-Gate_Shroud.stl",
+      "watertight": true,
+      "consistent_winding": true,
+      "positive_volume": true,
+      "bounds_mm": [
+        50.0,
+        48.0,
+        59.5
+      ],
+      "faces": 1282
+    },
+    {
+      "file": "prototype-stl\\architect-I2C_Rear_Keeper.stl",
+      "watertight": true,
+      "consistent_winding": true,
+      "positive_volume": true,
+      "bounds_mm": [
+        3.600006103515625,
+        11.599999904632568,
+        23.5
+      ],
+      "faces": 24
+    },
+    {
+      "file": "prototype-stl\\architect-I2C_Rear_Shutter.stl",
+      "watertight": true,
+      "consistent_winding": true,
+      "positive_volume": true,
+      "bounds_mm": [
+        20.0,
+        5.199999809265137,
+        13.400001525878906
+      ],
+      "faces": 28
+    },
+    {
+      "file": "prototype-stl\\architect-Lid.stl",
+      "watertight": true,
+      "consistent_winding": true,
+      "positive_volume": true,
+      "bounds_mm": [
+        240.55475091934204,
+        203.07441091537476,
+        38.46512413024902
+      ],
+      "faces": 18036
+    },
+    {
+      "file": "prototype-stl\\architect-Potentiometer_Keeper.stl",
+      "watertight": true,
+      "consistent_winding": true,
+      "positive_volume": true,
+      "bounds_mm": [
+        16.100006103515625,
+        18.800003051757812,
+        1.5
+      ],
+      "faces": 512
+    },
+    {
+      "file": "prototype-stl\\architect-RGB_LED_Keeper.stl",
+      "watertight": true,
+      "consistent_winding": true,
+      "positive_volume": true,
+      "bounds_mm": [
+        11.600006103515625,
+        6.091053009033203,
+        3.0
+      ],
+      "faces": 528
+    },
+    {
+      "file": "prototype-stl\\architect-Servo_Cassette.stl",
+      "watertight": true,
+      "consistent_winding": true,
+      "positive_volume": true,
+      "bounds_mm": [
+        36.80000114440918,
+        34.0,
+        28.0
+      ],
+      "faces": 898
+    },
+    {
+      "file": "prototype-stl\\architect-Switch_Cassette.stl",
+      "watertight": true,
+      "consistent_winding": true,
+      "positive_volume": true,
+      "bounds_mm": [
+        20.199996948242188,
+        20.170379638671875,
+        12.25
+      ],
+      "faces": 1100
+    },
+    {
+      "file": "prototype-stl\\architect-UNO_Edge_Clip_1.stl",
+      "watertight": true,
+      "consistent_winding": true,
+      "positive_volume": true,
+      "bounds_mm": [
+        5.9000091552734375,
+        10.0,
+        6.200000286102295
+      ],
+      "faces": 36
+    },
+    {
+      "file": "prototype-stl\\architect-UNO_Edge_Clip_2.stl",
+      "watertight": true,
+      "consistent_winding": true,
+      "positive_volume": true,
+      "bounds_mm": [
+        5.900001525878906,
+        10.0,
+        6.200000286102295
+      ],
+      "faces": 36
+    },
+    {
+      "file": "prototype-stl\\explorer-Base.stl",
+      "watertight": true,
+      "consistent_winding": true,
+      "positive_volume": true,
+      "bounds_mm": [
+        246.3384343981743,
+        209.37625122070312,
+        42.0
+      ],
+      "faces": 68064
+    },
+    {
+      "file": "prototype-stl\\explorer-Battery_Door.stl",
+      "watertight": true,
+      "consistent_winding": true,
+      "positive_volume": true,
+      "bounds_mm": [
+        34.399993896484375,
+        67.5999984741211,
+        3.400000035762787
+      ],
+      "faces": 604
+    },
+    {
+      "file": "prototype-stl\\explorer-Emblem_Diffuser.stl",
+      "watertight": true,
+      "consistent_winding": true,
+      "positive_volume": true,
+      "bounds_mm": [
+        47.57141876220703,
+        47.93202590942383,
+        1.2000007629394531
+      ],
+      "faces": 236
+    },
+    {
+      "file": "prototype-stl\\explorer-Emblem_Mask.stl",
+      "watertight": true,
+      "consistent_winding": true,
+      "positive_volume": true,
+      "bounds_mm": [
+        52.0,
+        51.923736572265625,
+        5.099998474121094
+      ],
+      "faces": 2844
+    },
+    {
+      "file": "prototype-stl\\explorer-I2C_Rear_Keeper.stl",
+      "watertight": true,
+      "consistent_winding": true,
+      "positive_volume": true,
+      "bounds_mm": [
+        3.600006103515625,
+        11.599999904632568,
+        23.5
+      ],
+      "faces": 24
+    },
+    {
+      "file": "prototype-stl\\explorer-I2C_Rear_Shutter.stl",
+      "watertight": true,
+      "consistent_winding": true,
+      "positive_volume": true,
+      "bounds_mm": [
+        20.0,
+        5.199999809265137,
+        13.400001525878906
+      ],
+      "faces": 28
+    },
+    {
+      "file": "prototype-stl\\explorer-Joystick_Carrier.stl",
+      "watertight": true,
+      "consistent_winding": true,
+      "positive_volume": true,
+      "bounds_mm": [
+        40.399993896484375,
+        30.0,
+        22.0
+      ],
+      "faces": 624
+    },
+    {
+      "file": "prototype-stl\\explorer-Lid.stl",
+      "watertight": true,
+      "consistent_winding": true,
+      "positive_volume": true,
+      "bounds_mm": [
+        240.55475091934204,
+        203.07441091537476,
+        40.86512565612793
+      ],
+      "faces": 18172
+    },
+    {
+      "file": "prototype-stl\\explorer-Reveal_Dome.stl",
+      "watertight": true,
+      "consistent_winding": true,
+      "positive_volume": true,
+      "bounds_mm": [
+        22.20000457763672,
+        19.970672607421875,
+        10.239810943603516
+      ],
+      "faces": 2284
+    },
+    {
+      "file": "prototype-stl\\explorer-RGB_LED_Keeper.stl",
+      "watertight": true,
+      "consistent_winding": true,
+      "positive_volume": true,
+      "bounds_mm": [
+        11.600006103515625,
+        6.091053009033203,
+        3.0
+      ],
+      "faces": 528
+    },
+    {
+      "file": "prototype-stl\\explorer-UNO_Edge_Clip_1.stl",
+      "watertight": true,
+      "consistent_winding": true,
+      "positive_volume": true,
+      "bounds_mm": [
+        5.9000091552734375,
+        10.0,
+        6.200000286102295
+      ],
+      "faces": 36
+    },
+    {
+      "file": "prototype-stl\\explorer-UNO_Edge_Clip_2.stl",
+      "watertight": true,
+      "consistent_winding": true,
+      "positive_volume": true,
+      "bounds_mm": [
+        5.900001525878906,
+        10.0,
+        6.200000286102295
+      ],
+      "faces": 36
+    },
+    {
+      "file": "prototype-stl\\main-Base.stl",
+      "watertight": true,
+      "consistent_winding": true,
+      "positive_volume": true,
+      "bounds_mm": [
+        242.0,
+        183.8000030517578,
+        48.0
+      ],
+      "faces": 9296
+    },
+    {
+      "file": "prototype-stl\\main-Battery_Door.stl",
+      "watertight": true,
+      "consistent_winding": true,
+      "positive_volume": true,
+      "bounds_mm": [
+        34.399993896484375,
+        67.5999984741211,
+        3.400000035762787
+      ],
+      "faces": 604
+    },
+    {
+      "file": "prototype-stl\\main-Button_Cap.stl",
+      "watertight": true,
+      "consistent_winding": true,
+      "positive_volume": true,
+      "bounds_mm": [
+        20.0,
+        19.970672607421875,
+        13.299999237060547
+      ],
+      "faces": 932
+    },
+    {
+      "file": "prototype-stl\\main-Buzzer_Keeper.stl",
+      "watertight": true,
+      "consistent_winding": true,
+      "positive_volume": true,
+      "bounds_mm": [
+        20.400001525878906,
+        22.600006103515625,
+        1.7000007629394531
+      ],
+      "faces": 510
+    },
+    {
+      "file": "prototype-stl\\main-Emblem_Diffuser.stl",
+      "watertight": true,
+      "consistent_winding": true,
+      "positive_volume": true,
+      "bounds_mm": [
+        47.57141876220703,
+        47.932029724121094,
+        1.1999969482421875
+      ],
+      "faces": 236
+    },
+    {
+      "file": "prototype-stl\\main-Emblem_Mask.stl",
+      "watertight": true,
+      "consistent_winding": true,
+      "positive_volume": true,
+      "bounds_mm": [
+        52.0,
+        51.923736572265625,
+        5.099998474121094
+      ],
+      "faces": 2244
+    },
+    {
+      "file": "prototype-stl\\main-I2C_Left_Keeper.stl",
+      "watertight": true,
+      "consistent_winding": true,
+      "positive_volume": true,
+      "bounds_mm": [
+        11.600006103515625,
+        3.600006103515625,
+        29.5
+      ],
+      "faces": 24
+    },
+    {
+      "file": "prototype-stl\\main-I2C_Left_Shutter.stl",
+      "watertight": true,
+      "consistent_winding": true,
+      "positive_volume": true,
+      "bounds_mm": [
+        5.1999969482421875,
+        20.0,
+        13.400001525878906
+      ],
+      "faces": 28
+    },
+    {
+      "file": "prototype-stl\\main-I2C_Right_Keeper.stl",
+      "watertight": true,
+      "consistent_winding": true,
+      "positive_volume": true,
+      "bounds_mm": [
+        11.599999904632568,
+        3.5999984741210938,
+        29.5
+      ],
+      "faces": 24
+    },
+    {
+      "file": "prototype-stl\\main-I2C_Right_Shutter.stl",
+      "watertight": true,
+      "consistent_winding": true,
+      "positive_volume": true,
+      "bounds_mm": [
+        5.199999809265137,
+        20.0,
+        13.400001525878906
+      ],
+      "faces": 28
+    },
+    {
+      "file": "prototype-stl\\main-LCD_Carrier.stl",
+      "watertight": true,
+      "consistent_winding": true,
+      "positive_volume": true,
+      "bounds_mm": [
+        87.0,
+        40.0,
+        20.0
+      ],
+      "faces": 660
+    },
+    {
+      "file": "prototype-stl\\main-Lid.stl",
+      "watertight": true,
+      "consistent_winding": true,
+      "positive_volume": true,
+      "bounds_mm": [
+        227.8833360671997,
+        174.54166555404663,
+        30.800003051757812
+      ],
+      "faces": 13976
+    },
+    {
+      "file": "prototype-stl\\main-RGB_LED_Keeper.stl",
+      "watertight": true,
+      "consistent_winding": true,
+      "positive_volume": true,
+      "bounds_mm": [
+        11.600006103515625,
+        6.0910491943359375,
+        3.0
+      ],
+      "faces": 528
+    },
+    {
+      "file": "prototype-stl\\main-Switch_Cassette.stl",
+      "watertight": true,
+      "consistent_winding": true,
+      "positive_volume": true,
+      "bounds_mm": [
+        20.199996948242188,
+        20.170379638671875,
+        12.25
+      ],
+      "faces": 1100
+    },
+    {
+      "file": "prototype-stl\\main-UNO_Edge_Clip_1.stl",
+      "watertight": true,
+      "consistent_winding": true,
+      "positive_volume": true,
+      "bounds_mm": [
+        5.9000091552734375,
+        10.0,
+        6.200000286102295
+      ],
+      "faces": 36
+    },
+    {
+      "file": "prototype-stl\\main-UNO_Edge_Clip_2.stl",
+      "watertight": true,
+      "consistent_winding": true,
+      "positive_volume": true,
+      "bounds_mm": [
+        5.900001525878906,
+        10.0,
+        6.200000286102295
+      ],
+      "faces": 36
+    },
+    {
+      "file": "prototype-stl\\main-USB_Shutter.stl",
+      "watertight": true,
+      "consistent_winding": true,
+      "positive_volume": true,
+      "bounds_mm": [
+        32.0,
+        5.199999809265137,
+        21.400001525878906
+      ],
+      "faces": 28
+    },
+    {
+      "file": "prototype-stl\\main-USB_Shutter_Keeper.stl",
+      "watertight": true,
+      "consistent_winding": true,
+      "positive_volume": true,
+      "bounds_mm": [
+        3.600006103515625,
+        11.599999904632568,
+        25.200000762939453
+      ],
+      "faces": 24
+    },
+    {
+      "file": "fit-tests\\01-rounded-grip-base.stl",
+      "watertight": true,
+      "consistent_winding": true,
+      "positive_volume": true,
+      "bounds_mm": [
+        67.81924438476562,
+        73.37290954589844,
+        41.97955322265625
+      ],
+      "faces": 14108
+    },
+    {
+      "file": "fit-tests\\02-rounded-grip-lid.stl",
+      "watertight": true,
+      "consistent_winding": true,
+      "positive_volume": true,
+      "bounds_mm": [
+        65.29582977294922,
+        73.37755584716797,
+        35.43958282470703
+      ],
+      "faces": 2166
+    },
+    {
+      "file": "fit-tests\\03-battery-door.stl",
+      "watertight": true,
+      "consistent_winding": true,
+      "positive_volume": true,
+      "bounds_mm": [
+        34.400001525878906,
+        67.5999984741211,
+        3.4000000953674316
+      ],
+      "faces": 604
+    },
+    {
+      "file": "fit-tests\\04-i2c-shutter-track.stl",
+      "watertight": true,
+      "consistent_winding": true,
+      "positive_volume": true,
+      "bounds_mm": [
+        59.000003814697266,
+        19.0,
+        30.0
+      ],
+      "faces": 556
+    },
+    {
+      "file": "fit-tests\\05-i2c-shutter.stl",
+      "watertight": true,
+      "consistent_winding": true,
+      "positive_volume": true,
+      "bounds_mm": [
+        20.0,
+        5.199999809265137,
+        13.399999618530273
+      ],
+      "faces": 28
+    },
+    {
+      "file": "fit-tests\\06-i2c-keeper.stl",
+      "watertight": true,
+      "consistent_winding": true,
+      "positive_volume": true,
+      "bounds_mm": [
+        3.5999999046325684,
+        11.600000381469727,
+        23.5
+      ],
+      "faces": 24
+    },
+    {
+      "file": "fit-tests\\07-joystick-carrier.stl",
+      "watertight": true,
+      "consistent_winding": true,
+      "positive_volume": true,
+      "bounds_mm": [
+        40.400001525878906,
+        30.0,
+        22.0
+      ],
+      "faces": 624
+    },
+    {
+      "file": "fit-tests\\08-joystick-receiver.stl",
+      "watertight": true,
+      "consistent_winding": true,
+      "positive_volume": true,
+      "bounds_mm": [
+        48.0,
+        38.0,
+        10.0
+      ],
+      "faces": 456
+    },
+    {
+      "file": "fit-tests\\09-uno-edge-clip.stl",
+      "watertight": true,
+      "consistent_winding": true,
+      "positive_volume": true,
+      "bounds_mm": [
+        5.900000095367432,
+        10.0,
+        6.199999809265137
+      ],
+      "faces": 36
+    },
+    {
+      "file": "fit-tests\\10-lcd-carrier.stl",
+      "watertight": true,
+      "consistent_winding": true,
+      "positive_volume": true,
+      "bounds_mm": [
+        87.0,
+        40.0,
+        20.0
+      ],
+      "faces": 660
+    },
+    {
+      "file": "fit-tests\\11-lcd-receiver.stl",
+      "watertight": true,
+      "consistent_winding": true,
+      "positive_volume": true,
+      "bounds_mm": [
+        96.0,
+        48.0,
+        13.800000190734863
+      ],
+      "faces": 728
+    },
+    {
+      "file": "fit-tests\\12-usb-track.stl",
+      "watertight": true,
+      "consistent_winding": true,
+      "positive_volume": true,
+      "bounds_mm": [
+        82.0,
+        10.399999618530273,
+        30.0
+      ],
+      "faces": 382
+    },
+    {
+      "file": "fit-tests\\13-usb-shutter.stl",
+      "watertight": true,
+      "consistent_winding": true,
+      "positive_volume": true,
+      "bounds_mm": [
+        32.0,
+        5.199999809265137,
+        21.399999618530273
+      ],
+      "faces": 28
+    },
+    {
+      "file": "fit-tests\\14-usb-keeper.stl",
+      "watertight": true,
+      "consistent_winding": true,
+      "positive_volume": true,
+      "bounds_mm": [
+        3.5999999046325684,
+        11.600000381469727,
+        25.200000762939453
+      ],
+      "faces": 24
+    },
+    {
+      "file": "optical-options\\clear-film-frame.stl",
+      "watertight": true,
+      "consistent_winding": true,
+      "positive_volume": true,
+      "bounds_mm": [
+        22.20000457763672,
+        19.970672607421875,
+        10.090320587158203
+      ],
+      "faces": 2288
+    },
+    {
+      "file": "optical-options\\printed-roof-0p4mm.stl",
+      "watertight": true,
+      "consistent_winding": true,
+      "positive_volume": true,
+      "bounds_mm": [
+        22.20000457763672,
+        19.970672607421875,
+        10.239810943603516
+      ],
+      "faces": 2284
+    },
+    {
+      "file": "optical-options\\printed-roof-0p6mm.stl",
+      "watertight": true,
+      "consistent_winding": true,
+      "positive_volume": true,
+      "bounds_mm": [
+        22.20000457763672,
+        19.970672607421875,
+        10.239810943603516
+      ],
+      "faces": 2284
+    },
+    {
+      "file": "optical-options\\printed-roof-0p8mm.stl",
+      "watertight": true,
+      "consistent_winding": true,
+      "positive_volume": true,
+      "bounds_mm": [
+        22.20000457763672,
+        19.970672607421875,
+        10.299999237060547
+      ],
+      "faces": 2284
+    }
+  ]
+}

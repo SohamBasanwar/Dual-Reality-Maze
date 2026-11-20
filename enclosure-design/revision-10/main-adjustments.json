@@ -1,0 +1,254 @@
+[
+  {
+    "prefix": "Breadboard",
+    "origin": [
+      34,
+      12,
+      3.8
+    ],
+    "nominal_mm": [
+      166,
+      55,
+      10
+    ],
+    "board_bottom_z": 9.2,
+    "axes": [
+      {
+        "axis": "X",
+        "jaw": "Breadboard_X_Jaw",
+        "key": "Breadboard_X_Lock_Key",
+        "origin": [
+          200,
+          39.5,
+          3.8
+        ],
+        "direction": [
+          -1,
+          0,
+          0
+        ],
+        "range_mm": [
+          -3,
+          0,
+          3
+        ],
+        "key_release_pre": [
+          0,
+          -1,
+          0
+        ],
+        "key_release_mm": 10.5,
+        "nominal_dimension_mm": 166,
+        "slot_pitch_mm": 3
+      },
+      {
+        "axis": "Y",
+        "jaw": "Breadboard_Y_Jaw",
+        "key": "Breadboard_Y_Lock_Key",
+        "origin": [
+          117.0,
+          67,
+          3.8
+        ],
+        "direction": [
+          0,
+          -1,
+          0
+        ],
+        "range_mm": [
+          -3,
+          0,
+          3
+        ],
+        "key_release_pre": [
+          1,
+          0,
+          0
+        ],
+        "key_release_mm": 10.5,
+        "nominal_dimension_mm": 55,
+        "slot_pitch_mm": 3
+      }
+    ],
+    "height_options_mm": [
+      0.6,
+      1.2,
+      1.8
+    ],
+    "height_meaning": "Insert thickness changes support height. Thicker insert accepts a thinner body under the fixed top lips; no stacking.",
+    "fixed_component_corner": [
+      34,
+      12
+    ],
+    "local_frame_z": 3.8,
+    "role": "main"
+  },
+  {
+    "prefix": "UNO",
+    "origin": [
+      88,
+      91,
+      3.8
+    ],
+    "nominal_mm": [
+      69.2,
+      54,
+      1.6
+    ],
+    "board_bottom_z": 9.2,
+    "axes": [
+      {
+        "axis": "X",
+        "jaw": "UNO_X_Jaw",
+        "key": "UNO_X_Lock_Key",
+        "origin": [
+          157.2,
+          118.0,
+          3.8
+        ],
+        "direction": [
+          -1,
+          0,
+          0
+        ],
+        "range_mm": [
+          -3,
+          0,
+          3
+        ],
+        "key_release_pre": [
+          0,
+          -1,
+          0
+        ],
+        "key_release_mm": 10.5,
+        "nominal_dimension_mm": 69.2,
+        "slot_pitch_mm": 3
+      },
+      {
+        "axis": "Y",
+        "jaw": "UNO_Y_Jaw",
+        "key": "UNO_Y_Lock_Key",
+        "origin": [
+          122.6,
+          145,
+          3.8
+        ],
+        "direction": [
+          0,
+          -1,
+          0
+        ],
+        "range_mm": [
+          -3,
+          0,
+          3
+        ],
+        "key_release_pre": [
+          1,
+          0,
+          0
+        ],
+        "key_release_mm": 10.5,
+        "nominal_dimension_mm": 54,
+        "slot_pitch_mm": 3
+      }
+    ],
+    "height_options_mm": [
+      0.6,
+      1.2,
+      1.8
+    ],
+    "height_meaning": "Insert thickness changes support height. Thicker insert accepts a thinner body under the fixed top lips; no stacking.",
+    "fixed_component_corner": [
+      88,
+      91
+    ],
+    "local_frame_z": 3.8,
+    "role": "main"
+  },
+  {
+    "prefix": "LCD",
+    "origin": [
+      76.7,
+      25,
+      49.2
+    ],
+    "nominal_mm": [
+      80.6,
+      36,
+      1.6
+    ],
+    "board_bottom_z": 54.6,
+    "axes": [
+      {
+        "axis": "X",
+        "jaw": "LCD_X_Jaw",
+        "key": "LCD_X_Lock_Key",
+        "origin": [
+          157.3,
+          29,
+          49.2
+        ],
+        "direction": [
+          -1,
+          0,
+          0
+        ],
+        "range_mm": [
+          -3,
+          0,
+          3
+        ],
+        "key_release_pre": [
+          0,
+          -1,
+          0
+        ],
+        "key_release_mm": 10.5,
+        "nominal_dimension_mm": 80.6,
+        "slot_pitch_mm": 3
+      },
+      {
+        "axis": "Y",
+        "jaw": "LCD_Y_Jaw",
+        "key": "LCD_Y_Lock_Key",
+        "origin": [
+          133.3,
+          61,
+          49.2
+        ],
+        "direction": [
+          0,
+          -1,
+          0
+        ],
+        "range_mm": [
+          -3,
+          0,
+          3
+        ],
+        "key_release_pre": [
+          1,
+          0,
+          0
+        ],
+        "key_release_mm": 10.5,
+        "nominal_dimension_mm": 36,
+        "slot_pitch_mm": 3
+      }
+    ],
+    "height_options_mm": [
+      0.6,
+      1.2,
+      1.8
+    ],
+    "height_meaning": "Insert thickness changes support height. Thicker insert accepts a thinner body under the fixed top lips; no stacking.",
+    "fixed_component_corner": [
+      76.7,
+      25
+    ],
+    "local_frame_z": 49.2,
+    "role": "main"
+  }
+]

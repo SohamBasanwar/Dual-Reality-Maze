@@ -1,0 +1,50 @@
+{
+  "revision": 12,
+  "date": "2026-11-04",
+  "status": "Digital prototype checked; staff review and physical fit samples required",
+  "installed_printed_parts": 95,
+  "physically_coded_parts": 31,
+  "native_solids_checked": 141,
+  "stl_meshes_checked": 123,
+  "opaque_parts": 88,
+  "translucent_parts": 7,
+  "provisional_plate_count": 9,
+  "published_bed_mm": [
+    290,
+    290,
+    285
+  ],
+  "printer_assignment_confirmed": false,
+  "production_released": false,
+  "green_led_count": 4,
+  "main_rgb_secondary_shield": true,
+  "checks_repeated_for_revision12": [
+    "All final native solid validity",
+    "All STL mesh integrity",
+    "All three R12 assemblies and nominal component envelopes; final base repairs separately rechecked against every part/envelope",
+    "Gate, shutters, sensor hood and button sampled motion",
+    "Hidden lettering surface exposure",
+    "Lighting and bezel insertion checks",
+    "Synthetic plate packing and Prusa 3MF roundtrip",
+    "Guide handlers and local file links"
+  ],
+  "inherited_checks": "Detailed indexed adjustment settings, jaw travel and key release retained from R11/R10; R12 changes only ownership and identification cuts. Lighting fade helper host test retained.",
+  "physical_fit_verified": false,
+  "optical_uniformity_measured": false,
+  "battery_runtime_measured": false,
+  "firmware_integrated": false,
+  "limits": [
+    "Nominal dimensions and provisional ESP32 envelope; real components require fit testing.",
+    "UIC default 0.6 mm nozzle / 0.3 mm layers is coarser than several current fits. Staff must review small features; print coupons first.",
+    "Part orientation and support access require slicer/staff review. No G-code or confirmed print duration provided.",
+    "Rendered glow is illustrative, not measured illumination.",
+    "Servo power, LED driver/current and battery runtime need bench testing."
+  ],
+  "guide": {
+    "handler_calls_checked": 70,
+    "unique_element_ids": 47,
+    "all_handler_image_paths_exist": true,
+    "live_browser_render_verified": false,
+    "live_browser_limitation": "In-app browser URL policy rejected the file:// protocol."
+  }
+}

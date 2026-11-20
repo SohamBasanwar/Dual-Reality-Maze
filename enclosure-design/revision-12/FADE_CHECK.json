@@ -1,0 +1,15 @@
+{
+  "test": "Actual BreathingAccent.h compiled and executed with a host Arduino stub using g++ C++11",
+  "passed": true,
+  "checks": [
+    "monotonic brightening and dimming",
+    "0 to configured ceiling",
+    "20 ms update rate limit",
+    "off and restart",
+    "millis rollover",
+    "minimum cycle duration"
+  ],
+  "board_firmware_compiled": false,
+  "flashed": false,
+  "hardware_tested": false
+}

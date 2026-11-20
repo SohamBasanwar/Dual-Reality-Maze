@@ -1,0 +1,20 @@
+[
+  {
+    "role": "explorer",
+    "printed_part_intersections": [],
+    "gate_slider_intersections": [],
+    "physical_fit_verified": false
+  },
+  {
+    "role": "architect",
+    "printed_part_intersections": [],
+    "gate_slider_intersections": [],
+    "physical_fit_verified": false
+  },
+  {
+    "role": "main",
+    "printed_part_intersections": [],
+    "gate_slider_intersections": [],
+    "physical_fit_verified": false
+  }
+]

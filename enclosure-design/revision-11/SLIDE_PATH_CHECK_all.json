@@ -1,0 +1,23 @@
+[
+  {
+    "role": "explorer",
+    "jaw_poses_checked": 66,
+    "step_mm": 0.5,
+    "intersections": [],
+    "key_detent_requires_physical_flexure_test": true
+  },
+  {
+    "role": "architect",
+    "jaw_poses_checked": 40,
+    "step_mm": 0.5,
+    "intersections": [],
+    "key_detent_requires_physical_flexure_test": true
+  },
+  {
+    "role": "main",
+    "jaw_poses_checked": 78,
+    "step_mm": 0.5,
+    "intersections": [],
+    "key_detent_requires_physical_flexure_test": true
+  }
+]

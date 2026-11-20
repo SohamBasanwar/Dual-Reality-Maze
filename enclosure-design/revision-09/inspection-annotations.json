@@ -1,0 +1,184 @@
+{
+  "joystick-mount": [
+    {
+      "label": "explorer Joystick_Carrier",
+      "point": [
+        799.9998569488525,
+        699.7090816497803
+      ]
+    },
+    {
+      "label": "explorer Joystick_Mechanism",
+      "point": [
+        800.0212669372559,
+        572.818922996521
+      ]
+    },
+    {
+      "label": "explorer Joystick_PCB",
+      "point": [
+        799.9997615814209,
+        857.430374622345
+      ]
+    }
+  ],
+  "lcd-mount": [
+    {
+      "label": "main LCD_Backpack_Envelope",
+      "point": [
+        692.5539493560791,
+        585.9715461730957
+      ]
+    },
+    {
+      "label": "main LCD_Carrier",
+      "point": [
+        800.0008583068848,
+        584.2376947402954
+      ]
+    },
+    {
+      "label": "main LCD_Display_Envelope",
+      "point": [
+        800.0009536743164,
+        558.2292079925537
+      ]
+    },
+    {
+      "label": "main LCD_PCB_Envelope",
+      "point": [
+        800.0008583068848,
+        591.3309574127197
+      ]
+    }
+  ],
+  "servo-mount": [
+    {
+      "label": "architect Servo_Cassette",
+      "point": [
+        800.0000953674316,
+        600.0011444091797
+      ]
+    },
+    {
+      "label": "architect Servo_Retainer",
+      "point": [
+        733.5346698760986,
+        438.07432651519775
+      ]
+    },
+    {
+      "label": "architect SG90_Body_Envelope",
+      "point": [
+        791.6922569274902,
+        515.3384685516357
+      ]
+    }
+  ],
+  "button-linkage": [
+    {
+      "label": "architect Button_Cap",
+      "point": [
+        800.0014305114746,
+        455.6767702102661
+      ]
+    },
+    {
+      "label": "architect Button_Stem_Guide",
+      "point": [
+        800.001335144043,
+        457.33094215393066
+      ]
+    },
+    {
+      "label": "architect Tactile_Switch_Envelope",
+      "point": [
+        800.001335144043,
+        845.6404566764832
+      ]
+    },
+    {
+      "label": "Breadboard slice - nonprinted reference",
+      "point": [
+        800.0012397766113,
+        988.7235760688782
+      ]
+    }
+  ],
+  "buzzer-mount": [
+    {
+      "label": "buzzer-mount-seat",
+      "point": [
+        800.0017166137695,
+        591.4307355880737
+      ]
+    },
+    {
+      "label": "main Buzzer_Envelope",
+      "point": [
+        800.0016212463379,
+        650.8921265602112
+      ]
+    },
+    {
+      "label": "main Buzzer_Keeper",
+      "point": [
+        800.0012397766113,
+        789.0991687774658
+      ]
+    }
+  ],
+  "pot-mount": [
+    {
+      "label": "architect Bronze_Knob_Envelope",
+      "point": [
+        800.0026702880859,
+        407.1540355682373
+      ]
+    },
+    {
+      "label": "architect Potentiometer_Envelope",
+      "point": [
+        800.0024795532227,
+        600.0012516975403
+      ]
+    },
+    {
+      "label": "architect Potentiometer_Keeper",
+      "point": [
+        800.0025749206543,
+        922.4848330020905
+      ]
+    },
+    {
+      "label": "pot-mount-seat",
+      "point": [
+        800.0022888183594,
+        760.707414150238
+      ]
+    }
+  ],
+  "ldr-open": [
+    {
+      "label": "explorer Bare_Light_Sensor",
+      "point": [
+        814.1682624816895,
+        816.8928980827332
+      ]
+    },
+    {
+      "label": "explorer isolated opaque seat",
+      "point": [
+        800.0027656555176,
+        822.8852391242981
+      ]
+    },
+    {
+      "label": "explorer Reveal_Dome",
+      "point": [
+        814.1681671142578,
+        369.5756435394287
+      ]
+    }
+  ]
+}

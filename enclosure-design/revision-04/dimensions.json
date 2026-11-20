@@ -1,0 +1,12 @@
+{
+  "units": "mm",
+  "status": "Nominal prototype. Photos identify component families; no ruler/caliper measurements supplied.",
+  "breadboard": [166, 55, 10],
+  "uno_r3": [68.6, 53.4, 20],
+  "uno_r4": [68.85, 53.34, 20],
+  "battery_reservation": [30, 61, 23],
+  "battery_body_reference": [26.5, 48.5, 17.5],
+  "runtime_target_minutes": 60,
+  "power_status": "Common disposable 9V PP3 preferred by user. Architect regulated servo branch and one-hour loaded test unresolved.",
+  "finish": "Bronze colour / bronze knob. Structural polymer, not assumed solid bronze or metal-filled filament."
+}

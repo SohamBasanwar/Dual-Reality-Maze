@@ -1,0 +1,12 @@
+11 November 2026 hardware check
+Explorer, Architect and Main use the game protocol. Main supplies the RGB status on D3, D5 and D9. No handheld RGB wiring is required.
+The fitted-input test returned 329 Wi-Fi samples with both R3s online throughout. X and Y each spanned 0 to 1023. Two joystick clicks and exactly three Architect D2 presses registered. Potentiometer values spanned 4 to 1023. A2 stayed at 999 to 1023 during the initial cover test.
+Chapter I showed the Explorer moving from (532,148) to (324,556) and displayed Gate A raising after an Architect press. Hardware status read green before the game connected and blue once game feedback was active.
+The last two R3 uploads succeeded. The USB uploader could not update Main in this session. The R4 was restarted through its onboard debugger and resumed its previously installed game firmware with the requested status logic.
+Earlier bench checks confirmed LCD text readback, the three physical RGB colors, the buzzer beep, and visible unloaded servo sweeps. See hardware/bus-test in the workspace for raw captures.
+The game subsequently reached two of three runes and displayed Bridge A extending. A later Wi-Fi interruption stopped input. Rejoining DualRealityMaze restored both controllers and blue status. Reveal was left off in that session; the update below supersedes that setting.
+
+13 November 2026 launcher and laptop adapter update
+Start Maze.bat now starts/reuses the local bridge and opens the hardware game rather than the standalone file. The connection panel opens initially. Windows Wi-Fi join and optional retry are available. Reveal is enabled by default with the exact below-1000 threshold requested by Soham; 1000 and above releases it.
+Verified: launcher dependency check; first bridge start and repeated launch reuse one listener; browser title loading and transition into Chapter I; generated game JavaScript syntax; packet/counter validation; 999/1000/1023 Reveal boundaries; stale-input release; late-response cancellation after Disconnect; origin restrictions; feedback validation; serialized requests; simulated Main timeout and recovery.
+No new firmware was flashed. Windows detected no Arduino serial ports and no DualRealityMaze access point during this check. Live hardware reconnection and physical light cover/uncover behavior remain to be verified.

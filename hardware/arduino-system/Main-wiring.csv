@@ -1,0 +1,12 @@
+﻿Main pin,Connect to,Details
+USB-C,Laptop USB data port,115200 serial + power for initial test
+Header SDA (A4 equivalent),"Explorer A4, Architect A4, LCD SDA",5V header bus; NOT Qwiic
+Header SCL (A5 equivalent),"Explorer A5, Architect A5, LCD SCL",5V header bus; NOT Qwiic
+GND,Both R3 grounds; LCD GND; buzzer −,All signal grounds common
+5V,LCD VCC; Main local + rail,LCD backpack must be a 5V-compatible model
+D3,330 Ω → RGB red,RGB common cathode to GND
+D5,330 Ω → RGB green,Separate resistor
+D9,330 Ω → RGB blue,Main RGB common lead goes to GND
+D6,Small passive piezo +,Piezo −→GND; use a driver for high-current/active buzzers
+D10,100 Ω → logic-level N-MOSFET gate,"Four green LEDs, optional channel below"
+D2,"Reserved, unconnected",No physical master-power switching implemented

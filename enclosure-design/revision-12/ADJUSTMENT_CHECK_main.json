@@ -1,0 +1,115 @@
+[
+  {
+    "role": "main",
+    "settings": [
+      {
+        "mount": "Breadboard",
+        "axis": "X",
+        "dimension_delta_mm": -3,
+        "conflicts": []
+      },
+      {
+        "mount": "Breadboard",
+        "axis": "X",
+        "dimension_delta_mm": 0,
+        "conflicts": []
+      },
+      {
+        "mount": "Breadboard",
+        "axis": "X",
+        "dimension_delta_mm": 3,
+        "conflicts": []
+      },
+      {
+        "mount": "Breadboard",
+        "axis": "Y",
+        "dimension_delta_mm": -3,
+        "conflicts": []
+      },
+      {
+        "mount": "Breadboard",
+        "axis": "Y",
+        "dimension_delta_mm": 0,
+        "conflicts": []
+      },
+      {
+        "mount": "Breadboard",
+        "axis": "Y",
+        "dimension_delta_mm": 3,
+        "conflicts": []
+      },
+      {
+        "mount": "UNO",
+        "axis": "X",
+        "dimension_delta_mm": -3,
+        "conflicts": []
+      },
+      {
+        "mount": "UNO",
+        "axis": "X",
+        "dimension_delta_mm": 0,
+        "conflicts": []
+      },
+      {
+        "mount": "UNO",
+        "axis": "X",
+        "dimension_delta_mm": 3,
+        "conflicts": []
+      },
+      {
+        "mount": "UNO",
+        "axis": "Y",
+        "dimension_delta_mm": -3,
+        "conflicts": []
+      },
+      {
+        "mount": "UNO",
+        "axis": "Y",
+        "dimension_delta_mm": 0,
+        "conflicts": []
+      },
+      {
+        "mount": "UNO",
+        "axis": "Y",
+        "dimension_delta_mm": 3,
+        "conflicts": []
+      },
+      {
+        "mount": "LCD",
+        "axis": "X",
+        "dimension_delta_mm": -3,
+        "conflicts": []
+      },
+      {
+        "mount": "LCD",
+        "axis": "X",
+        "dimension_delta_mm": 0,
+        "conflicts": []
+      },
+      {
+        "mount": "LCD",
+        "axis": "X",
+        "dimension_delta_mm": 3,
+        "conflicts": []
+      },
+      {
+        "mount": "LCD",
+        "axis": "Y",
+        "dimension_delta_mm": -3,
+        "conflicts": []
+      },
+      {
+        "mount": "LCD",
+        "axis": "Y",
+        "dimension_delta_mm": 0,
+        "conflicts": []
+      },
+      {
+        "mount": "LCD",
+        "axis": "Y",
+        "dimension_delta_mm": 3,
+        "conflicts": []
+      }
+    ]
+  }
+]

@@ -1,0 +1,648 @@
+[
+  {
+    "role": "main",
+    "name": "Battery_Door",
+    "file": "main-Battery_Door\u2014Soham-Basanwar.stl",
+    "material": "bronze",
+    "component": false,
+    "explosion": [
+      0,
+      0,
+      -28
+    ],
+    "volume_mm3": 4651.593834631457,
+    "solids": 1,
+    "notes": "Two leading tabs plus recessed cantilever latch. Trial fit coupon before use.",
+    "personalization": "Soham Basanwar \u2014 inner face in two lines",
+    "file_label": "Soham Basanwar"
+  },
+  {
+    "role": "main",
+    "name": "Breadboard_X_Jaw",
+    "file": "main-Breadboard_X_Jaw\u2014Soham-Basanwar.stl",
+    "material": "bronze",
+    "component": false,
+    "explosion": [
+      0,
+      0,
+      20
+    ],
+    "volume_mm3": 505.9548517478979,
+    "solids": 1,
+    "notes": "Indexed edge jaw; +/-3 mm from nominal, 3 mm increments. Lift top retention lip slightly for insertion; do not force PCB.",
+    "personalization": "SB \u2014 noncontact upper face",
+    "file_label": "Soham Basanwar"
+  },
+  {
+    "role": "main",
+    "name": "Breadboard_X_Lock_Key",
+    "file": "main-Breadboard_X_Lock_Key\u2014Soham-Basanwar.stl",
+    "material": "bronze",
+    "component": false,
+    "explosion": [
+      0,
+      0,
+      20
+    ],
+    "volume_mm3": 95.6004518718514,
+    "solids": 1,
+    "notes": "Pull sideways to release; slide jaw; fully insert cross key. Split-tip detent is a prototype. Positive cross engagement carries slide load.",
+    "personalization": "SB \u2014 noncontact upper face",
+    "file_label": "Soham Basanwar"
+  },
+  {
+    "role": "main",
+    "name": "Breadboard_Y_Jaw",
+    "file": "main-Breadboard_Y_Jaw\u2014Soham-Basanwar.stl",
+    "material": "bronze",
+    "component": false,
+    "explosion": [
+      0,
+      0,
+      20
+    ],
+    "volume_mm3": 505.9548517478967,
+    "solids": 1,
+    "notes": "Indexed edge jaw; +/-3 mm from nominal, 3 mm increments. Lift top retention lip slightly for insertion; do not force PCB.",
+    "personalization": "SB \u2014 noncontact upper face",
+    "file_label": "Soham Basanwar"
+  },
+  {
+    "role": "main",
+    "name": "Breadboard_Y_Lock_Key",
+    "file": "main-Breadboard_Y_Lock_Key\u2014Soham-Basanwar.stl",
+    "material": "bronze",
+    "component": false,
+    "explosion": [
+      0,
+      0,
+      20
+    ],
+    "volume_mm3": 95.60045187185119,
+    "solids": 1,
+    "notes": "Pull sideways to release; slide jaw; fully insert cross key. Split-tip detent is a prototype. Positive cross engagement carries slide load.",
+    "personalization": "SB \u2014 noncontact upper face",
+    "file_label": "Soham Basanwar"
+  },
+  {
+    "role": "main",
+    "name": "Breadboard_Height_Insert",
+    "file": "main-Breadboard_Height_Insert\u2014Soham-Basanwar.stl",
+    "material": "bronze",
+    "component": false,
+    "explosion": [
+      0,
+      0,
+      20
+    ],
+    "volume_mm3": 1013.5840114397595,
+    "solids": 1,
+    "notes": "One-piece keyed 1.2 mm nominal height insert. Alternative 0.6 / 1.8 mm inserts adjust supported thickness by +/-0.6 mm; use one only.",
+    "personalization": "Soham Basanwar \u2014 noncontact upper face",
+    "file_label": "Soham Basanwar"
+  },
+  {
+    "role": "main",
+    "name": "UNO_X_Jaw",
+    "file": "main-UNO_X_Jaw\u2014Soham-Basanwar.stl",
+    "material": "bronze",
+    "component": false,
+    "explosion": [
+      0,
+      0,
+      20
+    ],
+    "volume_mm3": 354.7548518280428,
+    "solids": 1,
+    "notes": "Indexed edge jaw; +/-3 mm from nominal, 3 mm increments. Lift top retention lip slightly for insertion; do not force PCB.",
+    "personalization": "SB \u2014 noncontact upper face",
+    "file_label": "Soham Basanwar"
+  },
+  {
+    "role": "main",
+    "name": "UNO_X_Lock_Key",
+    "file": "main-UNO_X_Lock_Key\u2014Soham-Basanwar.stl",
+    "material": "bronze",
+    "component": false,
+    "explosion": [
+      0,
+      0,
+      20
+    ],
+    "volume_mm3": 95.60045187185139,
+    "solids": 1,
+    "notes": "Pull sideways to release; slide jaw; fully insert cross key. Split-tip detent is a prototype. Positive cross engagement carries slide load.",
+    "personalization": "SB \u2014 noncontact upper face",
+    "file_label": "Soham Basanwar"
+  },
+  {
+    "role": "main",
+    "name": "UNO_Y_Jaw",
+    "file": "main-UNO_Y_Jaw\u2014Soham-Basanwar.stl",
+    "material": "bronze",
+    "component": false,
+    "explosion": [
+      0,
+      0,
+      20
+    ],
+    "volume_mm3": 354.75485182804255,
+    "solids": 1,
+    "notes": "Indexed edge jaw; +/-3 mm from nominal, 3 mm increments. Lift top retention lip slightly for insertion; do not force PCB.",
+    "personalization": "SB \u2014 noncontact upper face",
+    "file_label": "Soham Basanwar"
+  },
+  {
+    "role": "main",
+    "name": "UNO_Y_Lock_Key",
+    "file": "main-UNO_Y_Lock_Key\u2014Soham-Basanwar.stl",
+    "material": "bronze",
+    "component": false,
+    "explosion": [
+      0,
+      0,
+      20
+    ],
+    "volume_mm3": 95.6004518718513,
+    "solids": 1,
+    "notes": "Pull sideways to release; slide jaw; fully insert cross key. Split-tip detent is a prototype. Positive cross engagement carries slide load.",
+    "personalization": "SB \u2014 noncontact upper face",
+    "file_label": "Soham Basanwar"
+  },
+  {
+    "role": "main",
+    "name": "UNO_Height_Insert",
+    "file": "main-UNO_Height_Insert\u2014Soham-Basanwar.stl",
+    "material": "bronze",
+    "component": false,
+    "explosion": [
+      0,
+      0,
+      20
+    ],
+    "volume_mm3": 544.1440124903417,
+    "solids": 1,
+    "notes": "One-piece keyed 1.2 mm nominal height insert. Alternative 0.6 / 1.8 mm inserts adjust supported thickness by +/-0.6 mm; use one only.",
+    "personalization": "Soham Basanwar \u2014 noncontact upper face",
+    "file_label": "Soham Basanwar"
+  },
+  {
+    "role": "main",
+    "name": "I2C_Left_Shutter",
+    "file": "main-I2C_Left_Shutter\u2014Soham-Basanwar.stl",
+    "material": "bronze",
+    "component": false,
+    "explosion": [
+      0,
+      -22,
+      0
+    ],
+    "volume_mm3": 732.0004446460088,
+    "solids": 1,
+    "notes": "18 x 12 mm aperture; slide 21 mm to open. Close only after cable removal. Not a strain clamp.",
+    "personalization": "SB \u2014 external finger tab, outside running surfaces",
+    "file_label": "Soham Basanwar"
+  },
+  {
+    "role": "main",
+    "name": "I2C_Left_Keeper",
+    "file": "main-I2C_Left_Keeper\u2014Soham-Basanwar.stl",
+    "material": "bronze",
+    "component": false,
+    "explosion": [
+      0,
+      0,
+      18
+    ],
+    "volume_mm3": 294.62399999999985,
+    "solids": 1,
+    "notes": "Top-inserted stop; lid prevents full withdrawal. Service by removing lid.",
+    "personalization": "Unmarked: no suitable nonfunctional face",
+    "file_label": "Soham Basanwar"
+  },
+  {
+    "role": "main",
+    "name": "I2C_Right_Shutter",
+    "file": "main-I2C_Right_Shutter\u2014Soham-Basanwar.stl",
+    "material": "bronze",
+    "component": false,
+    "explosion": [
+      0,
+      -22,
+      0
+    ],
+    "volume_mm3": 732.0004446269176,
+    "solids": 1,
+    "notes": "18 x 12 mm aperture; slide 21 mm to open. Close only after cable removal. Not a strain clamp.",
+    "personalization": "SB \u2014 external finger tab, outside running surfaces",
+    "file_label": "Soham Basanwar"
+  },
+  {
+    "role": "main",
+    "name": "I2C_Right_Keeper",
+    "file": "main-I2C_Right_Keeper\u2014Soham-Basanwar.stl",
+    "material": "bronze",
+    "component": false,
+    "explosion": [
+      0,
+      0,
+      18
+    ],
+    "volume_mm3": 294.6239999999998,
+    "solids": 1,
+    "notes": "Top-inserted stop; lid prevents full withdrawal. Service by removing lid.",
+    "personalization": "Unmarked: no suitable nonfunctional face",
+    "file_label": "Soham Basanwar"
+  },
+  {
+    "role": "main",
+    "name": "RGB_LED_Envelope",
+    "file": "main-RGB_LED_Envelope.stl",
+    "material": "diffuser",
+    "component": true,
+    "explosion": [
+      0,
+      0,
+      0
+    ],
+    "volume_mm3": 148.83295196381638,
+    "solids": 1,
+    "notes": "Nominal 5 mm four-lead RGB package behind emblem. Body, flange, lead order and resistors require actual-part verification.",
+    "personalization": "Reference component \u2014 not personalized",
+    "file_label": ""
+  },
+  {
+    "role": "main",
+    "name": "RGB_LED_Keeper",
+    "file": "main-RGB_LED_Keeper\u2014Soham-Basanwar.stl",
+    "material": "bronze",
+    "component": false,
+    "explosion": [
+      0,
+      0,
+      -18
+    ],
+    "volume_mm3": 46.60854959621248,
+    "solids": 1,
+    "notes": "Insert the two tabs through the Y keyways, then rotate 90 degrees. Captures the LED flange; leads pass through centre. Verify physical fit.",
+    "personalization": "Unmarked: no suitable nonfunctional face",
+    "file_label": "Soham Basanwar"
+  },
+  {
+    "role": "main",
+    "name": "Emblem_Diffuser",
+    "file": "main-Emblem_Diffuser\u2014Soham-Basanwar.stl",
+    "material": "diffuser",
+    "component": false,
+    "explosion": [
+      0,
+      0,
+      52
+    ],
+    "volume_mm3": 2164.884040193917,
+    "solids": 1,
+    "notes": "Separate translucent sheet/print; opaque bronze cannot transmit light.",
+    "personalization": "Unmarked: no suitable nonfunctional face",
+    "file_label": "Soham Basanwar"
+  },
+  {
+    "role": "main",
+    "name": "Emblem_Mask",
+    "file": "main-Emblem_Mask\u2014Soham-Basanwar.stl",
+    "material": "bronze",
+    "component": false,
+    "explosion": [
+      0,
+      0,
+      57
+    ],
+    "volume_mm3": 3320.866308197904,
+    "solids": 1,
+    "notes": "",
+    "personalization": "Unmarked: no suitable nonfunctional face",
+    "file_label": "Soham Basanwar"
+  },
+  {
+    "role": "main",
+    "name": "Button_Cap",
+    "file": "main-Button_Cap\u2014Soham-Basanwar.stl",
+    "material": "bronze",
+    "component": false,
+    "explosion": [
+      0,
+      0,
+      35
+    ],
+    "volume_mm3": 1897.7973638668632,
+    "solids": 1,
+    "notes": "Short captured power-control actuator; requires a load-switch circuit, not direct battery switching.",
+    "personalization": "SB \u2014 upper face, clear of icon",
+    "file_label": "Soham Basanwar"
+  },
+  {
+    "role": "main",
+    "name": "Switch_Cassette",
+    "file": "main-Switch_Cassette\u2014Soham-Basanwar.stl",
+    "material": "bronze",
+    "component": false,
+    "explosion": [
+      0,
+      0,
+      -10
+    ],
+    "volume_mm3": 1520.2323082059625,
+    "solids": 1,
+    "notes": "",
+    "personalization": "SB \u2014 outside bottom plate",
+    "file_label": "Soham Basanwar"
+  },
+  {
+    "role": "main",
+    "name": "Tactile_Switch_Envelope",
+    "file": "main-Tactile_Switch_Envelope.stl",
+    "material": "black",
+    "component": true,
+    "explosion": [
+      0,
+      0,
+      0
+    ],
+    "volume_mm3": 864.0,
+    "solids": 1,
+    "notes": "Looks like 12 mm family in photos; body size and operating travel unmeasured.",
+    "personalization": "Reference component \u2014 not personalized",
+    "file_label": ""
+  },
+  {
+    "role": "main",
+    "name": "LCD_X_Jaw",
+    "file": "main-LCD_X_Jaw\u2014Soham-Basanwar.stl",
+    "material": "bronze",
+    "component": false,
+    "explosion": [
+      0,
+      0,
+      -25
+    ],
+    "volume_mm3": 354.7548518280427,
+    "solids": 1,
+    "notes": "Indexed edge jaw; +/-3 mm from nominal, 3 mm increments. Lift top retention lip slightly for insertion; do not force PCB.",
+    "personalization": "SB \u2014 noncontact upper face",
+    "file_label": "Soham Basanwar"
+  },
+  {
+    "role": "main",
+    "name": "LCD_X_Lock_Key",
+    "file": "main-LCD_X_Lock_Key\u2014Soham-Basanwar.stl",
+    "material": "bronze",
+    "component": false,
+    "explosion": [
+      0,
+      0,
+      -25
+    ],
+    "volume_mm3": 95.60045187185132,
+    "solids": 1,
+    "notes": "Pull sideways to release; slide jaw; fully insert cross key. Split-tip detent is a prototype. Positive cross engagement carries slide load.",
+    "personalization": "SB \u2014 noncontact upper face",
+    "file_label": "Soham Basanwar"
+  },
+  {
+    "role": "main",
+    "name": "LCD_Y_Jaw",
+    "file": "main-LCD_Y_Jaw\u2014Soham-Basanwar.stl",
+    "material": "bronze",
+    "component": false,
+    "explosion": [
+      0,
+      0,
+      -25
+    ],
+    "volume_mm3": 354.7548518280425,
+    "solids": 1,
+    "notes": "Indexed edge jaw; +/-3 mm from nominal, 3 mm increments. Lift top retention lip slightly for insertion; do not force PCB.",
+    "personalization": "SB \u2014 noncontact upper face",
+    "file_label": "Soham Basanwar"
+  },
+  {
+    "role": "main",
+    "name": "LCD_Y_Lock_Key",
+    "file": "main-LCD_Y_Lock_Key\u2014Soham-Basanwar.stl",
+    "material": "bronze",
+    "component": false,
+    "explosion": [
+      0,
+      0,
+      -25
+    ],
+    "volume_mm3": 95.60045187185135,
+    "solids": 1,
+    "notes": "Pull sideways to release; slide jaw; fully insert cross key. Split-tip detent is a prototype. Positive cross engagement carries slide load.",
+    "personalization": "SB \u2014 noncontact upper face",
+    "file_label": "Soham Basanwar"
+  },
+  {
+    "role": "main",
+    "name": "LCD_Height_Insert",
+    "file": "main-LCD_Height_Insert\u2014Soham-Basanwar.stl",
+    "material": "bronze",
+    "component": false,
+    "explosion": [
+      0,
+      0,
+      -25
+    ],
+    "volume_mm3": 512.4640123666258,
+    "solids": 1,
+    "notes": "One-piece keyed 1.2 mm nominal height insert. Alternative 0.6 / 1.8 mm inserts adjust supported thickness by +/-0.6 mm; use one only.",
+    "personalization": "Soham Basanwar \u2014 noncontact upper face",
+    "file_label": "Soham Basanwar"
+  },
+  {
+    "role": "main",
+    "name": "LCD_Carrier",
+    "file": "main-LCD_Carrier\u2014Soham-Basanwar.stl",
+    "material": "bronze",
+    "component": false,
+    "explosion": [
+      0,
+      0,
+      -25
+    ],
+    "volume_mm3": 4353.788808971927,
+    "solids": 1,
+    "notes": "Replaceable PCB edge-capture carrier. Flat reference LCD stack, 0.2 mm vertical edge clearance. No fixed mounting-hole pins; measure actual LCD and backpack before printing.",
+    "personalization": "Unmarked: no suitable nonfunctional face",
+    "file_label": "Soham Basanwar"
+  },
+  {
+    "role": "main",
+    "name": "LCD_PCB_Envelope",
+    "file": "main-LCD_PCB_Envelope.stl",
+    "material": "pcb",
+    "component": true,
+    "explosion": [
+      0,
+      0,
+      0
+    ],
+    "volume_mm3": 4642.560000000004,
+    "solids": 1,
+    "notes": "",
+    "personalization": "Reference component \u2014 not personalized",
+    "file_label": ""
+  },
+  {
+    "role": "main",
+    "name": "LCD_Display_Envelope",
+    "file": "main-LCD_Display_Envelope.stl",
+    "material": "lcd",
+    "component": true,
+    "explosion": [
+      0,
+      0,
+      0
+    ],
+    "volume_mm3": 11260.799999999996,
+    "solids": 1,
+    "notes": "Reference 8.4 mm total PCB/display stack. Manufacturer-family reference, not a confirmed match to the photographed unit.",
+    "personalization": "Reference component \u2014 not personalized",
+    "file_label": ""
+  },
+  {
+    "role": "main",
+    "name": "LCD_Backpack_Envelope",
+    "file": "main-LCD_Backpack_Envelope.stl",
+    "material": "black",
+    "component": true,
+    "explosion": [
+      0,
+      0,
+      0
+    ],
+    "volume_mm3": 7560.0,
+    "solids": 1,
+    "notes": "",
+    "personalization": "Reference component \u2014 not personalized",
+    "file_label": ""
+  },
+  {
+    "role": "main",
+    "name": "Buzzer_Keeper",
+    "file": "main-Buzzer_Keeper\u2014Soham-Basanwar.stl",
+    "material": "bronze",
+    "component": false,
+    "explosion": [
+      0,
+      0,
+      -17
+    ],
+    "volume_mm3": 324.8451085112305,
+    "solids": 1,
+    "notes": "Lower bayonet ring leaves room for leads. Actual buzzer and lead spacing require verification.",
+    "personalization": "Unmarked: no suitable nonfunctional face",
+    "file_label": "Soham Basanwar"
+  },
+  {
+    "role": "main",
+    "name": "Buzzer_Envelope",
+    "file": "main-Buzzer_Envelope.stl",
+    "material": "black",
+    "component": true,
+    "explosion": [
+      0,
+      0,
+      0
+    ],
+    "volume_mm3": 3455.751918948773,
+    "solids": 1,
+    "notes": "",
+    "personalization": "Reference component \u2014 not personalized",
+    "file_label": ""
+  },
+  {
+    "role": "main",
+    "name": "ESP32_Optional_Envelope",
+    "file": "main-ESP32_Optional_Envelope.stl",
+    "material": "optional",
+    "component": true,
+    "explosion": [
+      0,
+      0,
+      0
+    ],
+    "volume_mm3": 34560.000000000015,
+    "solids": 1,
+    "notes": "Provisional 60 x 32 x 18 mm module reservation. Board not selected; verify breadboard header pitch and RF clearance.",
+    "personalization": "Reference component \u2014 not personalized",
+    "file_label": ""
+  },
+  {
+    "role": "main",
+    "name": "ESP32_Wiring_Clearance",
+    "file": "main-ESP32_Wiring_Clearance.stl",
+    "material": "clearance",
+    "component": true,
+    "explosion": [
+      0,
+      0,
+      0
+    ],
+    "volume_mm3": 13200.0,
+    "solids": 1,
+    "notes": "Keep free for low-profile jumpers. A tall upright Dupont plug may require more height.",
+    "personalization": "Reference component \u2014 not personalized",
+    "file_label": ""
+  },
+  {
+    "role": "main",
+    "name": "USB_Shutter",
+    "file": "main-USB_Shutter\u2014Soham-Basanwar.stl",
+    "material": "bronze",
+    "component": false,
+    "explosion": [
+      0,
+      -24,
+      0
+    ],
+    "volume_mm3": 1744.960444650715,
+    "solids": 1,
+    "notes": "Captive sliding cover: 35 mm travel. Open before inserting cable; close only when unplugged. Fit/retention prototype.",
+    "personalization": "SB \u2014 external finger tab, outside running surfaces",
+    "file_label": "Soham Basanwar"
+  },
+  {
+    "role": "main",
+    "name": "USB_Shutter_Keeper",
+    "file": "main-USB_Shutter_Keeper\u2014Soham-Basanwar.stl",
+    "material": "bronze",
+    "component": false,
+    "explosion": [
+      0,
+      0,
+      16
+    ],
+    "volume_mm3": 257.47200000000066,
+    "solids": 1,
+    "notes": "Keyed end stop installed from above; its head is trapped below the closed Main lid. Remove lid for service. Coupon fit required.",
+    "personalization": "Unmarked: no suitable nonfunctional face",
+    "file_label": "Soham Basanwar"
+  },
+  {
+    "role": "main",
+    "name": "USB_Plug_Clearance",
+    "file": "main-USB_Plug_Clearance.stl",
+    "material": "clearance",
+    "component": true,
+    "explosion": [
+      0,
+      0,
+      0
+    ],
+    "volume_mm3": 11904.0,
+    "solids": 1,
+    "notes": "Provisional plug and bend access above breadboard. Confirm actual USB-B/C cable.",
+    "personalization": "Reference component \u2014 not personalized",
+    "file_label": ""
+  }
+]

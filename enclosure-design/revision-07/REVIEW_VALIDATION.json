@@ -1,0 +1,25 @@
+{
+  "revision": 7,
+  "status": "Design-review prototype; physical fit unverified",
+  "printed_parts": 46,
+  "single_valid_printed_solids": true,
+  "watertight_meshes_including_samples_and_optical_options": 64,
+  "reserved_component_volumes_checked": 30,
+  "printed_part_intersections_mm3_over_0p05": 0,
+  "gate_rotation_checked_deg": [
+    0,
+    110,
+    5
+  ],
+  "shutters_checked": 5,
+  "i2c_travel_mm": 21,
+  "usb_travel_mm": 35,
+  "full_name_physical_parts": 9,
+  "SB_physical_parts": 12,
+  "unmarked_sensitive_parts": 25,
+  "gate_protrusion_above_nominal_lid_mm": 6.8,
+  "physical_fit_verified": false,
+  "powered_gate_test_performed": false,
+  "optical_test_performed": false,
+  "source_sha256": "7e3068f2ee70db82833b44b7855bc51c5a7ba3c61b86e0deb2bc76b5d3f550f5"
+}

@@ -1,0 +1,9 @@
+﻿Arduino pin,Connect to,Details
+5V,One outer potentiometer terminal,10 kΩ potentiometer
+GND,Other outer potentiometer terminal,Swap outer leads if direction feels reversed
+A0,Potentiometer centre/wiper,Not an outer terminal
+D2,One electrical side of pushbutton,Other side goes to GND
+D9,Servo signal,Usually orange/yellow; check servo labels
+A4/A5/GND,Main SDA/SCL/GND,Three-wire controller cable
+NO Arduino power pin,Servo positive,External regulated +5V only
+Common GND,Servo negative + external-supply negative,Signal reference must be shared

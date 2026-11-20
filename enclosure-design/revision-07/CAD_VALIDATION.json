@@ -1,0 +1,917 @@
+{
+  "scope": "Prototype solid validity and basic envelope checks only; not a print release.",
+  "parts": [
+    {
+      "role": "architect",
+      "part": "Battery_Door",
+      "valid_brep": true,
+      "solids": 1,
+      "volume_mm3": 4651.59,
+      "component": false
+    },
+    {
+      "role": "architect",
+      "part": "UNO_Edge_Clip_1",
+      "valid_brep": true,
+      "solids": 1,
+      "volume_mm3": 167.92,
+      "component": false
+    },
+    {
+      "role": "architect",
+      "part": "UNO_Edge_Clip_2",
+      "valid_brep": true,
+      "solids": 1,
+      "volume_mm3": 167.92,
+      "component": false
+    },
+    {
+      "role": "architect",
+      "part": "I2C_Rear_Shutter",
+      "valid_brep": true,
+      "solids": 1,
+      "volume_mm3": 732.0,
+      "component": false
+    },
+    {
+      "role": "architect",
+      "part": "I2C_Rear_Keeper",
+      "valid_brep": true,
+      "solids": 1,
+      "volume_mm3": 242.78,
+      "component": false
+    },
+    {
+      "role": "architect",
+      "part": "RGB_LED_Envelope",
+      "valid_brep": true,
+      "solids": 1,
+      "volume_mm3": 148.83,
+      "component": true
+    },
+    {
+      "role": "architect",
+      "part": "RGB_LED_Keeper",
+      "valid_brep": true,
+      "solids": 1,
+      "volume_mm3": 46.61,
+      "component": false
+    },
+    {
+      "role": "architect",
+      "part": "Emblem_Diffuser",
+      "valid_brep": true,
+      "solids": 1,
+      "volume_mm3": 2164.88,
+      "component": false
+    },
+    {
+      "role": "architect",
+      "part": "Emblem_Mask",
+      "valid_brep": true,
+      "solids": 1,
+      "volume_mm3": 3413.37,
+      "component": false
+    },
+    {
+      "role": "architect",
+      "part": "Potentiometer_Keeper",
+      "valid_brep": true,
+      "solids": 1,
+      "volume_mm3": 167.75,
+      "component": false
+    },
+    {
+      "role": "architect",
+      "part": "Potentiometer_Envelope",
+      "valid_brep": true,
+      "solids": 1,
+      "volume_mm3": 2519.56,
+      "component": true
+    },
+    {
+      "role": "architect",
+      "part": "Bronze_Knob_Envelope",
+      "valid_brep": true,
+      "solids": 1,
+      "volume_mm3": 5321.86,
+      "component": true
+    },
+    {
+      "role": "architect",
+      "part": "SG90_Body_Envelope",
+      "valid_brep": true,
+      "solids": 1,
+      "volume_mm3": 8137.4,
+      "component": true
+    },
+    {
+      "role": "architect",
+      "part": "Servo_Cassette",
+      "valid_brep": true,
+      "solids": 1,
+      "volume_mm3": 7736.59,
+      "component": false
+    },
+    {
+      "role": "architect",
+      "part": "Original_Horn_Envelope",
+      "valid_brep": true,
+      "solids": 1,
+      "volume_mm3": 138.36,
+      "component": true
+    },
+    {
+      "role": "architect",
+      "part": "Gate_Rotor",
+      "valid_brep": true,
+      "solids": 1,
+      "volume_mm3": 2398.73,
+      "component": false
+    },
+    {
+      "role": "architect",
+      "part": "Gate_Window_Cover",
+      "valid_brep": true,
+      "solids": 1,
+      "volume_mm3": 5238.82,
+      "component": false
+    },
+    {
+      "role": "architect",
+      "part": "Button_Cap",
+      "valid_brep": true,
+      "solids": 1,
+      "volume_mm3": 1891.52,
+      "component": false
+    },
+    {
+      "role": "architect",
+      "part": "Switch_Cassette",
+      "valid_brep": true,
+      "solids": 1,
+      "volume_mm3": 1520.23,
+      "component": false
+    },
+    {
+      "role": "architect",
+      "part": "Tactile_Switch_Envelope",
+      "valid_brep": true,
+      "solids": 1,
+      "volume_mm3": 864.0,
+      "component": true
+    },
+    {
+      "role": "architect",
+      "part": "ESP32_Optional_Envelope",
+      "valid_brep": true,
+      "solids": 1,
+      "volume_mm3": 34560.0,
+      "component": true
+    },
+    {
+      "role": "architect",
+      "part": "ESP32_Wiring_Clearance",
+      "valid_brep": true,
+      "solids": 1,
+      "volume_mm3": 13200.0,
+      "component": true
+    },
+    {
+      "role": "architect",
+      "part": "Base",
+      "valid_brep": true,
+      "solids": 1,
+      "volume_mm3": 254280.31,
+      "component": false
+    },
+    {
+      "role": "architect",
+      "part": "Lid",
+      "valid_brep": true,
+      "solids": 1,
+      "volume_mm3": 157825.72,
+      "component": false
+    },
+    {
+      "role": "architect",
+      "part": "Breadboard_Envelope",
+      "valid_brep": true,
+      "solids": 1,
+      "volume_mm3": 91300.0,
+      "component": true
+    },
+    {
+      "role": "architect",
+      "part": "UNO_PCB_Envelope",
+      "valid_brep": true,
+      "solids": 1,
+      "volume_mm3": 5861.18,
+      "component": true
+    },
+    {
+      "role": "architect",
+      "part": "UNO_Header_Envelope",
+      "valid_brep": true,
+      "solids": 2,
+      "volume_mm3": 5814.0,
+      "component": true
+    },
+    {
+      "role": "architect",
+      "part": "Battery_Envelope",
+      "valid_brep": true,
+      "solids": 1,
+      "volume_mm3": 22491.88,
+      "component": true
+    },
+    {
+      "role": "architect",
+      "part": "Battery_Clip_Envelope",
+      "valid_brep": true,
+      "solids": 1,
+      "volume_mm3": 3276.0,
+      "component": true
+    },
+    {
+      "role": "architect",
+      "part": "Power_Module_Reservation",
+      "valid_brep": true,
+      "solids": 1,
+      "volume_mm3": 7920.0,
+      "component": true
+    },
+    {
+      "role": "explorer",
+      "part": "Battery_Door",
+      "valid_brep": true,
+      "solids": 1,
+      "volume_mm3": 4651.59,
+      "component": false
+    },
+    {
+      "role": "explorer",
+      "part": "UNO_Edge_Clip_1",
+      "valid_brep": true,
+      "solids": 1,
+      "volume_mm3": 167.92,
+      "component": false
+    },
+    {
+      "role": "explorer",
+      "part": "UNO_Edge_Clip_2",
+      "valid_brep": true,
+      "solids": 1,
+      "volume_mm3": 167.92,
+      "component": false
+    },
+    {
+      "role": "explorer",
+      "part": "I2C_Rear_Shutter",
+      "valid_brep": true,
+      "solids": 1,
+      "volume_mm3": 732.0,
+      "component": false
+    },
+    {
+      "role": "explorer",
+      "part": "I2C_Rear_Keeper",
+      "valid_brep": true,
+      "solids": 1,
+      "volume_mm3": 242.78,
+      "component": false
+    },
+    {
+      "role": "explorer",
+      "part": "RGB_LED_Envelope",
+      "valid_brep": true,
+      "solids": 1,
+      "volume_mm3": 148.83,
+      "component": true
+    },
+    {
+      "role": "explorer",
+      "part": "RGB_LED_Keeper",
+      "valid_brep": true,
+      "solids": 1,
+      "volume_mm3": 46.61,
+      "component": false
+    },
+    {
+      "role": "explorer",
+      "part": "Emblem_Diffuser",
+      "valid_brep": true,
+      "solids": 1,
+      "volume_mm3": 2164.88,
+      "component": false
+    },
+    {
+      "role": "explorer",
+      "part": "Emblem_Mask",
+      "valid_brep": true,
+      "solids": 1,
+      "volume_mm3": 3497.39,
+      "component": false
+    },
+    {
+      "role": "explorer",
+      "part": "Joystick_Carrier",
+      "valid_brep": true,
+      "solids": 1,
+      "volume_mm3": 4151.28,
+      "component": false
+    },
+    {
+      "role": "explorer",
+      "part": "Reveal_Dome",
+      "valid_brep": true,
+      "solids": 1,
+      "volume_mm3": 887.29,
+      "component": false
+    },
+    {
+      "role": "explorer",
+      "part": "Joystick_PCB",
+      "valid_brep": true,
+      "solids": 1,
+      "volume_mm3": 1414.4,
+      "component": true
+    },
+    {
+      "role": "explorer",
+      "part": "Joystick_Mechanism",
+      "valid_brep": true,
+      "solids": 1,
+      "volume_mm3": 8464.45,
+      "component": true
+    },
+    {
+      "role": "explorer",
+      "part": "Bare_Light_Sensor",
+      "valid_brep": true,
+      "solids": 1,
+      "volume_mm3": 48.32,
+      "component": true
+    },
+    {
+      "role": "explorer",
+      "part": "ESP32_Optional_Envelope",
+      "valid_brep": true,
+      "solids": 1,
+      "volume_mm3": 34560.0,
+      "component": true
+    },
+    {
+      "role": "explorer",
+      "part": "ESP32_Wiring_Clearance",
+      "valid_brep": true,
+      "solids": 1,
+      "volume_mm3": 13200.0,
+      "component": true
+    },
+    {
+      "role": "explorer",
+      "part": "Base",
+      "valid_brep": true,
+      "solids": 1,
+      "volume_mm3": 254280.31,
+      "component": false
+    },
+    {
+      "role": "explorer",
+      "part": "Lid",
+      "valid_brep": true,
+      "solids": 1,
+      "volume_mm3": 159882.66,
+      "component": false
+    },
+    {
+      "role": "explorer",
+      "part": "Breadboard_Envelope",
+      "valid_brep": true,
+      "solids": 1,
+      "volume_mm3": 91300.0,
+      "component": true
+    },
+    {
+      "role": "explorer",
+      "part": "UNO_PCB_Envelope",
+      "valid_brep": true,
+      "solids": 1,
+      "volume_mm3": 5861.18,
+      "component": true
+    },
+    {
+      "role": "explorer",
+      "part": "UNO_Header_Envelope",
+      "valid_brep": true,
+      "solids": 2,
+      "volume_mm3": 5814.0,
+      "component": true
+    },
+    {
+      "role": "explorer",
+      "part": "Battery_Envelope",
+      "valid_brep": true,
+      "solids": 1,
+      "volume_mm3": 22491.88,
+      "component": true
+    },
+    {
+      "role": "explorer",
+      "part": "Battery_Clip_Envelope",
+      "valid_brep": true,
+      "solids": 1,
+      "volume_mm3": 3276.0,
+      "component": true
+    },
+    {
+      "role": "explorer",
+      "part": "Power_Module_Reservation",
+      "valid_brep": true,
+      "solids": 1,
+      "volume_mm3": 7920.0,
+      "component": true
+    },
+    {
+      "role": "main",
+      "part": "Battery_Door",
+      "valid_brep": true,
+      "solids": 1,
+      "volume_mm3": 4651.59,
+      "component": false
+    },
+    {
+      "role": "main",
+      "part": "UNO_Edge_Clip_1",
+      "valid_brep": true,
+      "solids": 1,
+      "volume_mm3": 167.92,
+      "component": false
+    },
+    {
+      "role": "main",
+      "part": "UNO_Edge_Clip_2",
+      "valid_brep": true,
+      "solids": 1,
+      "volume_mm3": 167.92,
+      "component": false
+    },
+    {
+      "role": "main",
+      "part": "I2C_Left_Shutter",
+      "valid_brep": true,
+      "solids": 1,
+      "volume_mm3": 732.0,
+      "component": false
+    },
+    {
+      "role": "main",
+      "part": "I2C_Left_Keeper",
+      "valid_brep": true,
+      "solids": 1,
+      "volume_mm3": 294.62,
+      "component": false
+    },
+    {
+      "role": "main",
+      "part": "I2C_Right_Shutter",
+      "valid_brep": true,
+      "solids": 1,
+      "volume_mm3": 732.0,
+      "component": false
+    },
+    {
+      "role": "main",
+      "part": "I2C_Right_Keeper",
+      "valid_brep": true,
+      "solids": 1,
+      "volume_mm3": 294.62,
+      "component": false
+    },
+    {
+      "role": "main",
+      "part": "RGB_LED_Envelope",
+      "valid_brep": true,
+      "solids": 1,
+      "volume_mm3": 148.83,
+      "component": true
+    },
+    {
+      "role": "main",
+      "part": "RGB_LED_Keeper",
+      "valid_brep": true,
+      "solids": 1,
+      "volume_mm3": 46.61,
+      "component": false
+    },
+    {
+      "role": "main",
+      "part": "Emblem_Diffuser",
+      "valid_brep": true,
+      "solids": 1,
+      "volume_mm3": 2164.88,
+      "component": false
+    },
+    {
+      "role": "main",
+      "part": "Emblem_Mask",
+      "valid_brep": true,
+      "solids": 1,
+      "volume_mm3": 3320.87,
+      "component": false
+    },
+    {
+      "role": "main",
+      "part": "Button_Cap",
+      "valid_brep": true,
+      "solids": 1,
+      "volume_mm3": 1897.8,
+      "component": false
+    },
+    {
+      "role": "main",
+      "part": "Switch_Cassette",
+      "valid_brep": true,
+      "solids": 1,
+      "volume_mm3": 1520.23,
+      "component": false
+    },
+    {
+      "role": "main",
+      "part": "Tactile_Switch_Envelope",
+      "valid_brep": true,
+      "solids": 1,
+      "volume_mm3": 864.0,
+      "component": true
+    },
+    {
+      "role": "main",
+      "part": "LCD_Carrier",
+      "valid_brep": true,
+      "solids": 1,
+      "volume_mm3": 8150.15,
+      "component": false
+    },
+    {
+      "role": "main",
+      "part": "LCD_PCB_Envelope",
+      "valid_brep": true,
+      "solids": 1,
+      "volume_mm3": 4642.56,
+      "component": true
+    },
+    {
+      "role": "main",
+      "part": "LCD_Display_Envelope",
+      "valid_brep": true,
+      "solids": 1,
+      "volume_mm3": 14000.0,
+      "component": true
+    },
+    {
+      "role": "main",
+      "part": "LCD_Backpack_Envelope",
+      "valid_brep": true,
+      "solids": 1,
+      "volume_mm3": 7560.0,
+      "component": true
+    },
+    {
+      "role": "main",
+      "part": "Buzzer_Keeper",
+      "valid_brep": true,
+      "solids": 1,
+      "volume_mm3": 324.85,
+      "component": false
+    },
+    {
+      "role": "main",
+      "part": "Buzzer_Envelope",
+      "valid_brep": true,
+      "solids": 1,
+      "volume_mm3": 3455.75,
+      "component": true
+    },
+    {
+      "role": "main",
+      "part": "ESP32_Optional_Envelope",
+      "valid_brep": true,
+      "solids": 1,
+      "volume_mm3": 34560.0,
+      "component": true
+    },
+    {
+      "role": "main",
+      "part": "ESP32_Wiring_Clearance",
+      "valid_brep": true,
+      "solids": 1,
+      "volume_mm3": 13200.0,
+      "component": true
+    },
+    {
+      "role": "main",
+      "part": "USB_Shutter",
+      "valid_brep": true,
+      "solids": 1,
+      "volume_mm3": 1744.96,
+      "component": false
+    },
+    {
+      "role": "main",
+      "part": "USB_Shutter_Keeper",
+      "valid_brep": true,
+      "solids": 1,
+      "volume_mm3": 257.47,
+      "component": false
+    },
+    {
+      "role": "main",
+      "part": "USB_Plug_Clearance",
+      "valid_brep": true,
+      "solids": 1,
+      "volume_mm3": 11904.0,
+      "component": true
+    },
+    {
+      "role": "main",
+      "part": "Base",
+      "valid_brep": true,
+      "solids": 1,
+      "volume_mm3": 270562.49,
+      "component": false
+    },
+    {
+      "role": "main",
+      "part": "Lid",
+      "valid_brep": true,
+      "solids": 1,
+      "volume_mm3": 154690.17,
+      "component": false
+    },
+    {
+      "role": "main",
+      "part": "Breadboard_Envelope",
+      "valid_brep": true,
+      "solids": 1,
+      "volume_mm3": 91300.0,
+      "component": true
+    },
+    {
+      "role": "main",
+      "part": "UNO_PCB_Envelope",
+      "valid_brep": true,
+      "solids": 1,
+      "volume_mm3": 5978.88,
+      "component": true
+    },
+    {
+      "role": "main",
+      "part": "UNO_Header_Envelope",
+      "valid_brep": true,
+      "solids": 2,
+      "volume_mm3": 5868.0,
+      "component": true
+    },
+    {
+      "role": "main",
+      "part": "Battery_Envelope",
+      "valid_brep": true,
+      "solids": 1,
+      "volume_mm3": 22491.88,
+      "component": true
+    },
+    {
+      "role": "main",
+      "part": "Battery_Clip_Envelope",
+      "valid_brep": true,
+      "solids": 1,
+      "volume_mm3": 3276.0,
+      "component": true
+    },
+    {
+      "role": "main",
+      "part": "Power_Module_Reservation",
+      "valid_brep": true,
+      "solids": 1,
+      "volume_mm3": 7920.0,
+      "component": true
+    }
+  ],
+  "layout": [
+    {
+      "role": "architect",
+      "nominal_size_mm": [
+        246,
+        207,
+        58
+      ],
+      "primary_envelope_pairs": [
+        {
+          "a": "SG90_Body_Envelope",
+          "b": "Breadboard_Envelope",
+          "intersection_mm3": 0.0
+        },
+        {
+          "a": "SG90_Body_Envelope",
+          "b": "UNO_PCB_Envelope",
+          "intersection_mm3": 0.0
+        },
+        {
+          "a": "SG90_Body_Envelope",
+          "b": "Battery_Envelope",
+          "intersection_mm3": 0.0
+        },
+        {
+          "a": "SG90_Body_Envelope",
+          "b": "Power_Module_Reservation",
+          "intersection_mm3": 0.0
+        },
+        {
+          "a": "Breadboard_Envelope",
+          "b": "UNO_PCB_Envelope",
+          "intersection_mm3": 0.0
+        },
+        {
+          "a": "Breadboard_Envelope",
+          "b": "Battery_Envelope",
+          "intersection_mm3": 0.0
+        },
+        {
+          "a": "Breadboard_Envelope",
+          "b": "Power_Module_Reservation",
+          "intersection_mm3": 0.0
+        },
+        {
+          "a": "UNO_PCB_Envelope",
+          "b": "Battery_Envelope",
+          "intersection_mm3": 0.0
+        },
+        {
+          "a": "UNO_PCB_Envelope",
+          "b": "Power_Module_Reservation",
+          "intersection_mm3": 0.0
+        },
+        {
+          "a": "Battery_Envelope",
+          "b": "Power_Module_Reservation",
+          "intersection_mm3": 0.0
+        }
+      ],
+      "shell_contact_review": [
+        {
+          "component": "SG90_Body_Envelope",
+          "base_intersection_mm3": 0.0,
+          "lid_intersection_mm3": 0.0
+        },
+        {
+          "component": "Breadboard_Envelope",
+          "base_intersection_mm3": 0.0,
+          "lid_intersection_mm3": 0.0
+        },
+        {
+          "component": "UNO_PCB_Envelope",
+          "base_intersection_mm3": 0.0,
+          "lid_intersection_mm3": 0.0
+        },
+        {
+          "component": "Battery_Envelope",
+          "base_intersection_mm3": 0.0,
+          "lid_intersection_mm3": 0.0
+        },
+        {
+          "component": "Power_Module_Reservation",
+          "base_intersection_mm3": 0.0,
+          "lid_intersection_mm3": 0.0
+        }
+      ],
+      "physical_fit_verified": false
+    },
+    {
+      "role": "explorer",
+      "nominal_size_mm": [
+        246,
+        207,
+        58
+      ],
+      "primary_envelope_pairs": [
+        {
+          "a": "Breadboard_Envelope",
+          "b": "UNO_PCB_Envelope",
+          "intersection_mm3": 0.0
+        },
+        {
+          "a": "Breadboard_Envelope",
+          "b": "Battery_Envelope",
+          "intersection_mm3": 0.0
+        },
+        {
+          "a": "Breadboard_Envelope",
+          "b": "Power_Module_Reservation",
+          "intersection_mm3": 0.0
+        },
+        {
+          "a": "UNO_PCB_Envelope",
+          "b": "Battery_Envelope",
+          "intersection_mm3": 0.0
+        },
+        {
+          "a": "UNO_PCB_Envelope",
+          "b": "Power_Module_Reservation",
+          "intersection_mm3": 0.0
+        },
+        {
+          "a": "Battery_Envelope",
+          "b": "Power_Module_Reservation",
+          "intersection_mm3": 0.0
+        }
+      ],
+      "shell_contact_review": [
+        {
+          "component": "Breadboard_Envelope",
+          "base_intersection_mm3": 0.0,
+          "lid_intersection_mm3": 0.0
+        },
+        {
+          "component": "UNO_PCB_Envelope",
+          "base_intersection_mm3": 0.0,
+          "lid_intersection_mm3": 0.0
+        },
+        {
+          "component": "Battery_Envelope",
+          "base_intersection_mm3": 0.0,
+          "lid_intersection_mm3": 0.0
+        },
+        {
+          "component": "Power_Module_Reservation",
+          "base_intersection_mm3": 0.0,
+          "lid_intersection_mm3": 0.0
+        }
+      ],
+      "physical_fit_verified": false
+    },
+    {
+      "role": "main",
+      "nominal_size_mm": [
+        234,
+        180,
+        64
+      ],
+      "primary_envelope_pairs": [
+        {
+          "a": "Breadboard_Envelope",
+          "b": "UNO_PCB_Envelope",
+          "intersection_mm3": 0.0
+        },
+        {
+          "a": "Breadboard_Envelope",
+          "b": "Battery_Envelope",
+          "intersection_mm3": 0.0
+        },
+        {
+          "a": "Breadboard_Envelope",
+          "b": "Power_Module_Reservation",
+          "intersection_mm3": 0.0
+        },
+        {
+          "a": "UNO_PCB_Envelope",
+          "b": "Battery_Envelope",
+          "intersection_mm3": 0.0
+        },
+        {
+          "a": "UNO_PCB_Envelope",
+          "b": "Power_Module_Reservation",
+          "intersection_mm3": 0.0
+        },
+        {
+          "a": "Battery_Envelope",
+          "b": "Power_Module_Reservation",
+          "intersection_mm3": 0.0
+        }
+      ],
+      "shell_contact_review": [
+        {
+          "component": "Breadboard_Envelope",
+          "base_intersection_mm3": 0.0,
+          "lid_intersection_mm3": 0.0
+        },
+        {
+          "component": "UNO_PCB_Envelope",
+          "base_intersection_mm3": 0.0,
+          "lid_intersection_mm3": 0.0
+        },
+        {
+          "component": "Battery_Envelope",
+          "base_intersection_mm3": 0.0,
+          "lid_intersection_mm3": 0.0
+        },
+        {
+          "component": "Power_Module_Reservation",
+          "base_intersection_mm3": 0.0,
+          "lid_intersection_mm3": 0.0
+        }
+      ],
+      "physical_fit_verified": false
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+import fs from 'node:fs/promises';
+import vm from 'node:vm';
+import {fileURLToPath} from 'node:url';
+import path from 'node:path';
+const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
+let html=await fs.readFile(path.join(root,'Dual_Reality_Maze_Story_Edition.html'),'utf8');
+// Keep the standalone edition intact; the hardware edition connects through Main.
+const legacy='Connect each R3 to the laptop by USB using its existing test sketch. Select the corresponding serial port below. The Main ZIP is an LCD/buzzer test and does not relay these inputs.';
+if(!html.includes(legacy))throw Error('Legacy connection instructions changed; review the hardware menu integration.');
+html=html.replace(legacy,'Explorer and Architect communicate with Main over I2C. Use Main Arduino connection to join Main Wi-Fi or select Main USB.');
+html=html.replace('<div class="controller-actions"><button id="connectExplorer">','<div class="controller-actions" style="display:none"><button id="connectExplorer">');
+html=html.replace('No serial controllers connected. Keyboard and mouse remain available.','Open the Main connection panel for live readings and connection status.');
+html=html.replace('<output id="controllerStatus"','<button id="openMainConnection">Open Main connection</button><output id="controllerStatus"');
+const adapter=await fs.readFile(path.join(root,'maze-source/work/story/hardware-hub.js'),'utf8');
+if(html.includes('window.mazeHardware='))throw Error('Input already contains hardware adapter.');
+const marker='bindVoiceManifest();';const at=html.lastIndexOf(marker);if(at<0)throw Error('Game integration marker missing.');
+html=html.slice(0,at)+adapter+'\n'+html.slice(at);
+for(const m of html.matchAll(/<script[^>]*>([\s\S]*?)<\/script>/g))new vm.Script(m[1]);
+await fs.writeFile(path.join(root,'hardware/arduino-system/game.html'),html);
+console.log('Hardware game copy built; JavaScript syntax verified. Original game unchanged.');

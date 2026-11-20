@@ -1,0 +1,128 @@
+[
+  {
+    "file": "01-rounded-grip-base.stl",
+    "valid_brep": true,
+    "solids": 1,
+    "purpose": "Actual battery-side grip section; pair with lid sample to assess feel and underside access."
+  },
+  {
+    "file": "02-rounded-grip-lid.stl",
+    "valid_brep": true,
+    "solids": 1,
+    "purpose": "Actual rounded lid section. Cropped leading edge is deliberately open."
+  },
+  {
+    "file": "03-battery-door.stl",
+    "valid_brep": true,
+    "solids": 1,
+    "purpose": "Independent PP3 door. Actual cell and snap required."
+  },
+  {
+    "file": "04-i2c-shutter-track.stl",
+    "valid_brep": true,
+    "solids": 1,
+    "purpose": "Actual rear I2C shutter receiver section."
+  },
+  {
+    "file": "05-i2c-shutter.stl",
+    "valid_brep": true,
+    "solids": 1,
+    "purpose": "Sliding cover; target travel 21 mm."
+  },
+  {
+    "file": "06-i2c-keeper.stl",
+    "valid_brep": true,
+    "solids": 1,
+    "purpose": "End keeper; full enclosure lid captures its head."
+  },
+  {
+    "file": "07-joystick-carrier.stl",
+    "valid_brep": true,
+    "solids": 1,
+    "purpose": "Try actual PCB before attempting a full lid."
+  },
+  {
+    "file": "08-joystick-receiver.stl",
+    "valid_brep": true,
+    "solids": 1,
+    "purpose": "Actual lid and blind snap receiver around joystick."
+  },
+  {
+    "file": "09-uno-edge-clip.stl",
+    "valid_brep": true,
+    "solids": 1,
+    "purpose": "Replaceable board edge clip."
+  },
+  {
+    "file": "20-reveal-pod.stl",
+    "valid_brep": true,
+    "solids": 1,
+    "purpose": "Actual isolated sensor seat, opaque floor and bayonet collar. Round crop avoids cutting through the curved outer shoulder. Test insertion and removal with real sensor."
+  },
+  {
+    "file": "21-reveal-dome.stl",
+    "valid_brep": true,
+    "solids": 1,
+    "purpose": "Actual 0.4 mm roof dome. Compare light readings with RGB active before selecting this roof."
+  },
+  {
+    "file": "10-lcd-carrier.stl",
+    "valid_brep": true,
+    "solids": 1,
+    "purpose": "Fit the actual LCD PCB and backpack; measure hole pattern before adding any pins."
+  },
+  {
+    "file": "11-lcd-receiver.stl",
+    "valid_brep": true,
+    "solids": 1,
+    "purpose": "Actual LCD window and receiver sample."
+  },
+  {
+    "file": "12-usb-track.stl",
+    "valid_brep": true,
+    "solids": 1,
+    "purpose": "Existing rear USB track, separate from the two new side I2C ports."
+  },
+  {
+    "file": "13-usb-shutter.stl",
+    "valid_brep": true,
+    "solids": 1,
+    "purpose": "Main rear USB cover; 35 mm target travel."
+  },
+  {
+    "file": "14-usb-keeper.stl",
+    "valid_brep": true,
+    "solids": 1,
+    "purpose": "USB end stop."
+  },
+  {
+    "file": "15-breadboard-button-cap.stl",
+    "valid_brep": true,
+    "solids": 1,
+    "purpose": "Full-length breadboard actuator. Confirm installed switch height and free gap before use."
+  },
+  {
+    "file": "16-button-stem-guide.stl",
+    "valid_brep": true,
+    "solids": 1,
+    "purpose": "Snap-in stem guide and downward stop; test return and release."
+  },
+  {
+    "file": "17-button-roof.stl",
+    "valid_brep": true,
+    "solids": 1,
+    "purpose": "Actual button roof opening and guide receivers. Test with the cap and guide over the real breadboard switch."
+  },
+  {
+    "file": "18-servo-cassette.stl",
+    "valid_brep": true,
+    "solids": 1,
+    "purpose": "Fit the real servo body and mounting ears in the loose cassette."
+  },
+  {
+    "file": "19-servo-retainer.stl",
+    "valid_brep": true,
+    "solids": 1,
+    "purpose": "Snap bridge for the servo cassette; test release and movement under load."
+  }
+]

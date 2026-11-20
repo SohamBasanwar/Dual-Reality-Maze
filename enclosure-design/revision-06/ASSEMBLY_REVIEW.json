@@ -1,0 +1,155 @@
+[
+  {
+    "role": "explorer",
+    "printed_part_intersections": [],
+    "gate_slider_intersections": [],
+    "shutter_travel_intersections": [],
+    "reveal_hood_rotation_intersections": [],
+    "reserved_volume_checks": [
+      {
+        "reference_volume": "Breadboard_Envelope",
+        "conflicts": []
+      },
+      {
+        "reference_volume": "Battery_Envelope",
+        "conflicts": []
+      },
+      {
+        "reference_volume": "UNO_PCB_Envelope",
+        "conflicts": []
+      },
+      {
+        "reference_volume": "ESP32_Optional_Envelope",
+        "conflicts": []
+      },
+      {
+        "reference_volume": "ESP32_Wiring_Clearance",
+        "conflicts": []
+      },
+      {
+        "reference_volume": "RGB_LED_Envelope",
+        "conflicts": []
+      },
+      {
+        "reference_volume": "Joystick_PCB",
+        "conflicts": []
+      },
+      {
+        "reference_volume": "Joystick_Mechanism",
+        "conflicts": []
+      },
+      {
+        "reference_volume": "Bare_Light_Sensor",
+        "conflicts": []
+      }
+    ],
+    "physical_fit_verified": false,
+    "optical_test_performed": false
+  },
+  {
+    "role": "architect",
+    "printed_part_intersections": [],
+    "gate_slider_intersections": [],
+    "shutter_travel_intersections": [],
+    "reveal_hood_rotation_intersections": [],
+    "reserved_volume_checks": [
+      {
+        "reference_volume": "Breadboard_Envelope",
+        "conflicts": []
+      },
+      {
+        "reference_volume": "Battery_Envelope",
+        "conflicts": []
+      },
+      {
+        "reference_volume": "UNO_PCB_Envelope",
+        "conflicts": []
+      },
+      {
+        "reference_volume": "ESP32_Optional_Envelope",
+        "conflicts": []
+      },
+      {
+        "reference_volume": "ESP32_Wiring_Clearance",
+        "conflicts": []
+      },
+      {
+        "reference_volume": "RGB_LED_Envelope",
+        "conflicts": []
+      },
+      {
+        "reference_volume": "Potentiometer_Envelope",
+        "conflicts": []
+      },
+      {
+        "reference_volume": "Tactile_Switch_Envelope",
+        "conflicts": []
+      },
+      {
+        "reference_volume": "SG90_Body_Envelope",
+        "conflicts": []
+      }
+    ],
+    "physical_fit_verified": false,
+    "optical_test_performed": false
+  },
+  {
+    "role": "main",
+    "printed_part_intersections": [],
+    "gate_slider_intersections": [],
+    "shutter_travel_intersections": [],
+    "reveal_hood_rotation_intersections": [],
+    "reserved_volume_checks": [
+      {
+        "reference_volume": "Breadboard_Envelope",
+        "conflicts": []
+      },
+      {
+        "reference_volume": "Battery_Envelope",
+        "conflicts": []
+      },
+      {
+        "reference_volume": "UNO_PCB_Envelope",
+        "conflicts": []
+      },
+      {
+        "reference_volume": "ESP32_Optional_Envelope",
+        "conflicts": []
+      },
+      {
+        "reference_volume": "ESP32_Wiring_Clearance",
+        "conflicts": []
+      },
+      {
+        "reference_volume": "USB_Plug_Clearance",
+        "conflicts": []
+      },
+      {
+        "reference_volume": "RGB_LED_Envelope",
+        "conflicts": []
+      },
+      {
+        "reference_volume": "Tactile_Switch_Envelope",
+        "conflicts": []
+      },
+      {
+        "reference_volume": "LCD_PCB_Envelope",
+        "conflicts": []
+      },
+      {
+        "reference_volume": "LCD_Display_Envelope",
+        "conflicts": []
+      },
+      {
+        "reference_volume": "LCD_Backpack_Envelope",
+        "conflicts": []
+      },
+      {
+        "reference_volume": "Buzzer_Envelope",
+        "conflicts": []
+      }
+    ],
+    "physical_fit_verified": false,
+    "optical_test_performed": false
+  }
+]

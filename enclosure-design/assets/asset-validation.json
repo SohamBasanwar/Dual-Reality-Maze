@@ -1,0 +1,44 @@
+[
+  {
+    "role": "explorer",
+    "source": "explorer-crest-reference.png",
+    "nativePaths": 1,
+    "inks": [
+      "#000000"
+    ],
+    "transparent": true,
+    "artboard_mm": [
+      70,
+      70
+    ],
+    "status": "one-ink master; reduce only after a physical-size detail check"
+  },
+  {
+    "role": "architect",
+    "source": "architect-crest-reference.png",
+    "nativePaths": 1,
+    "inks": [
+      "#000000"
+    ],
+    "transparent": true,
+    "artboard_mm": [
+      70,
+      70
+    ],
+    "status": "one-ink master; reduce only after a physical-size detail check"
+  },
+  {
+    "role": "main",
+    "source": "main-crest-reference.png",
+    "nativePaths": 1,
+    "inks": [
+      "#000000"
+    ],
+    "transparent": true,
+    "artboard_mm": [
+      70,
+      70
+    ],
+    "status": "one-ink master; reduce only after a physical-size detail check"
+  }
+]

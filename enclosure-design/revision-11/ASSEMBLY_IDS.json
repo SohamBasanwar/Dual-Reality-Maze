@@ -1,0 +1,936 @@
+[
+  {
+    "code": "E01",
+    "role": "explorer",
+    "name": "Base",
+    "marking": "Engraved E01 on noncontact face",
+    "location": {
+      "label": "E01",
+      "xy_mm": [
+        93,
+        62
+      ],
+      "z_mm": 0,
+      "angle_deg": 0,
+      "underside": true,
+      "height_mm": 3,
+      "removed_mm3": 2.1088918125024065
+    }
+  },
+  {
+    "code": "E02",
+    "role": "explorer",
+    "name": "Lid",
+    "marking": "Engraved E02 on noncontact face",
+    "location": {
+      "label": "E02",
+      "xy_mm": [
+        100,
+        91
+      ],
+      "z_mm": 54.2,
+      "angle_deg": 0,
+      "underside": true,
+      "height_mm": 2.8,
+      "removed_mm3": 2.0469685078423936
+    }
+  },
+  {
+    "code": "E03",
+    "role": "explorer",
+    "name": "Battery_Door",
+    "marking": "Engraved E03 on noncontact face",
+    "location": {
+      "label": "E03",
+      "xy_mm": [
+        195,
+        154
+      ],
+      "z_mm": 2.55,
+      "angle_deg": 0,
+      "underside": false,
+      "height_mm": 2.4,
+      "removed_mm3": 1.4661354407899125
+    }
+  },
+  {
+    "code": "E04",
+    "role": "explorer",
+    "name": "Breadboard_Height_Insert",
+    "marking": "Engraved E04 on noncontact face",
+    "location": {
+      "label": "E04",
+      "xy_mm": [
+        201.5,
+        77.5
+      ],
+      "z_mm": 9.200000000000005,
+      "angle_deg": 90,
+      "underside": false,
+      "height_mm": 2.2
+    }
+  },
+  {
+    "code": "E05",
+    "role": "explorer",
+    "name": "Breadboard_X_Jaw",
+    "marking": "Bag/tray label only; no safe readable noncontact engraving land",
+    "location": null
+  },
+  {
+    "code": "E06",
+    "role": "explorer",
+    "name": "Breadboard_X_Lock_Key",
+    "marking": "Bag/tray label only; no safe readable noncontact engraving land",
+    "location": null
+  },
+  {
+    "code": "E07",
+    "role": "explorer",
+    "name": "Breadboard_Y_Jaw",
+    "marking": "Bag/tray label only; no safe readable noncontact engraving land",
+    "location": null
+  },
+  {
+    "code": "E08",
+    "role": "explorer",
+    "name": "Breadboard_Y_Lock_Key",
+    "marking": "Bag/tray label only; no safe readable noncontact engraving land",
+    "location": null
+  },
+  {
+    "code": "E09",
+    "role": "explorer",
+    "name": "Emblem_Diffuser",
+    "marking": "Bag/tray label only; no safe readable noncontact engraving land",
+    "location": null
+  },
+  {
+    "code": "E10",
+    "role": "explorer",
+    "name": "Emblem_Mask",
+    "marking": "Bag/tray label only; no safe readable noncontact engraving land",
+    "location": null
+  },
+  {
+    "code": "E11",
+    "role": "explorer",
+    "name": "I2C_Rear_Keeper",
+    "marking": "Bag/tray label only; no safe readable noncontact engraving land",
+    "location": null
+  },
+  {
+    "code": "E12",
+    "role": "explorer",
+    "name": "I2C_Rear_Shutter",
+    "marking": "Bag/tray label only; no safe readable noncontact engraving land",
+    "location": null
+  },
+  {
+    "code": "E13",
+    "role": "explorer",
+    "name": "Joystick_Carrier",
+    "marking": "Bag/tray label only; no safe readable noncontact engraving land",
+    "location": null
+  },
+  {
+    "code": "E14",
+    "role": "explorer",
+    "name": "Joystick_Height_Insert",
+    "marking": "Engraved E14 on noncontact face",
+    "location": {
+      "label": "E14",
+      "xy_mm": [
+        209.5,
+        38.5
+      ],
+      "z_mm": 34.500000000000014,
+      "angle_deg": 90,
+      "underside": false,
+      "height_mm": 2.2
+    }
+  },
+  {
+    "code": "E15",
+    "role": "explorer",
+    "name": "Joystick_X_Jaw",
+    "marking": "Bag/tray label only; no safe readable noncontact engraving land",
+    "location": null
+  },
+  {
+    "code": "E16",
+    "role": "explorer",
+    "name": "Joystick_X_Lock_Key",
+    "marking": "Bag/tray label only; no safe readable noncontact engraving land",
+    "location": null
+  },
+  {
+    "code": "E17",
+    "role": "explorer",
+    "name": "Joystick_Y_Jaw",
+    "marking": "Bag/tray label only; no safe readable noncontact engraving land",
+    "location": null
+  },
+  {
+    "code": "E18",
+    "role": "explorer",
+    "name": "Joystick_Y_Lock_Key",
+    "marking": "Bag/tray label only; no safe readable noncontact engraving land",
+    "location": null
+  },
+  {
+    "code": "E19",
+    "role": "explorer",
+    "name": "RGB_LED_Keeper",
+    "marking": "Bag/tray label only; no safe readable noncontact engraving land",
+    "location": null
+  },
+  {
+    "code": "E20",
+    "role": "explorer",
+    "name": "Reveal_Dome",
+    "marking": "Bag/tray label only; no safe readable noncontact engraving land",
+    "location": null
+  },
+  {
+    "code": "E21",
+    "role": "explorer",
+    "name": "UNO_Height_Insert",
+    "marking": "Engraved E21 on noncontact face",
+    "location": {
+      "label": "E21",
+      "xy_mm": [
+        152.5,
+        19.5
+      ],
+      "z_mm": 9.200000000000003,
+      "angle_deg": 90,
+      "underside": false,
+      "height_mm": 2.2
+    }
+  },
+  {
+    "code": "E22",
+    "role": "explorer",
+    "name": "UNO_X_Jaw",
+    "marking": "Bag/tray label only; no safe readable noncontact engraving land",
+    "location": null
+  },
+  {
+    "code": "E23",
+    "role": "explorer",
+    "name": "UNO_X_Lock_Key",
+    "marking": "Bag/tray label only; no safe readable noncontact engraving land",
+    "location": null
+  },
+  {
+    "code": "E24",
+    "role": "explorer",
+    "name": "UNO_Y_Jaw",
+    "marking": "Bag/tray label only; no safe readable noncontact engraving land",
+    "location": null
+  },
+  {
+    "code": "E25",
+    "role": "explorer",
+    "name": "UNO_Y_Lock_Key",
+    "marking": "Bag/tray label only; no safe readable noncontact engraving land",
+    "location": null
+  },
+  {
+    "code": "A01",
+    "role": "architect",
+    "name": "Base",
+    "marking": "Engraved A01 on noncontact face",
+    "location": {
+      "label": "A01",
+      "xy_mm": [
+        93,
+        62
+      ],
+      "z_mm": 0,
+      "angle_deg": 0,
+      "underside": true,
+      "height_mm": 3,
+      "removed_mm3": 2.0629289241333026
+    }
+  },
+  {
+    "code": "A02",
+    "role": "architect",
+    "name": "Lid",
+    "marking": "Engraved A02 on noncontact face",
+    "location": {
+      "label": "A02",
+      "xy_mm": [
+        100,
+        91
+      ],
+      "z_mm": 54.2,
+      "angle_deg": 0,
+      "underside": true,
+      "height_mm": 2.8,
+      "removed_mm3": 2.0048682618071325
+    }
+  },
+  {
+    "code": "A03",
+    "role": "architect",
+    "name": "Battery_Door",
+    "marking": "Engraved A03 on noncontact face",
+    "location": {
+      "label": "A03",
+      "xy_mm": [
+        195,
+        154
+      ],
+      "z_mm": 2.55,
+      "angle_deg": 0,
+      "underside": false,
+      "height_mm": 2.4,
+      "removed_mm3": 1.4372689867295776
+    }
+  },
+  {
+    "code": "A04",
+    "role": "architect",
+    "name": "Breadboard_Height_Insert",
+    "marking": "Engraved A04 on noncontact face",
+    "location": {
+      "label": "A04",
+      "xy_mm": [
+        201.5,
+        77.5
+      ],
+      "z_mm": 9.200000000000005,
+      "angle_deg": 90,
+      "underside": false,
+      "height_mm": 2.2
+    }
+  },
+  {
+    "code": "A05",
+    "role": "architect",
+    "name": "Breadboard_X_Jaw",
+    "marking": "Bag/tray label only; no safe readable noncontact engraving land",
+    "location": null
+  },
+  {
+    "code": "A06",
+    "role": "architect",
+    "name": "Breadboard_X_Lock_Key",
+    "marking": "Bag/tray label only; no safe readable noncontact engraving land",
+    "location": null
+  },
+  {
+    "code": "A07",
+    "role": "architect",
+    "name": "Breadboard_Y_Jaw",
+    "marking": "Bag/tray label only; no safe readable noncontact engraving land",
+    "location": null
+  },
+  {
+    "code": "A08",
+    "role": "architect",
+    "name": "Breadboard_Y_Lock_Key",
+    "marking": "Bag/tray label only; no safe readable noncontact engraving land",
+    "location": null
+  },
+  {
+    "code": "A09",
+    "role": "architect",
+    "name": "Button_Cap",
+    "marking": "Bag/tray label only; no safe readable noncontact engraving land",
+    "location": null
+  },
+  {
+    "code": "A10",
+    "role": "architect",
+    "name": "Button_Contact_Shoe",
+    "marking": "Bag/tray label only; no safe readable noncontact engraving land",
+    "location": null
+  },
+  {
+    "code": "A11",
+    "role": "architect",
+    "name": "Button_Stem_Guide",
+    "marking": "Bag/tray label only; no safe readable noncontact engraving land",
+    "location": null
+  },
+  {
+    "code": "A12",
+    "role": "architect",
+    "name": "Emblem_Diffuser",
+    "marking": "Bag/tray label only; no safe readable noncontact engraving land",
+    "location": null
+  },
+  {
+    "code": "A13",
+    "role": "architect",
+    "name": "Emblem_Mask",
+    "marking": "Bag/tray label only; no safe readable noncontact engraving land",
+    "location": null
+  },
+  {
+    "code": "A14",
+    "role": "architect",
+    "name": "Gate_Drive_Pin",
+    "marking": "Bag/tray label only; no safe readable noncontact engraving land",
+    "location": null
+  },
+  {
+    "code": "A15",
+    "role": "architect",
+    "name": "Gate_Frame",
+    "marking": "Engraved A15 on noncontact face",
+    "location": {
+      "label": "A15",
+      "xy_mm": [
+        40,
+        65
+      ],
+      "z_mm": 40.3,
+      "angle_deg": 0,
+      "underside": true,
+      "height_mm": 2.2
+    }
+  },
+  {
+    "code": "A16",
+    "role": "architect",
+    "name": "Gate_Panel",
+    "marking": "Bag/tray label only; no safe readable noncontact engraving land",
+    "location": null
+  },
+  {
+    "code": "A17",
+    "role": "architect",
+    "name": "Gate_Pin_Keeper",
+    "marking": "Bag/tray label only; no safe readable noncontact engraving land",
+    "location": null
+  },
+  {
+    "code": "A18",
+    "role": "architect",
+    "name": "Gate_Shroud",
+    "marking": "Bag/tray label only; no safe readable noncontact engraving land",
+    "location": null
+  },
+  {
+    "code": "A19",
+    "role": "architect",
+    "name": "I2C_Rear_Keeper",
+    "marking": "Bag/tray label only; no safe readable noncontact engraving land",
+    "location": null
+  },
+  {
+    "code": "A20",
+    "role": "architect",
+    "name": "I2C_Rear_Shutter",
+    "marking": "Bag/tray label only; no safe readable noncontact engraving land",
+    "location": null
+  },
+  {
+    "code": "A21",
+    "role": "architect",
+    "name": "Potentiometer_Keeper",
+    "marking": "Bag/tray label only; no safe readable noncontact engraving land",
+    "location": null
+  },
+  {
+    "code": "A22",
+    "role": "architect",
+    "name": "RGB_LED_Keeper",
+    "marking": "Bag/tray label only; no safe readable noncontact engraving land",
+    "location": null
+  },
+  {
+    "code": "A23",
+    "role": "architect",
+    "name": "Servo_Cassette",
+    "marking": "Bag/tray label only; no safe readable noncontact engraving land",
+    "location": null
+  },
+  {
+    "code": "A24",
+    "role": "architect",
+    "name": "Servo_Fit_Insert",
+    "marking": "Bag/tray label only; no safe readable noncontact engraving land",
+    "location": null
+  },
+  {
+    "code": "A25",
+    "role": "architect",
+    "name": "Servo_Retainer",
+    "marking": "Engraved A25 on noncontact face",
+    "location": {
+      "label": "A25",
+      "xy_mm": [
+        40.845993205944815,
+        35.51977367303609
+      ],
+      "z_mm": 57.10000000000007,
+      "angle_deg": 0,
+      "underside": false,
+      "height_mm": 2.2,
+      "removed_mm3": 1.2119317506159177
+    }
+  },
+  {
+    "code": "A26",
+    "role": "architect",
+    "name": "UNO_Height_Insert",
+    "marking": "Engraved A26 on noncontact face",
+    "location": {
+      "label": "A26",
+      "xy_mm": [
+        152.5,
+        19.5
+      ],
+      "z_mm": 9.200000000000003,
+      "angle_deg": 90,
+      "underside": false,
+      "height_mm": 2.2
+    }
+  },
+  {
+    "code": "A27",
+    "role": "architect",
+    "name": "UNO_X_Jaw",
+    "marking": "Bag/tray label only; no safe readable noncontact engraving land",
+    "location": null
+  },
+  {
+    "code": "A28",
+    "role": "architect",
+    "name": "UNO_X_Lock_Key",
+    "marking": "Bag/tray label only; no safe readable noncontact engraving land",
+    "location": null
+  },
+  {
+    "code": "A29",
+    "role": "architect",
+    "name": "UNO_Y_Jaw",
+    "marking": "Bag/tray label only; no safe readable noncontact engraving land",
+    "location": null
+  },
+  {
+    "code": "A30",
+    "role": "architect",
+    "name": "UNO_Y_Lock_Key",
+    "marking": "Bag/tray label only; no safe readable noncontact engraving land",
+    "location": null
+  },
+  {
+    "code": "M01",
+    "role": "main",
+    "name": "Base",
+    "marking": "Engraved M01 on noncontact face",
+    "location": {
+      "label": "M01",
+      "xy_mm": [
+        93,
+        64
+      ],
+      "z_mm": 0,
+      "angle_deg": 0,
+      "underside": true,
+      "height_mm": 3,
+      "removed_mm3": 2.591341527935583
+    }
+  },
+  {
+    "code": "M02",
+    "role": "main",
+    "name": "Lid",
+    "marking": "Engraved M02 on noncontact face",
+    "location": {
+      "label": "M02",
+      "xy_mm": [
+        76,
+        75
+      ],
+      "z_mm": 60.2,
+      "angle_deg": 0,
+      "underside": true,
+      "height_mm": 2.8,
+      "removed_mm3": 2.3958518235886004
+    }
+  },
+  {
+    "code": "M03",
+    "role": "main",
+    "name": "Battery_Door",
+    "marking": "Engraved M03 on noncontact face",
+    "location": {
+      "label": "M03",
+      "xy_mm": [
+        185,
+        132
+      ],
+      "z_mm": 2.4,
+      "angle_deg": 0,
+      "underside": false,
+      "height_mm": 2.4,
+      "removed_mm3": 1.725716982103222
+    }
+  },
+  {
+    "code": "M04",
+    "role": "main",
+    "name": "Breadboard_Height_Insert",
+    "marking": "Engraved M04 on noncontact face",
+    "location": {
+      "label": "M04",
+      "xy_mm": [
+        195.5,
+        21.5
+      ],
+      "z_mm": 9.200000000000005,
+      "angle_deg": 90,
+      "underside": false,
+      "height_mm": 2.2,
+      "removed_mm3": 1.4703399667234862
+    }
+  },
+  {
+    "code": "M05",
+    "role": "main",
+    "name": "Breadboard_X_Jaw",
+    "marking": "Bag/tray label only; no safe readable noncontact engraving land",
+    "location": null
+  },
+  {
+    "code": "M06",
+    "role": "main",
+    "name": "Breadboard_X_Lock_Key",
+    "marking": "Bag/tray label only; no safe readable noncontact engraving land",
+    "location": null
+  },
+  {
+    "code": "M07",
+    "role": "main",
+    "name": "Breadboard_Y_Jaw",
+    "marking": "Bag/tray label only; no safe readable noncontact engraving land",
+    "location": null
+  },
+  {
+    "code": "M08",
+    "role": "main",
+    "name": "Breadboard_Y_Lock_Key",
+    "marking": "Bag/tray label only; no safe readable noncontact engraving land",
+    "location": null
+  },
+  {
+    "code": "M09",
+    "role": "main",
+    "name": "Button_Cap",
+    "marking": "Bag/tray label only; no safe readable noncontact engraving land",
+    "location": null
+  },
+  {
+    "code": "M10",
+    "role": "main",
+    "name": "Buzzer_Keeper",
+    "marking": "Bag/tray label only; no safe readable noncontact engraving land",
+    "location": null
+  },
+  {
+    "code": "M11",
+    "role": "main",
+    "name": "Emblem_Diffuser",
+    "marking": "Bag/tray label only; no safe readable noncontact engraving land",
+    "location": null
+  },
+  {
+    "code": "M12",
+    "role": "main",
+    "name": "Emblem_Mask",
+    "marking": "Bag/tray label only; no safe readable noncontact engraving land",
+    "location": null
+  },
+  {
+    "code": "M13",
+    "role": "main",
+    "name": "I2C_Left_Keeper",
+    "marking": "Bag/tray label only; no safe readable noncontact engraving land",
+    "location": null
+  },
+  {
+    "code": "M14",
+    "role": "main",
+    "name": "I2C_Left_Shutter",
+    "marking": "Bag/tray label only; no safe readable noncontact engraving land",
+    "location": null
+  },
+  {
+    "code": "M15",
+    "role": "main",
+    "name": "I2C_Right_Keeper",
+    "marking": "Bag/tray label only; no safe readable noncontact engraving land",
+    "location": null
+  },
+  {
+    "code": "M16",
+    "role": "main",
+    "name": "I2C_Right_Shutter",
+    "marking": "Bag/tray label only; no safe readable noncontact engraving land",
+    "location": null
+  },
+  {
+    "code": "M17",
+    "role": "main",
+    "name": "LCD_Carrier",
+    "marking": "Bag/tray label only; no safe readable noncontact engraving land",
+    "location": null
+  },
+  {
+    "code": "M18",
+    "role": "main",
+    "name": "LCD_Height_Insert",
+    "marking": "Engraved M18 on noncontact face",
+    "location": {
+      "label": "M18",
+      "xy_mm": [
+        152.8,
+        34.5
+      ],
+      "z_mm": 54.60000000000001,
+      "angle_deg": 90,
+      "underside": false,
+      "height_mm": 2.2,
+      "removed_mm3": 1.3619356188405618
+    }
+  },
+  {
+    "code": "M19",
+    "role": "main",
+    "name": "LCD_X_Jaw",
+    "marking": "Bag/tray label only; no safe readable noncontact engraving land",
+    "location": null
+  },
+  {
+    "code": "M20",
+    "role": "main",
+    "name": "LCD_X_Lock_Key",
+    "marking": "Bag/tray label only; no safe readable noncontact engraving land",
+    "location": null
+  },
+  {
+    "code": "M21",
+    "role": "main",
+    "name": "LCD_Y_Jaw",
+    "marking": "Bag/tray label only; no safe readable noncontact engraving land",
+    "location": null
+  },
+  {
+    "code": "M22",
+    "role": "main",
+    "name": "LCD_Y_Lock_Key",
+    "marking": "Bag/tray label only; no safe readable noncontact engraving land",
+    "location": null
+  },
+  {
+    "code": "M23",
+    "role": "main",
+    "name": "Light_G1_Bezel",
+    "marking": "Engraved M23 on noncontact face",
+    "location": {
+      "label": "M23",
+      "xy_mm": [
+        61,
+        10.2
+      ],
+      "z_mm": 66.55,
+      "angle_deg": 0,
+      "underside": false,
+      "height_mm": 2.2,
+      "removed_mm3": 1.413255083449485
+    }
+  },
+  {
+    "code": "M24",
+    "role": "main",
+    "name": "Light_G1_Diffuser",
+    "marking": "Bag/tray label only; no safe readable noncontact engraving land",
+    "location": null
+  },
+  {
+    "code": "M25",
+    "role": "main",
+    "name": "Light_G2_Bezel",
+    "marking": "Engraved M25 on noncontact face",
+    "location": {
+      "label": "M25",
+      "xy_mm": [
+        160,
+        10.2
+      ],
+      "z_mm": 66.55,
+      "angle_deg": 0,
+      "underside": false,
+      "height_mm": 2.2,
+      "removed_mm3": 1.4543143403785734
+    }
+  },
+  {
+    "code": "M26",
+    "role": "main",
+    "name": "Light_G2_Diffuser",
+    "marking": "Bag/tray label only; no safe readable noncontact engraving land",
+    "location": null
+  },
+  {
+    "code": "M27",
+    "role": "main",
+    "name": "Light_G3_Bezel",
+    "marking": "Engraved M27 on noncontact face",
+    "location": {
+      "label": "M27",
+      "xy_mm": [
+        38.3,
+        61
+      ],
+      "z_mm": 66.55,
+      "angle_deg": 90,
+      "underside": false,
+      "height_mm": 2.2,
+      "removed_mm3": 1.3365017812300266
+    }
+  },
+  {
+    "code": "M28",
+    "role": "main",
+    "name": "Light_G3_Diffuser",
+    "marking": "Bag/tray label only; no safe readable noncontact engraving land",
+    "location": null
+  },
+  {
+    "code": "M29",
+    "role": "main",
+    "name": "Light_G4_Bezel",
+    "marking": "Engraved M29 on noncontact face",
+    "location": {
+      "label": "M29",
+      "xy_mm": [
+        193.5,
+        61
+      ],
+      "z_mm": 66.55,
+      "angle_deg": 90,
+      "underside": false,
+      "height_mm": 2.2,
+      "removed_mm3": 1.4896099390482505
+    }
+  },
+  {
+    "code": "M30",
+    "role": "main",
+    "name": "Light_G4_Diffuser",
+    "marking": "Bag/tray label only; no safe readable noncontact engraving land",
+    "location": null
+  },
+  {
+    "code": "M31",
+    "role": "main",
+    "name": "RGB_Isolation_Cap",
+    "marking": "Engraved M31 on noncontact face",
+    "location": {
+      "label": "M31",
+      "xy_mm": [
+        113,
+        107.7
+      ],
+      "z_mm": 32.3,
+      "angle_deg": 0,
+      "underside": true,
+      "height_mm": 2.4,
+      "removed_mm3": 1.5245538955027769
+    }
+  },
+  {
+    "code": "M32",
+    "role": "main",
+    "name": "RGB_LED_Keeper",
+    "marking": "Bag/tray label only; no safe readable noncontact engraving land",
+    "location": null
+  },
+  {
+    "code": "M33",
+    "role": "main",
+    "name": "Switch_Cassette",
+    "marking": "Engraved M33 on noncontact face",
+    "location": {
+      "label": "M33",
+      "xy_mm": [
+        114.3713,
+        136.0298
+      ],
+      "z_mm": 59.25,
+      "angle_deg": 0,
+      "underside": false,
+      "height_mm": 2.2,
+      "removed_mm3": 1.3842614405950826
+    }
+  },
+  {
+    "code": "M34",
+    "role": "main",
+    "name": "UNO_Height_Insert",
+    "marking": "Engraved M34 on noncontact face",
+    "location": {
+      "label": "M34",
+      "xy_mm": [
+        141.5,
+        100.5
+      ],
+      "z_mm": 9.200000000000005,
+      "angle_deg": 90,
+      "underside": false,
+      "height_mm": 2.2,
+      "removed_mm3": 1.4045185486677383
+    }
+  },
+  {
+    "code": "M35",
+    "role": "main",
+    "name": "UNO_X_Jaw",
+    "marking": "Bag/tray label only; no safe readable noncontact engraving land",
+    "location": null
+  },
+  {
+    "code": "M36",
+    "role": "main",
+    "name": "UNO_X_Lock_Key",
+    "marking": "Bag/tray label only; no safe readable noncontact engraving land",
+    "location": null
+  },
+  {
+    "code": "M37",
+    "role": "main",
+    "name": "UNO_Y_Jaw",
+    "marking": "Bag/tray label only; no safe readable noncontact engraving land",
+    "location": null
+  },
+  {
+    "code": "M38",
+    "role": "main",
+    "name": "UNO_Y_Lock_Key",
+    "marking": "Bag/tray label only; no safe readable noncontact engraving land",
+    "location": null
+  },
+  {
+    "code": "M39",
+    "role": "main",
+    "name": "USB_Shutter",
+    "marking": "Bag/tray label only; no safe readable noncontact engraving land",
+    "location": null
+  },
+  {
+    "code": "M40",
+    "role": "main",
+    "name": "USB_Shutter_Keeper",
+    "marking": "Bag/tray label only; no safe readable noncontact engraving land",
+    "location": null
+  }
+]

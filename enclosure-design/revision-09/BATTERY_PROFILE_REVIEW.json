@@ -1,0 +1,22 @@
+[
+  {
+    "role": "explorer",
+    "added_external_volume_in_battery_region_mm3": 0.0,
+    "door_outside_original_grip_mm3": 0.0,
+    "door_skin_vertical_thickness_mm": 2.4,
+    "door_recess_mm": 0.15,
+    "mating_clearance_vertical_mm": 0.2,
+    "battery_body_clearance_mm3": 0.0,
+    "note": "Compares against the original oval outer shell with no service pad. Digital geometry only; physical feel/latch test remains."
+  },
+  {
+    "role": "architect",
+    "added_external_volume_in_battery_region_mm3": 0.0,
+    "door_outside_original_grip_mm3": 0.0,
+    "door_skin_vertical_thickness_mm": 2.4,
+    "door_recess_mm": 0.15,
+    "mating_clearance_vertical_mm": 0.2,
+    "battery_body_clearance_mm3": 0.0,
+    "note": "Compares against the original oval outer shell with no service pad. Digital geometry only; physical feel/latch test remains."
+  }
+]

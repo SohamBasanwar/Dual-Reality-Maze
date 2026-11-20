@@ -1,0 +1,19 @@
+# Run in FreeCAD to load and colour the three existing native CAD documents.
+from pathlib import Path
+import FreeCAD as App, FreeCADGui as Gui
+root=Path(__file__).resolve().parent
+docs=[]
+for role in ['main','architect','explorer']:
+    d=App.openDocument(str(root/'cad'/(role+'-revision04.FCStd')))
+    for o in d.getObject('PrintedParts').Group:
+        o.ViewObject.ShapeColor=(0.55,0.30,0.12)
+        o.ViewObject.LineColor=(0.18,0.10,0.04)
+        o.ViewObject.DisplayMode='Flat Lines'
+    for o in d.getObject('ComponentEnvelopes').Group:
+        o.ViewObject.ShapeColor=(0.15,0.34,0.48)
+        o.ViewObject.Visibility=o.Name in ['Joystick_Mechanism','Bronze_Knob_Envelope','LCD_Display_Envelope','Bare_Light_Sensor']
+    d.getObject('Emblem_Diffuser').ViewObject.ShapeColor={'explorer':(0.1,0.5,0.95),'architect':(1.0,0.6,0.1),'main':(0.6,0.2,0.95)}[role]
+    Gui.activeDocument().activeView().viewAxonometric()
+    Gui.activeDocument().activeView().fitAll()
+    docs.append(d)
+Gui.activateWorkbench('PartWorkbench')

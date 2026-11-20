@@ -1,0 +1,44 @@
+[
+  {
+    "file": "01-battery-grip-receiver.stl",
+    "valid_brep": true,
+    "solids": 1,
+    "purpose": "Actual curved-grip battery receiver; use with door 02 and chosen cell/snap."
+  },
+  {
+    "file": "02-battery-door.stl",
+    "valid_brep": true,
+    "solids": 1,
+    "purpose": "Door tabs and release tongue. Test in the intended material."
+  },
+  {
+    "file": "03-latch-base.stl",
+    "valid_brep": true,
+    "solids": 1,
+    "purpose": "Curved side receiver sample."
+  },
+  {
+    "file": "04-latch-lid.stl",
+    "valid_brep": true,
+    "solids": 1,
+    "purpose": "Matching flexing lid latch sample; align original upper/lower shell surfaces."
+  },
+  {
+    "file": "05-shutter-receiver.stl",
+    "valid_brep": true,
+    "solids": 1,
+    "purpose": "Rear guide-rail and aperture test section; verify unobstructed sliding."
+  },
+  {
+    "file": "06-usb-shutter.stl",
+    "valid_brep": true,
+    "solids": 1,
+    "purpose": "Sliding plate with thumb grip."
+  },
+  {
+    "file": "07-shutter-end-keeper.stl",
+    "valid_brep": true,
+    "solids": 1,
+    "purpose": "End stop: retained by Main lid in the full assembly."
+  }
+]

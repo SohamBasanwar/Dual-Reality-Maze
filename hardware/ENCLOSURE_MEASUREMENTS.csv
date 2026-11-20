@@ -1,0 +1,16 @@
+Part,Known or proposed value,Status,Physical measurement needed
+Uno R3 planar board,68.6 x 53.4 mm,Nominal reference,Actual board edges underside and plugged USB-B envelope
+Uno R4 planar board,68.85 x 53.34 mm,Official store nominal,Actual board antenna region underside and plugged USB-C envelope
+Explorer breadboard,83 x 55 x 12 mm,ASSUMED half-size,Actual length width height and side-rail overhang
+Architect breadboard,83 x 55 x 12 mm,ASSUMED half-size,Actual length width height and side-rail overhang
+Joystick,28 mm swing opening,ASSUMED,PCB dimensions pin header height cap sweep and click travel
+Light sensor,12 mm nominal opening,UNVERIFIED,Bare LDR or module dimensions and active sensing area
+Potentiometer,10k with 8 mm provisional hole,VALUE CONFIRMED geometry unverified,Bushing shaft knob and full installed height
+Pushbutton,12 mm provisional opening,UNVERIFIED,Actual switch type body cap press travel and retention
+SG90 body,23 x 12.2 x 29 mm,Manufacturer nominal variant must match,Flange width tabs shaft height cable exit and installed body
+SG90 horn and gate,Nominal 58 x 33 x 29 mm guard,UNVERIFIED,Horn sweep shaft coupling lift clearance and axial keeper
+LCD,80 x 36 mm PCB and 72 x 25 mm window,ASSUMED,PCB bezel glass opening backpack trimmer and connector height
+Buzzer,16 mm provisional envelope,UNVERIFIED,Actual package and retention contact areas
+Servo USB power lead,Dedicated regulated supply near 5V,PLANNED,Voltage specification current peak connector and cable diameter
+I2C harness,Three signals per controller,CONFIRMED architecture,Actual length connector body and bend radius
+Service closure,Locating rim plus removable retaining keys,PLANNED,Fit coupon and latch/key retention test

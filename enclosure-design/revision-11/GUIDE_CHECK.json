@@ -1,0 +1,7 @@
+{
+  "handler_calls_checked": 70,
+  "unique_element_ids": 45,
+  "all_handler_image_paths_exist": true,
+  "live_browser_render_verified": false,
+  "live_browser_limitation": "In-app browser URL policy rejected the file:// protocol."
+}

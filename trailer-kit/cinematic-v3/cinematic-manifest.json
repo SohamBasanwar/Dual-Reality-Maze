@@ -1,0 +1,170 @@
+{
+  "duration": 64.91666666666666,
+  "width": 1920,
+  "height": 1080,
+  "fps": 24,
+  "structure": "Quiet prologue → portal surge → animated game-title reveal → four fading narrated cards → growing action → coming-soon finale → homecoming",
+  "videoCreditCost": 350,
+  "pixverseCreditsRemaining": 920,
+  "narrator": "ElevenLabs Brian, deep/resonant voice, Eleven v4, existing free allowance",
+  "sourceDisclosure": "Chapters I–III prototype renderer captures are staged. Cinematic previews animate project artwork. Chapters IV–V and final homecoming are planned, labelled coming soon.",
+  "narrationDurations": {
+    "01_two_heroes.mp3": 3.47,
+    "02_cure.mp3": 3,
+    "03_memories.mp3": 2.93,
+    "04_oath.mp3": 3.79
+  },
+  "shots": [
+    {
+      "id": "01_cold_open",
+      "file": "C:\\Users\\soham\\Documents\\CS 362\\GP\\trailer-kit\\full-story-v2\\generated\\prologue.mp4",
+      "duration": 5,
+      "native": true,
+      "quote": "“Bring my daughter home.”",
+      "sub": "“I am counting on you.”",
+      "cross": 0,
+      "start": 0
+    },
+    {
+      "id": "02_portal_surge",
+      "file": "C:\\Users\\soham\\Documents\\CS 362\\GP\\trailer-kit\\full-story-v2\\generated\\opening.mp4",
+      "seek": 2.1,
+      "duration": 2,
+      "native": true,
+      "cross": 0.125,
+      "surge": true,
+      "start": 4.875
+    },
+    {
+      "id": "03_title_reveal",
+      "duration": 4,
+      "title": true,
+      "cross": 0.125,
+      "start": 6.75
+    },
+    {
+      "id": "04_two_heroes",
+      "duration": 4.583333333333333,
+      "card": [
+        "TWO HEROES.",
+        "ONE SHARED FATE."
+      ],
+      "voice": "01_two_heroes.mp3",
+      "cross": 0.375,
+      "start": 10.375
+    },
+    {
+      "id": "05_maze",
+      "file": "C:\\Users\\soham\\Documents\\CS 362\\GP\\trailer-kit\\clips\\01_maze_and_architect.mp4",
+      "duration": 4,
+      "label": "PROTOTYPE GAMEPLAY",
+      "cross": 0.375,
+      "start": 14.583333333333332
+    },
+    {
+      "id": "06_transformation",
+      "file": "C:\\Users\\soham\\Documents\\CS 362\\GP\\trailer-kit\\clips\\02_architect_transformation.mp4",
+      "duration": 2.25,
+      "cross": 0.125,
+      "start": 18.458333333333332
+    },
+    {
+      "id": "07_cure_card",
+      "duration": 4.125,
+      "card": [
+        "BEYOND THE CLOUDS…",
+        "A CURE."
+      ],
+      "voice": "02_cure.mp3",
+      "cross": 0.375,
+      "start": 20.333333333333332
+    },
+    {
+      "id": "08_sky_gardens",
+      "file": "C:\\Users\\soham\\Documents\\CS 362\\GP\\trailer-kit\\full-story-v2\\generated\\chapter2.mp4",
+      "duration": 5,
+      "native": true,
+      "cross": 0.375,
+      "start": 24.083333333333332
+    },
+    {
+      "id": "09_dragon_flight",
+      "file": "C:\\Users\\soham\\Documents\\CS 362\\GP\\trailer-kit\\clips\\04_dragon_flight.mp4",
+      "duration": 3,
+      "cross": 0.125,
+      "start": 28.958333333333332
+    },
+    {
+      "id": "10_memory_card",
+      "duration": 4.041666666666667,
+      "card": [
+        "SOME MEMORIES",
+        "REFUSE TO FADE."
+      ],
+      "voice": "03_memories.mp3",
+      "cross": 0.375,
+      "start": 31.583333333333332
+    },
+    {
+      "id": "11_forest",
+      "file": "C:\\Users\\soham\\Documents\\CS 362\\GP\\trailer-kit\\full-story-v2\\generated\\chapter3.mp4",
+      "duration": 5,
+      "native": true,
+      "cross": 0.375,
+      "start": 35.25
+    },
+    {
+      "id": "12_memory_capture",
+      "file": "C:\\Users\\soham\\Documents\\CS 362\\GP\\trailer-kit\\clips\\06_memory_in_the_jar.mp4",
+      "duration": 2.5,
+      "cross": 0.125,
+      "start": 40.125
+    },
+    {
+      "id": "13_oath_card",
+      "duration": 4.916666666666667,
+      "card": [
+        "BUT THE OATH…",
+        "IS NOT YET FULFILLED."
+      ],
+      "voice": "04_oath.mp3",
+      "cross": 0.375,
+      "start": 42.25
+    },
+    {
+      "id": "14_clockwork",
+      "file": "C:\\Users\\soham\\Documents\\CS 362\\GP\\trailer-kit\\full-story-v2\\generated\\chapter4.mp4",
+      "duration": 5,
+      "native": true,
+      "label": "CHAPTER IV · COMING SOON",
+      "cross": 0.375,
+      "start": 46.791666666666664
+    },
+    {
+      "id": "15_final_seal",
+      "file": "C:\\Users\\soham\\Documents\\CS 362\\GP\\trailer-kit\\full-story-v2\\generated\\chapter5.mp4",
+      "duration": 5,
+      "native": true,
+      "label": "CHAPTER V · COMING SOON",
+      "cross": 0.125,
+      "start": 51.666666666666664
+    },
+    {
+      "id": "16_homecoming",
+      "file": "C:\\Users\\soham\\Documents\\CS 362\\GP\\trailer-kit\\full-story-v2\\generated\\homecoming.mp4",
+      "duration": 4,
+      "native": true,
+      "label": "PLANNED STORY CONCLUSION",
+      "cross": 0.375,
+      "start": 56.291666666666664
+    },
+    {
+      "id": "17_end_title",
+      "duration": 5,
+      "title": true,
+      "end": true,
+      "cross": 0.375,
+      "start": 59.916666666666664
+    }
+  ]
+}

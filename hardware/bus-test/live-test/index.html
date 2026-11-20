@@ -1,0 +1,55 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Dual-Reality Maze | Live Hardware Test</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#09131f;color:#edf4fa;font:17px system-ui;padding:30px;max-width:1400px;margin:auto}h1{font-size:34px;margin:8px 0}h2{font-size:23px;margin-top:0}.eyebrow{color:#dfb96e;font-size:13px;letter-spacing:3px}p{color:#aabccb;line-height:1.5}.status{padding:12px 18px;background:#152737;border-radius:9px;margin:18px 0}.grid{display:grid;grid-template-columns:1.25fr 1fr;gap:24px}.card{background:#102030;border:1px solid #2b4257;border-radius:18px;padding:24px}.board{position:relative;height:360px;background:linear-gradient(90deg,transparent 49.8%,#34516a 50%,transparent 50.2%),linear-gradient(transparent 49.8%,#34516a 50%,transparent 50.2%),#091724;border-radius:14px;border:1px solid #35516c;overflow:hidden;margin:15px 0}.dot{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:38px;height:38px;border-radius:50%;background:#62e2c3;box-shadow:0 0 25px #62e2c355}.dot.pressed{background:#dc9bff;box-shadow:0 0 30px #dc9bff}.numbers{font:22px ui-monospace,monospace;margin:12px 0}.chips{display:flex;gap:8px;flex-wrap:wrap}.chip{background:#263746;padding:7px 12px;border-radius:18px;font-size:14px}.done{background:#1f594a;color:#b9f8e3}button{border:0;border-radius:9px;padding:13px 18px;cursor:pointer;font:600 16px system-ui;background:#e4bd74;color:#11202c;margin:5px 5px 5px 0}button.stop{background:#c83b4f;color:white}button:disabled{opacity:.5;cursor:not-allowed}.servo{height:170px;display:grid;place-items:center;background:#091724;border-radius:14px;margin:15px 0;position:relative}.arm{width:125px;height:14px;border-radius:9px;background:#e4bd74;transform-origin:12px 50%;margin-left:103px;transition:transform .15s linear}.pivot{position:absolute;width:26px;height:26px;border-radius:50%;background:#d8e3ec;border:5px solid #4c6579}small{color:#aabccb;line-height:1.6}.row{display:flex;justify-content:space-between;margin:10px 0;border-bottom:1px solid #2b4257;padding-bottom:9px}.good{color:#78e8c4}.bad{color:#ff9aaa}footer{margin-top:22px;color:#aabccb;font-size:14px}@media(max-width:850px){.grid{grid-template-columns:1fr}body{padding:16px}}
+</style>
+<div class="eyebrow">DUAL-REALITY MAZE · BENCH TEST</div><h1>Move it. Watch it. Verify it.</h1>
+<p>Explorer R3 → wired I²C → Main R4 → Wi-Fi → this laptop. USB supplies power; this page receives its readings over Wi-Fi.</p>
+<div id="connection" class="status">Connecting to the R4…</div>
+<div class="grid"><section class="card"><h2>Explorer joystick</h2><small>Move fully left, right, up and down. Rotate around the edge, click three times, then release to center. Display axes follow raw sensor values.</small>
+<div class="board"><div id="dot" class="dot"></div></div>
+<div id="numbers" class="numbers">X — · Y —</div><div id="click">Click: waiting</div>
+<div class="chips" style="margin-top:15px"><span class="chip" id="xmin">X low</span><span class="chip" id="xmax">X high</span><span class="chip" id="ymin">Y low</span><span class="chip" id="ymax">Y high</span><span class="chip" id="clicks">3 clicks</span><span class="chip" id="center">Centered</span></div>
+<p id="range">Observed range: waiting</p><button id="reset">Reset test checklist</button></section>
+<section class="card"><h2>Architect servo</h2><small>The sweep command travels from laptop → Wi-Fi → R4 → I²C → Architect R3. Keep the horn unloaded and clear.</small>
+<div class="servo"><div class="arm" id="arm"></div><div class="pivot"></div></div>
+<div id="servoState" class="numbers">Waiting for board</div>
+<small>This animation shows the pulse commanded by the R3, not measured shaft position. Confirm actual movement by watching the horn.</small><p><button id="sweep" disabled>Run visible sweep</button><button class="stop" id="stop">Stop servo</button></p>
+<p id="command">One slow sweep sequence takes about 11 seconds, then releases the servo.</p>
+<h2 style="margin-top:25px">Connection health</h2><div class="row"><span>HTTP responses</span><strong id="count">0</strong></div><div class="row"><span>Round-trip time</span><strong id="latency">—</strong></div><div class="row"><span>Explorer / Architect</span><strong id="boards">—</strong></div><div class="row"><span>Invalid board samples</span><strong id="errors">0</strong></div>
+<small>Network: DualRealityMaze · Board: 192.168.4.1<br>Test firmware only. This is not the game.</small></section></div>
+<footer>RGB and buzzer are not activated by this page. Stop ends servo pulses; it is not a power switch.</footer>
+<script>
+const $=id=>document.getElementById(id);
+let count=0,errors=0,startClicks=null,loX=1023,hiX=0,loY=1023,hiY=0,active=false,online=false,busy=false,resetPending=false;
+function reset(){startClicks=null;loX=loY=1023;hiX=hiY=0;for(const id of ['xmin','xmax','ymin','ymax','clicks','center'])$(id).classList.remove('done');} $('reset').onclick=reset;
+async function command(action){
+ if(busy)return;busy=true;$('sweep').disabled=true;$('command').textContent='Sending '+action+'…';
+ try{const r=await fetch('/api/'+action,{method:'POST'});const d=await r.json();if(!r.ok||!d.commandSent)throw Error('Command was not acknowledged');$('command').textContent=action==='stop'?'Stop acknowledged. Waiting for R3 status.':'Sweep acknowledged. Watch the actual horn.';}
+ catch(e){$('command').textContent=e.message;}finally{busy=false;}
+}
+$('sweep').onclick=()=>command('sweep');$('stop').onclick=()=>command('stop');
+async function poll(){
+ try{
+  const r=await fetch('/api/status');const d=await r.json();if(!r.ok)throw Error(d.error||'Connection failed');
+  const e=d.boards.find(b=>b.addr===17),a=d.boards.find(b=>b.addr===16);
+  const eOK=e?.valid&&e.echoOK&&e.tx===0,aOK=a?.valid&&a.echoOK&&a.tx===0;
+  online=true;count++;$('count').textContent=count;$('latency').textContent=d.latencyMs+' ms';
+  $('connection').textContent='LIVE OVER WI-FI · '+d.status.ip+' · R4 uptime '+Math.round(d.boards[0].ms/1000)+' s';
+  $('connection').className='status good';$('boards').textContent=(eOK?'OK':'READ ERROR')+' / '+(aOK?'OK':'READ ERROR');
+  errors+=Number(!eOK)+Number(!aOK);$('errors').textContent=errors;
+  if(eOK){
+   if(startClicks===null)startClicks=e.presses;
+   const clicks=(e.presses-startClicks+65536)%65536;
+   loX=Math.min(loX,e.x);hiX=Math.max(hiX,e.x);loY=Math.min(loY,e.y);hiY=Math.max(hiY,e.y);
+   $('dot').style.left=(5+90*e.x/1023)+'%';$('dot').style.top=(5+90*e.y/1023)+'%';$('dot').className='dot'+(e.button?' pressed':'');
+   $('numbers').textContent='X '+e.x+' · Y '+e.y;$('click').textContent='Click: '+(e.button?'PRESSED':'released')+' · '+clicks+' presses this test';
+   $('range').textContent='Observed range: X '+loX+'–'+hiX+' · Y '+loY+'–'+hiY;
+   for(const [id,ok] of [['xmin',loX<100],['xmax',hiX>923],['ymin',loY<100],['ymax',hiY>923],['clicks',clicks>=3],['center',Math.abs(e.x-499)<70&&Math.abs(e.y-527)<70]])if(ok)$(id).classList.add('done');
+  }
+  if(aOK){active=a.servoUs>0;$('servoState').textContent=active?'Command: '+a.servoUs+' µs':'Idle · pulses stopped';$('arm').style.transform='rotate('+(active?(a.servoUs-1500)*.09:0)+'deg)';}
+  else{$('servoState').textContent='Architect read error';}
+  $('sweep').disabled=busy||active||!aOK;
+ }catch(e){online=false;$('connection').textContent='OFFLINE · Join DualRealityMaze Wi-Fi to reconnect.';$('connection').className='status bad';$('sweep').disabled=true;$('servoState').textContent='No fresh data';}
+ setTimeout(poll,250);
+}poll();
+</script></html>

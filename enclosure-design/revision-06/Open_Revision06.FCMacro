@@ -1,0 +1,8 @@
+import FreeCAD as App
+from pathlib import Path
+r=Path(__file__).resolve().parent/"cad"
+for role in ["explorer","architect","main"]:
+    d=App.openDocument(str(r/(role+"-revision06.FCStd")))
+    d.getObject("ComponentEnvelopes").ViewObject.Visibility=False
+    Gui.activeDocument().activeView().viewAxonometric()
+    Gui.activeDocument().activeView().fitAll()

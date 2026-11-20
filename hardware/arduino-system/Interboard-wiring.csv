@@ -1,0 +1,11 @@
+﻿From,To,Signal,Notes
+Explorer R3 A4,Main SDA header,SDA header,30 cm; no +5V cable connection
+Explorer R3 A5,Main SCL header,SCL header,30 cm; no +5V cable connection
+Explorer R3 GND,Main GND,GND,30 cm; no +5V cable connection
+Architect R3 A4,Main SDA header,SDA header,30 cm; no +5V cable connection
+Architect R3 A5,Main SCL header,SCL header,30 cm; no +5V cable connection
+Architect R3 GND,Main GND,GND,30 cm; no +5V cable connection
+Main SDA,LCD SDA,SDA,Use 5V headers; not Qwiic
+Main SCL,LCD SCL,SCL,Use 5V headers; not Qwiic
+Main GND,LCD GND,GND,Use 5V headers; not Qwiic
+Main 5V,LCD VCC,5V,Use 5V headers; not Qwiic

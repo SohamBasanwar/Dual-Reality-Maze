@@ -1,0 +1,1052 @@
+[
+  {
+    "role": "architect",
+    "name": "Battery_Door",
+    "file": "architect-Battery_Door.stl",
+    "material": "bronze",
+    "component": false,
+    "explosion": [
+      0,
+      0,
+      -28
+    ],
+    "volume_mm3": 4678.69827878423,
+    "solids": 1,
+    "notes": "Two leading tabs plus recessed cantilever latch. Trial fit coupon before use."
+  },
+  {
+    "role": "architect",
+    "name": "RGB_LED_Envelope",
+    "file": "architect-RGB_LED_Envelope.stl",
+    "material": "diffuser",
+    "component": true,
+    "explosion": [
+      0,
+      0,
+      0
+    ],
+    "volume_mm3": 148.83295196381638,
+    "solids": 1,
+    "notes": "Nominal 5 mm four-lead RGB package behind emblem. Body, flange, lead order and resistors require actual-part verification."
+  },
+  {
+    "role": "architect",
+    "name": "RGB_LED_Keeper",
+    "file": "architect-RGB_LED_Keeper.stl",
+    "material": "bronze",
+    "component": false,
+    "explosion": [
+      0,
+      0,
+      -18
+    ],
+    "volume_mm3": 46.6085495962123,
+    "solids": 1,
+    "notes": "Insert the two tabs through the Y keyways, then rotate 90 degrees. Captures the LED flange; leads pass through centre. Verify physical fit."
+  },
+  {
+    "role": "architect",
+    "name": "Emblem_Diffuser",
+    "file": "architect-Emblem_Diffuser.stl",
+    "material": "diffuser",
+    "component": false,
+    "explosion": [
+      0,
+      0,
+      52
+    ],
+    "volume_mm3": 2164.8840401939174,
+    "solids": 1,
+    "notes": "Separate translucent sheet/print; opaque bronze cannot transmit light."
+  },
+  {
+    "role": "architect",
+    "name": "Emblem_Mask",
+    "file": "architect-Emblem_Mask.stl",
+    "material": "bronze",
+    "component": false,
+    "explosion": [
+      0,
+      0,
+      57
+    ],
+    "volume_mm3": 3413.373361840839,
+    "solids": 1,
+    "notes": ""
+  },
+  {
+    "role": "architect",
+    "name": "Potentiometer_Envelope",
+    "file": "architect-Potentiometer_Envelope.stl",
+    "material": "metal",
+    "component": true,
+    "explosion": [
+      0,
+      0,
+      0
+    ],
+    "volume_mm3": 2519.5573081790135,
+    "solids": 1,
+    "notes": "16 mm body / 6 mm shaft placeholder. Product image does not establish actual dimensions."
+  },
+  {
+    "role": "architect",
+    "name": "Bronze_Knob_Envelope",
+    "file": "architect-Bronze_Knob_Envelope.stl",
+    "material": "knob",
+    "component": true,
+    "explosion": [
+      0,
+      0,
+      0
+    ],
+    "volume_mm3": 5321.85795518111,
+    "solids": 1,
+    "notes": ""
+  },
+  {
+    "role": "architect",
+    "name": "SG90_Body_Envelope",
+    "file": "architect-SG90_Body_Envelope.stl",
+    "material": "servo",
+    "component": true,
+    "explosion": [
+      0,
+      0,
+      0
+    ],
+    "volume_mm3": 8137.4000000000015,
+    "solids": 1,
+    "notes": "Sideways placement. Shaft offset, ears and exact horn geometry require measurement."
+  },
+  {
+    "role": "architect",
+    "name": "Servo_Cassette",
+    "file": "architect-Servo_Cassette.stl",
+    "material": "bronze",
+    "component": false,
+    "explosion": [
+      0,
+      0,
+      38
+    ],
+    "volume_mm3": 9494.436800617415,
+    "solids": 1,
+    "notes": ""
+  },
+  {
+    "role": "architect",
+    "name": "Gate_Frame",
+    "file": "architect-Gate_Frame.stl",
+    "material": "bronze",
+    "component": false,
+    "explosion": [
+      0,
+      0,
+      65
+    ],
+    "volume_mm3": 7298.398351701369,
+    "solids": 1,
+    "notes": ""
+  },
+  {
+    "role": "architect",
+    "name": "Gate_Panel",
+    "file": "architect-Gate_Panel.stl",
+    "material": "bronze",
+    "component": false,
+    "explosion": [
+      0,
+      0,
+      80
+    ],
+    "volume_mm3": 1060.400000000003,
+    "solids": 1,
+    "notes": "Scotch-yoke concept: 7 mm crank, +/-60 degrees, nominal lift 12.12 mm. Load and horn fit unverified."
+  },
+  {
+    "role": "architect",
+    "name": "Original_Horn_Envelope",
+    "file": "architect-Original_Horn_Envelope.stl",
+    "material": "white",
+    "component": true,
+    "explosion": [
+      0,
+      0,
+      0
+    ],
+    "volume_mm3": 156.1663123490756,
+    "solids": 1,
+    "notes": "Placeholder for supplied nylon horn, not a fabricated spline."
+  },
+  {
+    "role": "architect",
+    "name": "Gate_Drive_Pin",
+    "file": "architect-Gate_Drive_Pin.stl",
+    "material": "bronze",
+    "component": false,
+    "explosion": [
+      0,
+      18,
+      65
+    ],
+    "volume_mm3": 44.673447534046964,
+    "solids": 1,
+    "notes": "Trial captive pin. Match supplied horn hole before printing; keeper limits axial movement."
+  },
+  {
+    "role": "architect",
+    "name": "Gate_Shroud",
+    "file": "architect-Gate_Shroud.stl",
+    "material": "bronze",
+    "component": false,
+    "explosion": [
+      0,
+      0,
+      92
+    ],
+    "volume_mm3": 14911.571933243542,
+    "solids": 1,
+    "notes": "Removable guard and axial keeper concept; check pinch access, slot widths and full servo sweep physically."
+  },
+  {
+    "role": "architect",
+    "name": "Button_Cap",
+    "file": "architect-Button_Cap.stl",
+    "material": "bronze",
+    "component": false,
+    "explosion": [
+      0,
+      0,
+      35
+    ],
+    "volume_mm3": 1892.8868337430856,
+    "solids": 1,
+    "notes": "Guided actuator, retaining flange and adjustable pusher. 0.3 mm radial clearance; tune switch travel."
+  },
+  {
+    "role": "architect",
+    "name": "Switch_Cassette",
+    "file": "architect-Switch_Cassette.stl",
+    "material": "bronze",
+    "component": false,
+    "explosion": [
+      0,
+      0,
+      -10
+    ],
+    "volume_mm3": 1522.087414380766,
+    "solids": 1,
+    "notes": ""
+  },
+  {
+    "role": "architect",
+    "name": "Tactile_Switch_Envelope",
+    "file": "architect-Tactile_Switch_Envelope.stl",
+    "material": "black",
+    "component": true,
+    "explosion": [
+      0,
+      0,
+      0
+    ],
+    "volume_mm3": 864.0,
+    "solids": 1,
+    "notes": "Looks like 12 mm family in photos; body size and operating travel unmeasured."
+  },
+  {
+    "role": "architect",
+    "name": "ESP32_Optional_Envelope",
+    "file": "architect-ESP32_Optional_Envelope.stl",
+    "material": "optional",
+    "component": true,
+    "explosion": [
+      0,
+      0,
+      0
+    ],
+    "volume_mm3": 34560.0,
+    "solids": 1,
+    "notes": "Provisional 60 x 32 x 18 mm module reservation. Board not selected; verify breadboard header pitch and RF clearance."
+  },
+  {
+    "role": "architect",
+    "name": "ESP32_Wiring_Clearance",
+    "file": "architect-ESP32_Wiring_Clearance.stl",
+    "material": "clearance",
+    "component": true,
+    "explosion": [
+      0,
+      0,
+      0
+    ],
+    "volume_mm3": 13200.0,
+    "solids": 1,
+    "notes": "Keep free for low-profile jumpers. A tall upright Dupont plug may require more height."
+  },
+  {
+    "role": "architect",
+    "name": "Base",
+    "file": "architect-Base.stl",
+    "material": "bronze",
+    "component": false,
+    "explosion": [
+      0,
+      0,
+      0
+    ],
+    "volume_mm3": 253101.1417278833,
+    "solids": 1,
+    "notes": "Cradles, battery bay, strap anchors and cable saddles are integral. No screw bosses."
+  },
+  {
+    "role": "architect",
+    "name": "Lid",
+    "file": "architect-Lid.stl",
+    "material": "bronze",
+    "component": false,
+    "explosion": [
+      0,
+      0,
+      40
+    ],
+    "volume_mm3": 163384.23543502952,
+    "solids": 1,
+    "notes": "Rear locating tabs + two press-release side latches. All fits require coupons."
+  },
+  {
+    "role": "architect",
+    "name": "Breadboard_Envelope",
+    "file": "architect-Breadboard_Envelope.stl",
+    "material": "breadboard",
+    "component": true,
+    "explosion": [
+      0,
+      0,
+      0
+    ],
+    "volume_mm3": 91300.0,
+    "solids": 1,
+    "notes": ""
+  },
+  {
+    "role": "architect",
+    "name": "UNO_PCB_Envelope",
+    "file": "architect-UNO_PCB_Envelope.stl",
+    "material": "pcb",
+    "component": true,
+    "explosion": [
+      0,
+      0,
+      0
+    ],
+    "volume_mm3": 5861.1839999999975,
+    "solids": 1,
+    "notes": ""
+  },
+  {
+    "role": "architect",
+    "name": "UNO_Header_Envelope",
+    "file": "architect-UNO_Header_Envelope.stl",
+    "material": "black",
+    "component": true,
+    "explosion": [
+      0,
+      0,
+      0
+    ],
+    "volume_mm3": 5814.0,
+    "solids": 2,
+    "notes": ""
+  },
+  {
+    "role": "architect",
+    "name": "Battery_Envelope",
+    "file": "architect-Battery_Envelope.stl",
+    "material": "battery",
+    "component": true,
+    "explosion": [
+      0,
+      0,
+      0
+    ],
+    "volume_mm3": 22491.875,
+    "solids": 1,
+    "notes": "Common PP3 maximum envelope, not brand-specific; snap/lead space at bay leading end."
+  },
+  {
+    "role": "architect",
+    "name": "Battery_Clip_Envelope",
+    "file": "architect-Battery_Clip_Envelope.stl",
+    "material": "black",
+    "component": true,
+    "explosion": [
+      0,
+      0,
+      0
+    ],
+    "volume_mm3": 3276.0,
+    "solids": 1,
+    "notes": ""
+  },
+  {
+    "role": "architect",
+    "name": "Power_Module_Reservation",
+    "file": "architect-Power_Module_Reservation.stl",
+    "material": "reservation",
+    "component": true,
+    "explosion": [
+      0,
+      0,
+      0
+    ],
+    "volume_mm3": 7920.0,
+    "solids": 1,
+    "notes": "REGULATOR / LOAD SWITCH: component not selected; not an installed part."
+  },
+  {
+    "role": "explorer",
+    "name": "Battery_Door",
+    "file": "explorer-Battery_Door.stl",
+    "material": "bronze",
+    "component": false,
+    "explosion": [
+      0,
+      0,
+      -28
+    ],
+    "volume_mm3": 4678.69827878423,
+    "solids": 1,
+    "notes": "Two leading tabs plus recessed cantilever latch. Trial fit coupon before use."
+  },
+  {
+    "role": "explorer",
+    "name": "RGB_LED_Envelope",
+    "file": "explorer-RGB_LED_Envelope.stl",
+    "material": "diffuser",
+    "component": true,
+    "explosion": [
+      0,
+      0,
+      0
+    ],
+    "volume_mm3": 148.83295196381638,
+    "solids": 1,
+    "notes": "Nominal 5 mm four-lead RGB package behind emblem. Body, flange, lead order and resistors require actual-part verification."
+  },
+  {
+    "role": "explorer",
+    "name": "RGB_LED_Keeper",
+    "file": "explorer-RGB_LED_Keeper.stl",
+    "material": "bronze",
+    "component": false,
+    "explosion": [
+      0,
+      0,
+      -18
+    ],
+    "volume_mm3": 46.6085495962123,
+    "solids": 1,
+    "notes": "Insert the two tabs through the Y keyways, then rotate 90 degrees. Captures the LED flange; leads pass through centre. Verify physical fit."
+  },
+  {
+    "role": "explorer",
+    "name": "Emblem_Diffuser",
+    "file": "explorer-Emblem_Diffuser.stl",
+    "material": "diffuser",
+    "component": false,
+    "explosion": [
+      0,
+      0,
+      52
+    ],
+    "volume_mm3": 2164.8840401939174,
+    "solids": 1,
+    "notes": "Separate translucent sheet/print; opaque bronze cannot transmit light."
+  },
+  {
+    "role": "explorer",
+    "name": "Emblem_Mask",
+    "file": "explorer-Emblem_Mask.stl",
+    "material": "bronze",
+    "component": false,
+    "explosion": [
+      0,
+      0,
+      57
+    ],
+    "volume_mm3": 3497.39153652812,
+    "solids": 1,
+    "notes": ""
+  },
+  {
+    "role": "explorer",
+    "name": "Joystick_PCB",
+    "file": "explorer-Joystick_PCB.stl",
+    "material": "pcb",
+    "component": true,
+    "explosion": [
+      0,
+      0,
+      0
+    ],
+    "volume_mm3": 1414.4000000000012,
+    "solids": 1,
+    "notes": ""
+  },
+  {
+    "role": "explorer",
+    "name": "Joystick_Mechanism",
+    "file": "explorer-Joystick_Mechanism.stl",
+    "material": "black",
+    "component": true,
+    "explosion": [
+      0,
+      0,
+      0
+    ],
+    "volume_mm3": 8252.920065876977,
+    "solids": 1,
+    "notes": ""
+  },
+  {
+    "role": "explorer",
+    "name": "Bare_Light_Sensor",
+    "file": "explorer-Bare_Light_Sensor.stl",
+    "material": "sensor",
+    "component": true,
+    "explosion": [
+      0,
+      0,
+      0
+    ],
+    "volume_mm3": 45.80442088933918,
+    "solids": 1,
+    "notes": ""
+  },
+  {
+    "role": "explorer",
+    "name": "ESP32_Optional_Envelope",
+    "file": "explorer-ESP32_Optional_Envelope.stl",
+    "material": "optional",
+    "component": true,
+    "explosion": [
+      0,
+      0,
+      0
+    ],
+    "volume_mm3": 34560.0,
+    "solids": 1,
+    "notes": "Provisional 60 x 32 x 18 mm module reservation. Board not selected; verify breadboard header pitch and RF clearance."
+  },
+  {
+    "role": "explorer",
+    "name": "ESP32_Wiring_Clearance",
+    "file": "explorer-ESP32_Wiring_Clearance.stl",
+    "material": "clearance",
+    "component": true,
+    "explosion": [
+      0,
+      0,
+      0
+    ],
+    "volume_mm3": 13200.0,
+    "solids": 1,
+    "notes": "Keep free for low-profile jumpers. A tall upright Dupont plug may require more height."
+  },
+  {
+    "role": "explorer",
+    "name": "Base",
+    "file": "explorer-Base.stl",
+    "material": "bronze",
+    "component": false,
+    "explosion": [
+      0,
+      0,
+      0
+    ],
+    "volume_mm3": 253101.1417278833,
+    "solids": 1,
+    "notes": "Cradles, battery bay, strap anchors and cable saddles are integral. No screw bosses."
+  },
+  {
+    "role": "explorer",
+    "name": "Lid",
+    "file": "explorer-Lid.stl",
+    "material": "bronze",
+    "component": false,
+    "explosion": [
+      0,
+      0,
+      40
+    ],
+    "volume_mm3": 163966.6045295854,
+    "solids": 1,
+    "notes": "Rear locating tabs + two press-release side latches. All fits require coupons."
+  },
+  {
+    "role": "explorer",
+    "name": "Breadboard_Envelope",
+    "file": "explorer-Breadboard_Envelope.stl",
+    "material": "breadboard",
+    "component": true,
+    "explosion": [
+      0,
+      0,
+      0
+    ],
+    "volume_mm3": 91300.0,
+    "solids": 1,
+    "notes": ""
+  },
+  {
+    "role": "explorer",
+    "name": "UNO_PCB_Envelope",
+    "file": "explorer-UNO_PCB_Envelope.stl",
+    "material": "pcb",
+    "component": true,
+    "explosion": [
+      0,
+      0,
+      0
+    ],
+    "volume_mm3": 5861.1839999999975,
+    "solids": 1,
+    "notes": ""
+  },
+  {
+    "role": "explorer",
+    "name": "UNO_Header_Envelope",
+    "file": "explorer-UNO_Header_Envelope.stl",
+    "material": "black",
+    "component": true,
+    "explosion": [
+      0,
+      0,
+      0
+    ],
+    "volume_mm3": 5814.0,
+    "solids": 2,
+    "notes": ""
+  },
+  {
+    "role": "explorer",
+    "name": "Battery_Envelope",
+    "file": "explorer-Battery_Envelope.stl",
+    "material": "battery",
+    "component": true,
+    "explosion": [
+      0,
+      0,
+      0
+    ],
+    "volume_mm3": 22491.875,
+    "solids": 1,
+    "notes": "Common PP3 maximum envelope, not brand-specific; snap/lead space at bay leading end."
+  },
+  {
+    "role": "explorer",
+    "name": "Battery_Clip_Envelope",
+    "file": "explorer-Battery_Clip_Envelope.stl",
+    "material": "black",
+    "component": true,
+    "explosion": [
+      0,
+      0,
+      0
+    ],
+    "volume_mm3": 3276.0,
+    "solids": 1,
+    "notes": ""
+  },
+  {
+    "role": "explorer",
+    "name": "Power_Module_Reservation",
+    "file": "explorer-Power_Module_Reservation.stl",
+    "material": "reservation",
+    "component": true,
+    "explosion": [
+      0,
+      0,
+      0
+    ],
+    "volume_mm3": 7920.0,
+    "solids": 1,
+    "notes": "REGULATOR / LOAD SWITCH: component not selected; not an installed part."
+  },
+  {
+    "role": "main",
+    "name": "Battery_Door",
+    "file": "main-Battery_Door.stl",
+    "material": "bronze",
+    "component": false,
+    "explosion": [
+      0,
+      0,
+      -28
+    ],
+    "volume_mm3": 4678.698278784235,
+    "solids": 1,
+    "notes": "Two leading tabs plus recessed cantilever latch. Trial fit coupon before use."
+  },
+  {
+    "role": "main",
+    "name": "RGB_LED_Envelope",
+    "file": "main-RGB_LED_Envelope.stl",
+    "material": "diffuser",
+    "component": true,
+    "explosion": [
+      0,
+      0,
+      0
+    ],
+    "volume_mm3": 148.83295196381638,
+    "solids": 1,
+    "notes": "Nominal 5 mm four-lead RGB package behind emblem. Body, flange, lead order and resistors require actual-part verification."
+  },
+  {
+    "role": "main",
+    "name": "RGB_LED_Keeper",
+    "file": "main-RGB_LED_Keeper.stl",
+    "material": "bronze",
+    "component": false,
+    "explosion": [
+      0,
+      0,
+      -18
+    ],
+    "volume_mm3": 46.60854959621252,
+    "solids": 1,
+    "notes": "Insert the two tabs through the Y keyways, then rotate 90 degrees. Captures the LED flange; leads pass through centre. Verify physical fit."
+  },
+  {
+    "role": "main",
+    "name": "Emblem_Diffuser",
+    "file": "main-Emblem_Diffuser.stl",
+    "material": "diffuser",
+    "component": false,
+    "explosion": [
+      0,
+      0,
+      52
+    ],
+    "volume_mm3": 2164.884040193917,
+    "solids": 1,
+    "notes": "Separate translucent sheet/print; opaque bronze cannot transmit light."
+  },
+  {
+    "role": "main",
+    "name": "Emblem_Mask",
+    "file": "main-Emblem_Mask.stl",
+    "material": "bronze",
+    "component": false,
+    "explosion": [
+      0,
+      0,
+      57
+    ],
+    "volume_mm3": 3320.866308197904,
+    "solids": 1,
+    "notes": ""
+  },
+  {
+    "role": "main",
+    "name": "Button_Cap",
+    "file": "main-Button_Cap.stl",
+    "material": "bronze",
+    "component": false,
+    "explosion": [
+      0,
+      0,
+      35
+    ],
+    "volume_mm3": 1899.0471758793024,
+    "solids": 1,
+    "notes": "Guided actuator, retaining flange and adjustable pusher. 0.3 mm radial clearance; tune switch travel."
+  },
+  {
+    "role": "main",
+    "name": "Switch_Cassette",
+    "file": "main-Switch_Cassette.stl",
+    "material": "bronze",
+    "component": false,
+    "explosion": [
+      0,
+      0,
+      -10
+    ],
+    "volume_mm3": 1522.0874143807653,
+    "solids": 1,
+    "notes": ""
+  },
+  {
+    "role": "main",
+    "name": "Tactile_Switch_Envelope",
+    "file": "main-Tactile_Switch_Envelope.stl",
+    "material": "black",
+    "component": true,
+    "explosion": [
+      0,
+      0,
+      0
+    ],
+    "volume_mm3": 864.0,
+    "solids": 1,
+    "notes": "Looks like 12 mm family in photos; body size and operating travel unmeasured."
+  },
+  {
+    "role": "main",
+    "name": "LCD_PCB_Envelope",
+    "file": "main-LCD_PCB_Envelope.stl",
+    "material": "pcb",
+    "component": true,
+    "explosion": [
+      0,
+      0,
+      0
+    ],
+    "volume_mm3": 4642.560000000004,
+    "solids": 1,
+    "notes": ""
+  },
+  {
+    "role": "main",
+    "name": "LCD_Display_Envelope",
+    "file": "main-LCD_Display_Envelope.stl",
+    "material": "lcd",
+    "component": true,
+    "explosion": [
+      0,
+      0,
+      0
+    ],
+    "volume_mm3": 13999.999999999996,
+    "solids": 1,
+    "notes": ""
+  },
+  {
+    "role": "main",
+    "name": "LCD_Backpack_Envelope",
+    "file": "main-LCD_Backpack_Envelope.stl",
+    "material": "black",
+    "component": true,
+    "explosion": [
+      0,
+      0,
+      0
+    ],
+    "volume_mm3": 7560.0,
+    "solids": 1,
+    "notes": ""
+  },
+  {
+    "role": "main",
+    "name": "Buzzer_Envelope",
+    "file": "main-Buzzer_Envelope.stl",
+    "material": "black",
+    "component": true,
+    "explosion": [
+      0,
+      0,
+      0
+    ],
+    "volume_mm3": 3455.751918948773,
+    "solids": 1,
+    "notes": ""
+  },
+  {
+    "role": "main",
+    "name": "ESP32_Optional_Envelope",
+    "file": "main-ESP32_Optional_Envelope.stl",
+    "material": "optional",
+    "component": true,
+    "explosion": [
+      0,
+      0,
+      0
+    ],
+    "volume_mm3": 34560.0,
+    "solids": 1,
+    "notes": "Provisional 60 x 32 x 18 mm module reservation. Board not selected; verify breadboard header pitch and RF clearance."
+  },
+  {
+    "role": "main",
+    "name": "ESP32_Wiring_Clearance",
+    "file": "main-ESP32_Wiring_Clearance.stl",
+    "material": "clearance",
+    "component": true,
+    "explosion": [
+      0,
+      0,
+      0
+    ],
+    "volume_mm3": 13200.0,
+    "solids": 1,
+    "notes": "Keep free for low-profile jumpers. A tall upright Dupont plug may require more height."
+  },
+  {
+    "role": "main",
+    "name": "USB_Shutter",
+    "file": "main-USB_Shutter.stl",
+    "material": "bronze",
+    "component": false,
+    "explosion": [
+      0,
+      -24,
+      0
+    ],
+    "volume_mm3": 1746.5600000000002,
+    "solids": 1,
+    "notes": "Captive sliding cover: 35 mm travel. Open before inserting cable; close only when unplugged. Fit/retention prototype."
+  },
+  {
+    "role": "main",
+    "name": "USB_Shutter_Keeper",
+    "file": "main-USB_Shutter_Keeper.stl",
+    "material": "bronze",
+    "component": false,
+    "explosion": [
+      0,
+      0,
+      16
+    ],
+    "volume_mm3": 257.47200000000066,
+    "solids": 1,
+    "notes": "Keyed end stop installed from above; its head is trapped below the closed Main lid. Remove lid for service. Coupon fit required."
+  },
+  {
+    "role": "main",
+    "name": "USB_Plug_Clearance",
+    "file": "main-USB_Plug_Clearance.stl",
+    "material": "clearance",
+    "component": true,
+    "explosion": [
+      0,
+      0,
+      0
+    ],
+    "volume_mm3": 11904.0,
+    "solids": 1,
+    "notes": "Provisional plug and bend access above breadboard. Confirm actual USB-B/C cable."
+  },
+  {
+    "role": "main",
+    "name": "Base",
+    "file": "main-Base.stl",
+    "material": "bronze",
+    "component": false,
+    "explosion": [
+      0,
+      0,
+      0
+    ],
+    "volume_mm3": 265581.30892074923,
+    "solids": 1,
+    "notes": "Cradles, battery bay, strap anchors and cable saddles are integral. No screw bosses."
+  },
+  {
+    "role": "main",
+    "name": "Lid",
+    "file": "main-Lid.stl",
+    "material": "bronze",
+    "component": false,
+    "explosion": [
+      0,
+      0,
+      40
+    ],
+    "volume_mm3": 161853.8623886638,
+    "solids": 1,
+    "notes": "Rear locating tabs + two press-release side latches. All fits require coupons."
+  },
+  {
+    "role": "main",
+    "name": "Breadboard_Envelope",
+    "file": "main-Breadboard_Envelope.stl",
+    "material": "breadboard",
+    "component": true,
+    "explosion": [
+      0,
+      0,
+      0
+    ],
+    "volume_mm3": 91300.0,
+    "solids": 1,
+    "notes": ""
+  },
+  {
+    "role": "main",
+    "name": "UNO_PCB_Envelope",
+    "file": "main-UNO_PCB_Envelope.stl",
+    "material": "pcb",
+    "component": true,
+    "explosion": [
+      0,
+      0,
+      0
+    ],
+    "volume_mm3": 5978.879999999997,
+    "solids": 1,
+    "notes": ""
+  },
+  {
+    "role": "main",
+    "name": "UNO_Header_Envelope",
+    "file": "main-UNO_Header_Envelope.stl",
+    "material": "black",
+    "component": true,
+    "explosion": [
+      0,
+      0,
+      0
+    ],
+    "volume_mm3": 5868.000000000001,
+    "solids": 2,
+    "notes": ""
+  },
+  {
+    "role": "main",
+    "name": "Battery_Envelope",
+    "file": "main-Battery_Envelope.stl",
+    "material": "battery",
+    "component": true,
+    "explosion": [
+      0,
+      0,
+      0
+    ],
+    "volume_mm3": 22491.875,
+    "solids": 1,
+    "notes": "Common PP3 maximum envelope, not brand-specific; snap/lead space at bay leading end."
+  },
+  {
+    "role": "main",
+    "name": "Battery_Clip_Envelope",
+    "file": "main-Battery_Clip_Envelope.stl",
+    "material": "black",
+    "component": true,
+    "explosion": [
+      0,
+      0,
+      0
+    ],
+    "volume_mm3": 3276.0,
+    "solids": 1,
+    "notes": ""
+  },
+  {
+    "role": "main",
+    "name": "Power_Module_Reservation",
+    "file": "main-Power_Module_Reservation.stl",
+    "material": "reservation",
+    "component": true,
+    "explosion": [
+      0,
+      0,
+      0
+    ],
+    "volume_mm3": 7920.0,
+    "solids": 1,
+    "notes": "REGULATOR / LOAD SWITCH: component not selected; not an installed part."
+  }
+]

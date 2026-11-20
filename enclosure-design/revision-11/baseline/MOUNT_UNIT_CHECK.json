@@ -1,0 +1,40 @@
+[
+  {
+    "name": "LCD",
+    "fixed_solids": 1,
+    "valid": true,
+    "parts": [
+      [
+        "fixed",
+        true,
+        1
+      ],
+      [
+        "LCD_X_Jaw",
+        true,
+        1
+      ],
+      [
+        "LCD_X_Lock_Key",
+        true,
+        1
+      ],
+      [
+        "LCD_Y_Jaw",
+        true,
+        1
+      ],
+      [
+        "LCD_Y_Lock_Key",
+        true,
+        1
+      ],
+      [
+        "LCD_Height_Insert",
+        true,
+        1
+      ]
+    ],
+    "intersections": []
+  }
+]

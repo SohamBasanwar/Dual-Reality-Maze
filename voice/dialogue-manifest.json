@@ -1,0 +1,919 @@
+{
+  "version": 1,
+  "sourceOfTruth": "Existing story dialogue; descriptions remain silent.",
+  "characters": {
+    "king": {
+      "name": "King",
+      "castId": "king-v1",
+      "voiceId": null,
+      "personality": "A father whose authority is strained by fear for his daughter.",
+      "characteristics": "Mature, grounded lower register; clear and restrained.",
+      "accent": "No story-defined accent; choose a natural English voice and keep it consistent.",
+      "delivery": "Measured appeals; allow a pause when reassurance gives way to grief.",
+      "typicalEmotions": [
+        "concern",
+        "hope",
+        "grief"
+      ],
+      "changes": "The forbidden ritual is a desperate, grave decision rather than a triumphant proclamation.",
+      "speakingSpeed": "Measured, about 125–145 words/minute when auditioning."
+    },
+    "architect": {
+      "name": "Architect",
+      "castId": "architect-v1",
+      "voiceId": null,
+      "personality": "Protective companion who lends his power to the paths and learns to ask the forest for help.",
+      "characteristics": "Warm lower register, thoughtful and steady.",
+      "accent": "No story-defined accent; keep the selected English voice across chapters.",
+      "delivery": "Conversational, slightly unhurried; resolve without a constant announcer tone.",
+      "typicalEmotions": [
+        "resolve",
+        "wonder",
+        "gratitude"
+      ],
+      "changes": "Gentler with the sleeping Princess; uncertainty when the forest rejects him; gratitude after the Dryad's blessing.",
+      "speakingSpeed": "Steady, about 130–150 words/minute; allow pauses around promises."
+    },
+    "explorer": {
+      "name": "Rowan / Explorer",
+      "castId": "explorer-v1",
+      "voiceId": null,
+      "personality": "Curious and loyal adventurer; brings practical knowledge and hope to the rescue.",
+      "characteristics": "Bright young adult voice, warm and clear.",
+      "accent": "No story-defined accent; choose for clarity rather than an invented regional identity.",
+      "delivery": "Light conversational energy; quicker in danger, softer when reassuring the memory.",
+      "typicalEmotions": [
+        "curiosity",
+        "urgency",
+        "joy",
+        "concern"
+      ],
+      "changes": "Delight at seeing the dragon; concern at the Princess's sleep; quiet reassurance when opening the jar.",
+      "speakingSpeed": "Conversational, about 145–165 words/minute; quieter reassurance can slow down."
+    },
+    "princess": {
+      "name": "Princess",
+      "castId": "princess-v1",
+      "voiceId": null,
+      "personality": "Seeks help, then struggles with lost memories before recognizing her family.",
+      "characteristics": "Distinct clear female voice with natural breath and emotional range.",
+      "accent": "No accent is specified by the story.",
+      "delivery": "Urgent in captivity, tentative after waking, relieved at recognition.",
+      "typicalEmotions": [
+        "fear",
+        "confusion",
+        "relief"
+      ],
+      "changes": "The opening cry and the later confused question must not use the same performance intensity.",
+      "speakingSpeed": "Clear, about 135–155 words/minute; pause naturally in the confused waking question."
+    },
+    "physician": {
+      "name": "Physician",
+      "castId": "physician-v1",
+      "voiceId": null,
+      "personality": "Compassionate, precise guide who explains the curse and missing memories.",
+      "characteristics": "Clear adult voice distinct from the King and Architect.",
+      "accent": "No story-defined accent.",
+      "delivery": "Calm diagnosis with a little weight before difficult news.",
+      "typicalEmotions": [
+        "concern",
+        "certainty"
+      ],
+      "changes": "Explain the stolen memories with gravity, without treating narration as spoken dialogue.",
+      "speakingSpeed": "Measured, about 130–150 words/minute; keep the diagnosis easy to understand."
+    },
+    "alchemist": {
+      "name": "Great Alchemist",
+      "castId": "alchemist-v1",
+      "voiceId": null,
+      "personality": "Patient healer who understands the difference between body and spirit.",
+      "characteristics": "Mature, warm textured voice; intelligible rather than excessively slow.",
+      "accent": "No story-defined accent.",
+      "delivery": "Thoughtful pauses and quiet concentration during brewing.",
+      "typicalEmotions": [
+        "concern",
+        "resolve",
+        "hope"
+      ],
+      "changes": "A welcome is warmer than the focused incantation over the ingredients.",
+      "speakingSpeed": "Thoughtful, about 125–145 words/minute; avoid an unnaturally slow incantation."
+    },
+    "dryad": {
+      "name": "Dryad",
+      "castId": "dryad-v1",
+      "voiceId": null,
+      "personality": "Warm but firm guardian who asks the heroes to respect her living forest.",
+      "characteristics": "Patient adult female voice, quietly powerful and grounded.",
+      "accent": "No story-defined accent; avoid inventing an ethnic or regional identity.",
+      "delivery": "Unhurried, conversational; firm boundaries followed by gentleness.",
+      "typicalEmotions": [
+        "calm",
+        "resolve",
+        "joy",
+        "sorrow"
+      ],
+      "changes": "Question the intrusion with composure; congratulate gently; the bad ending is sorrowful, not threatening.",
+      "speakingSpeed": "Unhurried, about 125–145 words/minute; firmer when setting a boundary."
+    }
+  },
+  "lines": [
+    {
+      "id": "ch1-prologue-01",
+      "chapter": "ch1",
+      "scene": "prologue:The kingdom falls",
+      "character": "explorer",
+      "text": "“Stay together! Get everyone inside!”",
+      "tone": "urgent",
+      "emotionalContext": "Monsters broke through the gates. Ghosts swept over the rooftops. By nightfall, the kingdom’s lanterns had gone dark.",
+      "emotion": "fear / urgency",
+      "tags": [
+        "worried"
+      ],
+      "delivery": "Quick, clear appeal; a person asking for help, not a theatrical scream.",
+      "source": "story/story.js",
+      "audioPath": "voice/audio/ch1/explorer/ch1-prologue-01.mp3"
+    },
+    {
+      "id": "ch1-prologue-02",
+      "chapter": "ch1",
+      "scene": "prologue:Taken beyond the veil",
+      "character": "princess",
+      "text": "“Father! Please, someone help me!”",
+      "tone": "urgent",
+      "emotionalContext": "The pale host carried the Princess toward an ancient maze. Her cry echoed through the empty streets.",
+      "emotion": "fear / urgency",
+      "tags": [
+        "worried"
+      ],
+      "delivery": "Quick, clear appeal; a person asking for help, not a theatrical scream.",
+      "source": "story/story.js",
+      "audioPath": "voice/audio/ch1/princess/ch1-prologue-02.mp3"
+    },
+    {
+      "id": "ch1-prologue-03",
+      "chapter": "ch1",
+      "scene": "prologue:The king’s summons",
+      "character": "king",
+      "text": "“Bring my daughter home. I am counting on you.”",
+      "tone": "grave",
+      "emotionalContext": "The king summoned the Explorer and the royal Architect. With a trembling voice, he entrusted them with his last hope.",
+      "emotion": "concern / grief",
+      "tags": [
+        "sad"
+      ],
+      "delivery": "Measured, restrained gravity. Let difficult news settle.",
+      "source": "story/story.js",
+      "audioPath": "voice/audio/ch1/king/ch1-prologue-03.mp3"
+    },
+    {
+      "id": "ch1-prologue-04",
+      "chapter": "ch1",
+      "scene": "prologue:Magic and knowledge",
+      "character": "architect",
+      "text": "“You know the secrets of these ancient mazes. I can bring their stones to life.”",
+      "tone": "resolute",
+      "emotionalContext": "The Architect could become one with the maze and command its gates and bridges. The Explorer had studied ancient ruins and labyrinths across the world. Together, magic and knowledge would guide them.",
+      "emotion": "determination",
+      "tags": [
+        "determined"
+      ],
+      "delivery": "Steady conviction directed toward a companion.",
+      "source": "story/story.js",
+      "audioPath": "voice/audio/ch1/architect/ch1-prologue-04.mp3"
+    },
+    {
+      "id": "ch1-prologue-05",
+      "chapter": "ch1",
+      "scene": "prologue:At the threshold",
+      "character": "architect",
+      "text": "“Stay close. I can feel her somewhere ahead.”",
+      "tone": "gentle",
+      "emotionalContext": "They followed the ghostly light to a maze suspended above the abyss. Its gray walls stood silent.",
+      "emotion": "reassurance",
+      "tags": [
+        "calm"
+      ],
+      "delivery": "Soft, sincere conversation; protect the listener without whispering unnecessarily.",
+      "source": "story/story.js",
+      "audioPath": "voice/audio/ch1/architect/ch1-prologue-05.mp3"
+    },
+    {
+      "id": "ch1-prologue-06",
+      "chapter": "ch1",
+      "scene": "prologue:Two realities. One promise.",
+      "character": "explorer",
+      "text": "“Hold on, Princess. We’re coming for you!”",
+      "tone": "resolute",
+      "emotionalContext": "Together, they stepped through the ancient arch. Beyond the cold stone, the Princess was still calling.",
+      "emotion": "determination",
+      "tags": [
+        "determined"
+      ],
+      "delivery": "Steady conviction directed toward a companion.",
+      "source": "story/story.js",
+      "audioPath": "voice/audio/ch1/explorer/ch1-prologue-06.mp3"
+    },
+    {
+      "id": "ch1-epilogue-01",
+      "chapter": "ch1",
+      "scene": "epilogue:Beyond the wormhole",
+      "character": "explorer",
+      "text": "“Princess… we’re here. Please, open your eyes.”",
+      "tone": "worried",
+      "emotionalContext": "Beyond the veil, they found the Princess alive. But no voice could wake her. A violet mark shimmered above her heart.",
+      "emotion": "uncertainty / concern",
+      "tags": [
+        "worried"
+      ],
+      "delivery": "A small hesitation and genuine concern.",
+      "source": "story/quests.js",
+      "audioPath": "voice/audio/ch1/explorer/ch1-epilogue-01.mp3"
+    },
+    {
+      "id": "ch1-epilogue-02",
+      "chapter": "ch1",
+      "scene": "epilogue:Home, but not awakened",
+      "character": "king",
+      "text": "“My child… you are safe now. Please wake up.”",
+      "tone": "gentle",
+      "emotionalContext": "The Architect carried her home through the returning dawn. The king waited at the palace gates.",
+      "emotion": "reassurance",
+      "tags": [
+        "calm"
+      ],
+      "delivery": "Soft, sincere conversation; protect the listener without whispering unnecessarily.",
+      "source": "story/quests.js",
+      "audioPath": "voice/audio/ch1/king/ch1-epilogue-02.mp3"
+    },
+    {
+      "id": "ch1-epilogue-03",
+      "chapter": "ch1",
+      "scene": "epilogue:The physician’s discovery",
+      "character": "physician",
+      "text": "“This is no ordinary sleep. We must find the cure.”",
+      "tone": "grave",
+      "emotionalContext": "The royal physician examined the Princess. An ancient curse held her between this world and the realm beyond the maze.",
+      "emotion": "concern / grief",
+      "tags": [
+        "sad"
+      ],
+      "delivery": "Measured, restrained gravity. Let difficult news settle.",
+      "source": "story/quests.js",
+      "audioPath": "voice/audio/ch1/physician/ch1-epilogue-03.mp3"
+    },
+    {
+      "id": "ch1-epilogue-04",
+      "chapter": "ch1",
+      "scene": "epilogue:The Great Alchemist",
+      "character": "architect",
+      "text": "“Then we go back. Together. Our promise still stands.”",
+      "tone": "resolute",
+      "emotionalContext": "Only the Great Alchemist knew the cure. To wake the Princess, the heroes would have to return to the dungeon.",
+      "emotion": "determination",
+      "tags": [
+        "determined"
+      ],
+      "delivery": "Steady conviction directed toward a companion.",
+      "source": "story/quests.js",
+      "audioPath": "voice/audio/ch1/architect/ch1-epilogue-04.mp3"
+    },
+    {
+      "id": "ch2-comic-01",
+      "chapter": "ch2",
+      "scene": "comic:A route above the clouds",
+      "character": "physician",
+      "text": "Find the dragon at the highest roost. It will carry you to the Alchemist.",
+      "tone": "grave",
+      "emotionalContext": "The physician marks the shattered sky gardens. The Great Alchemist has retreated to a sanctuary above them. Only his emerald dragon knows the way.",
+      "emotion": "concern / grief",
+      "tags": [
+        "sad"
+      ],
+      "delivery": "Measured, restrained gravity. Let difficult news settle.",
+      "source": "chapters/campaign.js",
+      "audioPath": "voice/audio/ch2/physician/ch2-comic-01.mp3"
+    },
+    {
+      "id": "ch2-comic-02",
+      "chapter": "ch2",
+      "scene": "comic:The hanging gardens",
+      "character": "explorer",
+      "text": "There! Beyond the broken bridge. That must be our way up.",
+      "tone": "wonder",
+      "emotionalContext": "Water spills from broken terraces. Brass pipes wind through emerald stone. High above the ruins, a dragon guards the last passage to the sanctuary.",
+      "emotion": "curiosity / wonder",
+      "tags": [
+        "curious"
+      ],
+      "delivery": "Bright discovery with room for a small breath.",
+      "source": "chapters/campaign.js",
+      "audioPath": "voice/audio/ch2/explorer/ch2-comic-02.mp3"
+    },
+    {
+      "id": "ch2-comic-03",
+      "chapter": "ch2",
+      "scene": "comic:Three gifts for a cure",
+      "character": "explorer",
+      "text": "I’ll gather the three ingredients. Help me cross these ruins, and the dragon will take us to the Alchemist.",
+      "tone": "resolute",
+      "emotionalContext": "Rowan reads the ancient recipe: amber crystal, moonblossom, and dew of the veil. The Architect prepares to join the ruins and open their doors and bridges. Gather all three, then reach the dragon’s roost.",
+      "emotion": "determination",
+      "tags": [
+        "determined"
+      ],
+      "delivery": "Steady conviction directed toward a companion.",
+      "source": "chapters/campaign.js",
+      "audioPath": "voice/audio/ch2/explorer/ch2-comic-03.mp3"
+    },
+    {
+      "id": "ch2-comic-04",
+      "chapter": "ch2",
+      "scene": "comic:The sanctuary in the sky",
+      "character": "alchemist",
+      "text": "You have brought what I need. Her body is safe, but her spirit is lost. Let us light its way home.",
+      "tone": "gentle",
+      "emotionalContext": "The dragon lands above the clouds. The Architect has taken human form again. The Great Alchemist receives the three ingredients beside his bronze cauldron.",
+      "emotion": "reassurance",
+      "tags": [
+        "calm"
+      ],
+      "delivery": "Soft, sincere conversation; protect the listener without whispering unnecessarily.",
+      "source": "chapters/campaign.js",
+      "audioPath": "voice/audio/ch2/alchemist/ch2-comic-04.mp3"
+    },
+    {
+      "id": "ch2-comic-05",
+      "chapter": "ch2",
+      "scene": "comic:A light to guide her home",
+      "character": "alchemist",
+      "text": "Take this to her. It will reach through the curse and show you where her spirit wandered.",
+      "tone": "resolute",
+      "emotionalContext": "The Alchemist seals the guiding draught in a golden vial. The dragon waits at the sanctuary’s edge, ready to carry both heroes directly to the kingdom.",
+      "emotion": "determination",
+      "tags": [
+        "determined"
+      ],
+      "delivery": "Steady conviction directed toward a companion.",
+      "source": "chapters/campaign.js",
+      "audioPath": "voice/audio/ch2/alchemist/ch2-comic-05.mp3"
+    },
+    {
+      "id": "ch2-comic-06",
+      "chapter": "ch2",
+      "scene": "comic:Home on emerald wings",
+      "character": "explorer",
+      "text": "We have it! Take us to the Princess. There is still time.",
+      "tone": "joyful",
+      "emotionalContext": "The dragon lands in the royal garden. The physician leads Rowan and the Architect straight to the Princess, the golden cure held safely between them.",
+      "emotion": "joy / relief",
+      "tags": [
+        "excited"
+      ],
+      "delivery": "Warm relief or discovery; avoid excessive volume.",
+      "source": "chapters/campaign.js",
+      "audioPath": "voice/audio/ch2/explorer/ch2-comic-06.mp3"
+    },
+    {
+      "id": "ch2-comic-07",
+      "chapter": "ch2",
+      "scene": "comic:A voice through the curse",
+      "character": "princess",
+      "text": "The forest… I cannot remember the way…",
+      "tone": "worried",
+      "emotionalContext": "The Architect lifts the draught to the Princess’s lips. Her eyes open for a moment. A leaf of green light slips from the vial: the cure has revealed the next step.",
+      "emotion": "uncertainty / concern",
+      "tags": [
+        "worried"
+      ],
+      "delivery": "A small hesitation and genuine concern.",
+      "source": "chapters/campaign.js",
+      "audioPath": "voice/audio/ch2/princess/ch2-comic-07.mp3"
+    },
+    {
+      "id": "ch2-comic-08",
+      "chapter": "ch2",
+      "scene": "comic:The forest remembers",
+      "character": "explorer",
+      "text": "Then we will find your memories, Princess. Every last one.",
+      "tone": "resolute",
+      "emotionalContext": "The Princess falls asleep again, but the leaf remains. The draught has shown where her lost memories wait. Rowan and the Architect follow its light toward the forest.",
+      "emotion": "determination",
+      "tags": [
+        "determined"
+      ],
+      "delivery": "Steady conviction directed toward a companion.",
+      "source": "chapters/campaign.js",
+      "audioPath": "voice/audio/ch2/explorer/ch2-comic-08.mp3"
+    },
+    {
+      "id": "ch3-comic-01",
+      "chapter": "ch3",
+      "scene": "comic:Awake, but far from home",
+      "character": "princess",
+      "text": "I know this is my room… why can’t I remember any of you?",
+      "tone": "worried",
+      "emotionalContext": "The Alchemist’s draught has broken the sleeping curse. After resting, the Princess wakes for good—but the faces she once loved mean nothing to her.",
+      "emotion": "uncertainty / concern",
+      "tags": [
+        "worried"
+      ],
+      "delivery": "A small hesitation and genuine concern.",
+      "source": "chapters/forest.js",
+      "audioPath": "voice/audio/ch3/princess/ch3-comic-01.mp3"
+    },
+    {
+      "id": "ch3-comic-02",
+      "chapter": "ch3",
+      "scene": "comic:What the shadows stole",
+      "character": "physician",
+      "text": "Bring the memory leaf home. Another medicine cannot replace what was stolen.",
+      "tone": "grave",
+      "emotionalContext": "The curse separated her memories from her body. The draught freed her, but those memories took refuge in a leaf deep inside the Forest of Memories. Its spirit remembers being a child.",
+      "emotion": "concern / grief",
+      "tags": [
+        "sad"
+      ],
+      "delivery": "Measured, restrained gravity. Let difficult news settle.",
+      "source": "chapters/forest.js",
+      "audioPath": "voice/audio/ch3/physician/ch3-comic-02.mp3"
+    },
+    {
+      "id": "ch3-comic-03",
+      "chapter": "ch3",
+      "scene": "comic:The forest keeps its past",
+      "character": "explorer",
+      "text": "That laugh… it must be her memory. Come on, Architect!",
+      "tone": "wonder",
+      "emotionalContext": "Rowan follows the leaf’s trail into a rainforest of ancient roots, running water and half-forgotten paths. Somewhere beyond the canopy, a little laugh answers them.",
+      "emotion": "curiosity / wonder",
+      "tags": [
+        "curious"
+      ],
+      "delivery": "Bright discovery with room for a small breath.",
+      "source": "chapters/forest.js",
+      "audioPath": "voice/audio/ch3/explorer/ch3-comic-03.mp3"
+    },
+    {
+      "id": "ch3-comic-04",
+      "chapter": "ch3",
+      "scene": "comic:A forest already spoken for",
+      "character": "dryad",
+      "text": "These roots are my home. Ask for their help; do not try to become their master.",
+      "tone": "gentle",
+      "emotionalContext": "The Architect’s magic has been turned away. The Dryad steps from the Heart Tree: the living forest already has a guardian, and its power cannot be taken.",
+      "emotion": "reassurance",
+      "tags": [
+        "calm"
+      ],
+      "delivery": "Soft, sincere conversation; protect the listener without whispering unnecessarily.",
+      "source": "chapters/forest.js",
+      "audioPath": "voice/audio/ch3/dryad/ch3-comic-04.mp3"
+    },
+    {
+      "id": "ch3-comic-05",
+      "chapter": "ch3",
+      "scene": "comic:The three-fruit offering",
+      "character": "dryad",
+      "text": "Follow my path. Bring the three fruits gently; leave the orchard guardians unharmed.",
+      "tone": "gentle",
+      "emotionalContext": "The Architect waits beside the Heart Tree while Rowan explores alone. The Dryad opens the southern wall and builds a stone path beyond the forest. In her hidden orchard, avoid the wandering plant guardians. Find a golden Moonpear, a red Emberheart and a violet Starplum in three separate groves. Beside each tree: SPACE when the needle enters the gold segment.",
+      "emotion": "reassurance",
+      "tags": [
+        "calm"
+      ],
+      "delivery": "Soft, sincere conversation; protect the listener without whispering unnecessarily.",
+      "source": "chapters/forest.js",
+      "audioPath": "voice/audio/ch3/dryad/ch3-comic-05.mp3"
+    },
+    {
+      "id": "ch3-comic-06",
+      "chapter": "ch3",
+      "scene": "comic:Three gifts of the forest",
+      "character": "dryad",
+      "text": "A bottle for her soul, robes to shelter your steps, and my golden seal to guide the roots. Bring her memories home.",
+      "tone": "resolute",
+      "emotionalContext": "For the offering, the Dryad gives Rowan a soul-collecting bottle and leaf-woven robes that protect him and deepen his affinity with the rainforest. To the Architect she grants a golden nature seal: control of two passages at a time. The ten-minute memory hunt begins after her blessing.",
+      "emotion": "determination",
+      "tags": [
+        "determined"
+      ],
+      "delivery": "Steady conviction directed toward a companion.",
+      "source": "chapters/forest.js",
+      "audioPath": "voice/audio/ch3/dryad/ch3-comic-06.mp3"
+    },
+    {
+      "id": "ch3-comic-07",
+      "chapter": "ch3",
+      "scene": "comic:A childhood held in light",
+      "character": "explorer",
+      "text": "Got you! Don’t worry—we’re taking you home.",
+      "tone": "joyful",
+      "emotionalContext": "After a playful greeting, the little memory chooses to enter Rowan’s bottle. The Architect is beside him again, and the Dryad rises from the roots of this very clearing.",
+      "emotion": "joy / relief",
+      "tags": [
+        "excited"
+      ],
+      "delivery": "Warm relief or discovery; avoid excessive volume.",
+      "source": "chapters/forest.js",
+      "audioPath": "voice/audio/ch3/explorer/ch3-comic-07.mp3"
+    },
+    {
+      "id": "ch3-comic-08",
+      "chapter": "ch3",
+      "scene": "comic:An old friend hears the forest",
+      "character": "dryad",
+      "text": "Guardian of the high winds, our friends need your wings once more.",
+      "tone": "resolute",
+      "emotionalContext": "The Dryad prepares a golden messenger leaf. It will follow the heroes’ path back toward the kingdom and call their emerald friend.",
+      "emotion": "determination",
+      "tags": [
+        "determined"
+      ],
+      "delivery": "Steady conviction directed toward a companion.",
+      "source": "chapters/forest.js",
+      "audioPath": "voice/audio/ch3/dryad/ch3-comic-08.mp3"
+    },
+    {
+      "id": "ch3-comic-09",
+      "chapter": "ch3",
+      "scene": "comic:Wings from the kingdom",
+      "character": "explorer",
+      "text": "Look above the trees! Our friend heard her!",
+      "tone": "joyful",
+      "emotionalContext": "At the palace, the emerald dragon lifts its head. It recognizes the Dryad’s call and takes flight toward the Forest of Memories.",
+      "emotion": "joy / relief",
+      "tags": [
+        "excited"
+      ],
+      "delivery": "Warm relief or discovery; avoid excessive volume.",
+      "source": "chapters/forest.js",
+      "audioPath": "voice/audio/ch3/explorer/ch3-comic-09.mp3"
+    },
+    {
+      "id": "ch3-comic-10",
+      "chapter": "ch3",
+      "scene": "comic:A promise carried home",
+      "character": "architect",
+      "text": "Thank you. Your forest will always have friends in us.",
+      "tone": "gentle",
+      "emotionalContext": "The dragon lands in the clearing where they found the memory. Rowan keeps the jar close as both heroes climb aboard. The Dryad’s gift has given them a way home.",
+      "emotion": "reassurance",
+      "tags": [
+        "calm"
+      ],
+      "delivery": "Soft, sincere conversation; protect the listener without whispering unnecessarily.",
+      "source": "chapters/forest.js",
+      "audioPath": "voice/audio/ch3/architect/ch3-comic-10.mp3"
+    },
+    {
+      "id": "ch3-comic-11",
+      "chapter": "ch3",
+      "scene": "comic:The names she knew",
+      "character": "princess",
+      "text": "Father… I remember. I remember you!",
+      "tone": "joyful",
+      "emotionalContext": "Back in the kingdom, Rowan opens the jar beside the Princess. The leaf unfolds into memories: her home, her childhood, and the people who never stopped searching.",
+      "emotion": "joy / relief",
+      "tags": [
+        "excited"
+      ],
+      "delivery": "Warm relief or discovery; avoid excessive volume.",
+      "source": "chapters/forest.js",
+      "audioPath": "voice/audio/ch3/princess/ch3-comic-11.mp3"
+    },
+    {
+      "id": "ch3-comic-12",
+      "chapter": "ch3",
+      "scene": "comic:The bell beneath the shadows",
+      "character": "princess",
+      "text": "There was a bell… a tower of turning gears. That is where the shadows began.",
+      "tone": "worried",
+      "emotionalContext": "The Princess embraces the King. Then one last memory returns: the attackers carried the mark of a brass bell. Its echo leads to the Clockwork Citadel, where the source of the curse still waits.",
+      "emotion": "uncertainty / concern",
+      "tags": [
+        "worried"
+      ],
+      "delivery": "A small hesitation and genuine concern.",
+      "source": "chapters/forest.js",
+      "audioPath": "voice/audio/ch3/princess/ch3-comic-12.mp3"
+    },
+    {
+      "id": "ch1-cue-cry",
+      "chapter": "ch1",
+      "scene": "opening",
+      "character": "princess",
+      "text": "“Help! Is someone there?”",
+      "tone": "urgent",
+      "emotionalContext": "The Princess is taken through the portal; the companions plan their rescue.",
+      "emotion": "fear / urgency",
+      "tags": [
+        "worried"
+      ],
+      "delivery": "Quick, clear appeal; a person asking for help, not a theatrical scream.",
+      "source": "story/story.js",
+      "audioPath": "voice/audio/ch1/princess/ch1-cue-cry.mp3"
+    },
+    {
+      "id": "ch1-cue-return",
+      "chapter": "ch1",
+      "scene": "opening",
+      "character": "explorer",
+      "text": "“We have to reach that gate.”",
+      "tone": "resolute",
+      "emotionalContext": "The Princess is taken through the portal; the companions plan their rescue.",
+      "emotion": "determination",
+      "tags": [
+        "determined"
+      ],
+      "delivery": "Steady conviction directed toward a companion.",
+      "source": "story/story.js",
+      "audioPath": "voice/audio/ch1/explorer/ch1-cue-return.mp3"
+    },
+    {
+      "id": "ch1-cue-rune-instruction",
+      "chapter": "ch1",
+      "scene": "opening",
+      "character": "explorer",
+      "text": "We need the Sun, Moon, and Star runes to awaken the key. Collect all three!",
+      "tone": "resolute",
+      "emotionalContext": "The Princess is taken through the portal; the companions plan their rescue.",
+      "emotion": "determination",
+      "tags": [
+        "determined"
+      ],
+      "delivery": "Steady conviction directed toward a companion.",
+      "source": "story/story.js",
+      "audioPath": "voice/audio/ch1/explorer/ch1-cue-rune-instruction.mp3"
+    },
+    {
+      "id": "ch1-cue-oath",
+      "chapter": "ch1",
+      "scene": "opening",
+      "character": "architect",
+      "text": "“You walk the path. I will become it.”",
+      "tone": "resolute",
+      "emotionalContext": "The Architect promises to become the path before dissolving into the maze.",
+      "emotion": "determination",
+      "tags": [
+        "determined"
+      ],
+      "delivery": "Steady conviction directed toward a companion.",
+      "source": "story/story.js",
+      "audioPath": "voice/audio/ch1/architect/ch1-cue-oath.mp3"
+    },
+    {
+      "id": "ch1-cue-key",
+      "chapter": "ch1",
+      "scene": "rune-awakening",
+      "character": "explorer",
+      "text": "The runes united! The golden key is ready. Let’s claim it!",
+      "tone": "joyful",
+      "emotionalContext": "The three collected runes awaken the golden key.",
+      "emotion": "joy / relief",
+      "tags": [
+        "excited"
+      ],
+      "delivery": "Warm relief or discovery; avoid excessive volume.",
+      "source": "story/quests.js",
+      "audioPath": "voice/audio/ch1/explorer/ch1-cue-key.mp3"
+    },
+    {
+      "id": "ch1-cue-return-form",
+      "chapter": "ch1",
+      "scene": "finale",
+      "character": "architect",
+      "text": "“The stone releases me. We finish this together.”",
+      "tone": "resolute",
+      "emotionalContext": "The Architect reforms and both companions discover the sleeping Princess. ",
+      "emotion": "determination",
+      "tags": [
+        "determined"
+      ],
+      "delivery": "Steady conviction directed toward a companion.",
+      "source": "story/quests.js",
+      "audioPath": "voice/audio/ch1/architect/ch1-cue-return-form.mp3"
+    },
+    {
+      "id": "ch1-cue-sleep",
+      "chapter": "ch1",
+      "scene": "finale",
+      "character": "explorer",
+      "text": "“She’s here… but she won’t wake.”",
+      "tone": "worried",
+      "emotionalContext": "The heroes have reached the Princess, but she will not wake.",
+      "emotion": "uncertainty / concern",
+      "tags": [
+        "worried"
+      ],
+      "delivery": "A small hesitation and genuine concern.",
+      "source": "story/quests.js",
+      "audioPath": "voice/audio/ch1/explorer/ch1-cue-sleep.mp3"
+    },
+    {
+      "id": "ch1-cue-curse",
+      "chapter": "ch1",
+      "scene": "finale",
+      "character": "architect",
+      "text": "“This sleep is woven from magic.”",
+      "tone": "grave",
+      "emotionalContext": "The Architect reforms and both companions discover the sleeping Princess. ",
+      "emotion": "concern / grief",
+      "tags": [
+        "sad"
+      ],
+      "delivery": "Measured, restrained gravity. Let difficult news settle.",
+      "source": "story/quests.js",
+      "audioPath": "voice/audio/ch1/architect/ch1-cue-curse.mp3"
+    },
+    {
+      "id": "ch2-intro-explorer",
+      "chapter": "ch2",
+      "scene": "opening:explorer",
+      "character": "explorer",
+      "text": "That’s our ride! Let’s find the three ingredients and reach that dragon.",
+      "tone": "wonder",
+      "emotionalContext": "After the dragon roars, Rowan recognizes their ride.",
+      "emotion": "curiosity / wonder",
+      "tags": [
+        "curious"
+      ],
+      "delivery": "Bright discovery with room for a small breath.",
+      "source": "chapters/laboratory-intro.js",
+      "audioPath": "voice/audio/ch2/explorer/ch2-intro-explorer.mp3"
+    },
+    {
+      "id": "ch2-intro-architect",
+      "chapter": "ch2",
+      "scene": "opening:architect",
+      "character": "architect",
+      "text": "You gather them. I’ll become one with these ruins and open the way. Try not to keep our ride waiting.",
+      "tone": "resolute",
+      "emotionalContext": "The Architect offers to enter the ruins and help gather the ingredients.",
+      "emotion": "determination",
+      "tags": [
+        "determined"
+      ],
+      "delivery": "Steady conviction directed toward a companion.",
+      "source": "chapters/laboratory-intro.js",
+      "audioPath": "voice/audio/ch2/architect/ch2-intro-architect.mp3"
+    },
+    {
+      "id": "ch3-sequence-pathOpening-pathRaise",
+      "chapter": "ch3",
+      "scene": "pathOpening:pathRaise",
+      "character": "dryad",
+      "text": "A path for patient feet.",
+      "tone": "gentle",
+      "emotionalContext": "The Dryad invites cooperation with her forest.",
+      "emotion": "reassurance",
+      "tags": [
+        "calm"
+      ],
+      "delivery": "Soft, sincere conversation; protect the listener without whispering unnecessarily.",
+      "source": "chapters/forest.js",
+      "audioPath": "voice/audio/ch3/dryad/ch3-sequence-pathOpening-pathRaise.mp3"
+    },
+    {
+      "id": "ch3-sequence-intro-attempt",
+      "chapter": "ch3",
+      "scene": "intro:attempt",
+      "character": "architect",
+      "text": "Let me become the path. We will find her together.",
+      "tone": "resolute",
+      "emotionalContext": "The living forest resists the Architect; its guardian questions the intrusion.",
+      "emotion": "determination",
+      "tags": [
+        "determined"
+      ],
+      "delivery": "Steady conviction directed toward a companion.",
+      "source": "chapters/forest.js",
+      "audioPath": "voice/audio/ch3/architect/ch3-sequence-intro-attempt.mp3"
+    },
+    {
+      "id": "ch3-sequence-intro-dryad",
+      "chapter": "ch3",
+      "scene": "intro:dryad",
+      "character": "dryad",
+      "text": "Who stirs the roots of my home?",
+      "tone": "steady",
+      "emotionalContext": "The living forest resists the Architect; its guardian questions the intrusion.",
+      "emotion": "composure",
+      "tags": [],
+      "delivery": "Natural conversational delivery.",
+      "source": "chapters/forest.js",
+      "audioPath": "voice/audio/ch3/dryad/ch3-sequence-intro-dryad.mp3"
+    },
+    {
+      "id": "ch3-sequence-capture-jarOpen",
+      "chapter": "ch3",
+      "scene": "capture:jarOpen",
+      "character": "explorer",
+      "text": "Come along. We’re taking you home.",
+      "tone": "gentle",
+      "emotionalContext": "The memory is treated gently and chooses to enter the jar.",
+      "emotion": "reassurance",
+      "tags": [
+        "calm"
+      ],
+      "delivery": "Soft, sincere conversation; protect the listener without whispering unnecessarily.",
+      "source": "chapters/forest.js",
+      "audioPath": "voice/audio/ch3/explorer/ch3-sequence-capture-jarOpen.mp3"
+    },
+    {
+      "id": "ch3-sequence-capture-congratulate",
+      "chapter": "ch3",
+      "scene": "capture:congratulate",
+      "character": "dryad",
+      "text": "You have cared for her gently. Let us bring you all home.",
+      "tone": "joyful",
+      "emotionalContext": "The memory is treated gently and chooses to enter the jar.",
+      "emotion": "joy / relief",
+      "tags": [
+        "excited"
+      ],
+      "delivery": "Warm relief or discovery; avoid excessive volume.",
+      "source": "chapters/forest.js",
+      "audioPath": "voice/audio/ch3/dryad/ch3-sequence-capture-congratulate.mp3"
+    },
+    {
+      "id": "ch2-defeat",
+      "chapter": "ch2",
+      "scene": "bad-ending",
+      "character": "king",
+      "text": "I will not lose you. If the light cannot save you… then let the darkness answer.",
+      "tone": "grave",
+      "emotionalContext": "The cure failed to arrive; grief drives the King toward forbidden magic.",
+      "emotion": "concern / grief",
+      "tags": [
+        "sad"
+      ],
+      "delivery": "Measured, restrained gravity. Let difficult news settle.",
+      "source": "chapters/campaign.js",
+      "audioPath": "voice/audio/ch2/king/ch2-defeat.mp3"
+    },
+    {
+      "id": "ch2-flight-ascent",
+      "chapter": "ch2",
+      "scene": "ascent",
+      "character": "explorer",
+      "text": "The ingredients are safe. Come back to us, Architect. It’s time to fly!",
+      "tone": "wonder",
+      "emotionalContext": "The ingredients are gathered and the Architect can rejoin Rowan.",
+      "emotion": "curiosity / wonder",
+      "tags": [
+        "curious"
+      ],
+      "delivery": "Bright discovery with room for a small breath.",
+      "source": "chapters/campaign.js",
+      "audioPath": "voice/audio/ch2/explorer/ch2-flight-ascent.mp3"
+    },
+    {
+      "id": "ch2-flight-home",
+      "chapter": "ch2",
+      "scene": "homeflight",
+      "character": "explorer",
+      "text": "Hold tight! We’re taking the cure home.",
+      "tone": "joyful",
+      "emotionalContext": "The cure is ready; the heroes return on the emerald dragon.",
+      "emotion": "joy / relief",
+      "tags": [
+        "excited"
+      ],
+      "delivery": "Warm relief or discovery; avoid excessive volume.",
+      "source": "chapters/campaign.js",
+      "audioPath": "voice/audio/ch2/explorer/ch2-flight-home.mp3"
+    },
+    {
+      "id": "ch2-brewing",
+      "chapter": "ch2",
+      "scene": "brewing",
+      "character": "alchemist",
+      "text": "Amber, blossom, and dew. Let this light find her.",
+      "tone": "resolute",
+      "emotionalContext": "The Alchemist carefully unites the three ingredients.",
+      "emotion": "determination",
+      "tags": [
+        "determined"
+      ],
+      "delivery": "Steady conviction directed toward a companion.",
+      "source": "chapters/campaign.js",
+      "audioPath": "voice/audio/ch2/alchemist/ch2-brewing.mp3"
+    },
+    {
+      "id": "ch3-defeat",
+      "chapter": "ch3",
+      "scene": "bad-ending",
+      "character": "dryad",
+      "text": "The forest will keep her safe. But the little memory has taken root… and cannot return.",
+      "tone": "grave",
+      "emotionalContext": "The memory hunt timed out. The guardian offers sorrowful comfort, not a threat.",
+      "emotion": "concern / grief",
+      "tags": [
+        "sad"
+      ],
+      "delivery": "Measured, restrained gravity. Let difficult news settle.",
+      "source": "chapters/forest.js",
+      "audioPath": "voice/audio/ch3/dryad/ch3-defeat.mp3"
+    }
+  ]
+}

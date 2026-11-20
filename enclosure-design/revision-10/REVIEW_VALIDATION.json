@@ -1,0 +1,43 @@
+{
+  "revision": 10,
+  "date": "2026-10-29",
+  "status": "Digital prototype checks passed; physical validation required",
+  "installed_printed_parts": 86,
+  "native_solids_checked": 128,
+  "stl_meshes_checked": 113,
+  "guide_views": 98,
+  "indexed_settings_checked": 44,
+  "jaw_travel_poses_checked": 184,
+  "jaw_step_mm": 0.5,
+  "locking_keys_checked": 16,
+  "key_release_mm": 10.5,
+  "intersection_threshold_mm3": 0.05,
+  "physical_fit_verified": false,
+  "limitations": [
+    "Flexible snap tips excluded from rigid key-travel test; coupon flexure and retention test required.",
+    "Component envelopes use nominal dimensions, not measured user components.",
+    "Safe powered servo endpoints, battery runtime, structural strength and optical response remain untested.",
+    "Body adjustments do not establish compatibility with every connector, tab or shaft offset."
+  ],
+  "gallery_check": {
+    "handler_calls_checked": 66,
+    "unique_element_ids": 40,
+    "all_handler_image_paths_exist": true,
+    "live_browser_render_verified": false,
+    "live_browser_limitation": "In-app browser URL policy rejected the file:// protocol."
+  },
+  "reports": [
+    "CAD_VALIDATION.json",
+    "MESH_VALIDATION.json",
+    "ASSEMBLY_REVIEW.json",
+    "ADJUSTMENT_CHECK_explorer_architect_main.json",
+    "SLIDE_PATH_CHECK_all.json",
+    "KEY_RELEASE_CHECK.json",
+    "GUIDE_CHECK.json"
+  ],
+  "native_sha256": {
+    "architect-revision10.FCStd": "42f864b98d56199f10c2ca3e260211a91725df17c78e7a2a164690cd169d3157",
+    "explorer-revision10.FCStd": "232bad9aea26696b63d1c232654ad54e142c7a935f0022f3f341e2f80c8d9193",
+    "main-revision10.FCStd": "08587b4a51355f7c46aa1fa1da651f763d409dc032f7c7ddf10876db82b8e1b4"
+  }
+}

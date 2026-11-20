@@ -1,0 +1,17 @@
+[
+  {
+    "role": "explorer",
+    "comparisons": 36,
+    "conflicts": []
+  },
+  {
+    "role": "architect",
+    "comparisons": 44,
+    "conflicts": []
+  },
+  {
+    "role": "main",
+    "comparisons": 58,
+    "conflicts": []
+  }
+]

@@ -1,0 +1,14 @@
+ID,Task,Proposed owner,Due date,Status,Expected evidence,Reviewer
+CREATIVE,Concept game design story and workflow,Soham Basanwar,2026-10-22,Credited in deliverables,Existing game source and story materials,Team
+DECK,Presentation trailer and milestone document,Soham Basanwar,2026-10-26,Prepared for review,submission folder and validation receipt,Team
+GROUP,Replace group number placeholder,Soham Basanwar,2026-10-26,Awaiting group number,Updated cover footer and slide 17,Team
+EXPLORER,Calibrate joystick click and light sensor,Ronit Mishra,2026-10-30,Proposed assignment,Pin map firmware revision and measured thresholds,Soham Basanwar
+ARCHITECT,Calibrate potentiometer button and servo,Prince Patel,2026-10-30,Proposed assignment,Pin map firmware revision and test evidence,Soham Basanwar
+MAIN,Implement R4 polling and USB relay,Whole team,2026-11-02,Planned,Packets from both boards and timeout demonstration,Team
+SERVO,Drive servo only after accepted game action,Prince Patel,2026-11-06,Proposed assignment,Rejected action leaves physical gate unchanged,Ronit Mishra
+INTEGRATE,Test complete board to laptop round trip,Whole team,2026-11-09,Planned,Recorded integration checklist and failure recovery,Team
+POWER,Measure servo and controller power demand,Whole team,2026-11-10,Planned,Current voltage and power-input records,Team
+MEASURE,Confirm actual module and breadboard dimensions,Soham Basanwar,2026-11-11,Awaiting component details,Millimeter measurements and connector locations,Team
+PRINT,Create and test screwless enclosure fit,Whole team,2026-11-16,Deferred until measurements,Clearance coupon fit check and removable lids,Team
+REHEARSE,Rehearse trailer and physical demonstration,Whole team,2026-11-20,Planned,Slide 3 playback on presentation device and demo checklist,Team
+DEMO,Project demonstration,Whole team,2026-11-23,Required checkpoint,Working integrated demonstration,Course staff

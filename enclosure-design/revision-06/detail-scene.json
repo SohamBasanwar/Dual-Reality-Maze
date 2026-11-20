@@ -1,0 +1,38 @@
+[
+  {
+    "role": "explorer",
+    "name": "Lid",
+    "file": "Lid.stl",
+    "material": "bronze",
+    "component": false,
+    "explosion": [
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "role": "explorer",
+    "name": "Reveal_Dome",
+    "file": "Reveal_Dome.stl",
+    "material": "bronze",
+    "component": false,
+    "explosion": [
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "role": "explorer",
+    "name": "Bare_Light_Sensor",
+    "file": "Bare_Light_Sensor.stl",
+    "material": "sensor",
+    "component": true,
+    "explosion": [
+      0,
+      0,
+      0
+    ]
+  }
+]

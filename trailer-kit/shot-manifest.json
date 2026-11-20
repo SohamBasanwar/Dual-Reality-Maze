@@ -1,0 +1,110 @@
+{
+  "captureMethod": "Deterministic staged shots from unmodified game canvas renderers. Not a recorded player session. Title card uses existing game artwork with editorial typography and zoom. Snippets have no audio. Draft has an original synthesized temporary score and no voiceover.",
+  "duration": 33.45833333333333,
+  "shots": [
+    {
+      "id": "01_maze_and_architect",
+      "duration": 5,
+      "source": "Chapter I game renderer; staged Gate A activation",
+      "caption": "TWO HEROES. ONE PATH.",
+      "start": 0,
+      "width": 1920,
+      "height": 1080,
+      "fps": 24,
+      "animated": true,
+      "clip": "clips/01_maze_and_architect.mp4",
+      "still": "stills/01_maze_and_architect.png"
+    },
+    {
+      "id": "02_architect_transformation",
+      "duration": 4.791666666666667,
+      "source": "Chapter II opening, merge shot",
+      "caption": "BECOME THE WAY FORWARD.",
+      "start": 5,
+      "width": 1920,
+      "height": 1080,
+      "fps": 24,
+      "animated": true,
+      "clip": "clips/02_architect_transformation.mp4",
+      "still": "stills/02_architect_transformation.png"
+    },
+    {
+      "id": "03_emerald_guardian",
+      "duration": 2.5833333333333335,
+      "source": "Chapter II opening, dragon roar shot",
+      "caption": "AWAKEN AN ANCIENT ALLY.",
+      "start": 9.791666666666668,
+      "width": 1920,
+      "height": 1080,
+      "fps": 24,
+      "animated": true,
+      "clip": "clips/03_emerald_guardian.mp4",
+      "still": "stills/03_emerald_guardian.png"
+    },
+    {
+      "id": "04_dragon_flight",
+      "duration": 5,
+      "source": "Chapter II ascent, sky flight from 7 to 12 seconds",
+      "caption": "RISE ABOVE THE SHATTERED GARDENS.",
+      "start": 12.375000000000002,
+      "width": 1920,
+      "height": 1080,
+      "fps": 24,
+      "animated": true,
+      "clip": "clips/04_dragon_flight.mp4",
+      "still": "stills/04_dragon_flight.png"
+    },
+    {
+      "id": "05_heart_tree_and_dryad",
+      "duration": 3.5,
+      "source": "Chapter III introduction, Dryad dialogue shot",
+      "caption": "ENTER A FOREST THAT REMEMBERS.",
+      "start": 17.375,
+      "width": 1920,
+      "height": 1080,
+      "fps": 24,
+      "animated": true,
+      "clip": "clips/05_heart_tree_and_dryad.mp4",
+      "still": "stills/05_heart_tree_and_dryad.png"
+    },
+    {
+      "id": "06_memory_in_the_jar",
+      "duration": 3.5833333333333335,
+      "source": "Chapter III capture, jarOpen and jarEnter shots",
+      "caption": "BRING HER MEMORIES HOME.",
+      "start": 20.875,
+      "width": 1920,
+      "height": 1080,
+      "fps": 24,
+      "animated": true,
+      "clip": "clips/06_memory_in_the_jar.mp4",
+      "still": "stills/06_memory_in_the_jar.png"
+    },
+    {
+      "id": "07_home_on_emerald_wings",
+      "duration": 5,
+      "source": "Chapter III homeflight cinematic",
+      "caption": "A PROMISE CARRIED HOME.",
+      "start": 24.458333333333332,
+      "width": 1920,
+      "height": 1080,
+      "fps": 24,
+      "animated": true,
+      "clip": "clips/07_home_on_emerald_wings.mp4",
+      "still": "stills/07_home_on_emerald_wings.png"
+    },
+    {
+      "id": "08_title_end_card",
+      "duration": 4,
+      "source": "Existing title-screen.png, editorial slow zoom and typography",
+      "caption": "",
+      "start": 29.458333333333332,
+      "width": 1920,
+      "height": 1080,
+      "fps": 24,
+      "animated": true,
+      "clip": "clips/08_title_end_card.mp4",
+      "still": "stills/08_title_end_card.png"
+    }
+  ]
+}

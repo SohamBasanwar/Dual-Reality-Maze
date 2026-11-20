@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Dual-Reality Maze — Fantasy Edition V2</title>
+<style>
+  :root{
+    --bg:#040713;
+    --panel:#09101d;
+    --panel2:#10172b;
+    --gold:#f7d889;
+    --text:#f4efd9;
+    --muted:#a8b2c9;
+    --line:#35405d;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;min-height:100%;background:#03050d;color:var(--text);font-family:Georgia,"Times New Roman",serif}
+  body{
+    min-height:100vh;display:flex;align-items:center;justify-content:center;padding:18px;
+    background:
+      radial-gradient(circle at 20% 15%, #183468 0, #091128 22%, transparent 45%),
+      radial-gradient(circle at 85% 8%, #291150 0, #0a0f22 25%, transparent 46%),
+      linear-gradient(#050814,#02030a);
+  }
+  .game-shell{
+    width:min(1540px,100%);background:#070a13;border:3px solid #465277;
+    box-shadow:0 0 0 2px #11162a,0 24px 90px #000c,inset 0 0 70px #1a245522;
+  }
+  .topbar{
+    display:flex;align-items:center;justify-content:space-between;padding:12px 18px;
+    background:linear-gradient(180deg,#151c31,#0b1020);border-bottom:2px solid #35405d;
+  }
+  .logo-wrap{display:flex;align-items:center;gap:12px}
+  .gem{width:26px;height:26px;transform:rotate(45deg);border:2px solid #b8e7ff;background:radial-gradient(circle at 35% 30%,#d8fbff 0,#50c8ff 28%,#4351ff 60%,#24185d 100%);box-shadow:0 0 15px #57d6ff,0 0 30px #5c55ff88}
+  .title{font-size:22px;letter-spacing:2px;color:#fff1c7;text-shadow:0 1px #7b4d1e,0 0 12px #f2b45c33}
+  .subtitle,.mode,.footer{font-family:Consolas,monospace}
+  .subtitle{font-size:12px;color:#8797bb}
+  .mode{font-size:12px;color:#9fb7de;border:1px solid #3e4b6b;background:#10162a;padding:6px 10px}
+  .main{display:grid;grid-template-columns:minmax(0,1fr) 345px;min-height:720px}
+  .game-area{position:relative;padding:15px;overflow:hidden;background:radial-gradient(circle at 13% 7%,#224e7733 0 2%,transparent 9%),radial-gradient(circle at 90% 84%,#5c2ba633 0 3%,transparent 10%),linear-gradient(#060b1c,#030712)}
+  .floating-orb{position:absolute;width:14px;height:14px;border-radius:50%;background:#50d9ff;box-shadow:0 0 16px #50d9ff,0 0 28px #4a55ff;opacity:.40;animation:float 7s ease-in-out infinite}
+  .o1{left:6%;top:12%}.o2{left:91%;top:18%;animation-delay:2s}.o3{left:8%;top:87%;animation-delay:4s}.o4{left:88%;top:78%;animation-delay:1s}
+  @keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-13px)}}
+  canvas{width:100%;height:auto;aspect-ratio:16/10;display:block;image-rendering:pixelated;border:2px solid #303b5a;background:#081022;box-shadow:0 0 0 2px #0e1428,0 16px 50px #0008,inset 0 0 45px #5d46a022}
+  .side{background:linear-gradient(180deg,#0b1020 0,#090d18 100%);border-left:2px solid #35405d;padding:14px;position:relative}
+  .side:before,.side:after{content:"";position:absolute;left:7px;right:7px;height:1px;background:linear-gradient(90deg,transparent,#b98b45,transparent);opacity:.6}
+  .side:before{top:7px}.side:after{bottom:7px}
+  .brand{text-align:center;padding:13px 8px 16px;border:1px solid #5a4c37;background:linear-gradient(#11172b,#0d1223);margin-bottom:12px}
+  .brand h1{font-size:31px;line-height:.95;margin:0;color:#ffe9ae;letter-spacing:1px;text-shadow:0 2px #654315,0 0 18px #ffcc7733}
+  .brand .rule{height:1px;background:linear-gradient(90deg,transparent,#d9a44d,transparent);margin:10px 14px}
+  .brand .mini-gem{font-size:18px;color:#64d8ff;text-shadow:0 0 10px #39bfff}
+  .architect{border:1px solid #4d5672;background:linear-gradient(#11172b,#0d1222);padding:13px;margin-bottom:12px}
+  .section-title{text-align:center;color:#f6dfaa;letter-spacing:1.4px;font-size:19px;margin:0 0 5px}
+  .section-copy{text-align:center;color:#b6bfd2;font-size:13px;line-height:1.35;margin-bottom:12px}
+  .control-row{display:grid;grid-template-columns:42px 1fr auto;align-items:center;gap:9px;padding:8px 0;border-top:1px solid #283149}
+  .control-row:first-of-type{border-top:0}
+  .icon{width:34px;height:34px;border:2px solid #3f4a66;display:grid;place-items:center;background:#11182a;box-shadow:inset 0 0 12px #0008}
+  .icon .bars{width:16px;height:23px;position:relative}
+  .icon .bars:before{content:"";position:absolute;top:0;bottom:0;left:1px;width:4px;background:currentColor;box-shadow:7px 0 0 currentColor}
+  .label{font-size:15px}
+  .toggles{display:flex;gap:5px}
+  .toggle{min-width:42px;padding:6px 7px;border:1px solid #4a5369;background:#171d2c;color:#9aa5be;font:bold 12px Consolas,monospace;cursor:pointer}
+  .toggle.on.active{color:#fff;background:#15223a;box-shadow:0 0 12px currentColor;border-color:currentColor}
+  .toggle.off.active{color:#ddd;background:#2b2f3b;border-color:#697083}
+  .selected{outline:1px solid #e6c276aa;background:#171b2d;box-shadow:inset 0 0 16px #e8b95712}
+  .status-card{border:1px solid #4d5672;background:#0f1527;padding:10px 12px;margin-bottom:12px}
+  .status-line{display:flex;align-items:center;justify-content:space-between;padding:8px 0;border-bottom:1px solid #273049;font-size:14px}
+  .status-line:last-child{border:0}
+  .value{font:700 22px Consolas,monospace;color:#f7d889;text-shadow:0 0 8px #ffcd6b55}
+  .key-icon{color:#ffd34e;text-shadow:0 0 9px #ffc22f;font-size:21px}
+  .buttons{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+  button.action{border:1px solid #46516f;background:linear-gradient(#18223a,#10172a);color:#f1eadc;padding:9px;font:bold 12px Consolas,monospace;cursor:pointer}
+  button.action:hover{background:#202c47}
+  button.action.gold{grid-column:1/-1;border-color:#a37938;color:#ffe5a6;box-shadow:inset 0 0 18px #d89f2522}
+  .help{margin-top:10px;color:#8997b4;font:11px/1.45 Consolas,monospace}
+  .footer{display:flex;justify-content:space-between;gap:12px;padding:9px 14px;border-top:2px solid #35405d;background:#090d18;font-size:12px;color:#8998bb}
+  @media(max-width:1000px){.main{grid-template-columns:1fr}.side{border-left:0;border-top:2px solid #35405d}}
+</style>
+</head>
+<body>
+<div class="game-shell">
+  <div class="topbar">
+    <div class="logo-wrap">
+      <div class="gem"></div>
+      <div>
+        <div class="title">DUAL-REALITY MAZE</div>
+        <div class="subtitle">Fantasy Prototype — Explorer + Architect</div>
+      </div>
+    </div>
+    <div class="mode" id="modeText">SIMULATION MODE</div>
+  </div>
+  <div class="main">
+    <section class="game-area">
+      <span class="floating-orb o1"></span><span class="floating-orb o2"></span><span class="floating-orb o3"></span><span class="floating-orb o4"></span>
+      <canvas id="game" width="960" height="600"></canvas>
+    </section>
+    <aside class="side">
+      <div class="brand"><h1>DUAL-REALITY<br>MAZE</h1><div class="rule"></div><div class="mini-gem">◆</div></div>
+      <div class="architect">
+        <h2 class="section-title">THE ARCHITECT</h2>
+        <div class="section-copy">Control the maze elements<br>between realities.</div>
+        <div id="controls"></div>
+      </div>
+      <div class="status-card">
+        <div class="status-line"><span>⏱ Time</span><span class="value" id="time">02:00</span></div>
+        <div class="status-line"><span><span class="key-icon">⚿</span> Key</span><span class="value" id="keyState">0 / 1</span></div>
+        <div class="status-line"><span>Reveal</span><span id="revealState">READY</span></div>
+      </div>
+      <div class="buttons">
+        <button class="action gold" id="startBtn">START / RESTART GAME</button>
+        <button class="action" id="prevBtn">◀ Select</button>
+        <button class="action" id="nextBtn">Select ▶</button>
+        <button class="action" id="toggleBtn">Activate</button>
+        <button class="action" id="revealBtn">Reveal</button>
+        <button class="action" id="hardwareBtn">R4 Mode</button>
+      </div>
+      <div class="help">
+        Explorer: WASD / Arrow Keys<br>
+        Architect: Q / E to select, Space to activate<br>
+        Reveal: R<br><br>
+        Hardware mode expects the R4 to provide <b>/state</b> JSON.
+      </div>
+    </aside>
+  </div>
+  <div class="footer"><span id="message">Press Start to enter the maze.</span><span>CS 362 — Dual-Reality Maze</span></div>
+</div>
+<script>
+const canvas = document.getElementById('game');
+const ctx = canvas.getContext('2d');
+ctx.imageSmoothingEnabled = false;
+
+const TILE=60, COLS=16, ROWS=10;
+const map=[
+ [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1],
+ [1,0,0,0,1,0,0,0,0,0,1,0,0,0,0,1],
+ [1,0,1,0,1,0,1,1,1,0,1,0,1,1,0,1],
+ [1,0,1,0,0,0,0,0,1,0,0,0,0,1,0,1],
+ [1,0,1,1,1,1,1,0,1,1,1,1,0,1,0,1],
+ [1,0,0,0,0,0,1,0,0,0,0,1,0,0,0,1],
+ [1,1,1,1,1,0,1,1,1,1,0,1,1,1,0,1],
+ [1,0,0,0,1,0,0,0,0,1,0,0,0,1,0,1],
+ [1,0,1,0,0,0,1,1,0,0,0,1,0,0,0,1],
+ [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]
+];
+
+const controls=[
+  {name:'Gate A',type:'gate',x:4,y:3,open:false,color:'#ff5757'},
+  {name:'Gate B',type:'gate',x:10,y:3,open:false,color:'#48a7ff'},
+  {name:'Gate C',type:'gate',x:12,y:5,open:false,color:'#35e28d'},
+  {name:'Bridge A',type:'bridge',x:8,y:8,open:false,color:'#ffbd45'},
+  {name:'Bridge B',type:'bridge',x:14,y:6,open:false,color:'#52b7ff'}
+];
+
+const wallTorches=[
+  {x:2,y:1,side:'top'},{x:5,y:1,side:'top'},{x:9,y:1,side:'top'},{x:12,y:1,side:'top'},
+  {x:1,y:4,side:'left'},{x:7,y:3,side:'right'},{x:11,y:3,side:'top'},{x:14,y:4,side:'right'},
+  {x:5,y:7,side:'left'},{x:10,y:8,side:'bottom'},{x:13,y:7,side:'right'}
+];
+const edgeCrystals=[
+  {x:3,y:1,side:'right',c:'#53dfff'},
+  {x:12,y:2,side:'left',c:'#5dd7ff'},
+  {x:3,y:7,side:'left',c:'#8b6cff'},
+  {x:12,y:7,side:'right',c:'#45f1c7'}
+];
+const decorCrates=[{x:5,y:3},{x:9,y:5},{x:12,y:3}];
+const wallSkulls=[{x:2,y:5,side:'left'},{x:11,y:7,side:'right'}];
+const banners=[{x:1,y:1,side:'left'},{x:7,y:1,side:'top'},{x:13,y:4,side:'right'}];
+const key={x:13,y:8,collected:false};
+const exit={x:14,y:8};
+const secretTiles=[{x:6,y:3},{x:10,y:7},{x:12,y:8}];
+
+let player={x:1,y:1};
+let selected=0, revealUntil=0, secondsLeft=120, gameRunning=false, timerHandle=null, hardwareMode=false, pollHandle=null, frame=0;
+
+function setMessage(t){document.getElementById('message').textContent=t}
+function mmss(s){return String(Math.floor(s/60)).padStart(2,'0')+':'+String(s%60).padStart(2,'0')}
+function resetGame(){player={x:1,y:1}; key.collected=false; controls.forEach(c=>c.open=false); selected=0; revealUntil=0; secondsLeft=120; gameRunning=true; setMessage('The dungeon awakens. Find the key and reach the portal.'); if(timerHandle) clearInterval(timerHandle); timerHandle=setInterval(()=>{if(!gameRunning)return; secondsLeft--; if(secondsLeft<=0){secondsLeft=0; gameRunning=false; setMessage('The maze seals itself. Time has run out.');} updateUI();},1000); updateUI();}
+function isBlocked(x,y){ if(x<0||y<0||x>=COLS||y>=ROWS) return true; if(map[y][x]===1) return true; const c=controls.find(c=>c.x===x&&c.y===y); if(c&&!c.open) return true; return false; }
+function move(dx,dy){ if(!gameRunning||hardwareMode) return; const nx=player.x+dx, ny=player.y+dy; if(isBlocked(nx,ny)){ setMessage('A magical barrier blocks the path.'); return; } player.x=nx; player.y=ny; if(!key.collected&&player.x===key.x&&player.y===key.y){ key.collected=true; setMessage('The Explorer claimed the golden key.'); } if(player.x===exit.x&&player.y===exit.y){ if(key.collected){ gameRunning=false; setMessage('The portal opens — both realities are aligned. You escaped!'); } else setMessage('The portal remains sealed. Find the golden key.'); } updateUI(); }
+function selectDelta(d){ if(hardwareMode) return; selected=(selected+d+controls.length)%controls.length; updateUI(); }
+function activateSelected(){ if(hardwareMode) return; const c=controls[selected]; c.open=!c.open; setMessage(`${c.name} ${c.open?'opened':'sealed'}.`); updateUI(); }
+function reveal(){ if(!gameRunning||hardwareMode) return; revealUntil=Date.now()+3000; setMessage('The Explorer reveals hidden runes for 3 seconds.'); updateUI(); }
+function updateUI(){ document.getElementById('time').textContent=mmss(secondsLeft); document.getElementById('keyState').textContent=key.collected?'1 / 1':'0 / 1'; document.getElementById('revealState').textContent=Date.now()<revealUntil?'ACTIVE':'READY'; document.getElementById('controls').innerHTML=controls.map((c,i)=>`<div class="control-row ${i===selected?'selected':''}"><div class="icon" style="color:${c.color};border-color:${c.color}88;box-shadow:inset 0 0 10px #0008,0 0 10px ${c.color}22"><div class="bars"></div></div><div class="label">${c.name}</div><div class="toggles"><button class="toggle off ${!c.open?'active':''}" onclick="directSet(${i},false)">OFF</button><button class="toggle on ${c.open?'active':''}" style="color:${c.open?c.color:'#8f9ab2'}" onclick="directSet(${i},true)">ON</button></div></div>`).join(''); }
+window.directSet=(i,v)=>{ if(hardwareMode) return; selected=i; controls[i].open=v; setMessage(`${controls[i].name} ${v?'opened':'sealed'}.`); updateUI(); };
+
+function floorTile(x,y){ const px=x*TILE, py=y*TILE; const g=ctx.createLinearGradient(px,py,px,py+TILE); g.addColorStop(0,(x+y)%2===0?'#153455':'#17385b'); g.addColorStop(1,(x+y)%2===0?'#0e2642':'#112d4a'); ctx.fillStyle=g; ctx.fillRect(px,py,TILE,TILE); ctx.strokeStyle='#244b6d'; ctx.strokeRect(px+.5,py+.5,TILE-1,TILE-1); ctx.strokeStyle='#091b31'; ctx.lineWidth=1.5; ctx.beginPath(); ctx.moveTo(px+2,py+30); ctx.lineTo(px+58,py+30); ctx.moveTo(px+30,py+2); ctx.lineTo(px+30,py+58); ctx.stroke(); ctx.fillStyle='#31577755'; ctx.fillRect(px+8,py+9,4,4); ctx.fillRect(px+42,py+42,3,3); }
+function wallTile(x,y){ const px=x*TILE, py=y*TILE; const g=ctx.createLinearGradient(px,py,px,py+TILE); g.addColorStop(0,'#9b6dcc'); g.addColorStop(.45,'#72479d'); g.addColorStop(1,'#432868'); ctx.fillStyle=g; ctx.fillRect(px,py,TILE,TILE); ctx.fillStyle='#c194dd'; ctx.fillRect(px+2,py+2,TILE-4,7); ctx.strokeStyle='#2c1749'; ctx.lineWidth=2; ctx.strokeRect(px+1,py+1,TILE-2,TILE-2); ctx.beginPath(); ctx.moveTo(px,py+22); ctx.lineTo(px+TILE,py+22); ctx.moveTo(px,py+42); ctx.lineTo(px+TILE,py+42); ctx.stroke(); ctx.beginPath(); ctx.moveTo(px+20,py); ctx.lineTo(px+20,py+22); ctx.moveTo(px+43,py+22); ctx.lineTo(px+43,py+42); ctx.moveTo(px+24,py+42); ctx.lineTo(px+24,py+TILE); ctx.stroke(); }
+function wallAnchor(pos){ const x=pos.x*TILE, y=pos.y*TILE; if(pos.side==='top') return {x:x+30,y:y+11}; if(pos.side==='bottom') return {x:x+30,y:y+49}; if(pos.side==='left') return {x:x+11,y:y+30}; return {x:x+49,y:y+30}; }
+function drawWallTorch(t){ const a=wallAnchor(t); ctx.save(); if(t.side==='left'||t.side==='right'){ ctx.fillStyle='#70513a'; ctx.fillRect(a.x+(t.side==='left'?-1:-7),a.y-11,8,22); } else { ctx.fillStyle='#70513a'; ctx.fillRect(a.x-11,a.y+(t.side==='top'?-1:-7),22,8); } const glow=10+Math.sin(frame*.18+t.x)*2.5; const grd=ctx.createRadialGradient(a.x,a.y,2,a.x,a.y,20+glow); grd.addColorStop(0,'#fff7ae'); grd.addColorStop(.18,'#ffb13d'); grd.addColorStop(.52,'#ff5a24aa'); grd.addColorStop(1,'#ff5a2400'); ctx.fillStyle=grd; ctx.beginPath(); ctx.arc(a.x,a.y,20+glow,0,Math.PI*2); ctx.fill(); ctx.fillStyle='#ffd54d'; ctx.beginPath(); ctx.moveTo(a.x,a.y-12); ctx.lineTo(a.x-6,a.y+4); ctx.lineTo(a.x,a.y+8); ctx.lineTo(a.x+6,a.y+4); ctx.closePath(); ctx.fill(); ctx.fillStyle='#ff6b24'; ctx.beginPath(); ctx.moveTo(a.x,a.y-7); ctx.lineTo(a.x-4,a.y+5); ctx.lineTo(a.x+4,a.y+3); ctx.closePath(); ctx.fill(); ctx.restore(); }
+function drawCrystal(c){ const a=wallAnchor(c); ctx.save(); ctx.shadowColor=c.c; ctx.shadowBlur=18; ctx.fillStyle=c.c; ctx.beginPath(); ctx.moveTo(a.x,a.y-18); ctx.lineTo(a.x+10,a.y-2); ctx.lineTo(a.x+6,a.y+14); ctx.lineTo(a.x-7,a.y+13); ctx.lineTo(a.x-11,a.y-2); ctx.closePath(); ctx.fill(); ctx.globalAlpha=.35; ctx.fillStyle='#fff'; ctx.beginPath(); ctx.moveTo(a.x-2,a.y-13); ctx.lineTo(a.x+3,a.y-2); ctx.lineTo(a.x,y+7); ctx.closePath(); ctx.fill(); ctx.restore(); }
+function drawCrate(b){ const x=b.x*TILE+30,y=b.y*TILE+34; ctx.fillStyle='#6d3e1d'; ctx.fillRect(x-13,y-13,26,26); ctx.fillStyle='#92572d'; ctx.fillRect(x-10,y-10,20,20); ctx.strokeStyle='#2f1c15'; ctx.strokeRect(x-13,y-13,26,26); ctx.beginPath(); ctx.moveTo(x-10,y-10); ctx.lineTo(x+10,y+10); ctx.moveTo(x+10,y-10); ctx.lineTo(x-10,y+10); ctx.stroke(); }
+function drawWallSkull(s){ const a=wallAnchor(s); const x=a.x, y=a.y+2; ctx.fillStyle='#d7d3c5'; ctx.beginPath(); ctx.arc(x,y-5,8,0,Math.PI*2); ctx.fill(); ctx.fillRect(x-6,y,12,8); ctx.fillStyle='#22242d'; ctx.fillRect(x-5,y-7,3,3); ctx.fillRect(x+2,y-7,3,3); ctx.fillRect(x-2,y+1,4,4); }
+function drawBanner(b){ const a=wallAnchor(b); ctx.fillStyle='#3b2e84'; if(b.side==='top'){ ctx.fillRect(a.x-11,a.y-1,22,27); ctx.fillStyle='#f0c96d'; ctx.beginPath(); ctx.moveTo(a.x,a.y+7); ctx.lineTo(a.x+6,a.y+15); ctx.lineTo(a.x,a.y+24); ctx.lineTo(a.x-6,a.y+15); ctx.closePath(); ctx.fill(); } else { ctx.fillRect(a.x-10,a.y-13,20,26); ctx.fillStyle='#f0c96d'; ctx.beginPath(); ctx.moveTo(a.x,a.y-6); ctx.lineTo(a.x+6,a.y); ctx.lineTo(a.x,a.y+7); ctx.lineTo(a.x-6,a.y); ctx.closePath(); ctx.fill(); }}
+function drawGate(c){ const x=c.x*TILE,y=c.y*TILE; if(c.open){ ctx.save(); ctx.shadowColor=c.color; ctx.shadowBlur=14; ctx.strokeStyle=c.color; ctx.lineWidth=3; ctx.strokeRect(x+12,y+10,TILE-24,TILE-20); ctx.restore(); } else { ctx.save(); ctx.shadowColor=c.color; ctx.shadowBlur=15; ctx.fillStyle='#201529'; ctx.fillRect(x+7,y+8,TILE-14,TILE-16); ctx.strokeStyle=c.color; ctx.lineWidth=5; for(let i=0;i<4;i++){ ctx.beginPath(); ctx.moveTo(x+15+i*10,y+11); ctx.lineTo(x+15+i*10,y+48); ctx.stroke(); } ctx.strokeRect(x+8,y+8,TILE-16,TILE-16); ctx.restore(); }}
+function drawBridge(c){ const x=c.x*TILE,y=c.y*TILE; if(c.open){ ctx.save(); ctx.shadowColor=c.color; ctx.shadowBlur=12; ctx.fillStyle=c.color; ctx.globalAlpha=.85; ctx.fillRect(x+7,y+17,TILE-14,TILE-34); ctx.globalAlpha=1; ctx.strokeStyle='#fff8'; ctx.strokeRect(x+7,y+17,TILE-14,TILE-34); ctx.restore(); } else { ctx.fillStyle='#0b1a2e'; ctx.fillRect(x+8,y+10,TILE-16,TILE-20); ctx.strokeStyle='#1d4266'; ctx.strokeRect(x+8,y+10,TILE-16,TILE-20); }}
+function drawKey(){ if(key.collected) return; const x=key.x*TILE+30,y=key.y*TILE+30; ctx.save(); ctx.shadowColor='#ffd84e'; ctx.shadowBlur=18; ctx.strokeStyle='#ffd84e'; ctx.lineWidth=7; ctx.beginPath(); ctx.arc(x-8,y,10,0,Math.PI*2); ctx.stroke(); ctx.beginPath(); ctx.moveTo(x+2,y); ctx.lineTo(x+22,y); ctx.lineTo(x+22,y+10); ctx.moveTo(x+14,y); ctx.lineTo(x+14,y+8); ctx.stroke(); ctx.restore(); }
+function drawPortal(){ const x=exit.x*TILE+30,y=exit.y*TILE+30; const pulse=1+Math.sin(frame*.08)*.08; ctx.save(); ctx.translate(x,y); ctx.scale(pulse,pulse); ctx.shadowColor=key.collected?'#70f5ff':'#66738f'; ctx.shadowBlur=25; ctx.fillStyle='#1c1736'; ctx.beginPath(); ctx.ellipse(0,0,24,30,0,0,Math.PI*2); ctx.fill(); const g=ctx.createRadialGradient(0,0,3,0,0,23); g.addColorStop(0,key.collected?'#e7ffff':'#6a6d77'); g.addColorStop(.25,key.collected?'#6ffff3':'#474b59'); g.addColorStop(.6,key.collected?'#4a66ff':'#242a38'); g.addColorStop(1,'#151125'); ctx.fillStyle=g; ctx.beginPath(); ctx.ellipse(0,0,18,24,0,0,Math.PI*2); ctx.fill(); ctx.strokeStyle=key.collected?'#99edff':'#6f7486'; ctx.lineWidth=4; ctx.beginPath(); ctx.ellipse(0,0,27,34,0,0,Math.PI*2); ctx.stroke(); ctx.restore(); }
+function drawPlayer(){ const x=player.x*TILE+30,y=player.y*TILE+32; ctx.save(); ctx.shadowColor='#6ad8ff'; ctx.shadowBlur=10; ctx.fillStyle='#f2e5cc'; ctx.fillRect(x-10,y-15,20,13); ctx.fillStyle='#efe7df'; ctx.fillRect(x-14,y-19,28,7); ctx.fillStyle='#7a4f2d'; ctx.fillRect(x-12,y-24,24,8); ctx.fillStyle='#25283a'; ctx.fillRect(x-7,y-9,4,4); ctx.fillRect(x+3,y-9,4,4); ctx.fillStyle='#6e87a3'; ctx.fillRect(x-11,y-2,22,22); ctx.fillStyle='#a56b39'; ctx.fillRect(x-16,y,6,16); ctx.fillStyle='#3d4c65'; ctx.fillRect(x-11,y+20,8,8); ctx.fillRect(x+3,y+20,8,8); ctx.restore(); }
+function drawSecret(){ if(Date.now()>=revealUntil) return; secretTiles.forEach(s=>{ const x=s.x*TILE+30,y=s.y*TILE+30; ctx.save(); ctx.shadowColor='#aa77ff'; ctx.shadowBlur=20; ctx.strokeStyle='#c49bff'; ctx.lineWidth=3; ctx.beginPath(); ctx.rect(x-15,y-15,30,30); ctx.stroke(); ctx.beginPath(); ctx.moveTo(x,y-12); ctx.lineTo(x+10,y); ctx.lineTo(x,y+12); ctx.lineTo(x-10,y); ctx.closePath(); ctx.stroke(); ctx.restore(); }); }
+function drawVignette(){ const g=ctx.createRadialGradient(canvas.width/2,canvas.height/2,180,canvas.width/2,canvas.height/2,620); g.addColorStop(0,'#0000'); g.addColorStop(1,'#02030a88'); ctx.fillStyle=g; ctx.fillRect(0,0,canvas.width,canvas.height); }
+function draw(){ frame++; ctx.clearRect(0,0,canvas.width,canvas.height); for(let y=0;y<ROWS;y++) for(let x=0;x<COLS;x++) map[y][x]===1?wallTile(x,y):floorTile(x,y); banners.forEach(drawBanner); wallTorches.forEach(drawWallTorch); edgeCrystals.forEach(drawCrystal); decorCrates.forEach(drawCrate); wallSkulls.forEach(drawWallSkull); controls.forEach(c=>c.type==='gate'?drawGate(c):drawBridge(c)); drawSecret(); drawKey(); drawPortal(); drawPlayer(); drawVignette(); if(!gameRunning&&secondsLeft>0){ ctx.fillStyle='#050713aa'; ctx.fillRect(0,0,canvas.width,canvas.height); ctx.textAlign='center'; ctx.fillStyle='#ffe8ab'; ctx.font='bold 36px Georgia'; ctx.fillText('ENTER THE DUAL-REALITY MAZE',canvas.width/2,canvas.height/2-20); ctx.fillStyle='#aab6d4'; ctx.font='17px Consolas'; ctx.fillText('Press START to awaken the dungeon',canvas.width/2,canvas.height/2+22); } requestAnimationFrame(draw); }
+async function pollR4(){ try{ const res=await fetch('/state',{cache:'no-store'}); if(!res.ok) throw new Error(); const s=await res.json(); if(Number.isInteger(s.x)) player.x=s.x; if(Number.isInteger(s.y)) player.y=s.y; if(typeof s.time==='number') secondsLeft=s.time; if(typeof s.key==='boolean') key.collected=s.key; if(typeof s.reveal==='boolean'&&s.reveal) revealUntil=Date.now()+500; if(Number.isInteger(s.selected)) selected=Math.max(0,Math.min(controls.length-1,s.selected)); if(Array.isArray(s.controls)) s.controls.forEach((v,i)=>{ if(controls[i]&&typeof v==='boolean') controls[i].open=v; }); if(typeof s.message==='string'&&s.message) setMessage(s.message); document.getElementById('modeText').textContent='R4 HARDWARE MODE — CONNECTED'; updateUI(); }catch(e){ document.getElementById('modeText').textContent='R4 HARDWARE MODE — WAITING'; }}
+function setHardware(on){ hardwareMode=on; if(pollHandle) clearInterval(pollHandle); if(on){ pollHandle=setInterval(pollR4,150); pollR4(); } else document.getElementById('modeText').textContent='SIMULATION MODE'; }
+document.addEventListener('keydown',e=>{ const k=e.key.toLowerCase(); if(['arrowup','arrowdown','arrowleft','arrowright',' '].includes(k)) e.preventDefault(); if(k==='w'||k==='arrowup') move(0,-1); if(k==='s'||k==='arrowdown') move(0,1); if(k==='a'||k==='arrowleft') move(-1,0); if(k==='d'||k==='arrowright') move(1,0); if(k==='r') reveal(); if(k==='q') selectDelta(-1); if(k==='e') selectDelta(1); if(k===' ') activateSelected(); });
+document.getElementById('startBtn').onclick=resetGame; document.getElementById('prevBtn').onclick=()=>selectDelta(-1); document.getElementById('nextBtn').onclick=()=>selectDelta(1); document.getElementById('toggleBtn').onclick=activateSelected; document.getElementById('revealBtn').onclick=reveal; document.getElementById('hardwareBtn').onclick=()=>{ setHardware(!hardwareMode); document.getElementById('hardwareBtn').textContent=hardwareMode?'Simulation':'R4 Mode'; };
+updateUI(); draw();
+</script>
+</body>
+</html>

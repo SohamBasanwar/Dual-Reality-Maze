@@ -1,0 +1,67 @@
+{
+  "startingCredits": 1270,
+  "usedCredits": 300,
+  "remainingCredits": 970,
+  "shots": [
+    {
+      "id": "opening",
+      "file": "generated/opening.mp4",
+      "provider": "PixVerse V6",
+      "settings": "720p, 5 seconds, audio enabled, multi-shot disabled, preview disabled",
+      "credits": 50,
+      "export": "Watermark-free selected in provider UI",
+      "duration": "00:00:05.04",
+      "probe": "Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'C:\\Users\\soham\\Documents\\CS 362\\GP\\trailer-kit\\full-story-v2\\generated\\opening.mp4':\r\n  Metadata:\r\n    major_brand     : isom\r\n    minor_version   : 512\r\n    compatible_brands: isomiso2avc1mp41\r\n    encoder         : Lavf60.16.100\r\n  Duration: 00:00:05.04, start: 0.000000, bitrate: 6652 kb/s\r\n  Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(tv, bt709, progressive), 1280x720, 6415 kb/s, 24 fps, 24 tbr, 12288 tbn (default)\r\n      Metadata:\r\n        handler_name    : VideoHandler\r\n        vendor_id       : [0][0][0][0]\r\n  Stream #0:1[0x2](und): Audio: aac (LC) (mp4a / 0x6134706D), 32000 Hz, stereo, fltp, 194 kb/s (default)\r\n      Metadata:\r\n        handler_name    : SoundHandler\r\n        vendor_id       : [0][0][0][0]\r\nAt least one output file must be specified\r\n"
+    },
+    {
+      "id": "chapter2",
+      "file": "generated/chapter2.mp4",
+      "provider": "PixVerse V6",
+      "settings": "720p, 5 seconds, audio enabled, multi-shot disabled, preview disabled",
+      "credits": 50,
+      "export": "Watermark-free selected in provider UI",
+      "duration": "00:00:05.04",
+      "probe": "Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'C:\\Users\\soham\\Documents\\CS 362\\GP\\trailer-kit\\full-story-v2\\generated\\chapter2.mp4':\r\n  Metadata:\r\n    major_brand     : isom\r\n    minor_version   : 512\r\n    compatible_brands: isomiso2avc1mp41\r\n    encoder         : Lavf60.16.100\r\n  Duration: 00:00:05.04, start: 0.000000, bitrate: 11437 kb/s\r\n  Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(tv, bt709, progressive), 1280x720, 11201 kb/s, 24 fps, 24 tbr, 12288 tbn (default)\r\n      Metadata:\r\n        handler_name    : VideoHandler\r\n        vendor_id       : [0][0][0][0]\r\n  Stream #0:1[0x2](und): Audio: aac (LC) (mp4a / 0x6134706D), 32000 Hz, stereo, fltp, 192 kb/s (default)\r\n      Metadata:\r\n        handler_name    : SoundHandler\r\n        vendor_id       : [0][0][0][0]\r\nAt least one output file must be specified\r\n"
+    },
+    {
+      "id": "chapter3",
+      "file": "generated/chapter3.mp4",
+      "provider": "PixVerse V6",
+      "settings": "720p, 5 seconds, audio enabled, multi-shot disabled, preview disabled",
+      "credits": 50,
+      "export": "Watermark-free selected in provider UI",
+      "duration": "00:00:05.04",
+      "probe": "Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'C:\\Users\\soham\\Documents\\CS 362\\GP\\trailer-kit\\full-story-v2\\generated\\chapter3.mp4':\r\n  Metadata:\r\n    major_brand     : isom\r\n    minor_version   : 512\r\n    compatible_brands: isomiso2avc1mp41\r\n    encoder         : Lavf60.16.100\r\n  Duration: 00:00:05.04, start: 0.000000, bitrate: 9404 kb/s\r\n  Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(tv, bt709, progressive), 1280x720, 9163 kb/s, 24 fps, 24 tbr, 12288 tbn (default)\r\n      Metadata:\r\n        handler_name    : VideoHandler\r\n        vendor_id       : [0][0][0][0]\r\n  Stream #0:1[0x2](und): Audio: aac (LC) (mp4a / 0x6134706D), 32000 Hz, stereo, fltp, 198 kb/s (default)\r\n      Metadata:\r\n        handler_name    : SoundHandler\r\n        vendor_id       : [0][0][0][0]\r\nAt least one output file must be specified\r\n"
+    },
+    {
+      "id": "chapter4",
+      "file": "generated/chapter4.mp4",
+      "provider": "PixVerse V6",
+      "settings": "720p, 5 seconds, audio enabled, multi-shot disabled, preview disabled",
+      "credits": 50,
+      "export": "Watermark-free selected in provider UI",
+      "duration": "00:00:05.04",
+      "probe": "Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'C:\\Users\\soham\\Documents\\CS 362\\GP\\trailer-kit\\full-story-v2\\generated\\chapter4.mp4':\r\n  Metadata:\r\n    major_brand     : isom\r\n    minor_version   : 512\r\n    compatible_brands: isomiso2avc1mp41\r\n    encoder         : Lavf60.16.100\r\n  Duration: 00:00:05.04, start: 0.000000, bitrate: 8327 kb/s\r\n  Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(tv, bt709, progressive), 1280x720, 8092 kb/s, 24 fps, 24 tbr, 12288 tbn (default)\r\n      Metadata:\r\n        handler_name    : VideoHandler\r\n        vendor_id       : [0][0][0][0]\r\n  Stream #0:1[0x2](und): Audio: aac (LC) (mp4a / 0x6134706D), 32000 Hz, stereo, fltp, 191 kb/s (default)\r\n      Metadata:\r\n        handler_name    : SoundHandler\r\n        vendor_id       : [0][0][0][0]\r\nAt least one output file must be specified\r\n"
+    },
+    {
+      "id": "chapter5",
+      "file": "generated/chapter5.mp4",
+      "provider": "PixVerse V6",
+      "settings": "720p, 5 seconds, audio enabled, multi-shot disabled, preview disabled",
+      "credits": 50,
+      "export": "Watermark-free selected in provider UI",
+      "duration": "00:00:05.04",
+      "probe": "Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'C:\\Users\\soham\\Documents\\CS 362\\GP\\trailer-kit\\full-story-v2\\generated\\chapter5.mp4':\r\n  Metadata:\r\n    major_brand     : isom\r\n    minor_version   : 512\r\n    compatible_brands: isomiso2avc1mp41\r\n    encoder         : Lavf60.16.100\r\n  Duration: 00:00:05.04, start: 0.000000, bitrate: 8662 kb/s\r\n  Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(tv, bt709, progressive), 1280x720, 8422 kb/s, 24 fps, 24 tbr, 12288 tbn (default)\r\n      Metadata:\r\n        handler_name    : VideoHandler\r\n        vendor_id       : [0][0][0][0]\r\n  Stream #0:1[0x2](und): Audio: aac (LC) (mp4a / 0x6134706D), 32000 Hz, stereo, fltp, 196 kb/s (default)\r\n      Metadata:\r\n        handler_name    : SoundHandler\r\n        vendor_id       : [0][0][0][0]\r\nAt least one output file must be specified\r\n"
+    },
+    {
+      "id": "homecoming",
+      "file": "generated/homecoming.mp4",
+      "provider": "PixVerse V6",
+      "settings": "720p, 5 seconds, audio enabled, multi-shot disabled, preview disabled",
+      "credits": 50,
+      "export": "Watermark-free selected in provider UI",
+      "duration": "00:00:05.04",
+      "probe": "Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'C:\\Users\\soham\\Documents\\CS 362\\GP\\trailer-kit\\full-story-v2\\generated\\homecoming.mp4':\r\n  Metadata:\r\n    major_brand     : isom\r\n    minor_version   : 512\r\n    compatible_brands: isomiso2avc1mp41\r\n    encoder         : Lavf60.16.100\r\n  Duration: 00:00:05.04, start: 0.000000, bitrate: 11204 kb/s\r\n  Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(tv, bt709, progressive), 1280x720, 10972 kb/s, 24 fps, 24 tbr, 12288 tbn (default)\r\n      Metadata:\r\n        handler_name    : VideoHandler\r\n        vendor_id       : [0][0][0][0]\r\n  Stream #0:1[0x2](und): Audio: aac (LC) (mp4a / 0x6134706D), 32000 Hz, stereo, fltp, 188 kb/s (default)\r\n      Metadata:\r\n        handler_name    : SoundHandler\r\n        vendor_id       : [0][0][0][0]\r\nAt least one output file must be specified\r\n"
+    }
+  ]
+}

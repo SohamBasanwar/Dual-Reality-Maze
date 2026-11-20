@@ -1,0 +1,38 @@
+[
+  {
+    "role": "main",
+    "keys": [
+      {
+        "key": "Breadboard_X_Lock_Key",
+        "release_mm": 10.5,
+        "intersections": []
+      },
+      {
+        "key": "Breadboard_Y_Lock_Key",
+        "release_mm": 10.5,
+        "intersections": []
+      },
+      {
+        "key": "UNO_X_Lock_Key",
+        "release_mm": 10.5,
+        "intersections": []
+      },
+      {
+        "key": "UNO_Y_Lock_Key",
+        "release_mm": 10.5,
+        "intersections": []
+      },
+      {
+        "key": "LCD_X_Lock_Key",
+        "release_mm": 10.5,
+        "intersections": []
+      },
+      {
+        "key": "LCD_Y_Lock_Key",
+        "release_mm": 10.5,
+        "intersections": []
+      }
+    ],
+    "excluded_flexible_tip_requires_physical_test": true
+  }
+]

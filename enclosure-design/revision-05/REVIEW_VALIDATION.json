@@ -1,0 +1,22 @@
+{
+  "status": "Design-review prototype; physical fit and fabrication release pending",
+  "date": "2026-10-25",
+  "printed_solids": 29,
+  "fit_test_meshes": 7,
+  "watertight_meshes": 36,
+  "component_reservations_checked": 30,
+  "printed_intersections": 0,
+  "gate_panel_sweep_step_deg": 5,
+  "gate_panel_sweep_range_deg": [
+    -60,
+    60
+  ],
+  "shutter_travel_step_mm": 1,
+  "shutter_travel_range_mm": [
+    0,
+    35
+  ],
+  "physical_fit_verified": false,
+  "electrical_integration_verified": false,
+  "source_sha256": "e0d35754de6587c02cfef53245e12f87fff7348a2de29ea60b57abcf2dfcf8df"
+}

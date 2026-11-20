@@ -1,0 +1,42 @@
+{
+  "revision": 9,
+  "status": "Design-review prototype; physical fit unverified",
+  "printed_parts": 50,
+  "single_valid_printed_solids": true,
+  "watertight_meshes_including_samples_and_optical_options": 75,
+  "reserved_component_volumes_checked": 37,
+  "printed_part_intersections_mm3_over_0p05": 0,
+  "gate_crank_checked_deg": [
+    -60,
+    60,
+    5
+  ],
+  "gate_lift_mm": 12.12436,
+  "shutters_checked": 5,
+  "i2c_travel_mm": 21,
+  "usb_travel_mm": 35,
+  "full_name_physical_parts": 9,
+  "SB_physical_parts": 12,
+  "unmarked_sensitive_parts": 29,
+  "gate_protrusion_above_nominal_lid_mm": 40,
+  "button_stroke_checked_mm": [
+    0,
+    0.45,
+    0.05
+  ],
+  "reveal_hood_rotation_checked_deg": [
+    0,
+    90,
+    5
+  ],
+  "reveal_hood_lift_checked_mm": [
+    1,
+    15,
+    1
+  ],
+  "mounts": "Edge carriers, snap clips, quarter-turn keepers; no fixed pins at unverified PCB holes",
+  "physical_fit_verified": false,
+  "powered_gate_test_performed": false,
+  "optical_test_performed": false,
+  "source_sha256": "6b236773a221d1a885b78a9ee41fc989a633b10719f263171c510ead3f93013e"
+}

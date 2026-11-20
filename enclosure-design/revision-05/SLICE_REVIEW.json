@@ -1,0 +1,32 @@
+[
+  {
+    "role": "explorer",
+    "orientation": "lid inverted; external face downward",
+    "slicer": "PrusaSlicer 2.9.6",
+    "generic_bed_mm": [
+      300,
+      300,
+      300
+    ],
+    "layer_height_mm": 0.2,
+    "nozzle_mm": 0.4,
+    "supports": "organic, build plate only",
+    "support_path_sections": 972,
+    "scope": "Slicing feasibility preview only. Not assigned UIC machine settings. G-code excluded from delivery."
+  },
+  {
+    "role": "main",
+    "orientation": "lid inverted; external face downward",
+    "slicer": "PrusaSlicer 2.9.6",
+    "generic_bed_mm": [
+      300,
+      300,
+      300
+    ],
+    "layer_height_mm": 0.2,
+    "nozzle_mm": 0.4,
+    "supports": "organic, build plate only",
+    "support_path_sections": 263,
+    "scope": "Slicing feasibility preview only. Not assigned UIC machine settings. G-code excluded from delivery."
+  }
+]

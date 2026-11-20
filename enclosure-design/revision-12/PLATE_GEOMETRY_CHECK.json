@@ -1,0 +1,72 @@
+{
+  "all_checks_passed": true,
+  "installed_piece_count": 95,
+  "material_separation": true,
+  "plates": [
+    {
+      "plate": "OPAQUE-01",
+      "separate_objects": 5,
+      "units": "mm",
+      "source_bounds_preserved": true,
+      "within_published_bed": true
+    },
+    {
+      "plate": "OPAQUE-02",
+      "separate_objects": 5,
+      "units": "mm",
+      "source_bounds_preserved": true,
+      "within_published_bed": true
+    },
+    {
+      "plate": "OPAQUE-03",
+      "separate_objects": 8,
+      "units": "mm",
+      "source_bounds_preserved": true,
+      "within_published_bed": true
+    },
+    {
+      "plate": "OPAQUE-04",
+      "separate_objects": 7,
+      "units": "mm",
+      "source_bounds_preserved": true,
+      "within_published_bed": true
+    },
+    {
+      "plate": "OPAQUE-05",
+      "separate_objects": 14,
+      "units": "mm",
+      "source_bounds_preserved": true,
+      "within_published_bed": true
+    },
+    {
+      "plate": "OPAQUE-06",
+      "separate_objects": 11,
+      "units": "mm",
+      "source_bounds_preserved": true,
+      "within_published_bed": true
+    },
+    {
+      "plate": "OPAQUE-07",
+      "separate_objects": 37,
+      "units": "mm",
+      "source_bounds_preserved": true,
+      "within_published_bed": true
+    },
+    {
+      "plate": "OPAQUE-08",
+      "separate_objects": 1,
+      "units": "mm",
+      "source_bounds_preserved": true,
+      "within_published_bed": true
+    },
+    {
+      "plate": "TRANSLUCENT-01",
+      "separate_objects": 7,
+      "units": "mm",
+      "source_bounds_preserved": true,
+      "within_published_bed": true
+    }
+  ],
+  "actual_first_plate_imported_by_prusaslicer": true,
+  "support_layout_verified": false
+}

@@ -1,0 +1,22 @@
+{
+  "status": "Digital review passed; physical fit and optical tests outstanding",
+  "printed_parts": 49,
+  "fit_samples": 14,
+  "alternative_optical_hoods": 4,
+  "verified_meshes": 67,
+  "preview_files": 32,
+  "component_reservations_checked": 30,
+  "source_sha256": "06f159980272848312704d82812871ac05552a807b18a350071a8a5171829a9c",
+  "checks": [
+    "Valid single-solid printed BReps",
+    "Watertight meshes, consistent winding, positive volume",
+    "No printed-part or nominal component conflicts",
+    "Five shutter travel paths",
+    "Gate slider, horn and drive pin sweep",
+    "Reveal hood quarter-turn sweep"
+  ],
+  "physical_fit_verified": false,
+  "optical_isolation_verified": false,
+  "powered_servo_test_performed": false,
+  "uic_print_profile_selected": false
+}

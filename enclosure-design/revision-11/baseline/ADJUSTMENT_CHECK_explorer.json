@@ -1,0 +1,144 @@
+[
+  {
+    "role": "explorer",
+    "settings": [
+      {
+        "mount": "Breadboard",
+        "axis": "X",
+        "dimension_delta_mm": -3,
+        "conflicts": []
+      },
+      {
+        "mount": "Breadboard",
+        "axis": "X",
+        "dimension_delta_mm": 0,
+        "conflicts": []
+      },
+      {
+        "mount": "Breadboard",
+        "axis": "X",
+        "dimension_delta_mm": 3,
+        "conflicts": []
+      },
+      {
+        "mount": "Breadboard",
+        "axis": "Y",
+        "dimension_delta_mm": -3,
+        "conflicts": []
+      },
+      {
+        "mount": "Breadboard",
+        "axis": "Y",
+        "dimension_delta_mm": 0,
+        "conflicts": []
+      },
+      {
+        "mount": "Breadboard",
+        "axis": "Y",
+        "dimension_delta_mm": 3,
+        "conflicts": [
+          [
+            "Breadboard_Y_Lock_Key",
+            "Base",
+            18.031
+          ],
+          [
+            "Breadboard_Envelope adjusted",
+            "Base",
+            341.719
+          ]
+        ]
+      },
+      {
+        "mount": "UNO",
+        "axis": "X",
+        "dimension_delta_mm": -3,
+        "conflicts": []
+      },
+      {
+        "mount": "UNO",
+        "axis": "X",
+        "dimension_delta_mm": 0,
+        "conflicts": []
+      },
+      {
+        "mount": "UNO",
+        "axis": "X",
+        "dimension_delta_mm": 3,
+        "conflicts": []
+      },
+      {
+        "mount": "UNO",
+        "axis": "Y",
+        "dimension_delta_mm": -3,
+        "conflicts": []
+      },
+      {
+        "mount": "UNO",
+        "axis": "Y",
+        "dimension_delta_mm": 0,
+        "conflicts": []
+      },
+      {
+        "mount": "UNO",
+        "axis": "Y",
+        "dimension_delta_mm": 3,
+        "conflicts": [
+          [
+            "UNO_Y_Jaw",
+            "Base",
+            10.067
+          ]
+        ]
+      },
+      {
+        "mount": "Joystick",
+        "axis": "X",
+        "dimension_delta_mm": -3,
+        "conflicts": []
+      },
+      {
+        "mount": "Joystick",
+        "axis": "X",
+        "dimension_delta_mm": 0,
+        "conflicts": []
+      },
+      {
+        "mount": "Joystick",
+        "axis": "X",
+        "dimension_delta_mm": 3,
+        "conflicts": [
+          [
+            "Joystick_PCB adjusted",
+            "Joystick_Carrier",
+            43.772
+          ]
+        ]
+      },
+      {
+        "mount": "Joystick",
+        "axis": "Y",
+        "dimension_delta_mm": -3,
+        "conflicts": []
+      },
+      {
+        "mount": "Joystick",
+        "axis": "Y",
+        "dimension_delta_mm": 0,
+        "conflicts": []
+      },
+      {
+        "mount": "Joystick",
+        "axis": "Y",
+        "dimension_delta_mm": 3,
+        "conflicts": [
+          [
+            "Joystick_PCB adjusted",
+            "Joystick_Carrier",
+            61.859
+          ]
+        ]
+      }
+    ]
+  }
+]

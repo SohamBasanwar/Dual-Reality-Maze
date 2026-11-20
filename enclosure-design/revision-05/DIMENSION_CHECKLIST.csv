@@ -1,0 +1,20 @@
+Part,Photo evidence,Nominal reservation,Still needed before final print
+All three breadboards,Full-size board; user confirms same size,166 x 55 x 10 mm,Measure total length width height including side interlocks and backing
+UNO R3,Board family confirmed,68.6 x 53.4 mm PCB,Header and plug heights; underside clearance; strap routes clear of contacts
+UNO R4 WiFi,R4 with clear base in photo,68.85 x 53.34 mm PCB,Remove clear base for this cradle; verify antenna and USB-C cable clearance
+Joystick,Black PCB with 5-pin header,34 x 26 mm PCB,PCB size cap full swing header direction shaft height and cable bend
+Pushbutton,Large square metal-top tactile type,12 x 12 x 6 mm placeholder,Body size actuator height operating travel lead projection and force
+Potentiometer,User product reference only,16 mm body and 6 mm shaft placeholder,Actual purchased part body shaft flats/spline length antirotation tab and lugs
+Bronze knob,User reference option,22 mm diameter x 14 mm height placeholder,Actual bore and retention type; choose press-fit rather than a set-screw knob
+SG90,Blue servo with supplied horns,23 x 12.2 x 29 mm family reference,All mounting ears shaft position horn hole sizes thickness sweep and wire exit
+LCD plus I2C backpack,Both sides photographed,80.6 x 36 mm PCB; 42 x 20 x 9 mm backpack allowance,Actual PCB window glass bezel trimmer header projections and combined depth
+Bare light sensor,Round two-lead LDR,5.4 mm face placeholder,Disk diameter thickness lead bend and clearance from RGB light
+RGB LED,Four-lead clear LED visible,5 mm package placeholder,Package diameter flange lead order common anode/cathode and LED specifications
+Buzzer,Round sounder plus separate rectangular speaker photographed,20 mm diameter x 11 mm placeholder,Which sounder will be installed; actual size active/passive voltage/current
+9V battery,Common disposable PP3 selected,26.5 x 48.5 x 17.5 mm reference,Check purchased cell and snap together; insulate exposed terminals
+Battery snap and leads,Snap photographed,Extra bay length up to 61 mm overall,Actual connector thickness width lead bend and pull-ribbon clearance
+Power regulator and load switch,Not selected,30 x 22 x 12 mm provisional zone,Select electrical design first; footprint height connectors ventilation and rating
+I2C tether and strain relief,Dupont leads photographed,10.4 mm entry placeholder,Select sleeved cable and locking connector; outer diameter and bend radius
+Optional ESP32,Not selected by user,60 x 32 x 18 mm plus 5 mm jumper space,Actual PCB headers antenna USB connector and low-profile wire access
+Main USB fallback lead,R3 USB-B or R4 USB-C,30 x 20 mm nominal rear opening and 35 mm shutter travel,Actual plug boot cable bend and extension routing through guides
+RGB keeper,Nominal 5 mm four-lead LED,Quarter-turn keeper and 6 mm flange allowance,Actual flange body lead order and fit in intended print material

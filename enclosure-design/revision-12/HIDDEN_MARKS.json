@@ -1,0 +1,978 @@
+{
+  "restored_exterior_marks": [
+    {
+      "role": "explorer",
+      "name": "I2C_Rear_Shutter",
+      "reason": "external finger-tab initials",
+      "restored_mm3": 1.5995553539901266
+    },
+    {
+      "role": "explorer",
+      "name": "Base",
+      "reason": "exposed assembly code E01",
+      "restored_mm3": 2.1088918132300023
+    },
+    {
+      "role": "explorer",
+      "name": "Base",
+      "reason": "exterior base owner name",
+      "restored_mm3": 13.934399825899163
+    },
+    {
+      "role": "architect",
+      "name": "I2C_Rear_Shutter",
+      "reason": "external finger-tab initials",
+      "restored_mm3": 1.5995553539901266
+    },
+    {
+      "role": "architect",
+      "name": "Servo_Retainer",
+      "reason": "exposed assembly code A25",
+      "restored_mm3": 1.211934086452402
+    },
+    {
+      "role": "architect",
+      "name": "Servo_Retainer",
+      "reason": "servo retainer top initials",
+      "restored_mm3": 1.8551046822421995
+    },
+    {
+      "role": "architect",
+      "name": "Button_Cap",
+      "reason": "button top initials",
+      "restored_mm3": 1.3629361763692032
+    },
+    {
+      "role": "architect",
+      "name": "Base",
+      "reason": "exposed assembly code A01",
+      "restored_mm3": 2.0629289241915103
+    },
+    {
+      "role": "architect",
+      "name": "Base",
+      "reason": "exterior base owner name",
+      "restored_mm3": 13.939145995565923
+    },
+    {
+      "role": "main",
+      "name": "I2C_Left_Shutter",
+      "reason": "external finger-tab initials",
+      "restored_mm3": 1.5995553633627313
+    },
+    {
+      "role": "main",
+      "name": "I2C_Right_Shutter",
+      "reason": "external finger-tab initials",
+      "restored_mm3": 1.5995553633626716
+    },
+    {
+      "role": "main",
+      "name": "Button_Cap",
+      "reason": "button top initials",
+      "restored_mm3": 1.3629347461033534
+    },
+    {
+      "role": "main",
+      "name": "USB_Shutter",
+      "reason": "external finger-tab initials",
+      "restored_mm3": 1.5995553633626924
+    },
+    {
+      "role": "main",
+      "name": "Base",
+      "reason": "exposed assembly code M01",
+      "restored_mm3": 2.5045107160533915
+    },
+    {
+      "role": "main",
+      "name": "Base",
+      "reason": "exterior base owner name",
+      "restored_mm3": 13.970341467204094
+    },
+    {
+      "role": "main",
+      "name": "Light_G1_Bezel",
+      "reason": "exposed assembly code M23",
+      "restored_mm3": 1.4132550834502087
+    },
+    {
+      "role": "main",
+      "name": "Light_G1_Bezel",
+      "reason": "light bezel top initials",
+      "restored_mm3": 1.057148104104103
+    },
+    {
+      "role": "main",
+      "name": "Light_G2_Bezel",
+      "reason": "exposed assembly code M25",
+      "restored_mm3": 1.4543143403789023
+    },
+    {
+      "role": "main",
+      "name": "Light_G2_Bezel",
+      "reason": "light bezel top initials",
+      "restored_mm3": 1.05714810410411
+    },
+    {
+      "role": "main",
+      "name": "Light_G3_Bezel",
+      "reason": "exposed assembly code M27",
+      "restored_mm3": 1.3365017812303313
+    },
+    {
+      "role": "main",
+      "name": "Light_G4_Bezel",
+      "reason": "exposed assembly code M29",
+      "restored_mm3": 1.4896099390478654
+    },
+    {
+      "role": "main",
+      "name": "Light_G4_Bezel",
+      "reason": "light bezel top initials",
+      "restored_mm3": 1.0571481041041002
+    },
+    {
+      "role": "main",
+      "name": "Lid",
+      "reason": "top receiver code M23",
+      "restored_mm3": 1.8249678247032843
+    },
+    {
+      "role": "main",
+      "name": "Lid",
+      "reason": "top receiver code M25",
+      "restored_mm3": 1.8779885593736265
+    },
+    {
+      "role": "main",
+      "name": "Lid",
+      "reason": "top receiver code M27",
+      "restored_mm3": 1.7258545728697652
+    },
+    {
+      "role": "main",
+      "name": "Lid",
+      "reason": "top receiver code M29",
+      "restored_mm3": 1.9235665535225885
+    }
+  ],
+  "new_hidden_marks": [
+    {
+      "label": "SB",
+      "role": "explorer",
+      "name": "I2C_Rear_Shutter",
+      "kind": "owner",
+      "centre_mm": [
+        123.0,
+        0.0,
+        21.0
+      ],
+      "view_direction": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "height_mm": 2.6,
+      "visibility": "Interior back face; hidden when shutter is closed"
+    },
+    {
+      "label": "E12",
+      "role": "explorer",
+      "name": "I2C_Rear_Shutter",
+      "kind": "code",
+      "centre_mm": [
+        123.0,
+        0.0,
+        26.0
+      ],
+      "view_direction": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "height_mm": 2.6,
+      "visibility": "Interior back face; hidden when shutter is closed"
+    },
+    {
+      "label": "Soham Basanwar",
+      "xy_mm": [
+        65,
+        105
+      ],
+      "z_mm": 4.0,
+      "angle_deg": 0,
+      "underside": false,
+      "height_mm": 3.6,
+      "bounds_xywh_mm": [
+        65.0,
+        105.0,
+        39.03149044585987,
+        3.4829044585987248
+      ],
+      "removed_mm3": 13.145863120589638,
+      "visibility": "Hidden when assembled",
+      "role": "explorer",
+      "name": "Base",
+      "kind": "owner"
+    },
+    {
+      "label": "E01",
+      "xy_mm": [
+        150,
+        76
+      ],
+      "z_mm": 4.0,
+      "angle_deg": 0,
+      "underside": false,
+      "height_mm": 3,
+      "bounds_xywh_mm": [
+        150.0,
+        76.0,
+        6.041146496815287,
+        2.869808917197446
+      ],
+      "removed_mm3": 2.0955913868674543,
+      "visibility": "Hidden when assembled",
+      "role": "explorer",
+      "name": "Base",
+      "kind": "code"
+    },
+    {
+      "label": "SB",
+      "role": "architect",
+      "name": "I2C_Rear_Shutter",
+      "kind": "owner",
+      "centre_mm": [
+        123.0,
+        0.0,
+        21.0
+      ],
+      "view_direction": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "height_mm": 2.6,
+      "visibility": "Interior back face; hidden when shutter is closed"
+    },
+    {
+      "label": "A20",
+      "role": "architect",
+      "name": "I2C_Rear_Shutter",
+      "kind": "code",
+      "centre_mm": [
+        123.0,
+        0.0,
+        26.0
+      ],
+      "view_direction": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "height_mm": 2.6,
+      "visibility": "Interior back face; hidden when shutter is closed"
+    },
+    {
+      "label": "SB",
+      "xy_mm": [
+        46.6,
+        88.4
+      ],
+      "z_mm": 53.7,
+      "angle_deg": 0,
+      "underside": true,
+      "height_mm": 2.4,
+      "removed_mm3": 1.2580936114968608,
+      "visibility": "Hidden when assembled",
+      "role": "architect",
+      "name": "Button_Cap",
+      "kind": "owner"
+    },
+    {
+      "label": "A09",
+      "xy_mm": [
+        45.2,
+        98.5
+      ],
+      "z_mm": 53.7,
+      "angle_deg": 0,
+      "underside": true,
+      "height_mm": 2.4,
+      "removed_mm3": 1.5281309602669353,
+      "visibility": "Hidden when assembled",
+      "role": "architect",
+      "name": "Button_Cap",
+      "kind": "code"
+    },
+    {
+      "label": "Soham Basanwar",
+      "xy_mm": [
+        65,
+        105
+      ],
+      "z_mm": 4.0,
+      "angle_deg": 0,
+      "underside": false,
+      "height_mm": 3.6,
+      "bounds_xywh_mm": [
+        65.0,
+        105.0,
+        39.03149044585987,
+        3.4829044585987248
+      ],
+      "removed_mm3": 13.13045266235713,
+      "visibility": "Hidden when assembled",
+      "role": "architect",
+      "name": "Base",
+      "kind": "owner"
+    },
+    {
+      "label": "A01",
+      "xy_mm": [
+        150,
+        76
+      ],
+      "z_mm": 4.0,
+      "angle_deg": 0,
+      "underside": false,
+      "height_mm": 3,
+      "bounds_xywh_mm": [
+        150.0,
+        76.0,
+        6.545987261146507,
+        2.869808917197446
+      ],
+      "removed_mm3": 2.0513862484076526,
+      "visibility": "Hidden when assembled",
+      "role": "architect",
+      "name": "Base",
+      "kind": "code"
+    },
+    {
+      "label": "SB",
+      "role": "main",
+      "name": "I2C_Left_Shutter",
+      "kind": "owner",
+      "centre_mm": [
+        234.0,
+        125.0,
+        21.0
+      ],
+      "view_direction": [
+        -1.0,
+        0.0,
+        0.0
+      ],
+      "height_mm": 2.6,
+      "visibility": "Interior back face; hidden when shutter is closed"
+    },
+    {
+      "label": "M14",
+      "role": "main",
+      "name": "I2C_Left_Shutter",
+      "kind": "code",
+      "centre_mm": [
+        234.0,
+        125.0,
+        26.0
+      ],
+      "view_direction": [
+        -1.0,
+        0.0,
+        0.0
+      ],
+      "height_mm": 2.6,
+      "visibility": "Interior back face; hidden when shutter is closed"
+    },
+    {
+      "label": "SB",
+      "role": "main",
+      "name": "I2C_Right_Shutter",
+      "kind": "owner",
+      "centre_mm": [
+        0.0,
+        95.0,
+        21.0
+      ],
+      "view_direction": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "height_mm": 2.6,
+      "visibility": "Interior back face; hidden when shutter is closed"
+    },
+    {
+      "label": "M16",
+      "role": "main",
+      "name": "I2C_Right_Shutter",
+      "kind": "code",
+      "centre_mm": [
+        0.0,
+        95.0,
+        26.0
+      ],
+      "view_direction": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "height_mm": 2.6,
+      "visibility": "Interior back face; hidden when shutter is closed"
+    },
+    {
+      "label": "SB",
+      "xy_mm": [
+        114.6,
+        138.4
+      ],
+      "z_mm": 59.7,
+      "angle_deg": 0,
+      "underside": true,
+      "height_mm": 2.4,
+      "bounds_xywh_mm": [
+        114.6,
+        138.4,
+        4.0805095541401215,
+        2.3219363057324927
+      ],
+      "removed_mm3": 1.2580936114979977,
+      "visibility": "Hidden when assembled",
+      "role": "main",
+      "name": "Button_Cap",
+      "kind": "owner"
+    },
+    {
+      "label": "M09",
+      "xy_mm": [
+        113.2,
+        148.5
+      ],
+      "z_mm": 59.7,
+      "angle_deg": 0,
+      "underside": true,
+      "height_mm": 2.4,
+      "bounds_xywh_mm": [
+        113.2,
+        148.5,
+        5.724636942675161,
+        2.295847133757974
+      ],
+      "removed_mm3": 1.8165856658717985,
+      "visibility": "Hidden when assembled",
+      "role": "main",
+      "name": "Button_Cap",
+      "kind": "code"
+    },
+    {
+      "label": "SB",
+      "role": "main",
+      "name": "USB_Shutter",
+      "kind": "owner",
+      "centre_mm": [
+        117.0,
+        0.0,
+        31.0
+      ],
+      "view_direction": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "height_mm": 2.6,
+      "visibility": "Interior back face; hidden when shutter is closed"
+    },
+    {
+      "label": "M39",
+      "role": "main",
+      "name": "USB_Shutter",
+      "kind": "code",
+      "centre_mm": [
+        117.0,
+        0.0,
+        36.0
+      ],
+      "view_direction": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "height_mm": 2.6,
+      "visibility": "Interior back face; hidden when shutter is closed"
+    },
+    {
+      "label": "Soham Basanwar",
+      "xy_mm": [
+        90,
+        20
+      ],
+      "z_mm": 4.0,
+      "angle_deg": 0,
+      "underside": false,
+      "height_mm": 3.6,
+      "bounds_xywh_mm": [
+        90.0,
+        20.0,
+        39.03149044585987,
+        3.4829044585987248
+      ],
+      "removed_mm3": 13.581073657958768,
+      "visibility": "Hidden when assembled",
+      "role": "main",
+      "name": "Base",
+      "kind": "owner"
+    },
+    {
+      "label": "M01",
+      "xy_mm": [
+        93,
+        70
+      ],
+      "z_mm": 4.0,
+      "angle_deg": 0,
+      "underside": false,
+      "height_mm": 3,
+      "bounds_xywh_mm": [
+        93.0,
+        70.0,
+        6.701019108280249,
+        2.869808917197446
+      ],
+      "removed_mm3": 2.565041701600421,
+      "visibility": "Hidden when assembled",
+      "role": "main",
+      "name": "Base",
+      "kind": "code"
+    },
+    {
+      "label": "SB",
+      "xy_mm": [
+        67,
+        10.2
+      ],
+      "z_mm": 64.95,
+      "angle_deg": 0,
+      "underside": true,
+      "height_mm": 2.2,
+      "bounds_xywh_mm": [
+        67.0,
+        10.2,
+        3.740467091295116,
+        2.1284416135881106
+      ],
+      "removed_mm3": 1.0571481041038169,
+      "visibility": "Hidden when assembled",
+      "role": "main",
+      "name": "Light_G1_Bezel",
+      "kind": "owner"
+    },
+    {
+      "label": "M23",
+      "xy_mm": [
+        61,
+        10.2
+      ],
+      "z_mm": 64.95,
+      "angle_deg": 0,
+      "underside": true,
+      "height_mm": 2.2,
+      "bounds_xywh_mm": [
+        61.000000000000014,
+        10.2,
+        5.257392781316341,
+        2.104526539278133
+      ],
+      "removed_mm3": 1.4132550834499398,
+      "visibility": "Hidden when assembled",
+      "role": "main",
+      "name": "Light_G1_Bezel",
+      "kind": "code"
+    },
+    {
+      "label": "SB",
+      "xy_mm": [
+        169,
+        10.2
+      ],
+      "z_mm": 64.95,
+      "angle_deg": 0,
+      "underside": true,
+      "height_mm": 2.2,
+      "bounds_xywh_mm": [
+        169.00000000000003,
+        10.2,
+        3.740467091295102,
+        2.1284416135881106
+      ],
+      "removed_mm3": 1.057148104104158,
+      "visibility": "Hidden when assembled",
+      "role": "main",
+      "name": "Light_G2_Bezel",
+      "kind": "owner"
+    },
+    {
+      "label": "M25",
+      "xy_mm": [
+        154,
+        10.2
+      ],
+      "z_mm": 64.95,
+      "angle_deg": 0,
+      "underside": true,
+      "height_mm": 2.2,
+      "bounds_xywh_mm": [
+        154.0,
+        10.2,
+        5.29382590233547,
+        2.104526539278133
+      ],
+      "removed_mm3": 1.454314340380165,
+      "visibility": "Hidden when assembled",
+      "role": "main",
+      "name": "Light_G2_Bezel",
+      "kind": "code"
+    },
+    {
+      "label": "M27",
+      "xy_mm": [
+        38.3,
+        59
+      ],
+      "z_mm": 64.95,
+      "angle_deg": 90,
+      "underside": true,
+      "height_mm": 2.2,
+      "bounds_xywh_mm": [
+        38.3,
+        59.0,
+        2.068653927813166,
+        5.2531889596603065
+      ],
+      "removed_mm3": 1.3365017812307087,
+      "visibility": "Hidden when assembled",
+      "role": "main",
+      "name": "Light_G3_Bezel",
+      "kind": "code"
+    },
+    {
+      "label": "SB",
+      "xy_mm": [
+        193.5,
+        69
+      ],
+      "z_mm": 64.95,
+      "angle_deg": 90,
+      "underside": true,
+      "height_mm": 2.2,
+      "bounds_xywh_mm": [
+        193.5,
+        69.0,
+        2.128441613588109,
+        3.740467091295116
+      ],
+      "removed_mm3": 1.0571481041042716,
+      "visibility": "Hidden when assembled",
+      "role": "main",
+      "name": "Light_G4_Bezel",
+      "kind": "owner"
+    },
+    {
+      "label": "M29",
+      "xy_mm": [
+        193.5,
+        59
+      ],
+      "z_mm": 64.95,
+      "angle_deg": 90,
+      "underside": true,
+      "height_mm": 2.2,
+      "bounds_xywh_mm": [
+        193.5,
+        59.0,
+        2.104526539278112,
+        5.247583864118894
+      ],
+      "removed_mm3": 1.4896099390474546,
+      "visibility": "Hidden when assembled",
+      "role": "main",
+      "name": "Light_G4_Bezel",
+      "kind": "code"
+    },
+    {
+      "label": "M23",
+      "xy_mm": [
+        61,
+        13
+      ],
+      "z_mm": 54,
+      "angle_deg": 0,
+      "underside": true,
+      "height_mm": 2.6,
+      "bounds_xywh_mm": [
+        61.00000000000001,
+        13.0,
+        6.21328237791932,
+        2.4871677282377913
+      ],
+      "removed_mm3": 1.973913414607523,
+      "visibility": "Hidden when assembled",
+      "role": "main",
+      "name": "Lid",
+      "kind": "receiver",
+      "tag": "G1"
+    },
+    {
+      "label": "M25",
+      "xy_mm": [
+        159,
+        13
+      ],
+      "z_mm": 54,
+      "angle_deg": 0,
+      "underside": true,
+      "height_mm": 2.6,
+      "bounds_xywh_mm": [
+        159.0,
+        13.0,
+        6.256339702760073,
+        2.4871677282377913
+      ],
+      "removed_mm3": 2.031324568524724,
+      "visibility": "Hidden when assembled",
+      "role": "main",
+      "name": "Lid",
+      "kind": "receiver",
+      "tag": "G2"
+    },
+    {
+      "label": "M27",
+      "xy_mm": [
+        41,
+        69
+      ],
+      "z_mm": 52,
+      "angle_deg": 90,
+      "underside": true,
+      "height_mm": 2.6,
+      "bounds_xywh_mm": [
+        41.0,
+        69.0,
+        2.4447728237791893,
+        6.208314225053087
+      ],
+      "removed_mm3": 1.866535499197198,
+      "visibility": "Hidden when assembled",
+      "role": "main",
+      "name": "Lid",
+      "kind": "receiver",
+      "tag": "G3"
+    },
+    {
+      "label": "M29",
+      "xy_mm": [
+        190,
+        69
+      ],
+      "z_mm": 52,
+      "angle_deg": 90,
+      "underside": true,
+      "height_mm": 2.6,
+      "bounds_xywh_mm": [
+        190.0,
+        69.0,
+        2.487167728237779,
+        6.201690021231428
+      ],
+      "removed_mm3": 2.080438217992196,
+      "visibility": "Hidden when assembled",
+      "role": "main",
+      "name": "Lid",
+      "kind": "receiver",
+      "tag": "G4"
+    }
+  ],
+  "modified_parts": [
+    {
+      "role": "explorer",
+      "name": "I2C_Rear_Shutter",
+      "added_mm3": 1.5995553707110508,
+      "removed_mm3": 3.0015861060272924,
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "role": "explorer",
+      "name": "Base",
+      "added_mm3": 16.069243892424094,
+      "removed_mm3": 14.994602315816467,
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "role": "architect",
+      "name": "I2C_Rear_Shutter",
+      "added_mm3": 1.5995553707110508,
+      "removed_mm3": 3.203796628396014,
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "role": "architect",
+      "name": "Servo_Retainer",
+      "added_mm3": 3.0670378891569325,
+      "removed_mm3": 0.0,
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "role": "architect",
+      "name": "Button_Cap",
+      "added_mm3": 1.3629347460987573,
+      "removed_mm3": 2.786224571765198,
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "role": "architect",
+      "name": "Base",
+      "added_mm3": 16.02414161321064,
+      "removed_mm3": 14.949500036616508,
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "role": "main",
+      "name": "I2C_Left_Shutter",
+      "added_mm3": 1.5995553633626973,
+      "removed_mm3": 3.294040707240862,
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "role": "main",
+      "name": "I2C_Right_Shutter",
+      "added_mm3": 1.5995553700599348,
+      "removed_mm3": 3.3725282771080645,
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "role": "main",
+      "name": "Button_Cap",
+      "added_mm3": 1.3629347507459937,
+      "removed_mm3": 3.074679277367838,
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "role": "main",
+      "name": "USB_Shutter",
+      "added_mm3": 1.5995553707110508,
+      "removed_mm3": 3.516545327546851,
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "role": "main",
+      "name": "Base",
+      "added_mm3": 16.47485217402955,
+      "removed_mm3": 15.40021051412068,
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "role": "main",
+      "name": "Lid",
+      "added_mm3": 7.352377510469183,
+      "removed_mm3": 7.95233151532356,
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "role": "main",
+      "name": "Light_G1_Bezel",
+      "added_mm3": 2.4704031875542127,
+      "removed_mm3": 2.4704031875544046,
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "role": "main",
+      "name": "Light_G2_Bezel",
+      "added_mm3": 2.5114624444829112,
+      "removed_mm3": 2.5114624444831466,
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "role": "main",
+      "name": "Light_G3_Bezel",
+      "added_mm3": 1.3365017812303839,
+      "removed_mm3": 1.336501781230331,
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "role": "main",
+      "name": "Light_G4_Bezel",
+      "added_mm3": 2.5467580431521224,
+      "removed_mm3": 2.5467580431518946,
+      "valid": true,
+      "solids": 1
+    }
+  ],
+  "policy": "No ownership or assembly lettering on assembled exterior. Preserve functional symbols and internal adjustment arrows.",
+  "base_face_repair": [
+    {
+      "role": "explorer",
+      "inner_floor_z_mm": 4.0,
+      "valid": true,
+      "added_above_inner_floor_mm3": 0
+    },
+    {
+      "role": "architect",
+      "inner_floor_z_mm": 4.0,
+      "valid": true,
+      "added_above_inner_floor_mm3": 0
+    },
+    {
+      "role": "main",
+      "inner_floor_z_mm": 4.0,
+      "valid": true,
+      "added_above_inner_floor_mm3": 0
+    }
+  ],
+  "clip_land_repair": [
+    {
+      "role": "main",
+      "name": "Light_G1_Bezel",
+      "label": "SB",
+      "outside_probe_intersection_mm3": 0.015204932017074338,
+      "exposed": false
+    },
+    {
+      "role": "main",
+      "name": "Light_G2_Bezel",
+      "label": "M25",
+      "outside_probe_intersection_mm3": 0.030108255367374704,
+      "exposed": false
+    },
+    {
+      "role": "main",
+      "name": "Light_G3_Bezel",
+      "label": "M27",
+      "outside_probe_intersection_mm3": 0.0138306587984325,
+      "exposed": false
+    },
+    {
+      "role": "main",
+      "name": "Light_G4_Bezel",
+      "label": "M29",
+      "outside_probe_intersection_mm3": 0.023445272045650806,
+      "exposed": false
+    }
+  ],
+  "audit_note": "modified_parts volumes describe the initial R12 relocation. Later base/clip-land corrections are recorded separately and final geometry is validated by HIDDEN_FACE_CHECK, BASE_REPAIR_CHECK, CAD_VALIDATION and MESH_VALIDATION."
+}

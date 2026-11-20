@@ -1,0 +1,144 @@
+{
+  "duration": 54,
+  "width": 1920,
+  "height": 1080,
+  "fps": 24,
+  "generatedSourceResolution": "720p; resized to 1080p delivery frame without watermark removal or invented detail",
+  "generatedCreditCost": 300,
+  "creditsRemainingAfterBatch": 970,
+  "gameCapture": "Staged animation using unmodified game canvas renderers, not a recorded player completing levels",
+  "audio": "PixVerse scene sound effects; original synthesized score; existing Clipchamp Adam Multilingual King line",
+  "shots": [
+    {
+      "id": "01_oath",
+      "file": "images/sleeping-princess.png",
+      "still": true,
+      "duration": 4,
+      "head": "A KINGDOM WAITING. A PROMISE MADE.",
+      "title": "“Bring my daughter home.”",
+      "subtitle": "“I am counting on you.”",
+      "type": "Existing game character artwork",
+      "voice": true,
+      "start": 0
+    },
+    {
+      "id": "02_portal",
+      "file": "trailer-kit/full-story-v2/generated/opening.mp4",
+      "duration": 5,
+      "head": "THE ARCHITECT’S OATH",
+      "title": "Two heroes. One path.",
+      "type": "Cinematic preview from game artwork",
+      "native": true,
+      "start": 4
+    },
+    {
+      "id": "03_promise",
+      "duration": 1.5,
+      "card": true,
+      "head": "A COOPERATIVE FANTASY ADVENTURE",
+      "title": "One explores. One shapes the way.",
+      "start": 9
+    },
+    {
+      "id": "04_maze",
+      "file": "trailer-kit/clips/01_maze_and_architect.mp4",
+      "duration": 4,
+      "head": "CHAPTER I · THE ARCHITECT’S OATH",
+      "title": "Move together. Open the way.",
+      "type": "Prototype gameplay · staged capture",
+      "start": 10.5
+    },
+    {
+      "id": "05_transform",
+      "file": "trailer-kit/clips/02_architect_transformation.mp4",
+      "duration": 2,
+      "head": "BECOME THE WAY FORWARD",
+      "type": "In-game cinematic · staged capture",
+      "start": 14.5
+    },
+    {
+      "id": "06_sky",
+      "file": "trailer-kit/full-story-v2/generated/chapter2.mp4",
+      "duration": 5,
+      "head": "CHAPTER II · THE ALCHEMIST’S CURE",
+      "title": "A cure beyond the clouds.",
+      "type": "Cinematic preview from game artwork",
+      "native": true,
+      "start": 16.5
+    },
+    {
+      "id": "07_flight",
+      "file": "trailer-kit/clips/04_dragon_flight.mp4",
+      "duration": 3,
+      "head": "TAKE TO THE SKY",
+      "type": "In-game cinematic · staged capture",
+      "start": 21.5
+    },
+    {
+      "id": "08_forest",
+      "file": "trailer-kit/full-story-v2/generated/chapter3.mp4",
+      "duration": 5,
+      "head": "CHAPTER III · FOREST OF LOST MEMORIES",
+      "title": "Find what the forest remembers.",
+      "type": "Cinematic preview from game artwork",
+      "native": true,
+      "start": 24.5
+    },
+    {
+      "id": "09_memory",
+      "file": "trailer-kit/clips/06_memory_in_the_jar.mp4",
+      "duration": 3,
+      "head": "CARRY HER MEMORIES HOME",
+      "type": "In-game cinematic · staged capture",
+      "start": 29.5
+    },
+    {
+      "id": "10_beyond",
+      "duration": 1.5,
+      "card": true,
+      "head": "THE STORY CONTINUES",
+      "title": "The oath is only the beginning.",
+      "start": 32.5
+    },
+    {
+      "id": "11_citadel",
+      "file": "trailer-kit/full-story-v2/generated/chapter4.mp4",
+      "duration": 5,
+      "head": "CHAPTER IV · THE CLOCKWORK CITADEL",
+      "title": "Restore the bell. Reveal the truth.",
+      "type": "Coming soon · concept cinematic",
+      "native": true,
+      "start": 34
+    },
+    {
+      "id": "12_seal",
+      "file": "trailer-kit/full-story-v2/generated/chapter5.mp4",
+      "duration": 5,
+      "head": "CHAPTER V · THE HEART BEYOND THE VEIL",
+      "title": "Break the bindings. Seal the throne.",
+      "type": "Coming soon · concept cinematic",
+      "native": true,
+      "start": 39
+    },
+    {
+      "id": "13_home",
+      "file": "trailer-kit/full-story-v2/generated/homecoming.mp4",
+      "duration": 5,
+      "head": "A PROMISE CARRIED HOME",
+      "title": "Every path led here.",
+      "type": "Planned story conclusion · concept preview",
+      "native": true,
+      "start": 44
+    },
+    {
+      "id": "14_end",
+      "duration": 5,
+      "card": true,
+      "end": true,
+      "head": "THE ARCHITECT’S OATH",
+      "title": "DUAL-REALITY MAZE",
+      "subtitle": "Two players. One shared adventure.",
+      "start": 49
+    }
+  ]
+}

@@ -1,0 +1,129 @@
+{
+  "provider": "elevenlabs",
+  "modelId": "eleven_v3",
+  "outputFormat": "mp3_44100_128",
+  "audioTagsEnabled": true,
+  "voiceSettings": {
+    "stability": 0.5
+  },
+  "normalization": {
+    "enabled": false,
+    "integratedLUFS": -18,
+    "truePeakDB": -2
+  },
+  "characters": {
+    "king": {
+      "name": "King",
+      "castId": "king-v1",
+      "voiceId": null,
+      "personality": "A father whose authority is strained by fear for his daughter.",
+      "characteristics": "Mature, grounded lower register; clear and restrained.",
+      "accent": "No story-defined accent; choose a natural English voice and keep it consistent.",
+      "delivery": "Measured appeals; allow a pause when reassurance gives way to grief.",
+      "typicalEmotions": [
+        "concern",
+        "hope",
+        "grief"
+      ],
+      "changes": "The forbidden ritual is a desperate, grave decision rather than a triumphant proclamation.",
+      "speakingSpeed": "Measured, about 125–145 words/minute when auditioning."
+    },
+    "architect": {
+      "name": "Architect",
+      "castId": "architect-v1",
+      "voiceId": null,
+      "personality": "Protective companion who lends his power to the paths and learns to ask the forest for help.",
+      "characteristics": "Warm lower register, thoughtful and steady.",
+      "accent": "No story-defined accent; keep the selected English voice across chapters.",
+      "delivery": "Conversational, slightly unhurried; resolve without a constant announcer tone.",
+      "typicalEmotions": [
+        "resolve",
+        "wonder",
+        "gratitude"
+      ],
+      "changes": "Gentler with the sleeping Princess; uncertainty when the forest rejects him; gratitude after the Dryad's blessing.",
+      "speakingSpeed": "Steady, about 130–150 words/minute; allow pauses around promises."
+    },
+    "explorer": {
+      "name": "Rowan / Explorer",
+      "castId": "explorer-v1",
+      "voiceId": null,
+      "personality": "Curious and loyal adventurer; brings practical knowledge and hope to the rescue.",
+      "characteristics": "Bright young adult voice, warm and clear.",
+      "accent": "No story-defined accent; choose for clarity rather than an invented regional identity.",
+      "delivery": "Light conversational energy; quicker in danger, softer when reassuring the memory.",
+      "typicalEmotions": [
+        "curiosity",
+        "urgency",
+        "joy",
+        "concern"
+      ],
+      "changes": "Delight at seeing the dragon; concern at the Princess's sleep; quiet reassurance when opening the jar.",
+      "speakingSpeed": "Conversational, about 145–165 words/minute; quieter reassurance can slow down."
+    },
+    "princess": {
+      "name": "Princess",
+      "castId": "princess-v1",
+      "voiceId": null,
+      "personality": "Seeks help, then struggles with lost memories before recognizing her family.",
+      "characteristics": "Distinct clear female voice with natural breath and emotional range.",
+      "accent": "No accent is specified by the story.",
+      "delivery": "Urgent in captivity, tentative after waking, relieved at recognition.",
+      "typicalEmotions": [
+        "fear",
+        "confusion",
+        "relief"
+      ],
+      "changes": "The opening cry and the later confused question must not use the same performance intensity.",
+      "speakingSpeed": "Clear, about 135–155 words/minute; pause naturally in the confused waking question."
+    },
+    "physician": {
+      "name": "Physician",
+      "castId": "physician-v1",
+      "voiceId": null,
+      "personality": "Compassionate, precise guide who explains the curse and missing memories.",
+      "characteristics": "Clear adult voice distinct from the King and Architect.",
+      "accent": "No story-defined accent.",
+      "delivery": "Calm diagnosis with a little weight before difficult news.",
+      "typicalEmotions": [
+        "concern",
+        "certainty"
+      ],
+      "changes": "Explain the stolen memories with gravity, without treating narration as spoken dialogue.",
+      "speakingSpeed": "Measured, about 130–150 words/minute; keep the diagnosis easy to understand."
+    },
+    "alchemist": {
+      "name": "Great Alchemist",
+      "castId": "alchemist-v1",
+      "voiceId": null,
+      "personality": "Patient healer who understands the difference between body and spirit.",
+      "characteristics": "Mature, warm textured voice; intelligible rather than excessively slow.",
+      "accent": "No story-defined accent.",
+      "delivery": "Thoughtful pauses and quiet concentration during brewing.",
+      "typicalEmotions": [
+        "concern",
+        "resolve",
+        "hope"
+      ],
+      "changes": "A welcome is warmer than the focused incantation over the ingredients.",
+      "speakingSpeed": "Thoughtful, about 125–145 words/minute; avoid an unnaturally slow incantation."
+    },
+    "dryad": {
+      "name": "Dryad",
+      "castId": "dryad-v1",
+      "voiceId": null,
+      "personality": "Warm but firm guardian who asks the heroes to respect her living forest.",
+      "characteristics": "Patient adult female voice, quietly powerful and grounded.",
+      "accent": "No story-defined accent; avoid inventing an ethnic or regional identity.",
+      "delivery": "Unhurried, conversational; firm boundaries followed by gentleness.",
+      "typicalEmotions": [
+        "calm",
+        "resolve",
+        "joy",
+        "sorrow"
+      ],
+      "changes": "Question the intrusion with composure; congratulate gently; the bad ending is sorrowful, not threatening.",
+      "speakingSpeed": "Unhurried, about 125–145 words/minute; firmer when setting a boundary."
+    }
+  }
+}

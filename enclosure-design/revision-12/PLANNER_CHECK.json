@@ -1,0 +1,12 @@
+{
+  "synthetic_parts_checked": 95,
+  "multiple_plates": true,
+  "rotation_only_fit": true,
+  "oversize_rejected": true,
+  "packing_no_overlaps": true,
+  "part_count_preserved": true,
+  "production_bed_assumed": false,
+  "three_mf_written": true,
+  "three_mf_slicer_import_checked": true,
+  "three_mf_scene_placement_roundtrip": true
+}

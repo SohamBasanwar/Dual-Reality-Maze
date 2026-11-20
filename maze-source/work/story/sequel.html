@@ -1,0 +1,29 @@
+<style>
+.chapter-title{position:absolute;inset:0;z-index:10;overflow:hidden;background:#040e16;color:#eadbb7}.chapter-title[hidden]{display:none}
+.sequel-art{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;animation:sequel-drift 26s ease-in-out infinite alternate}
+.sequel-shade{position:absolute;inset:0;background:linear-gradient(90deg,#030c13eb,#041018c7 30%,#04101838 60%,transparent 82%),linear-gradient(0deg,#020c16b0,transparent 38%)}
+.sequel-frame{position:absolute;inset:2.5%;border:1px solid #a88f5266;pointer-events:none}.sequel-frame:before,.sequel-frame:after{content:'✦';position:absolute;top:-.8cqw;left:1.6cqw;color:#e0c185;font-size:1.4cqw}.sequel-frame:after{left:auto;right:1.6cqw}
+.sequel-copy{position:absolute;left:7%;top:12%;width:45%}.sequel-franchise{font:small-caps 1.35cqw Georgia,serif;letter-spacing:.23cqw;color:#e9d4a6;margin:0 0 2.3cqw}.sequel-chapter{display:flex;align-items:center;gap:1cqw;color:#92c9b7;letter-spacing:.27cqw;font-size:.82cqw;text-transform:uppercase}.sequel-chapter:before{content:'';width:3.6cqw;height:1px;background:#92c9b780}
+.chapter-title h2{font:normal 4.5cqw/1.02 Georgia,serif;color:#ffe0a6;letter-spacing:-.12cqw;margin:1.15cqw 0 1.6cqw;text-shadow:0 3px #163126,0 0 32px #dfbc6930}.chapter-title h2 span{display:block;font-size:6.1cqw}
+.sequel-promise{font:italic 1.45cqw/1.4 Georgia,serif;color:#dce9d7;margin:0 0 1cqw}.sequel-summary{font-size:1.06cqw;line-height:1.7;color:#c4ced0;width:32cqw;margin:0 0 1.7cqw}
+.sequel-status{display:inline-flex;align-items:center;gap:1cqw;padding:.85cqw 1.7cqw;border:1px solid #c9b17599;background:linear-gradient(120deg,#1b493850,#172537b0);box-shadow:inset 0 0 0 3px #06121c,0 0 30px #5cd7a51c;font:small-caps 1.8cqw Georgia,serif;letter-spacing:.3cqw;color:#ffe6b8}.sequel-status:before,.sequel-status:after{content:'✧';font-size:1.2cqw;color:#94dec3}
+.sequel-note{font-size:.76cqw;letter-spacing:.1cqw;color:#a6b8b9;margin:1.05cqw 0 0}.sequel-bottom{position:absolute;left:7%;right:5%;bottom:7%;display:flex;justify-content:space-between;align-items:flex-end}.sequel-replay{background:#101d26bb;border:1px solid #aa915a88;color:#d6c49e;font: .9cqw Georgia;padding:.7cqw 1.25cqw}.sequel-replay:hover{background:#244335;color:#ffdf9e;border-color:#d6b77a}.sequel-replay:focus-visible{outline:2px solid #b9f2d5;outline-offset:5px}.sequel-bottom p{font-size:.76cqw;line-height:1.8;letter-spacing:.13cqw;text-align:right;color:#d3dacd;text-shadow:0 2px 8px #000;margin:0}.sequel-bottom strong{font-weight:normal;color:#e5c47f}
+.sequel-aura{position:absolute;right:6%;top:25%;width:30%;aspect-ratio:1;background:radial-gradient(ellipse,#8ef2b42e,transparent 68%);mix-blend-mode:screen;animation:sequel-glow 4s ease-in-out infinite alternate;pointer-events:none}.sequel-sparks{position:absolute;inset:0;pointer-events:none}.sequel-sparks i{position:absolute;left:var(--x);bottom:8%;width:3px;height:3px;background:#c0f8d4;box-shadow:0 0 10px #95fbb3;opacity:0;animation:sequel-rise 9s linear var(--delay) infinite}
+.app:has(#comingSoon:not([hidden])) .footer{visibility:hidden}
+@keyframes sequel-drift{to{transform:scale(1.04) translateX(-.6%)}}@keyframes sequel-glow{to{opacity:.35;transform:scale(1.2)}}@keyframes sequel-rise{15%{opacity:.7}80%{opacity:.4}100%{opacity:0;transform:translate(16px,-35cqw)}}
+@media(prefers-reduced-motion:reduce){.sequel-art,.sequel-aura,.sequel-sparks i{animation:none}}
+</style>
+<section class="chapter-title" id="comingSoon" hidden aria-label="Chapter II — The Alchemist’s Cure">
+ <img class="sequel-art" src="__SEQUEL_ART__" alt="The sleeping Princess appears in a magical vision above Rowan, the Architect and the Great Alchemist.">
+ <div class="sequel-shade"></div><div class="sequel-aura" aria-hidden="true"></div>
+ <div class="sequel-sparks" aria-hidden="true"><i style="--x:53%;--delay:-1s"></i><i style="--x:63%;--delay:-5s"></i><i style="--x:72%;--delay:-3s"></i><i style="--x:81%;--delay:-7s"></i><i style="--x:90%;--delay:-2s"></i><i style="--x:45%;--delay:-6s"></i></div>
+ <div class="sequel-frame" aria-hidden="true"></div>
+ <div class="sequel-copy">
+  <p class="sequel-franchise">Dual-Reality Maze</p><div class="sequel-chapter">Chapter II · A new journey</div>
+  <h2>The Alchemist’s<span>Cure</span></h2>
+  <p class="sequel-promise">She is home. But she has not awakened.</p>
+  <p class="sequel-summary">An ancient curse holds the Princess in sleep.<br>Cross the hanging gardens, gather three ingredients, and ride the emerald dragon to the Great Alchemist’s sanctuary above the clouds.</p>
+  <button id="beginChapter2" class="sequel-status">Begin Chapter II</button><p class="sequel-note">The next chapter of the Architect’s oath.</p>
+ </div>
+ <div class="sequel-bottom"><button id="replayChapter" class="sequel-replay">↶ Replay Chapter I</button><p><strong>A SLEEPING PRINCESS · A FORGOTTEN CURE</strong><br>Their promise is not yet fulfilled.</p></div>
+</section>

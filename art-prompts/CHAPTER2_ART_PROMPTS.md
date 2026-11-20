@@ -1,0 +1,21 @@
+# Chapter II artwork
+
+All assets were made with the built-in image-generation tool and saved in `images/`, with game assets copied into `maze-source/work/assets/` and embedded in the Story Edition.
+
+## Comic — initial generation
+
+Reference: `images/comic.png`. Output draft: `images/chapter2-comic-v1.png`.
+
+Use case illustration-story. Create a six-panel pixel-art fantasy comic sheet, exactly THREE columns and TWO rows, six equal square panels separated by thin dark gutters. Match reference game's Explorer (small young adventurer with brown fur-trimmed cap, white shirt, brown backpack), Architect (brown skin, dark hair beard moustache, purple royal coat gold trim cyan clasp), and fair princess golden-brown hair white gold gown. New Alchemist: elderly brown-skinned man with long silver beard, green robe brass goggles, kind face, distinct from king. Reading order: top-left palace physician points the two heroes toward ancient map, sleeping princess in distant bed; top-middle heroes entering overgrown emerald laboratory amid roots glass pipes and luminous pools; top-right Alchemist greets heroes beside empty bronze cauldron, three distinct ingredients displayed: amber crystal, violet flower, cyan flask; bottom-left Alchemist and heroes hold newly brewed golden potion beside glowing cauldron; bottom-middle palace bedroom physician gives potion to princess who briefly opens eyes with a faint spectral silhouette above her; bottom-right Explorer and Architect follow one glowing green leaf toward mysterious moonlit forest entrance with ancient trees and blue ghost lights. Rich detailed consistent pixel art, readable expressions, atmospheric torchlight, emerald/cyan/gold palette. No text, lettering, captions, speech bubbles, logos. Exactly six panels.
+
+## Comic — final continuity correction
+
+Inputs: draft, `images/epilogue.png`, `images/sequel-title.png`. Final output: `images/chapter2-comic.png`.
+
+Edit target image 1 six-panel Chapter II comic. Preserve the exact six-panel layout, all scenes, Explorer Rowan brown fur-trimmed cap white shirt backpack, brown-skinned bearded Architect purple gold coat, Princess design, colors, art style, props and backgrounds. Correct ONLY elderly character identities for continuity. In TOP LEFT panel, replace the green-robed goggles man with the royal PHYSICIAN from image 2: white neatly swept-back hair, short white beard, round eyeglasses, cream/white robe with dark blue and gold trim, no hood or goggles, pointing at map. In TOP RIGHT and BOTTOM LEFT panels replace the goggles Alchemist with the established ALCHEMIST from image 3: tall green pointed hood with gold edging, deeply lined kindly face, long flowing white beard, dark emerald robe with gold ornament, no goggles; preserve his pose and held potion. In BOTTOM MIDDLE the elderly man behind Architect should be the royal PHYSICIAN from image 2 in white/blue robe and round glasses. No other changes, no text.
+
+## Laboratory atlas — final generation
+
+Reference: `images/sequel-title.png`. Transparent output: `images/laboratory-atlas.png`.
+
+Use case illustration-story. Generate a transparent game asset atlas, exactly FOUR equal square columns by TWO equal square rows, eight isolated assets, large clear gutters. Consistent detailed pixel-art fantasy matching supplied game image, top-down slightly elevated view for maze tiles and props. Cell reading order: 1 seamless square dark teal cobblestone floor tile; 2 square emerald-gray stone wall block with beveled mossy top and short dark front face; 3 decorative cluster of hanging roots wrapped around brass glass alchemy pipes with green liquid; 4 large bronze cauldron with glowing golden liquid, sturdy base and ornate rim; 5 the SAME Great Alchemist from reference right side, kindly elderly man long white beard green pointed hood with gold edging, full body standing, no goggles; 6 amber crystal cluster on small round brass pedestal; 7 luminous violet flower on a small round brass pedestal; 8 cyan potion flask on a small round brass pedestal. Entire assets within their cells, no overlaps, no text, no grid borders, no backgrounds, no extra people. Each asset clearly readable when rendered small. Truly transparent negative space. Do not include Explorer or Architect.

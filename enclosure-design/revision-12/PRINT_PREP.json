@@ -1,0 +1,2676 @@
+{
+  "revision": 12,
+  "units": "mm",
+  "usable_bed_width_mm": null,
+  "usable_bed_depth_mm": null,
+  "usable_bed_height_mm": null,
+  "printer": null,
+  "nozzle_mm": null,
+  "production_released": false,
+  "material_groups": {
+    "OPAQUE": 88,
+    "TRANSLUCENT": 7
+  },
+  "parts": [
+    {
+      "code": "E03",
+      "role": "explorer",
+      "name": "Battery_Door",
+      "file": "prototype-stl/E03-explorer-Battery_Door\u2014Soham-Basanwar.stl",
+      "quantity": 1,
+      "material_group": "OPAQUE",
+      "material": "Opaque PLA prototype; bronze if available, black stock fallback",
+      "stage": 3,
+      "rotation_xyz_deg": [
+        180,
+        0,
+        0
+      ],
+      "orientation_min_xyz_mm": [
+        186.8000030517578,
+        -189.1999969482422,
+        -7.565633773803688
+      ],
+      "print_bbox_xyz_mm": [
+        34.399993896484375,
+        67.5999984741211,
+        7.4156337678432465
+      ],
+      "nominal_solid_volume_mm3": 5316.64852762484,
+      "support_review": "Candidate interior face down; inspect latching projections and support access. Preserve the smooth hand-contact surface.",
+      "orientation_verified_by_slicing": false
+    },
+    {
+      "code": "E05",
+      "role": "explorer",
+      "name": "Breadboard_X_Jaw",
+      "file": "prototype-stl/E05-explorer-Breadboard_X_Jaw\u2014Soham-Basanwar.stl",
+      "quantity": 1,
+      "material_group": "OPAQUE",
+      "material": "Opaque PLA prototype; bronze if available, black stock fallback",
+      "stage": 3,
+      "rotation_xyz_deg": [
+        0,
+        0,
+        0
+      ],
+      "orientation_min_xyz_mm": [
+        38.0,
+        90.5,
+        4.75
+      ],
+      "print_bbox_xyz_mm": [
+        17.0,
+        10.0,
+        16.100000381469727
+      ],
+      "nominal_solid_volume_mm3": 505.955864051418,
+      "support_review": "Review overhangs and bed contact in slicer; keep supports out of fitted slots.",
+      "orientation_verified_by_slicing": false
+    },
+    {
+      "code": "E06",
+      "role": "explorer",
+      "name": "Breadboard_X_Lock_Key",
+      "file": "prototype-stl/E06-explorer-Breadboard_X_Lock_Key\u2014Soham-Basanwar.stl",
+      "quantity": 1,
+      "material_group": "OPAQUE",
+      "material": "Opaque PLA prototype; bronze if available, black stock fallback",
+      "stage": 3,
+      "rotation_xyz_deg": [
+        0,
+        0,
+        0
+      ],
+      "orientation_min_xyz_mm": [
+        32.0,
+        86.5999984741211,
+        4.920000076293945
+      ],
+      "print_bbox_xyz_mm": [
+        18.299999237060547,
+        14.800003051757812,
+        2.880000114440918
+      ],
+      "nominal_solid_volume_mm3": 95.60161813593798,
+      "support_review": "Flat orientation candidate. Keep flexible detent and narrow indexed slots free of support; test fit.",
+      "orientation_verified_by_slicing": false
+    },
+    {
+      "code": "E07",
+      "role": "explorer",
+      "name": "Breadboard_Y_Jaw",
+      "file": "prototype-stl/E07-explorer-Breadboard_Y_Jaw\u2014Soham-Basanwar.stl",
+      "quantity": 1,
+      "material_group": "OPAQUE",
+      "material": "Opaque PLA prototype; bronze if available, black stock fallback",
+      "stage": 3,
+      "rotation_xyz_deg": [
+        0,
+        0,
+        0
+      ],
+      "orientation_min_xyz_mm": [
+        118.0,
+        108.0,
+        4.75
+      ],
+      "print_bbox_xyz_mm": [
+        10.0,
+        17.0,
+        16.100000381469727
+      ],
+      "nominal_solid_volume_mm3": 505.95637171999255,
+      "support_review": "Review overhangs and bed contact in slicer; keep supports out of fitted slots.",
+      "orientation_verified_by_slicing": false
+    },
+    {
+      "code": "E08",
+      "role": "explorer",
+      "name": "Breadboard_Y_Lock_Key",
+      "file": "prototype-stl/E08-explorer-Breadboard_Y_Lock_Key\u2014Soham-Basanwar.stl",
+      "quantity": 1,
+      "material_group": "OPAQUE",
+      "material": "Opaque PLA prototype; bronze if available, black stock fallback",
+      "stage": 3,
+      "rotation_xyz_deg": [
+        0,
+        0,
+        0
+      ],
+      "orientation_min_xyz_mm": [
+        114.0999984741211,
+        112.69999694824219,
+        4.920000076293945
+      ],
+      "print_bbox_xyz_mm": [
+        14.799995422363281,
+        18.300003051757812,
+        2.880000114440918
+      ],
+      "nominal_solid_volume_mm3": 95.60165985317963,
+      "support_review": "Flat orientation candidate. Keep flexible detent and narrow indexed slots free of support; test fit.",
+      "orientation_verified_by_slicing": false
+    },
+    {
+      "code": "E04",
+      "role": "explorer",
+      "name": "Breadboard_Height_Insert",
+      "file": "prototype-stl/E04-explorer-Breadboard_Height_Insert\u2014Soham-Basanwar.stl",
+      "quantity": 1,
+      "material_group": "OPAQUE",
+      "material": "Opaque PLA prototype; bronze if available, black stock fallback",
+      "stage": 3,
+      "rotation_xyz_deg": [
+        0,
+        0,
+        0
+      ],
+      "orientation_min_xyz_mm": [
+        44.5,
+        69.5,
+        7.300000190734863
+      ],
+      "print_bbox_xyz_mm": [
+        160.0,
+        49.0,
+        1.8999996185302734
+      ],
+      "nominal_solid_volume_mm3": 1012.3363691454439,
+      "support_review": "Flat orientation candidate. Keep flexible detent and narrow indexed slots free of support; test fit.",
+      "orientation_verified_by_slicing": false
+    },
+    {
+      "code": "E22",
+      "role": "explorer",
+      "name": "UNO_X_Jaw",
+      "file": "prototype-stl/E22-explorer-UNO_X_Jaw\u2014Soham-Basanwar.stl",
+      "quantity": 1,
+      "material_group": "OPAQUE",
+      "material": "Opaque PLA prototype; bronze if available, black stock fallback",
+      "stage": 3,
+      "rotation_xyz_deg": [
+        0,
+        0,
+        0
+      ],
+      "orientation_min_xyz_mm": [
+        86.4000015258789,
+        31.700000762939453,
+        4.75
+      ],
+      "print_bbox_xyz_mm": [
+        17.0,
+        10.0,
+        7.699999809265137
+      ],
+      "nominal_solid_volume_mm3": 354.75571045559883,
+      "support_review": "Review overhangs and bed contact in slicer; keep supports out of fitted slots.",
+      "orientation_verified_by_slicing": false
+    },
+    {
+      "code": "E23",
+      "role": "explorer",
+      "name": "UNO_X_Lock_Key",
+      "file": "prototype-stl/E23-explorer-UNO_X_Lock_Key\u2014Soham-Basanwar.stl",
+      "quantity": 1,
+      "material_group": "OPAQUE",
+      "material": "Opaque PLA prototype; bronze if available, black stock fallback",
+      "stage": 3,
+      "rotation_xyz_deg": [
+        0,
+        0,
+        0
+      ],
+      "orientation_min_xyz_mm": [
+        80.4000015258789,
+        27.799999237060547,
+        4.920000076293945
+      ],
+      "print_bbox_xyz_mm": [
+        18.29999542236328,
+        14.799999237060547,
+        2.880000114440918
+      ],
+      "nominal_solid_volume_mm3": 95.6016065585597,
+      "support_review": "Flat orientation candidate. Keep flexible detent and narrow indexed slots free of support; test fit.",
+      "orientation_verified_by_slicing": false
+    },
+    {
+      "code": "E24",
+      "role": "explorer",
+      "name": "UNO_Y_Jaw",
+      "file": "prototype-stl/E24-explorer-UNO_Y_Jaw\u2014Soham-Basanwar.stl",
+      "quantity": 1,
+      "material_group": "OPAQUE",
+      "material": "Opaque PLA prototype; bronze if available, black stock fallback",
+      "stage": 3,
+      "rotation_xyz_deg": [
+        0,
+        0,
+        0
+      ],
+      "orientation_min_xyz_mm": [
+        117.69999694824219,
+        48.400001525878906,
+        4.75
+      ],
+      "print_bbox_xyz_mm": [
+        10.0,
+        17.0,
+        7.699999809265137
+      ],
+      "nominal_solid_volume_mm3": 354.7561199212996,
+      "support_review": "Review overhangs and bed contact in slicer; keep supports out of fitted slots.",
+      "orientation_verified_by_slicing": false
+    },
+    {
+      "code": "E25",
+      "role": "explorer",
+      "name": "UNO_Y_Lock_Key",
+      "file": "prototype-stl/E25-explorer-UNO_Y_Lock_Key\u2014Soham-Basanwar.stl",
+      "quantity": 1,
+      "material_group": "OPAQUE",
+      "material": "Opaque PLA prototype; bronze if available, black stock fallback",
+      "stage": 3,
+      "rotation_xyz_deg": [
+        0,
+        0,
+        0
+      ],
+      "orientation_min_xyz_mm": [
+        113.80000305175781,
+        53.099998474121094,
+        4.920000076293945
+      ],
+      "print_bbox_xyz_mm": [
+        14.800003051757812,
+        18.300003051757812,
+        2.880000114440918
+      ],
+      "nominal_solid_volume_mm3": 95.60142374114274,
+      "support_review": "Flat orientation candidate. Keep flexible detent and narrow indexed slots free of support; test fit.",
+      "orientation_verified_by_slicing": false
+    },
+    {
+      "code": "E21",
+      "role": "explorer",
+      "name": "UNO_Height_Insert",
+      "file": "prototype-stl/E21-explorer-UNO_Height_Insert\u2014Soham-Basanwar.stl",
+      "quantity": 1,
+      "material_group": "OPAQUE",
+      "material": "Opaque PLA prototype; bronze if available, black stock fallback",
+      "stage": 3,
+      "rotation_xyz_deg": [
+        0,
+        0,
+        0
+      ],
+      "orientation_min_xyz_mm": [
+        92.9000015258789,
+        11.5,
+        7.300000190734863
+      ],
+      "print_bbox_xyz_mm": [
+        62.599998474121094,
+        47.400001525878906,
+        1.8999996185302734
+      ],
+      "nominal_solid_volume_mm3": 537.2966473194799,
+      "support_review": "Flat orientation candidate. Keep flexible detent and narrow indexed slots free of support; test fit.",
+      "orientation_verified_by_slicing": false
+    },
+    {
+      "code": "E12",
+      "role": "explorer",
+      "name": "I2C_Rear_Shutter",
+      "file": "prototype-stl/E12-explorer-I2C_Rear_Shutter\u2014Soham-Basanwar.stl",
+      "quantity": 1,
+      "material_group": "OPAQUE",
+      "material": "Opaque PLA prototype; bronze if available, black stock fallback",
+      "stage": 3,
+      "rotation_xyz_deg": [
+        -90,
+        0,
+        0
+      ],
+      "orientation_min_xyz_mm": [
+        113.0,
+        17.299999237060547,
+        1.0593194345458925e-15
+      ],
+      "print_bbox_xyz_mm": [
+        20.0,
+        13.400001525878906,
+        5.199999809265138
+      ],
+      "nominal_solid_volume_mm3": 730.5999763531931,
+      "support_review": "Interior flat plate face toward bed; external finger tab up. Keep running faces support-free.",
+      "orientation_verified_by_slicing": false
+    },
+    {
+      "code": "E11",
+      "role": "explorer",
+      "name": "I2C_Rear_Keeper",
+      "file": "prototype-stl/E11-explorer-I2C_Rear_Keeper\u2014Soham-Basanwar.stl",
+      "quantity": 1,
+      "material_group": "OPAQUE",
+      "material": "Opaque PLA prototype; bronze if available, black stock fallback",
+      "stage": 3,
+      "rotation_xyz_deg": [
+        0,
+        0,
+        0
+      ],
+      "orientation_min_xyz_mm": [
+        131.39999389648438,
+        -3.5999999046325684,
+        17.5
+      ],
+      "print_bbox_xyz_mm": [
+        3.600006103515625,
+        11.599999904632568,
+        23.5
+      ],
+      "nominal_solid_volume_mm3": 242.7848396988023,
+      "support_review": "Review overhangs and bed contact in slicer; keep supports out of fitted slots.",
+      "orientation_verified_by_slicing": false
+    },
+    {
+      "code": "E19",
+      "role": "explorer",
+      "name": "RGB_LED_Keeper",
+      "file": "prototype-stl/E19-explorer-RGB_LED_Keeper\u2014Soham-Basanwar.stl",
+      "quantity": 1,
+      "material_group": "OPAQUE",
+      "material": "Opaque PLA prototype; bronze if available, black stock fallback",
+      "stage": 3,
+      "rotation_xyz_deg": [
+        0,
+        0,
+        0
+      ],
+      "orientation_min_xyz_mm": [
+        117.19999694824219,
+        63.95060348510742,
+        35.29999923706055
+      ],
+      "print_bbox_xyz_mm": [
+        11.600006103515625,
+        6.098796844482422,
+        3.0
+      ],
+      "nominal_solid_volume_mm3": 46.56857695869985,
+      "support_review": "Review overhangs and bed contact in slicer; keep supports out of fitted slots.",
+      "orientation_verified_by_slicing": false
+    },
+    {
+      "code": "E09",
+      "role": "explorer",
+      "name": "Emblem_Diffuser",
+      "file": "prototype-stl/E09-explorer-Emblem_Diffuser\u2014Soham-Basanwar.stl",
+      "quantity": 1,
+      "material_group": "TRANSLUCENT",
+      "material": "Neutral translucent PLA",
+      "stage": 4,
+      "rotation_xyz_deg": [
+        0,
+        0,
+        0
+      ],
+      "orientation_min_xyz_mm": [
+        99.21428680419922,
+        43.0,
+        58.04999923706055
+      ],
+      "print_bbox_xyz_mm": [
+        47.57141876220703,
+        48.0,
+        1.2000007629394531
+      ],
+      "nominal_solid_volume_mm3": 2162.7757198141626,
+      "support_review": "Flat optical insert; no support expected. Check solid thin layers and actual light diffusion.",
+      "orientation_verified_by_slicing": false
+    },
+    {
+      "code": "E10",
+      "role": "explorer",
+      "name": "Emblem_Mask",
+      "file": "prototype-stl/E10-explorer-Emblem_Mask\u2014Soham-Basanwar.stl",
+      "quantity": 1,
+      "material_group": "OPAQUE",
+      "material": "Opaque PLA prototype; bronze if available, black stock fallback",
+      "stage": 3,
+      "rotation_xyz_deg": [
+        0,
+        0,
+        0
+      ],
+      "orientation_min_xyz_mm": [
+        97.0,
+        41.0051383972168,
+        56.0
+      ],
+      "print_bbox_xyz_mm": [
+        51.97944641113281,
+        51.98971939086914,
+        5.099998474121094
+      ],
+      "nominal_solid_volume_mm3": 3493.4047557522695,
+      "support_review": "Review overhangs and bed contact in slicer; keep supports out of fitted slots.",
+      "orientation_verified_by_slicing": false
+    },
+    {
+      "code": "E15",
+      "role": "explorer",
+      "name": "Joystick_X_Jaw",
+      "file": "prototype-stl/E15-explorer-Joystick_X_Jaw\u2014Soham-Basanwar.stl",
+      "quantity": 1,
+      "material_group": "OPAQUE",
+      "material": "Opaque PLA prototype; bronze if available, black stock fallback",
+      "stage": 3,
+      "rotation_xyz_deg": [
+        0,
+        0,
+        0
+      ],
+      "orientation_min_xyz_mm": [
+        178.0,
+        32.0,
+        30.049999237060547
+      ],
+      "print_bbox_xyz_mm": [
+        17.0,
+        10.0,
+        7.700000762939453
+      ],
+      "nominal_solid_volume_mm3": 354.7562376877025,
+      "support_review": "Review overhangs and bed contact in slicer; keep supports out of fitted slots.",
+      "orientation_verified_by_slicing": false
+    },
+    {
+      "code": "E16",
+      "role": "explorer",
+      "name": "Joystick_X_Lock_Key",
+      "file": "prototype-stl/E16-explorer-Joystick_X_Lock_Key\u2014Soham-Basanwar.stl",
+      "quantity": 1,
+      "material_group": "OPAQUE",
+      "material": "Opaque PLA prototype; bronze if available, black stock fallback",
+      "stage": 3,
+      "rotation_xyz_deg": [
+        0,
+        0,
+        0
+      ],
+      "orientation_min_xyz_mm": [
+        172.0,
+        28.100000381469727,
+        30.219999313354492
+      ],
+      "print_bbox_xyz_mm": [
+        18.300003051757812,
+        14.80000114440918,
+        2.8799991607666016
+      ],
+      "nominal_solid_volume_mm3": 95.60143180197247,
+      "support_review": "Flat orientation candidate. Keep flexible detent and narrow indexed slots free of support; test fit.",
+      "orientation_verified_by_slicing": false
+    },
+    {
+      "code": "E17",
+      "role": "explorer",
+      "name": "Joystick_Y_Jaw",
+      "file": "prototype-stl/E17-explorer-Joystick_Y_Jaw\u2014Soham-Basanwar.stl",
+      "quantity": 1,
+      "material_group": "OPAQUE",
+      "material": "Opaque PLA prototype; bronze if available, black stock fallback",
+      "stage": 3,
+      "rotation_xyz_deg": [
+        0,
+        0,
+        0
+      ],
+      "orientation_min_xyz_mm": [
+        201.0,
+        40.0,
+        30.049999237060547
+      ],
+      "print_bbox_xyz_mm": [
+        10.0,
+        17.0,
+        7.700000762939453
+      ],
+      "nominal_solid_volume_mm3": 354.75604469717973,
+      "support_review": "Review overhangs and bed contact in slicer; keep supports out of fitted slots.",
+      "orientation_verified_by_slicing": false
+    },
+    {
+      "code": "E18",
+      "role": "explorer",
+      "name": "Joystick_Y_Lock_Key",
+      "file": "prototype-stl/E18-explorer-Joystick_Y_Lock_Key\u2014Soham-Basanwar.stl",
+      "quantity": 1,
+      "material_group": "OPAQUE",
+      "material": "Opaque PLA prototype; bronze if available, black stock fallback",
+      "stage": 3,
+      "rotation_xyz_deg": [
+        0,
+        0,
+        0
+      ],
+      "orientation_min_xyz_mm": [
+        197.10000610351562,
+        44.70000076293945,
+        30.219999313354492
+      ],
+      "print_bbox_xyz_mm": [
+        14.79998779296875,
+        18.299999237060547,
+        2.8799991607666016
+      ],
+      "nominal_solid_volume_mm3": 95.6014283629368,
+      "support_review": "Flat orientation candidate. Keep flexible detent and narrow indexed slots free of support; test fit.",
+      "orientation_verified_by_slicing": false
+    },
+    {
+      "code": "E14",
+      "role": "explorer",
+      "name": "Joystick_Height_Insert",
+      "file": "prototype-stl/E14-explorer-Joystick_Height_Insert\u2014Soham-Basanwar.stl",
+      "quantity": 1,
+      "material_group": "OPAQUE",
+      "material": "Opaque PLA prototype; bronze if available, black stock fallback",
+      "stage": 3,
+      "rotation_xyz_deg": [
+        0,
+        0,
+        0
+      ],
+      "orientation_min_xyz_mm": [
+        184.5,
+        30.5,
+        32.599998474121094
+      ],
+      "print_bbox_xyz_mm": [
+        28.0,
+        20.0,
+        1.9000015258789062
+      ],
+      "nominal_solid_volume_mm3": 239.70523992064008,
+      "support_review": "Flat orientation candidate. Keep flexible detent and narrow indexed slots free of support; test fit.",
+      "orientation_verified_by_slicing": false
+    },
+    {
+      "code": "E13",
+      "role": "explorer",
+      "name": "Joystick_Carrier",
+      "file": "prototype-stl/E13-explorer-Joystick_Carrier\u2014Soham-Basanwar.stl",
+      "quantity": 1,
+      "material_group": "OPAQUE",
+      "material": "Opaque PLA prototype; bronze if available, black stock fallback",
+      "stage": 3,
+      "rotation_xyz_deg": [
+        0,
+        0,
+        0
+      ],
+      "orientation_min_xyz_mm": [
+        170.0,
+        27.0,
+        29.100000381469727
+      ],
+      "print_bbox_xyz_mm": [
+        47.19999694824219,
+        38.0,
+        25.899999618530273
+      ],
+      "nominal_solid_volume_mm3": 5454.568428737386,
+      "support_review": "Review overhangs and bed contact in slicer; keep supports out of fitted slots.",
+      "orientation_verified_by_slicing": false
+    },
+    {
+      "code": "E20",
+      "role": "explorer",
+      "name": "Reveal_Dome",
+      "file": "prototype-stl/E20-explorer-Reveal_Dome\u2014Soham-Basanwar.stl",
+      "quantity": 1,
+      "material_group": "OPAQUE",
+      "material": "Opaque PLA prototype; bronze if available, black stock fallback",
+      "stage": 3,
+      "rotation_xyz_deg": [
+        0,
+        0,
+        0
+      ],
+      "orientation_min_xyz_mm": [
+        111.9000015258789,
+        107.0,
+        58.20000076293945
+      ],
+      "print_bbox_xyz_mm": [
+        22.20000457763672,
+        20.0,
+        10.239810943603516
+      ],
+      "nominal_solid_volume_mm3": 883.479383525817,
+      "support_review": "Opaque sensor pod with thin trial roof. Optical sample required; use existing clear-window alternative if the roof blocks light.",
+      "orientation_verified_by_slicing": false
+    },
+    {
+      "code": "E01",
+      "role": "explorer",
+      "name": "Base",
+      "file": "prototype-stl/E01-explorer-Base\u2014Soham-Basanwar.stl",
+      "quantity": 1,
+      "material_group": "OPAQUE",
+      "material": "Opaque PLA prototype; bronze if available, black stock fallback",
+      "stage": 2,
+      "rotation_xyz_deg": [
+        0,
+        0,
+        0
+      ],
+      "orientation_min_xyz_mm": [
+        -0.1683904528617859,
+        -4.0,
+        0.0
+      ],
+      "print_bbox_xyz_mm": [
+        246.3384343981743,
+        209.37567138671875,
+        42.0
+      ],
+      "nominal_solid_volume_mm3": 253405.90740676154,
+      "support_review": "Open side up. Review grip curvature and cable-hatch overhangs; no trapped supports in rails.",
+      "orientation_verified_by_slicing": false
+    },
+    {
+      "code": "E02",
+      "role": "explorer",
+      "name": "Lid",
+      "file": "prototype-stl/E02-explorer-Lid\u2014Soham-Basanwar.stl",
+      "quantity": 1,
+      "material_group": "OPAQUE",
+      "material": "Opaque PLA prototype; bronze if available, black stock fallback",
+      "stage": 2,
+      "rotation_xyz_deg": [
+        180,
+        0,
+        0
+      ],
+      "orientation_min_xyz_mm": [
+        2.700411319732666,
+        -205.38560485839844,
+        -63.40000152587889
+      ],
+      "print_bbox_xyz_mm": [
+        240.58779668807983,
+        203.0946021080017,
+        40.86512374877931
+      ],
+      "nominal_solid_volume_mm3": 159888.38628520942,
+      "support_review": "Candidate exterior face down. Sculpted surfaces need contact/support review. Block supports in enclosed light galleries; coupon first.",
+      "orientation_verified_by_slicing": false
+    },
+    {
+      "code": "A03",
+      "role": "architect",
+      "name": "Battery_Door",
+      "file": "prototype-stl/A03-architect-Battery_Door\u2014Soham-Basanwar.stl",
+      "quantity": 1,
+      "material_group": "OPAQUE",
+      "material": "Opaque PLA prototype; bronze if available, black stock fallback",
+      "stage": 3,
+      "rotation_xyz_deg": [
+        180,
+        0,
+        0
+      ],
+      "orientation_min_xyz_mm": [
+        186.8000030517578,
+        -189.1999969482422,
+        -7.565633773803688
+      ],
+      "print_bbox_xyz_mm": [
+        34.399993896484375,
+        67.5999984741211,
+        7.4156337678432465
+      ],
+      "nominal_solid_volume_mm3": 5316.677389737007,
+      "support_review": "Candidate interior face down; inspect latching projections and support access. Preserve the smooth hand-contact surface.",
+      "orientation_verified_by_slicing": false
+    },
+    {
+      "code": "A05",
+      "role": "architect",
+      "name": "Breadboard_X_Jaw",
+      "file": "prototype-stl/A05-architect-Breadboard_X_Jaw\u2014Soham-Basanwar.stl",
+      "quantity": 1,
+      "material_group": "OPAQUE",
+      "material": "Opaque PLA prototype; bronze if available, black stock fallback",
+      "stage": 3,
+      "rotation_xyz_deg": [
+        0,
+        0,
+        0
+      ],
+      "orientation_min_xyz_mm": [
+        38.0,
+        73.0,
+        4.75
+      ],
+      "print_bbox_xyz_mm": [
+        17.0,
+        10.0,
+        16.100000381469727
+      ],
+      "nominal_solid_volume_mm3": 505.955864051418,
+      "support_review": "Review overhangs and bed contact in slicer; keep supports out of fitted slots.",
+      "orientation_verified_by_slicing": false
+    },
+    {
+      "code": "A06",
+      "role": "architect",
+      "name": "Breadboard_X_Lock_Key",
+      "file": "prototype-stl/A06-architect-Breadboard_X_Lock_Key\u2014Soham-Basanwar.stl",
+      "quantity": 1,
+      "material_group": "OPAQUE",
+      "material": "Opaque PLA prototype; bronze if available, black stock fallback",
+      "stage": 3,
+      "rotation_xyz_deg": [
+        0,
+        0,
+        0
+      ],
+      "orientation_min_xyz_mm": [
+        32.0,
+        72.0999984741211,
+        4.920000076293945
+      ],
+      "print_bbox_xyz_mm": [
+        18.299999237060547,
+        14.800003051757812,
+        2.880000114440918
+      ],
+      "nominal_solid_volume_mm3": 95.60161791382636,
+      "support_review": "Flat orientation candidate. Keep flexible detent and narrow indexed slots free of support; test fit.",
+      "orientation_verified_by_slicing": false
+    },
+    {
+      "code": "A07",
+      "role": "architect",
+      "name": "Breadboard_Y_Jaw",
+      "file": "prototype-stl/A07-architect-Breadboard_Y_Jaw\u2014Soham-Basanwar.stl",
+      "quantity": 1,
+      "material_group": "OPAQUE",
+      "material": "Opaque PLA prototype; bronze if available, black stock fallback",
+      "stage": 3,
+      "rotation_xyz_deg": [
+        0,
+        0,
+        0
+      ],
+      "orientation_min_xyz_mm": [
+        118.0,
+        108.0,
+        4.75
+      ],
+      "print_bbox_xyz_mm": [
+        10.0,
+        17.0,
+        16.100000381469727
+      ],
+      "nominal_solid_volume_mm3": 505.95637171999255,
+      "support_review": "Review overhangs and bed contact in slicer; keep supports out of fitted slots.",
+      "orientation_verified_by_slicing": false
+    },
+    {
+      "code": "A08",
+      "role": "architect",
+      "name": "Breadboard_Y_Lock_Key",
+      "file": "prototype-stl/A08-architect-Breadboard_Y_Lock_Key\u2014Soham-Basanwar.stl",
+      "quantity": 1,
+      "material_group": "OPAQUE",
+      "material": "Opaque PLA prototype; bronze if available, black stock fallback",
+      "stage": 3,
+      "rotation_xyz_deg": [
+        0,
+        0,
+        0
+      ],
+      "orientation_min_xyz_mm": [
+        114.0999984741211,
+        112.69999694824219,
+        4.920000076293945
+      ],
+      "print_bbox_xyz_mm": [
+        14.799995422363281,
+        18.300003051757812,
+        2.880000114440918
+      ],
+      "nominal_solid_volume_mm3": 95.60165985317963,
+      "support_review": "Flat orientation candidate. Keep flexible detent and narrow indexed slots free of support; test fit.",
+      "orientation_verified_by_slicing": false
+    },
+    {
+      "code": "A04",
+      "role": "architect",
+      "name": "Breadboard_Height_Insert",
+      "file": "prototype-stl/A04-architect-Breadboard_Height_Insert\u2014Soham-Basanwar.stl",
+      "quantity": 1,
+      "material_group": "OPAQUE",
+      "material": "Opaque PLA prototype; bronze if available, black stock fallback",
+      "stage": 3,
+      "rotation_xyz_deg": [
+        0,
+        0,
+        0
+      ],
+      "orientation_min_xyz_mm": [
+        44.5,
+        69.5,
+        7.300000190734863
+      ],
+      "print_bbox_xyz_mm": [
+        160.0,
+        49.0,
+        1.8999996185302734
+      ],
+      "nominal_solid_volume_mm3": 1012.3606243193934,
+      "support_review": "Flat orientation candidate. Keep flexible detent and narrow indexed slots free of support; test fit.",
+      "orientation_verified_by_slicing": false
+    },
+    {
+      "code": "A27",
+      "role": "architect",
+      "name": "UNO_X_Jaw",
+      "file": "prototype-stl/A27-architect-UNO_X_Jaw\u2014Soham-Basanwar.stl",
+      "quantity": 1,
+      "material_group": "OPAQUE",
+      "material": "Opaque PLA prototype; bronze if available, black stock fallback",
+      "stage": 3,
+      "rotation_xyz_deg": [
+        0,
+        0,
+        0
+      ],
+      "orientation_min_xyz_mm": [
+        86.4000015258789,
+        31.700000762939453,
+        4.75
+      ],
+      "print_bbox_xyz_mm": [
+        17.0,
+        10.0,
+        7.699999809265137
+      ],
+      "nominal_solid_volume_mm3": 354.75571045559883,
+      "support_review": "Review overhangs and bed contact in slicer; keep supports out of fitted slots.",
+      "orientation_verified_by_slicing": false
+    },
+    {
+      "code": "A28",
+      "role": "architect",
+      "name": "UNO_X_Lock_Key",
+      "file": "prototype-stl/A28-architect-UNO_X_Lock_Key\u2014Soham-Basanwar.stl",
+      "quantity": 1,
+      "material_group": "OPAQUE",
+      "material": "Opaque PLA prototype; bronze if available, black stock fallback",
+      "stage": 3,
+      "rotation_xyz_deg": [
+        0,
+        0,
+        0
+      ],
+      "orientation_min_xyz_mm": [
+        80.4000015258789,
+        27.799999237060547,
+        4.920000076293945
+      ],
+      "print_bbox_xyz_mm": [
+        18.29999542236328,
+        14.799999237060547,
+        2.880000114440918
+      ],
+      "nominal_solid_volume_mm3": 95.6016065585597,
+      "support_review": "Flat orientation candidate. Keep flexible detent and narrow indexed slots free of support; test fit.",
+      "orientation_verified_by_slicing": false
+    },
+    {
+      "code": "A29",
+      "role": "architect",
+      "name": "UNO_Y_Jaw",
+      "file": "prototype-stl/A29-architect-UNO_Y_Jaw\u2014Soham-Basanwar.stl",
+      "quantity": 1,
+      "material_group": "OPAQUE",
+      "material": "Opaque PLA prototype; bronze if available, black stock fallback",
+      "stage": 3,
+      "rotation_xyz_deg": [
+        0,
+        0,
+        0
+      ],
+      "orientation_min_xyz_mm": [
+        117.69999694824219,
+        48.400001525878906,
+        4.75
+      ],
+      "print_bbox_xyz_mm": [
+        10.0,
+        17.0,
+        7.699999809265137
+      ],
+      "nominal_solid_volume_mm3": 354.7561199212996,
+      "support_review": "Review overhangs and bed contact in slicer; keep supports out of fitted slots.",
+      "orientation_verified_by_slicing": false
+    },
+    {
+      "code": "A30",
+      "role": "architect",
+      "name": "UNO_Y_Lock_Key",
+      "file": "prototype-stl/A30-architect-UNO_Y_Lock_Key\u2014Soham-Basanwar.stl",
+      "quantity": 1,
+      "material_group": "OPAQUE",
+      "material": "Opaque PLA prototype; bronze if available, black stock fallback",
+      "stage": 3,
+      "rotation_xyz_deg": [
+        0,
+        0,
+        0
+      ],
+      "orientation_min_xyz_mm": [
+        113.80000305175781,
+        53.099998474121094,
+        4.920000076293945
+      ],
+      "print_bbox_xyz_mm": [
+        14.800003051757812,
+        18.300003051757812,
+        2.880000114440918
+      ],
+      "nominal_solid_volume_mm3": 95.60142374114274,
+      "support_review": "Flat orientation candidate. Keep flexible detent and narrow indexed slots free of support; test fit.",
+      "orientation_verified_by_slicing": false
+    },
+    {
+      "code": "A26",
+      "role": "architect",
+      "name": "UNO_Height_Insert",
+      "file": "prototype-stl/A26-architect-UNO_Height_Insert\u2014Soham-Basanwar.stl",
+      "quantity": 1,
+      "material_group": "OPAQUE",
+      "material": "Opaque PLA prototype; bronze if available, black stock fallback",
+      "stage": 3,
+      "rotation_xyz_deg": [
+        0,
+        0,
+        0
+      ],
+      "orientation_min_xyz_mm": [
+        92.9000015258789,
+        11.5,
+        7.300000190734863
+      ],
+      "print_bbox_xyz_mm": [
+        62.599998474121094,
+        47.400001525878906,
+        1.8999996185302734
+      ],
+      "nominal_solid_volume_mm3": 537.1417770359045,
+      "support_review": "Flat orientation candidate. Keep flexible detent and narrow indexed slots free of support; test fit.",
+      "orientation_verified_by_slicing": false
+    },
+    {
+      "code": "A20",
+      "role": "architect",
+      "name": "I2C_Rear_Shutter",
+      "file": "prototype-stl/A20-architect-I2C_Rear_Shutter\u2014Soham-Basanwar.stl",
+      "quantity": 1,
+      "material_group": "OPAQUE",
+      "material": "Opaque PLA prototype; bronze if available, black stock fallback",
+      "stage": 3,
+      "rotation_xyz_deg": [
+        -90,
+        0,
+        0
+      ],
+      "orientation_min_xyz_mm": [
+        113.0,
+        17.299999237060547,
+        1.0593194345458925e-15
+      ],
+      "print_bbox_xyz_mm": [
+        20.0,
+        13.400001525878906,
+        5.199999809265138
+      ],
+      "nominal_solid_volume_mm3": 730.3980084969711,
+      "support_review": "Interior flat plate face toward bed; external finger tab up. Keep running faces support-free.",
+      "orientation_verified_by_slicing": false
+    },
+    {
+      "code": "A19",
+      "role": "architect",
+      "name": "I2C_Rear_Keeper",
+      "file": "prototype-stl/A19-architect-I2C_Rear_Keeper\u2014Soham-Basanwar.stl",
+      "quantity": 1,
+      "material_group": "OPAQUE",
+      "material": "Opaque PLA prototype; bronze if available, black stock fallback",
+      "stage": 3,
+      "rotation_xyz_deg": [
+        0,
+        0,
+        0
+      ],
+      "orientation_min_xyz_mm": [
+        131.39999389648438,
+        -3.5999999046325684,
+        17.5
+      ],
+      "print_bbox_xyz_mm": [
+        3.600006103515625,
+        11.599999904632568,
+        23.5
+      ],
+      "nominal_solid_volume_mm3": 242.7848396988023,
+      "support_review": "Review overhangs and bed contact in slicer; keep supports out of fitted slots.",
+      "orientation_verified_by_slicing": false
+    },
+    {
+      "code": "A22",
+      "role": "architect",
+      "name": "RGB_LED_Keeper",
+      "file": "prototype-stl/A22-architect-RGB_LED_Keeper\u2014Soham-Basanwar.stl",
+      "quantity": 1,
+      "material_group": "OPAQUE",
+      "material": "Opaque PLA prototype; bronze if available, black stock fallback",
+      "stage": 3,
+      "rotation_xyz_deg": [
+        0,
+        0,
+        0
+      ],
+      "orientation_min_xyz_mm": [
+        117.19999694824219,
+        63.95060348510742,
+        35.29999923706055
+      ],
+      "print_bbox_xyz_mm": [
+        11.600006103515625,
+        6.098796844482422,
+        3.0
+      ],
+      "nominal_solid_volume_mm3": 46.56857695869985,
+      "support_review": "Review overhangs and bed contact in slicer; keep supports out of fitted slots.",
+      "orientation_verified_by_slicing": false
+    },
+    {
+      "code": "A12",
+      "role": "architect",
+      "name": "Emblem_Diffuser",
+      "file": "prototype-stl/A12-architect-Emblem_Diffuser\u2014Soham-Basanwar.stl",
+      "quantity": 1,
+      "material_group": "TRANSLUCENT",
+      "material": "Neutral translucent PLA",
+      "stage": 4,
+      "rotation_xyz_deg": [
+        0,
+        0,
+        0
+      ],
+      "orientation_min_xyz_mm": [
+        99.21428680419922,
+        43.0,
+        58.04999923706055
+      ],
+      "print_bbox_xyz_mm": [
+        47.57141876220703,
+        48.0,
+        1.2000007629394531
+      ],
+      "nominal_solid_volume_mm3": 2162.7757198141626,
+      "support_review": "Flat optical insert; no support expected. Check solid thin layers and actual light diffusion.",
+      "orientation_verified_by_slicing": false
+    },
+    {
+      "code": "A13",
+      "role": "architect",
+      "name": "Emblem_Mask",
+      "file": "prototype-stl/A13-architect-Emblem_Mask\u2014Soham-Basanwar.stl",
+      "quantity": 1,
+      "material_group": "OPAQUE",
+      "material": "Opaque PLA prototype; bronze if available, black stock fallback",
+      "stage": 3,
+      "rotation_xyz_deg": [
+        0,
+        0,
+        0
+      ],
+      "orientation_min_xyz_mm": [
+        97.0,
+        41.0051383972168,
+        56.0
+      ],
+      "print_bbox_xyz_mm": [
+        51.97944641113281,
+        51.98971939086914,
+        5.099998474121094
+      ],
+      "nominal_solid_volume_mm3": 3409.3670994084573,
+      "support_review": "Review overhangs and bed contact in slicer; keep supports out of fitted slots.",
+      "orientation_verified_by_slicing": false
+    },
+    {
+      "code": "A21",
+      "role": "architect",
+      "name": "Potentiometer_Keeper",
+      "file": "prototype-stl/A21-architect-Potentiometer_Keeper\u2014Soham-Basanwar.stl",
+      "quantity": 1,
+      "material_group": "OPAQUE",
+      "material": "Opaque PLA prototype; bronze if available, black stock fallback",
+      "stage": 3,
+      "rotation_xyz_deg": [
+        0,
+        0,
+        0
+      ],
+      "orientation_min_xyz_mm": [
+        188.9499969482422,
+        32.599998474121094,
+        41.20000076293945
+      ],
+      "print_bbox_xyz_mm": [
+        16.093643188476562,
+        18.800003051757812,
+        1.5
+      ],
+      "nominal_solid_volume_mm3": 167.58730944915442,
+      "support_review": "Review overhangs and bed contact in slicer; keep supports out of fitted slots.",
+      "orientation_verified_by_slicing": false
+    },
+    {
+      "code": "A25",
+      "role": "architect",
+      "name": "Servo_Retainer",
+      "file": "prototype-stl/A25-architect-Servo_Retainer\u2014Soham-Basanwar.stl",
+      "quantity": 1,
+      "material_group": "OPAQUE",
+      "material": "Opaque PLA prototype; bronze if available, black stock fallback",
+      "stage": 3,
+      "rotation_xyz_deg": [
+        0,
+        0,
+        0
+      ],
+      "orientation_min_xyz_mm": [
+        39.20000076293945,
+        35.0,
+        44.0
+      ],
+      "print_bbox_xyz_mm": [
+        33.60000228881836,
+        8.0,
+        13.099998474121094
+      ],
+      "nominal_solid_volume_mm3": 635.5995628356468,
+      "support_review": "Review overhangs and bed contact in slicer; keep supports out of fitted slots.",
+      "orientation_verified_by_slicing": false
+    },
+    {
+      "code": "A24",
+      "role": "architect",
+      "name": "Servo_Fit_Insert",
+      "file": "prototype-stl/A24-architect-Servo_Fit_Insert\u2014Soham-Basanwar.stl",
+      "quantity": 1,
+      "material_group": "OPAQUE",
+      "material": "Opaque PLA prototype; bronze if available, black stock fallback",
+      "stage": 3,
+      "rotation_xyz_deg": [
+        0,
+        0,
+        0
+      ],
+      "orientation_min_xyz_mm": [
+        43.400001525878906,
+        27.549999237060547,
+        40.5
+      ],
+      "print_bbox_xyz_mm": [
+        25.199996948242188,
+        29.900001525878906,
+        10.299999237060547
+      ],
+      "nominal_solid_volume_mm3": 1921.1839642638654,
+      "support_review": "Review overhangs and bed contact in slicer; keep supports out of fitted slots.",
+      "orientation_verified_by_slicing": false
+    },
+    {
+      "code": "A23",
+      "role": "architect",
+      "name": "Servo_Cassette",
+      "file": "prototype-stl/A23-architect-Servo_Cassette\u2014Soham-Basanwar.stl",
+      "quantity": 1,
+      "material_group": "OPAQUE",
+      "material": "Opaque PLA prototype; bronze if available, black stock fallback",
+      "stage": 3,
+      "rotation_xyz_deg": [
+        0,
+        0,
+        0
+      ],
+      "orientation_min_xyz_mm": [
+        37.599998474121094,
+        26.0,
+        31.0
+      ],
+      "print_bbox_xyz_mm": [
+        36.80000305175781,
+        34.0,
+        28.0
+      ],
+      "nominal_solid_volume_mm3": 7227.969425642531,
+      "support_review": "Review overhangs and bed contact in slicer; keep supports out of fitted slots.",
+      "orientation_verified_by_slicing": false
+    },
+    {
+      "code": "A15",
+      "role": "architect",
+      "name": "Gate_Frame",
+      "file": "prototype-stl/A15-architect-Gate_Frame\u2014Soham-Basanwar.stl",
+      "quantity": 1,
+      "material_group": "OPAQUE",
+      "material": "Opaque PLA prototype; bronze if available, black stock fallback",
+      "stage": 3,
+      "rotation_xyz_deg": [
+        90,
+        0,
+        0
+      ],
+      "orientation_min_xyz_mm": [
+        33.0,
+        -94.0,
+        25.000000000000004
+      ],
+      "print_bbox_xyz_mm": [
+        46.0,
+        63.0,
+        43.0
+      ],
+      "nominal_solid_volume_mm3": 7356.532571928011,
+      "support_review": "Candidate broad back face down; review gate rail bridges and removeable supports before approving.",
+      "orientation_verified_by_slicing": false
+    },
+    {
+      "code": "A16",
+      "role": "architect",
+      "name": "Gate_Panel",
+      "file": "prototype-stl/A16-architect-Gate_Panel\u2014Soham-Basanwar.stl",
+      "quantity": 1,
+      "material_group": "OPAQUE",
+      "material": "Opaque PLA prototype; bronze if available, black stock fallback",
+      "stage": 3,
+      "rotation_xyz_deg": [
+        90,
+        0,
+        0
+      ],
+      "orientation_min_xyz_mm": [
+        39.0,
+        -82.93782043457031,
+        63.0
+      ],
+      "print_bbox_xyz_mm": [
+        34.0,
+        37.00000000000001,
+        2.1999969482421875
+      ],
+      "nominal_solid_volume_mm3": 1268.5774700106122,
+      "support_review": "Candidate broad back face down; review gate rail bridges and removeable supports before approving.",
+      "orientation_verified_by_slicing": false
+    },
+    {
+      "code": "A14",
+      "role": "architect",
+      "name": "Gate_Drive_Pin",
+      "file": "prototype-stl/A14-architect-Gate_Drive_Pin\u2014Soham-Basanwar.stl",
+      "quantity": 1,
+      "material_group": "OPAQUE",
+      "material": "Opaque PLA prototype; bronze if available, black stock fallback",
+      "stage": 3,
+      "rotation_xyz_deg": [
+        0,
+        0,
+        0
+      ],
+      "orientation_min_xyz_mm": [
+        55.400413513183594,
+        57.0,
+        46.839481353759766
+      ],
+      "print_bbox_xyz_mm": [
+        4.1991729736328125,
+        9.400001525878906,
+        4.198341369628906
+      ],
+      "nominal_solid_volume_mm3": 51.412944491332574,
+      "support_review": "Small working part: orientation, stem/pin strength and support removal require individual slicer review.",
+      "orientation_verified_by_slicing": false
+    },
+    {
+      "code": "A17",
+      "role": "architect",
+      "name": "Gate_Pin_Keeper",
+      "file": "prototype-stl/A17-architect-Gate_Pin_Keeper\u2014Soham-Basanwar.stl",
+      "quantity": 1,
+      "material_group": "OPAQUE",
+      "material": "Opaque PLA prototype; bronze if available, black stock fallback",
+      "stage": 3,
+      "rotation_xyz_deg": [
+        0,
+        0,
+        0
+      ],
+      "orientation_min_xyz_mm": [
+        55.10012435913086,
+        57.25,
+        46.53782272338867
+      ],
+      "print_bbox_xyz_mm": [
+        4.799751281738281,
+        0.7000007629394531,
+        4.695648193359375
+      ],
+      "nominal_solid_volume_mm3": 9.191640617133444,
+      "support_review": "Small working part: orientation, stem/pin strength and support removal require individual slicer review.",
+      "orientation_verified_by_slicing": false
+    },
+    {
+      "code": "A18",
+      "role": "architect",
+      "name": "Gate_Shroud",
+      "file": "prototype-stl/A18-architect-Gate_Shroud\u2014Soham-Basanwar.stl",
+      "quantity": 1,
+      "material_group": "OPAQUE",
+      "material": "Opaque PLA prototype; bronze if available, black stock fallback",
+      "stage": 3,
+      "rotation_xyz_deg": [
+        90,
+        0,
+        0
+      ],
+      "orientation_min_xyz_mm": [
+        31.0,
+        -98.0,
+        23.000000000000004
+      ],
+      "print_bbox_xyz_mm": [
+        50.0,
+        60.5,
+        48.599998474121094
+      ],
+      "nominal_solid_volume_mm3": 13945.401766493147,
+      "support_review": "Candidate broad back face down; review gate rail bridges and removeable supports before approving.",
+      "orientation_verified_by_slicing": false
+    },
+    {
+      "code": "A10",
+      "role": "architect",
+      "name": "Button_Contact_Shoe",
+      "file": "prototype-stl/A10-architect-Button_Contact_Shoe\u2014Soham-Basanwar.stl",
+      "quantity": 1,
+      "material_group": "OPAQUE",
+      "material": "Opaque PLA prototype; bronze if available, black stock fallback",
+      "stage": 3,
+      "rotation_xyz_deg": [
+        0,
+        0,
+        0
+      ],
+      "orientation_min_xyz_mm": [
+        46.501976013183594,
+        92.50049591064453,
+        26.649999618530273
+      ],
+      "print_bbox_xyz_mm": [
+        4.998023986816406,
+        4.9990081787109375,
+        7.100000381469727
+      ],
+      "nominal_solid_volume_mm3": 93.63874210637125,
+      "support_review": "Review overhangs and bed contact in slicer; keep supports out of fitted slots.",
+      "orientation_verified_by_slicing": false
+    },
+    {
+      "code": "A09",
+      "role": "architect",
+      "name": "Button_Cap",
+      "file": "prototype-stl/A09-architect-Button_Cap\u2014Soham-Basanwar.stl",
+      "quantity": 1,
+      "material_group": "OPAQUE",
+      "material": "Opaque PLA prototype; bronze if available, black stock fallback",
+      "stage": 3,
+      "rotation_xyz_deg": [
+        0,
+        0,
+        0
+      ],
+      "orientation_min_xyz_mm": [
+        39.0,
+        85.0019760131836,
+        30.649999618530273
+      ],
+      "print_bbox_xyz_mm": [
+        19.99209213256836,
+        19.996047973632812,
+        31.350000381469727
+      ],
+      "nominal_solid_volume_mm3": 2213.3162662168925,
+      "support_review": "Small working part: orientation, stem/pin strength and support removal require individual slicer review.",
+      "orientation_verified_by_slicing": false
+    },
+    {
+      "code": "A11",
+      "role": "architect",
+      "name": "Button_Stem_Guide",
+      "file": "prototype-stl/A11-architect-Button_Stem_Guide\u2014Soham-Basanwar.stl",
+      "quantity": 1,
+      "material_group": "OPAQUE",
+      "material": "Opaque PLA prototype; bronze if available, black stock fallback",
+      "stage": 3,
+      "rotation_xyz_deg": [
+        0,
+        0,
+        0
+      ],
+      "orientation_min_xyz_mm": [
+        36.599998474121094,
+        84.9000015258789,
+        31.0
+      ],
+      "print_bbox_xyz_mm": [
+        24.800003051757812,
+        20.199996948242188,
+        22.25
+      ],
+      "nominal_solid_volume_mm3": 1218.4531821292576,
+      "support_review": "Review overhangs and bed contact in slicer; keep supports out of fitted slots.",
+      "orientation_verified_by_slicing": false
+    },
+    {
+      "code": "A01",
+      "role": "architect",
+      "name": "Base",
+      "file": "prototype-stl/A01-architect-Base\u2014Soham-Basanwar.stl",
+      "quantity": 1,
+      "material_group": "OPAQUE",
+      "material": "Opaque PLA prototype; bronze if available, black stock fallback",
+      "stage": 2,
+      "rotation_xyz_deg": [
+        0,
+        0,
+        0
+      ],
+      "orientation_min_xyz_mm": [
+        -0.1683904528617859,
+        -4.0,
+        0.0
+      ],
+      "print_bbox_xyz_mm": [
+        246.3384343981743,
+        209.37567138671875,
+        42.0
+      ],
+      "nominal_solid_volume_mm3": 253229.88852606658,
+      "support_review": "Open side up. Review grip curvature and cable-hatch overhangs; no trapped supports in rails.",
+      "orientation_verified_by_slicing": false
+    },
+    {
+      "code": "A02",
+      "role": "architect",
+      "name": "Lid",
+      "file": "prototype-stl/A02-architect-Lid\u2014Soham-Basanwar.stl",
+      "quantity": 1,
+      "material_group": "OPAQUE",
+      "material": "Opaque PLA prototype; bronze if available, black stock fallback",
+      "stage": 2,
+      "rotation_xyz_deg": [
+        180,
+        0,
+        0
+      ],
+      "orientation_min_xyz_mm": [
+        2.700411319732666,
+        -205.38560485839844,
+        -58.99999999999999
+      ],
+      "print_bbox_xyz_mm": [
+        240.58779668807983,
+        203.0946021080017,
+        36.465122222900405
+      ],
+      "nominal_solid_volume_mm3": 174141.9293206012,
+      "support_review": "Candidate exterior face down. Sculpted surfaces need contact/support review. Block supports in enclosed light galleries; coupon first.",
+      "orientation_verified_by_slicing": false
+    },
+    {
+      "code": "M03",
+      "role": "main",
+      "name": "Battery_Door",
+      "file": "prototype-stl/M03-main-Battery_Door\u2014Soham-Basanwar.stl",
+      "quantity": 1,
+      "material_group": "OPAQUE",
+      "material": "Opaque PLA prototype; bronze if available, black stock fallback",
+      "stage": 3,
+      "rotation_xyz_deg": [
+        180,
+        0,
+        0
+      ],
+      "orientation_min_xyz_mm": [
+        178.8000030517578,
+        -161.1999969482422,
+        -3.7000000476836963
+      ],
+      "print_bbox_xyz_mm": [
+        34.399993896484375,
+        67.5999984741211,
+        3.400000035762787
+      ],
+      "nominal_solid_volume_mm3": 4649.752935808662,
+      "support_review": "Candidate interior face down; inspect latching projections and support access. Preserve the smooth hand-contact surface.",
+      "orientation_verified_by_slicing": false
+    },
+    {
+      "code": "M05",
+      "role": "main",
+      "name": "Breadboard_X_Jaw",
+      "file": "prototype-stl/M05-main-Breadboard_X_Jaw\u2014Soham-Basanwar.stl",
+      "quantity": 1,
+      "material_group": "OPAQUE",
+      "material": "Opaque PLA prototype; bronze if available, black stock fallback",
+      "stage": 3,
+      "rotation_xyz_deg": [
+        0,
+        0,
+        0
+      ],
+      "orientation_min_xyz_mm": [
+        32.0,
+        34.5,
+        4.75
+      ],
+      "print_bbox_xyz_mm": [
+        17.0,
+        10.0,
+        16.100000381469727
+      ],
+      "nominal_solid_volume_mm3": 505.95584165017726,
+      "support_review": "Review overhangs and bed contact in slicer; keep supports out of fitted slots.",
+      "orientation_verified_by_slicing": false
+    },
+    {
+      "code": "M06",
+      "role": "main",
+      "name": "Breadboard_X_Lock_Key",
+      "file": "prototype-stl/M06-main-Breadboard_X_Lock_Key\u2014Soham-Basanwar.stl",
+      "quantity": 1,
+      "material_group": "OPAQUE",
+      "material": "Opaque PLA prototype; bronze if available, black stock fallback",
+      "stage": 3,
+      "rotation_xyz_deg": [
+        0,
+        0,
+        0
+      ],
+      "orientation_min_xyz_mm": [
+        26.0,
+        30.600000381469727,
+        4.920000076293945
+      ],
+      "print_bbox_xyz_mm": [
+        18.299999237060547,
+        14.80000114440918,
+        2.880000114440918
+      ],
+      "nominal_solid_volume_mm3": 95.60161643651902,
+      "support_review": "Flat orientation candidate. Keep flexible detent and narrow indexed slots free of support; test fit.",
+      "orientation_verified_by_slicing": false
+    },
+    {
+      "code": "M07",
+      "role": "main",
+      "name": "Breadboard_Y_Jaw",
+      "file": "prototype-stl/M07-main-Breadboard_Y_Jaw\u2014Soham-Basanwar.stl",
+      "quantity": 1,
+      "material_group": "OPAQUE",
+      "material": "Opaque PLA prototype; bronze if available, black stock fallback",
+      "stage": 3,
+      "rotation_xyz_deg": [
+        0,
+        0,
+        0
+      ],
+      "orientation_min_xyz_mm": [
+        112.0,
+        52.0,
+        4.75
+      ],
+      "print_bbox_xyz_mm": [
+        10.0,
+        17.0,
+        16.100000381469727
+      ],
+      "nominal_solid_volume_mm3": 505.95637171999255,
+      "support_review": "Review overhangs and bed contact in slicer; keep supports out of fitted slots.",
+      "orientation_verified_by_slicing": false
+    },
+    {
+      "code": "M08",
+      "role": "main",
+      "name": "Breadboard_Y_Lock_Key",
+      "file": "prototype-stl/M08-main-Breadboard_Y_Lock_Key\u2014Soham-Basanwar.stl",
+      "quantity": 1,
+      "material_group": "OPAQUE",
+      "material": "Opaque PLA prototype; bronze if available, black stock fallback",
+      "stage": 3,
+      "rotation_xyz_deg": [
+        0,
+        0,
+        0
+      ],
+      "orientation_min_xyz_mm": [
+        108.0999984741211,
+        56.70000076293945,
+        4.920000076293945
+      ],
+      "print_bbox_xyz_mm": [
+        14.800003051757812,
+        18.299999237060547,
+        2.880000114440918
+      ],
+      "nominal_solid_volume_mm3": 95.60161822797114,
+      "support_review": "Flat orientation candidate. Keep flexible detent and narrow indexed slots free of support; test fit.",
+      "orientation_verified_by_slicing": false
+    },
+    {
+      "code": "M04",
+      "role": "main",
+      "name": "Breadboard_Height_Insert",
+      "file": "prototype-stl/M04-main-Breadboard_Height_Insert\u2014Soham-Basanwar.stl",
+      "quantity": 1,
+      "material_group": "OPAQUE",
+      "material": "Opaque PLA prototype; bronze if available, black stock fallback",
+      "stage": 3,
+      "rotation_xyz_deg": [
+        0,
+        0,
+        0
+      ],
+      "orientation_min_xyz_mm": [
+        38.5,
+        13.5,
+        7.300000190734863
+      ],
+      "print_bbox_xyz_mm": [
+        160.0,
+        49.0,
+        1.8999996185302734
+      ],
+      "nominal_solid_volume_mm3": 1012.1182436740547,
+      "support_review": "Flat orientation candidate. Keep flexible detent and narrow indexed slots free of support; test fit.",
+      "orientation_verified_by_slicing": false
+    },
+    {
+      "code": "M35",
+      "role": "main",
+      "name": "UNO_X_Jaw",
+      "file": "prototype-stl/M35-main-UNO_X_Jaw\u2014Soham-Basanwar.stl",
+      "quantity": 1,
+      "material_group": "OPAQUE",
+      "material": "Opaque PLA prototype; bronze if available, black stock fallback",
+      "stage": 3,
+      "rotation_xyz_deg": [
+        0,
+        0,
+        0
+      ],
+      "orientation_min_xyz_mm": [
+        74.80000305175781,
+        113.0,
+        4.75
+      ],
+      "print_bbox_xyz_mm": [
+        17.0,
+        10.0,
+        7.699999809265137
+      ],
+      "nominal_solid_volume_mm3": 354.7556962446899,
+      "support_review": "Review overhangs and bed contact in slicer; keep supports out of fitted slots.",
+      "orientation_verified_by_slicing": false
+    },
+    {
+      "code": "M36",
+      "role": "main",
+      "name": "UNO_X_Lock_Key",
+      "file": "prototype-stl/M36-main-UNO_X_Lock_Key\u2014Soham-Basanwar.stl",
+      "quantity": 1,
+      "material_group": "OPAQUE",
+      "material": "Opaque PLA prototype; bronze if available, black stock fallback",
+      "stage": 3,
+      "rotation_xyz_deg": [
+        0,
+        0,
+        0
+      ],
+      "orientation_min_xyz_mm": [
+        68.80000305175781,
+        109.0999984741211,
+        4.920000076293945
+      ],
+      "print_bbox_xyz_mm": [
+        18.29999542236328,
+        14.800003051757812,
+        2.880000114440918
+      ],
+      "nominal_solid_volume_mm3": 95.60147975645383,
+      "support_review": "Flat orientation candidate. Keep flexible detent and narrow indexed slots free of support; test fit.",
+      "orientation_verified_by_slicing": false
+    },
+    {
+      "code": "M37",
+      "role": "main",
+      "name": "UNO_Y_Jaw",
+      "file": "prototype-stl/M37-main-UNO_Y_Jaw\u2014Soham-Basanwar.stl",
+      "quantity": 1,
+      "material_group": "OPAQUE",
+      "material": "Opaque PLA prototype; bronze if available, black stock fallback",
+      "stage": 3,
+      "rotation_xyz_deg": [
+        0,
+        0,
+        0
+      ],
+      "orientation_min_xyz_mm": [
+        106.4000015258789,
+        130.0,
+        4.75
+      ],
+      "print_bbox_xyz_mm": [
+        10.0,
+        17.0,
+        7.699999809265137
+      ],
+      "nominal_solid_volume_mm3": 354.75611782825416,
+      "support_review": "Review overhangs and bed contact in slicer; keep supports out of fitted slots.",
+      "orientation_verified_by_slicing": false
+    },
+    {
+      "code": "M38",
+      "role": "main",
+      "name": "UNO_Y_Lock_Key",
+      "file": "prototype-stl/M38-main-UNO_Y_Lock_Key\u2014Soham-Basanwar.stl",
+      "quantity": 1,
+      "material_group": "OPAQUE",
+      "material": "Opaque PLA prototype; bronze if available, black stock fallback",
+      "stage": 3,
+      "rotation_xyz_deg": [
+        0,
+        0,
+        0
+      ],
+      "orientation_min_xyz_mm": [
+        102.5,
+        134.6999969482422,
+        4.920000076293945
+      ],
+      "print_bbox_xyz_mm": [
+        14.800003051757812,
+        18.300003051757812,
+        2.880000114440918
+      ],
+      "nominal_solid_volume_mm3": 95.60146077864407,
+      "support_review": "Flat orientation candidate. Keep flexible detent and narrow indexed slots free of support; test fit.",
+      "orientation_verified_by_slicing": false
+    },
+    {
+      "code": "M34",
+      "role": "main",
+      "name": "UNO_Height_Insert",
+      "file": "prototype-stl/M34-main-UNO_Height_Insert\u2014Soham-Basanwar.stl",
+      "quantity": 1,
+      "material_group": "OPAQUE",
+      "material": "Opaque PLA prototype; bronze if available, black stock fallback",
+      "stage": 3,
+      "rotation_xyz_deg": [
+        0,
+        0,
+        0
+      ],
+      "orientation_min_xyz_mm": [
+        81.30000305175781,
+        92.5,
+        7.300000190734863
+      ],
+      "print_bbox_xyz_mm": [
+        63.19999694824219,
+        48.0,
+        1.8999996185302734
+      ],
+      "nominal_solid_volume_mm3": 542.7443711678088,
+      "support_review": "Flat orientation candidate. Keep flexible detent and narrow indexed slots free of support; test fit.",
+      "orientation_verified_by_slicing": false
+    },
+    {
+      "code": "M14",
+      "role": "main",
+      "name": "I2C_Left_Shutter",
+      "file": "prototype-stl/M14-main-I2C_Left_Shutter\u2014Soham-Basanwar.stl",
+      "quantity": 1,
+      "material_group": "OPAQUE",
+      "material": "Opaque PLA prototype; bronze if available, black stock fallback",
+      "stage": 3,
+      "rotation_xyz_deg": [
+        0,
+        -90,
+        0
+      ],
+      "orientation_min_xyz_mm": [
+        -30.70000076293944,
+        115.0,
+        234.0
+      ],
+      "print_bbox_xyz_mm": [
+        13.400001525878906,
+        20.0,
+        5.1999969482421875
+      ],
+      "nominal_solid_volume_mm3": 730.3061895622365,
+      "support_review": "Interior flat plate face toward bed; external finger tab up. Check first-layer expansion.",
+      "orientation_verified_by_slicing": false
+    },
+    {
+      "code": "M13",
+      "role": "main",
+      "name": "I2C_Left_Keeper",
+      "file": "prototype-stl/M13-main-I2C_Left_Keeper\u2014Soham-Basanwar.stl",
+      "quantity": 1,
+      "material_group": "OPAQUE",
+      "material": "Opaque PLA prototype; bronze if available, black stock fallback",
+      "stage": 3,
+      "rotation_xyz_deg": [
+        0,
+        0,
+        0
+      ],
+      "orientation_min_xyz_mm": [
+        226.0,
+        133.39999389648438,
+        17.5
+      ],
+      "print_bbox_xyz_mm": [
+        11.600006103515625,
+        3.600006103515625,
+        29.5
+      ],
+      "nominal_solid_volume_mm3": 294.62548388838087,
+      "support_review": "Review overhangs and bed contact in slicer; keep supports out of fitted slots.",
+      "orientation_verified_by_slicing": false
+    },
+    {
+      "code": "M16",
+      "role": "main",
+      "name": "I2C_Right_Shutter",
+      "file": "prototype-stl/M16-main-I2C_Right_Shutter\u2014Soham-Basanwar.stl",
+      "quantity": 1,
+      "material_group": "OPAQUE",
+      "material": "Opaque PLA prototype; bronze if available, black stock fallback",
+      "stage": 3,
+      "rotation_xyz_deg": [
+        0,
+        90,
+        0
+      ],
+      "orientation_min_xyz_mm": [
+        17.299999237060547,
+        85.0,
+        1.0593194345458925e-15
+      ],
+      "print_bbox_xyz_mm": [
+        13.400001525878906,
+        20.0,
+        5.199999809265138
+      ],
+      "nominal_solid_volume_mm3": 730.228912887058,
+      "support_review": "Interior flat plate face toward bed; external finger tab up. Check first-layer expansion.",
+      "orientation_verified_by_slicing": false
+    },
+    {
+      "code": "M15",
+      "role": "main",
+      "name": "I2C_Right_Keeper",
+      "file": "prototype-stl/M15-main-I2C_Right_Keeper\u2014Soham-Basanwar.stl",
+      "quantity": 1,
+      "material_group": "OPAQUE",
+      "material": "Opaque PLA prototype; bronze if available, black stock fallback",
+      "stage": 3,
+      "rotation_xyz_deg": [
+        0,
+        0,
+        0
+      ],
+      "orientation_min_xyz_mm": [
+        -3.5999999046325684,
+        83.0,
+        17.5
+      ],
+      "print_bbox_xyz_mm": [
+        11.599999904632568,
+        3.5999984741210938,
+        29.5
+      ],
+      "nominal_solid_volume_mm3": 294.62376395416163,
+      "support_review": "Review overhangs and bed contact in slicer; keep supports out of fitted slots.",
+      "orientation_verified_by_slicing": false
+    },
+    {
+      "code": "M32",
+      "role": "main",
+      "name": "RGB_LED_Keeper",
+      "file": "prototype-stl/M32-main-RGB_LED_Keeper\u2014Soham-Basanwar.stl",
+      "quantity": 1,
+      "material_group": "OPAQUE",
+      "material": "Opaque PLA prototype; bronze if available, black stock fallback",
+      "stage": 3,
+      "rotation_xyz_deg": [
+        0,
+        0,
+        0
+      ],
+      "orientation_min_xyz_mm": [
+        111.19999694824219,
+        104.95059967041016,
+        41.29999923706055
+      ],
+      "print_bbox_xyz_mm": [
+        11.600006103515625,
+        6.0988006591796875,
+        3.0
+      ],
+      "nominal_solid_volume_mm3": 46.5685907342704,
+      "support_review": "Review overhangs and bed contact in slicer; keep supports out of fitted slots.",
+      "orientation_verified_by_slicing": false
+    },
+    {
+      "code": "M11",
+      "role": "main",
+      "name": "Emblem_Diffuser",
+      "file": "prototype-stl/M11-main-Emblem_Diffuser\u2014Soham-Basanwar.stl",
+      "quantity": 1,
+      "material_group": "TRANSLUCENT",
+      "material": "Neutral translucent PLA",
+      "stage": 4,
+      "rotation_xyz_deg": [
+        0,
+        0,
+        0
+      ],
+      "orientation_min_xyz_mm": [
+        93.21428680419922,
+        84.0,
+        64.05000305175781
+      ],
+      "print_bbox_xyz_mm": [
+        47.57141876220703,
+        48.0,
+        1.1999969482421875
+      ],
+      "nominal_solid_volume_mm3": 2162.7689028919135,
+      "support_review": "Flat optical insert; no support expected. Check solid thin layers and actual light diffusion.",
+      "orientation_verified_by_slicing": false
+    },
+    {
+      "code": "M12",
+      "role": "main",
+      "name": "Emblem_Mask",
+      "file": "prototype-stl/M12-main-Emblem_Mask\u2014Soham-Basanwar.stl",
+      "quantity": 1,
+      "material_group": "OPAQUE",
+      "material": "Opaque PLA prototype; bronze if available, black stock fallback",
+      "stage": 3,
+      "rotation_xyz_deg": [
+        0,
+        0,
+        0
+      ],
+      "orientation_min_xyz_mm": [
+        91.0,
+        82.00514221191406,
+        62.0
+      ],
+      "print_bbox_xyz_mm": [
+        51.97944641113281,
+        51.989715576171875,
+        5.099998474121094
+      ],
+      "nominal_solid_volume_mm3": 3316.848293354949,
+      "support_review": "Review overhangs and bed contact in slicer; keep supports out of fitted slots.",
+      "orientation_verified_by_slicing": false
+    },
+    {
+      "code": "M09",
+      "role": "main",
+      "name": "Button_Cap",
+      "file": "prototype-stl/M09-main-Button_Cap\u2014Soham-Basanwar.stl",
+      "quantity": 1,
+      "material_group": "OPAQUE",
+      "material": "Opaque PLA prototype; bronze if available, black stock fallback",
+      "stage": 3,
+      "rotation_xyz_deg": [
+        0,
+        0,
+        0
+      ],
+      "orientation_min_xyz_mm": [
+        107.0,
+        135.00198364257812,
+        54.70000076293945
+      ],
+      "print_bbox_xyz_mm": [
+        19.992095947265625,
+        19.99603271484375,
+        13.299999237060547
+      ],
+      "nominal_solid_volume_mm3": 1894.0830937976323,
+      "support_review": "Small working part: orientation, stem/pin strength and support removal require individual slicer review.",
+      "orientation_verified_by_slicing": false
+    },
+    {
+      "code": "M33",
+      "role": "main",
+      "name": "Switch_Cassette",
+      "file": "prototype-stl/M33-main-Switch_Cassette\u2014Soham-Basanwar.stl",
+      "quantity": 1,
+      "material_group": "OPAQUE",
+      "material": "Opaque PLA prototype; bronze if available, black stock fallback",
+      "stage": 3,
+      "rotation_xyz_deg": [
+        0,
+        0,
+        0
+      ],
+      "orientation_min_xyz_mm": [
+        106.9000015258789,
+        134.90199279785156,
+        47.0
+      ],
+      "print_bbox_xyz_mm": [
+        20.1920166015625,
+        20.196014404296875,
+        12.25
+      ],
+      "nominal_solid_volume_mm3": 1518.44763086542,
+      "support_review": "Review overhangs and bed contact in slicer; keep supports out of fitted slots.",
+      "orientation_verified_by_slicing": false
+    },
+    {
+      "code": "M19",
+      "role": "main",
+      "name": "LCD_X_Jaw",
+      "file": "prototype-stl/M19-main-LCD_X_Jaw\u2014Soham-Basanwar.stl",
+      "quantity": 1,
+      "material_group": "OPAQUE",
+      "material": "Opaque PLA prototype; bronze if available, black stock fallback",
+      "stage": 3,
+      "rotation_xyz_deg": [
+        0,
+        0,
+        0
+      ],
+      "orientation_min_xyz_mm": [
+        74.69999694824219,
+        24.0,
+        50.150001525878906
+      ],
+      "print_bbox_xyz_mm": [
+        17.0,
+        10.0,
+        7.6999969482421875
+      ],
+      "nominal_solid_volume_mm3": 354.75592829780044,
+      "support_review": "Review overhangs and bed contact in slicer; keep supports out of fitted slots.",
+      "orientation_verified_by_slicing": false
+    },
+    {
+      "code": "M20",
+      "role": "main",
+      "name": "LCD_X_Lock_Key",
+      "file": "prototype-stl/M20-main-LCD_X_Lock_Key\u2014Soham-Basanwar.stl",
+      "quantity": 1,
+      "material_group": "OPAQUE",
+      "material": "Opaque PLA prototype; bronze if available, black stock fallback",
+      "stage": 3,
+      "rotation_xyz_deg": [
+        0,
+        0,
+        0
+      ],
+      "orientation_min_xyz_mm": [
+        68.69999694824219,
+        20.100000381469727,
+        50.31999969482422
+      ],
+      "print_bbox_xyz_mm": [
+        18.300003051757812,
+        14.80000114440918,
+        2.8800010681152344
+      ],
+      "nominal_solid_volume_mm3": 95.60155687903729,
+      "support_review": "Flat orientation candidate. Keep flexible detent and narrow indexed slots free of support; test fit.",
+      "orientation_verified_by_slicing": false
+    },
+    {
+      "code": "M21",
+      "role": "main",
+      "name": "LCD_Y_Jaw",
+      "file": "prototype-stl/M21-main-LCD_Y_Jaw\u2014Soham-Basanwar.stl",
+      "quantity": 1,
+      "material_group": "OPAQUE",
+      "material": "Opaque PLA prototype; bronze if available, black stock fallback",
+      "stage": 3,
+      "rotation_xyz_deg": [
+        0,
+        0,
+        0
+      ],
+      "orientation_min_xyz_mm": [
+        95.69999694824219,
+        46.0,
+        50.150001525878906
+      ],
+      "print_bbox_xyz_mm": [
+        10.0,
+        17.0,
+        7.6999969482421875
+      ],
+      "nominal_solid_volume_mm3": 354.7556706465538,
+      "support_review": "Review overhangs and bed contact in slicer; keep supports out of fitted slots.",
+      "orientation_verified_by_slicing": false
+    },
+    {
+      "code": "M22",
+      "role": "main",
+      "name": "LCD_Y_Lock_Key",
+      "file": "prototype-stl/M22-main-LCD_Y_Lock_Key\u2014Soham-Basanwar.stl",
+      "quantity": 1,
+      "material_group": "OPAQUE",
+      "material": "Opaque PLA prototype; bronze if available, black stock fallback",
+      "stage": 3,
+      "rotation_xyz_deg": [
+        0,
+        0,
+        0
+      ],
+      "orientation_min_xyz_mm": [
+        91.80000305175781,
+        50.70000076293945,
+        50.31999969482422
+      ],
+      "print_bbox_xyz_mm": [
+        14.799995422363281,
+        18.299999237060547,
+        2.8800010681152344
+      ],
+      "nominal_solid_volume_mm3": 95.60149900893096,
+      "support_review": "Flat orientation candidate. Keep flexible detent and narrow indexed slots free of support; test fit.",
+      "orientation_verified_by_slicing": false
+    },
+    {
+      "code": "M18",
+      "role": "main",
+      "name": "LCD_Height_Insert",
+      "file": "prototype-stl/M18-main-LCD_Height_Insert\u2014Soham-Basanwar.stl",
+      "quantity": 1,
+      "material_group": "OPAQUE",
+      "material": "Opaque PLA prototype; bronze if available, black stock fallback",
+      "stage": 3,
+      "rotation_xyz_deg": [
+        0,
+        0,
+        0
+      ],
+      "orientation_min_xyz_mm": [
+        81.19999694824219,
+        26.5,
+        52.70000076293945
+      ],
+      "print_bbox_xyz_mm": [
+        74.60000610351562,
+        30.0,
+        1.8999977111816406
+      ],
+      "nominal_solid_volume_mm3": 511.1060453105096,
+      "support_review": "Flat orientation candidate. Keep flexible detent and narrow indexed slots free of support; test fit.",
+      "orientation_verified_by_slicing": false
+    },
+    {
+      "code": "M17",
+      "role": "main",
+      "name": "LCD_Carrier",
+      "file": "prototype-stl/M17-main-LCD_Carrier\u2014Soham-Basanwar.stl",
+      "quantity": 1,
+      "material_group": "OPAQUE",
+      "material": "Opaque PLA prototype; bronze if available, black stock fallback",
+      "stage": 3,
+      "rotation_xyz_deg": [
+        0,
+        0,
+        0
+      ],
+      "orientation_min_xyz_mm": [
+        66.69999694824219,
+        23.0,
+        49.20000076293945
+      ],
+      "print_bbox_xyz_mm": [
+        93.80000305175781,
+        48.0,
+        12.0
+      ],
+      "nominal_solid_volume_mm3": 4307.857199288356,
+      "support_review": "Review overhangs and bed contact in slicer; keep supports out of fitted slots.",
+      "orientation_verified_by_slicing": false
+    },
+    {
+      "code": "M10",
+      "role": "main",
+      "name": "Buzzer_Keeper",
+      "file": "prototype-stl/M10-main-Buzzer_Keeper\u2014Soham-Basanwar.stl",
+      "quantity": 1,
+      "material_group": "OPAQUE",
+      "material": "Opaque PLA prototype; bronze if available, black stock fallback",
+      "stage": 3,
+      "rotation_xyz_deg": [
+        0,
+        0,
+        0
+      ],
+      "orientation_min_xyz_mm": [
+        32.79999923706055,
+        102.69999694824219,
+        45.20000076293945
+      ],
+      "print_bbox_xyz_mm": [
+        20.400001525878906,
+        22.600006103515625,
+        1.7000007629394531
+      ],
+      "nominal_solid_volume_mm3": 324.6147701525652,
+      "support_review": "Review overhangs and bed contact in slicer; keep supports out of fitted slots.",
+      "orientation_verified_by_slicing": false
+    },
+    {
+      "code": "M39",
+      "role": "main",
+      "name": "USB_Shutter",
+      "file": "prototype-stl/M39-main-USB_Shutter\u2014Soham-Basanwar.stl",
+      "quantity": 1,
+      "material_group": "OPAQUE",
+      "material": "Opaque PLA prototype; bronze if available, black stock fallback",
+      "stage": 3,
+      "rotation_xyz_deg": [
+        -90,
+        0,
+        0
+      ],
+      "orientation_min_xyz_mm": [
+        101.0,
+        22.299999237060547,
+        1.3654811343327308e-15
+      ],
+      "print_bbox_xyz_mm": [
+        32.0,
+        21.400001525878906,
+        5.199999809265138
+      ],
+      "nominal_solid_volume_mm3": 1743.045307781895,
+      "support_review": "Interior flat plate face toward bed; external finger tab up. Keep running faces support-free.",
+      "orientation_verified_by_slicing": false
+    },
+    {
+      "code": "M40",
+      "role": "main",
+      "name": "USB_Shutter_Keeper",
+      "file": "prototype-stl/M40-main-USB_Shutter_Keeper\u2014Soham-Basanwar.stl",
+      "quantity": 1,
+      "material_group": "OPAQUE",
+      "material": "Opaque PLA prototype; bronze if available, black stock fallback",
+      "stage": 3,
+      "rotation_xyz_deg": [
+        0,
+        0,
+        0
+      ],
+      "orientation_min_xyz_mm": [
+        131.39999389648438,
+        -3.5999999046325684,
+        22.5
+      ],
+      "print_bbox_xyz_mm": [
+        3.600006103515625,
+        11.599999904632568,
+        25.200000762939453
+      ],
+      "nominal_solid_volume_mm3": 257.47290193179407,
+      "support_review": "Review overhangs and bed contact in slicer; keep supports out of fitted slots.",
+      "orientation_verified_by_slicing": false
+    },
+    {
+      "code": "M01",
+      "role": "main",
+      "name": "Base",
+      "file": "prototype-stl/M01-main-Base\u2014Soham-Basanwar.stl",
+      "quantity": 1,
+      "material_group": "OPAQUE",
+      "material": "Opaque PLA prototype; bronze if available, black stock fallback",
+      "stage": 2,
+      "rotation_xyz_deg": [
+        0,
+        0,
+        0
+      ],
+      "orientation_min_xyz_mm": [
+        -4.0,
+        -4.0,
+        0.0
+      ],
+      "print_bbox_xyz_mm": [
+        242.0,
+        183.80897521972656,
+        48.0
+      ],
+      "nominal_solid_volume_mm3": 271194.1410390632,
+      "support_review": "Open side up. Review grip curvature and cable-hatch overhangs; no trapped supports in rails.",
+      "orientation_verified_by_slicing": false
+    },
+    {
+      "code": "M02",
+      "role": "main",
+      "name": "Lid",
+      "file": "prototype-stl/M02-main-Lid\u2014Soham-Basanwar.stl",
+      "quantity": 1,
+      "material_group": "OPAQUE",
+      "material": "Opaque PLA prototype; bronze if available, black stock fallback",
+      "stage": 2,
+      "rotation_xyz_deg": [
+        180,
+        0,
+        0
+      ],
+      "orientation_min_xyz_mm": [
+        3.0583295822143555,
+        -176.94166564941406,
+        -65.80000305175781
+      ],
+      "print_bbox_xyz_mm": [
+        227.8833360671997,
+        174.54166555404663,
+        43.00000381469727
+      ],
+      "nominal_solid_volume_mm3": 170240.79290880187,
+      "support_review": "Candidate exterior face down. Sculpted surfaces need contact/support review. Block supports in enclosed light galleries; coupon first.",
+      "orientation_verified_by_slicing": false
+    },
+    {
+      "code": "M31",
+      "role": "main",
+      "name": "RGB_Isolation_Cap",
+      "file": "prototype-stl/M31-main-RGB_Isolation_Cap\u2014Soham-Basanwar.stl",
+      "quantity": 1,
+      "material_group": "OPAQUE",
+      "material": "Opaque PLA prototype; bronze if available, black stock fallback",
+      "stage": 3,
+      "rotation_xyz_deg": [
+        0,
+        0,
+        0
+      ],
+      "orientation_min_xyz_mm": [
+        106.20854187011719,
+        97.20213317871094,
+        32.29999923706055
+      ],
+      "print_bbox_xyz_mm": [
+        21.591461181640625,
+        21.595733642578125,
+        6.400001525878906
+      ],
+      "nominal_solid_volume_mm3": 1172.1788166624037,
+      "support_review": "Review overhangs and bed contact in slicer; keep supports out of fitted slots.",
+      "orientation_verified_by_slicing": false
+    },
+    {
+      "code": "M24",
+      "role": "main",
+      "name": "Light_G1_Diffuser",
+      "file": "prototype-stl/M24-main-Light_G1_Diffuser\u2014Soham-Basanwar.stl",
+      "quantity": 1,
+      "material_group": "TRANSLUCENT",
+      "material": "Neutral translucent PLA",
+      "stage": 4,
+      "rotation_xyz_deg": [
+        0,
+        0,
+        0
+      ],
+      "orientation_min_xyz_mm": [
+        29.202045440673828,
+        11.199999809265137,
+        64.05000305175781
+      ],
+      "print_bbox_xyz_mm": [
+        60.597957611083984,
+        26.597954750061035,
+        0.7999954223632812
+      ],
+      "nominal_solid_volume_mm3": 303.4107693690434,
+      "support_review": "Flat optical insert; no support expected. Check solid thin layers and actual light diffusion.",
+      "orientation_verified_by_slicing": false
+    },
+    {
+      "code": "M23",
+      "role": "main",
+      "name": "Light_G1_Bezel",
+      "file": "prototype-stl/M23-main-Light_G1_Bezel\u2014Soham-Basanwar.stl",
+      "quantity": 1,
+      "material_group": "OPAQUE",
+      "material": "Opaque PLA prototype; bronze if available, black stock fallback",
+      "stage": 3,
+      "rotation_xyz_deg": [
+        180,
+        0,
+        0
+      ],
+      "orientation_min_xyz_mm": [
+        27.503286361694336,
+        -39.49671173095704,
+        -66.55000305175781
+      ],
+      "print_bbox_xyz_mm": [
+        63.996713638305664,
+        29.99671173095703,
+        7.450004577636719
+      ],
+      "nominal_solid_volume_mm3": 790.4114149671688,
+      "support_review": "Broad clean exterior face down, legs up. Inspect hook bridges and clip-layer strength.",
+      "orientation_verified_by_slicing": false
+    },
+    {
+      "code": "M26",
+      "role": "main",
+      "name": "Light_G2_Diffuser",
+      "file": "prototype-stl/M26-main-Light_G2_Diffuser\u2014Soham-Basanwar.stl",
+      "quantity": 1,
+      "material_group": "TRANSLUCENT",
+      "material": "Neutral translucent PLA",
+      "stage": 4,
+      "rotation_xyz_deg": [
+        0,
+        0,
+        0
+      ],
+      "orientation_min_xyz_mm": [
+        144.1999969482422,
+        11.199999809265137,
+        64.05000305175781
+      ],
+      "print_bbox_xyz_mm": [
+        60.600006103515625,
+        26.59911060333252,
+        0.7999954223632812
+      ],
+      "nominal_solid_volume_mm3": 303.41083735069606,
+      "support_review": "Flat optical insert; no support expected. Check solid thin layers and actual light diffusion.",
+      "orientation_verified_by_slicing": false
+    },
+    {
+      "code": "M25",
+      "role": "main",
+      "name": "Light_G2_Bezel",
+      "file": "prototype-stl/M25-main-Light_G2_Bezel\u2014Soham-Basanwar.stl",
+      "quantity": 1,
+      "material_group": "OPAQUE",
+      "material": "Opaque PLA prototype; bronze if available, black stock fallback",
+      "stage": 3,
+      "rotation_xyz_deg": [
+        180,
+        0,
+        0
+      ],
+      "orientation_min_xyz_mm": [
+        142.5,
+        -39.49857330322266,
+        -66.55000305175781
+      ],
+      "print_bbox_xyz_mm": [
+        64.0,
+        29.998573303222656,
+        7.450004577636719
+      ],
+      "nominal_solid_volume_mm3": 790.3695582246272,
+      "support_review": "Broad clean exterior face down, legs up. Inspect hook bridges and clip-layer strength.",
+      "orientation_verified_by_slicing": false
+    },
+    {
+      "code": "M28",
+      "role": "main",
+      "name": "Light_G3_Diffuser",
+      "file": "prototype-stl/M28-main-Light_G3_Diffuser\u2014Soham-Basanwar.stl",
+      "quantity": 1,
+      "material_group": "TRANSLUCENT",
+      "material": "Neutral translucent PLA",
+      "stage": 4,
+      "rotation_xyz_deg": [
+        0,
+        0,
+        0
+      ],
+      "orientation_min_xyz_mm": [
+        39.20036315917969,
+        57.20036315917969,
+        64.05000305175781
+      ],
+      "print_bbox_xyz_mm": [
+        35.599639892578125,
+        44.599639892578125,
+        0.7999954223632812
+      ],
+      "nominal_solid_volume_mm3": 254.0823118615831,
+      "support_review": "Flat optical insert; no support expected. Check solid thin layers and actual light diffusion.",
+      "orientation_verified_by_slicing": false
+    },
+    {
+      "code": "M27",
+      "role": "main",
+      "name": "Light_G3_Bezel",
+      "file": "prototype-stl/M27-main-Light_G3_Bezel\u2014Soham-Basanwar.stl",
+      "quantity": 1,
+      "material_group": "OPAQUE",
+      "material": "Opaque PLA prototype; bronze if available, black stock fallback",
+      "stage": 3,
+      "rotation_xyz_deg": [
+        180,
+        0,
+        0
+      ],
+      "orientation_min_xyz_mm": [
+        37.5,
+        -103.50000000000001,
+        -66.55000305175781
+      ],
+      "print_bbox_xyz_mm": [
+        39.0,
+        47.99941635131837,
+        7.450004577636733
+      ],
+      "nominal_solid_volume_mm3": 678.476220320724,
+      "support_review": "Broad clean exterior face down, legs up. Inspect hook bridges and clip-layer strength.",
+      "orientation_verified_by_slicing": false
+    },
+    {
+      "code": "M30",
+      "role": "main",
+      "name": "Light_G4_Diffuser",
+      "file": "prototype-stl/M30-main-Light_G4_Diffuser\u2014Soham-Basanwar.stl",
+      "quantity": 1,
+      "material_group": "TRANSLUCENT",
+      "material": "Neutral translucent PLA",
+      "stage": 4,
+      "rotation_xyz_deg": [
+        0,
+        0,
+        0
+      ],
+      "orientation_min_xyz_mm": [
+        159.1999969482422,
+        57.200096130371094,
+        64.05000305175781
+      ],
+      "print_bbox_xyz_mm": [
+        35.600006103515625,
+        44.59990692138672,
+        0.7999954223632812
+      ],
+      "nominal_solid_volume_mm3": 254.08244767168858,
+      "support_review": "Flat optical insert; no support expected. Check solid thin layers and actual light diffusion.",
+      "orientation_verified_by_slicing": false
+    },
+    {
+      "code": "M29",
+      "role": "main",
+      "name": "Light_G4_Bezel",
+      "file": "prototype-stl/M29-main-Light_G4_Bezel\u2014Soham-Basanwar.stl",
+      "quantity": 1,
+      "material_group": "OPAQUE",
+      "material": "Opaque PLA prototype; bronze if available, black stock fallback",
+      "stage": 3,
+      "rotation_xyz_deg": [
+        180,
+        0,
+        0
+      ],
+      "orientation_min_xyz_mm": [
+        157.5,
+        -103.50000000000001,
+        -66.55000305175781
+      ],
+      "print_bbox_xyz_mm": [
+        39.0,
+        47.99984741210938,
+        7.450004577636733
+      ],
+      "nominal_solid_volume_mm3": 677.2682902613283,
+      "support_review": "Broad clean exterior face down, legs up. Inspect hook bridges and clip-layer strength.",
+      "orientation_verified_by_slicing": false
+    }
+  ]
+}

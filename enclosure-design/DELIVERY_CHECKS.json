@@ -1,0 +1,12 @@
+{
+  "crests": 3,
+  "native_vector_single_ink": true,
+  "transparent_png_single_ink": true,
+  "plan_pdf_pages": 5,
+  "nominal_cad_solids_checked": 7,
+  "physical_fit_verified": false,
+  "presentation_revision": "USB_WiFi_Revision",
+  "presentation_embedded_video_checked": true,
+  "presentation_group_number": "intentional placeholder",
+  "release_status": "design study; actual component fit and retention mechanisms pending"
+}

@@ -1,0 +1,9 @@
+character,intention,line,source
+Architect,quiet resolve,"You walk the path. I will become it.",maze-source/work/story/voice.js
+Explorer,urgent reassurance,"Hold on, Princess. We are coming for you!",maze-source/work/story/voice.js
+Dryad,warm firm boundary,"These roots are my home. Ask for their help; do not try to become their master.",maze-source/work/chapters/forest.js
+King,controlled worry,"Bring my daughter home. I am counting on you.",maze-source/work/story/voice.js
+Princess,disorientation,"I know this is my room… why can’t I remember any of you?",maze-source/work/chapters/forest.js
+Great Alchemist,thoughtful concern,"Her body returned. Her spirit did not. We must light her way home.",maze-source/work/story/voice.js
+Physician,compassionate diagnosis,"This is no ordinary sleep. An ancient curse holds her.",maze-source/work/story/voice.js
+Explorer,delighted surprise,"That’s our ride! Let’s find the three ingredients and reach that dragon.",maze-source/work/chapters/laboratory-intro.js

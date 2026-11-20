@@ -1,0 +1,95 @@
+.env
+.env.*
+!.env.example
+voice/audio/**/*.pending
+voice/audio/**/*.normalized.mp3
+
+# Credentials and machine-specific configuration
+*.pem
+*.key
+*.pfx
+*.p12
+arduino_secrets.h
+secrets.json
+credentials.json
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+Desktop.ini
+~$*
+
+# Dependencies, local tooling and compiler output
+node_modules/
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.cache/
+build/
+build-*/
+dist/
+*.o
+*.a
+*.elf
+*.hex
+*.bin
+*.exe
+*.dll
+*.log
+*.tmp
+*.bak
+/.task-tools/
+/.presentation-build/
+/task-notes/
+/hardware/verification/
+/hardware/bus-test/captures/
+/hardware/bus-test/**/*.txt
+/hardware/bus-test/**/*.json
+/hardware/bus-test/**/*.jsonl
+/hardware/bus-test/**/*wifi-profile.xml
+
+# Private component reference photographs and duplicate handoff copies
+/Compoment image/
+/To Be Designed/
+
+# Generated packages and presentation exports; source remains tracked
+*.zip
+*.7z
+*.tar
+*.gz
+/submission/**/*.pptx
+/submission/**/*.pdf
+/submission/**/*.png
+/submission/**/*.jpg
+
+# The launcher rebuilds this copy from the tracked Story Edition and adapter
+/hardware/arduino-system/game.html
+/maze-source/outputs/
+
+# Trailer production intermediates and raw footage remain local
+*.mov
+*.mp4
+*.mkv
+*.avi
+/Dual Maze Trailer and Game Clips and Audio/
+/trailer-kit/**/frames/
+/trailer-kit/**/temp/
+!/submission/Full_Story_Revision/Dual_Reality_Maze_Origin_Trailer.mp4
+
+# Regenerable CAD meshes, screenshots, print plates and backup files
+/enclosure-design/**/*.stl
+/enclosure-design/**/*.step
+/enclosure-design/**/*.brep
+/enclosure-design/**/*.3mf
+/enclosure-design/**/*.gcode
+/enclosure-design/**/*.FCBak
+/enclosure-design/**/*.FCStd1
+/enclosure-design/**/*.png
+/enclosure-design/**/*.jpg
+/enclosure-design/**/*.jpeg
+/enclosure-design/**/*.gif
+/enclosure-design/**/box-handoff/
+/enclosure-design/**/baseline-r11/
+/enclosure-design/**/SUBMISSION_MANIFEST.json

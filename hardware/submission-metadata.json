@@ -1,0 +1,11 @@
+{
+  "team_number": "[TEAM NUMBER REQUIRED]",
+  "course": "CS 362",
+  "project": "Dual-Reality Maze",
+  "members": [
+    {"name": "Soham Basanwar", "netid": "sbasan3"},
+    {"name": "Ronit Mishra", "netid": "rmish"},
+    {"name": "Prince Patel", "netid": "ppate515"}
+  ],
+  "abstract": "Dual-Reality Maze is a cooperative fantasy game controlled by three Arduino boards. The Explorer uses a joystick to navigate and a photoresistor to reveal hidden paths. The Architect uses a potentiometer and pushbutton to select and operate maze mechanisms, while a servo represents gate movement. A Main Arduino coordinates both controllers through wired I2C and communicates with the laptop game over Wi-Fi. An LCD displays status and time, an RGB LED indicates connection readiness, and a buzzer provides feedback. Original work combines the story, puzzles, game software, communication protocol, and physical controller interactions into one shared experience requiring coordinated teamwork."
+}

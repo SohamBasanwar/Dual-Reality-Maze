@@ -1,0 +1,109 @@
+{
+  "scope": "Nominal CAD geometry only; no physical fit or print release.",
+  "checks": [
+    {
+      "role": "explorer",
+      "part": "base",
+      "watertight": true,
+      "positive_volume": true,
+      "bounds_mm": [
+        240.0,
+        182.99,
+        40.0
+      ],
+      "faces": 2570,
+      "physical_fit_verified": false
+    },
+    {
+      "role": "explorer",
+      "part": "lid",
+      "watertight": true,
+      "positive_volume": true,
+      "bounds_mm": [
+        240.0,
+        182.99,
+        18.0
+      ],
+      "faces": 4068,
+      "physical_fit_verified": false
+    },
+    {
+      "role": "architect",
+      "part": "base",
+      "watertight": true,
+      "positive_volume": true,
+      "bounds_mm": [
+        240.0,
+        182.99,
+        40.0
+      ],
+      "faces": 2570,
+      "physical_fit_verified": false
+    },
+    {
+      "role": "architect",
+      "part": "lid",
+      "watertight": true,
+      "positive_volume": true,
+      "bounds_mm": [
+        240.0,
+        182.99,
+        18.0
+      ],
+      "faces": 4264,
+      "physical_fit_verified": false
+    },
+    {
+      "role": "main",
+      "part": "base",
+      "watertight": true,
+      "positive_volume": true,
+      "bounds_mm": [
+        240.0,
+        180.0,
+        52.0
+      ],
+      "faces": 908,
+      "physical_fit_verified": false
+    },
+    {
+      "role": "main",
+      "part": "lid",
+      "watertight": true,
+      "positive_volume": true,
+      "bounds_mm": [
+        240.0,
+        180.0,
+        18.0
+      ],
+      "faces": 1292,
+      "physical_fit_verified": false
+    },
+    {
+      "role": "architect",
+      "part": "guard",
+      "watertight": true,
+      "positive_volume": true,
+      "bounds_mm": [
+        58.0,
+        34.0,
+        27.0
+      ],
+      "faces": 612,
+      "physical_fit_verified": false
+    },
+    {
+      "role": "main",
+      "part": "crystal",
+      "watertight": true,
+      "positive_volume": true,
+      "bounds_mm": [
+        22.0,
+        19.05256,
+        10.0
+      ],
+      "faces": 32,
+      "physical_fit_verified": false
+    }
+  ]
+}

@@ -1,0 +1,149 @@
+[
+  {
+    "role": "explorer",
+    "name": "Base",
+    "label": "Soham Basanwar",
+    "outside_probe_intersection_mm3": 0.0,
+    "exposed": true
+  },
+  {
+    "role": "explorer",
+    "name": "Base",
+    "label": "E01",
+    "outside_probe_intersection_mm3": 0.0,
+    "exposed": true
+  },
+  {
+    "role": "architect",
+    "name": "Button_Cap",
+    "label": "SB",
+    "outside_probe_intersection_mm3": 0.0,
+    "exposed": true
+  },
+  {
+    "role": "architect",
+    "name": "Button_Cap",
+    "label": "A09",
+    "outside_probe_intersection_mm3": 0.0,
+    "exposed": true
+  },
+  {
+    "role": "architect",
+    "name": "Base",
+    "label": "Soham Basanwar",
+    "outside_probe_intersection_mm3": 0.0,
+    "exposed": true
+  },
+  {
+    "role": "architect",
+    "name": "Base",
+    "label": "A01",
+    "outside_probe_intersection_mm3": 0.0,
+    "exposed": true
+  },
+  {
+    "role": "main",
+    "name": "Button_Cap",
+    "label": "SB",
+    "outside_probe_intersection_mm3": 0.0,
+    "exposed": true
+  },
+  {
+    "role": "main",
+    "name": "Button_Cap",
+    "label": "M09",
+    "outside_probe_intersection_mm3": 0.0,
+    "exposed": true
+  },
+  {
+    "role": "main",
+    "name": "Base",
+    "label": "Soham Basanwar",
+    "outside_probe_intersection_mm3": 0.0,
+    "exposed": true
+  },
+  {
+    "role": "main",
+    "name": "Base",
+    "label": "M01",
+    "outside_probe_intersection_mm3": 0.0,
+    "exposed": true
+  },
+  {
+    "role": "main",
+    "name": "Light_G1_Bezel",
+    "label": "SB",
+    "outside_probe_intersection_mm3": 0.0,
+    "exposed": true
+  },
+  {
+    "role": "main",
+    "name": "Light_G1_Bezel",
+    "label": "M23",
+    "outside_probe_intersection_mm3": 0.0,
+    "exposed": true
+  },
+  {
+    "role": "main",
+    "name": "Light_G2_Bezel",
+    "label": "SB",
+    "outside_probe_intersection_mm3": 0.0,
+    "exposed": true
+  },
+  {
+    "role": "main",
+    "name": "Light_G2_Bezel",
+    "label": "M25",
+    "outside_probe_intersection_mm3": 0.0,
+    "exposed": true
+  },
+  {
+    "role": "main",
+    "name": "Light_G3_Bezel",
+    "label": "M27",
+    "outside_probe_intersection_mm3": 0.0,
+    "exposed": true
+  },
+  {
+    "role": "main",
+    "name": "Light_G4_Bezel",
+    "label": "SB",
+    "outside_probe_intersection_mm3": 0.0,
+    "exposed": true
+  },
+  {
+    "role": "main",
+    "name": "Light_G4_Bezel",
+    "label": "M29",
+    "outside_probe_intersection_mm3": 0.0,
+    "exposed": true
+  },
+  {
+    "role": "main",
+    "name": "Lid",
+    "label": "M23",
+    "outside_probe_intersection_mm3": 0.0,
+    "exposed": true
+  },
+  {
+    "role": "main",
+    "name": "Lid",
+    "label": "M25",
+    "outside_probe_intersection_mm3": 0.0,
+    "exposed": true
+  },
+  {
+    "role": "main",
+    "name": "Lid",
+    "label": "M27",
+    "outside_probe_intersection_mm3": 0.0,
+    "exposed": true
+  },
+  {
+    "role": "main",
+    "name": "Lid",
+    "label": "M29",
+    "outside_probe_intersection_mm3": 0.0,
+    "exposed": true
+  }
+]

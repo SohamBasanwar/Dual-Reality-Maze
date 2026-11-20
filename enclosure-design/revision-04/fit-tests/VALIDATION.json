@@ -1,0 +1,72 @@
+[
+  {
+    "part": "01-battery-bay-rim",
+    "valid": true,
+    "solids": 1,
+    "size_mm": [
+      44.4,
+      75.6,
+      12.0
+    ]
+  },
+  {
+    "part": "02-battery-door",
+    "valid": true,
+    "solids": 1,
+    "size_mm": [
+      34.4,
+      67.6,
+      3.4
+    ]
+  },
+  {
+    "part": "03-side-latch-base",
+    "valid": true,
+    "solids": 1,
+    "size_mm": [
+      12.0,
+      24.0,
+      17.0
+    ]
+  },
+  {
+    "part": "04-side-latch-lid",
+    "valid": true,
+    "solids": 1,
+    "size_mm": [
+      12.0,
+      24.0,
+      29.6
+    ]
+  },
+  {
+    "part": "05-button-guide",
+    "valid": true,
+    "solids": 1,
+    "size_mm": [
+      32.0,
+      32.0,
+      18.0
+    ]
+  },
+  {
+    "part": "06-button-cap",
+    "valid": true,
+    "solids": 1,
+    "size_mm": [
+      20.0,
+      20.0,
+      13.3
+    ]
+  },
+  {
+    "part": "07-switch-cassette",
+    "valid": true,
+    "solids": 1,
+    "size_mm": [
+      20.2,
+      20.2,
+      12.25
+    ]
+  }
+]

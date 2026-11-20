@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#030817">
+<title>Dual-Reality Maze · The Crystal Abyss</title>
+<style>
+:root{color-scheme:dark;font-family:Georgia,'Times New Roman',serif;color:#f4e4b8;background:#030716}
+*{box-sizing:border-box}body{margin:0;min-height:100vh;display:grid;place-items:center;background:radial-gradient(ellipse at 45% 40%,#14223b,#030716 78%)}
+button{font:inherit;cursor:pointer}button:focus-visible,canvas:focus-visible{outline:2px solid #fbd77e;outline-offset:4px}button:disabled{cursor:wait;opacity:.6}
+.app{width:min(100vw,calc((100dvh - 43px)*1.77683));margin:auto;container-type:inline-size}
+.stage{position:relative;aspect-ratio:1672/941;isolation:isolate;overflow:hidden;background:#06091d;box-shadow:0 20px 90px #0009}
+#world{width:100%;height:100%;display:block;image-rendering:pixelated;touch-action:none;outline-offset:-4px}
+.sr{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+.switch{position:absolute;left:90.91%;width:7.67%;height:4.78%;display:flex;gap:.28cqw;padding:.12cqw;background:#0a0c17;border-radius:.5cqw}
+.switch button{width:50%;border:.15cqw solid #44415b;background:linear-gradient(#1d1e30,#101120);color:#9696ad;font:1.23cqw 'Courier New',monospace;clip-path:polygon(12% 0,88% 0,100% 16%,100% 84%,88% 100%,12% 100%,0 84%,0 16%);padding:0;transition:background .18s,color .18s}
+.switch button[aria-pressed=true]{border-color:var(--color);background:color-mix(in srgb,var(--color) 24%,#101321);color:#fff;text-shadow:0 0 .5cqw var(--color);box-shadow:inset 0 0 .7cqw var(--color)}
+.switch button:hover{color:#fff;background:#353047}.switch.selected:before{content:'◆';position:absolute;color:#edc56c;left:-.9cqw;top:30%;font-size:.65cqw}
+.readout{position:absolute;left:90.7%;width:7.52%;background:#080b15;text-align:center;font:700 2.18cqw 'Courier New',monospace;letter-spacing:.13cqw;color:#f9d16d;line-height:1.3;text-shadow:0 0 1cqw #f7c34b22}
+#time{top:68.2%;font-variant-numeric:tabular-nums}#keyCount{top:74.8%;font-size:1.67cqw;letter-spacing:.24cqw;color:#fff8d7}#keyCount b{color:#ffcf48}#time.urgent{color:#ff6f60}
+.parchment{position:absolute;left:80.05%;top:84.4%;width:17.8%;height:11.25%;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:.45cqw;text-align:center}
+.primary{background:linear-gradient(#35211dec,#100e1ded);border:1px solid #a0733f;color:#ffe0a3;box-shadow:0 2px 0 #382819,0 0 0 2px #62452b80;padding:.65cqw 1.5cqw;font-size:1.02cqw;letter-spacing:.11cqw;text-transform:uppercase}
+.primary:hover{background:#4e342e;color:#fff4d7}.parchment small{font-size:.76cqw;color:#3c2119;font-weight:bold;text-shadow:0 1px #d6af7b}.parchment .quest{font-size:1.13cqw;color:#352017;font-variant:small-caps;font-weight:bold;text-shadow:0 1px #ebc997}
+.footer{height:43px;display:flex;align-items:center;justify-content:space-between;gap:14px;padding:0 13px;border-top:1px solid #34364d;background:#090c18;color:#ababc1;font:12px/1.3 Georgia,serif}
+.footer p{margin:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.tools{display:flex;gap:6px;flex-shrink:0}.tools button{background:transparent;border:1px solid #3a384a;color:#d5c49c;border-radius:3px;font:11px Georgia;padding:5px 9px}.tools button:hover{border-color:#c19851;color:#fff0c6}
+.toast{position:absolute;left:24%;bottom:3.5%;max-width:48%;background:#090c20ed;border:1px solid #907649;padding:10px 22px;color:#f9e2a6;font-size:14px;box-shadow:0 5px 30px #0008;pointer-events:none;opacity:0;transform:translateY(7px);transition:.25s;text-align:center}.toast.show{opacity:1;transform:none}
+.overlay{position:absolute;inset:0;background:#030610b8;display:grid;place-items:center;backdrop-filter:blur(3px)}.overlay[hidden]{display:none}.dialog{width:min(530px,86%);padding:30px;border:1px solid #ac884c;outline:4px solid #292638;background:linear-gradient(140deg,#181729,#080d1b);box-shadow:0 20px 80px #000c;text-align:center}.dialog h2{font-weight:normal;font-variant:small-caps;font-size:30px;color:#f8dca0;margin:0 0 16px}.dialog p{color:#c1c0d0;line-height:1.65;font-size:15px}.dialog dl{display:grid;grid-template-columns:1fr 1.5fr;text-align:left;gap:12px;margin:23px 0;color:#c6becd;font-size:14px}.dialog dt{color:#e5c686}.dialog dd{margin:0}.dialog button{padding:10px 23px;background:#302739;color:#f9dfa5;border:1px solid #ac884c}.dialog .fine{font-size:12px;color:#8d8ba4}
+.loading{position:absolute;inset:0;display:grid;place-items:center;background:#060918;color:#e8cd9a;font-size:18px;z-index:4}.loading[hidden]{display:none}
+@media(max-width:760px){.app{width:100vw}.footer{height:auto;min-height:60px;flex-direction:column;padding:9px;gap:8px}.footer p{max-width:95vw}.toast{font-size:11px;padding:7px;max-width:70%;left:8%;bottom:3%}.dialog{padding:16px}.dialog h2{font-size:22px}.dialog p,.dialog dl{font-size:12px}.tools button{padding:8px}.switch button{font-weight:bold}}
+@media(prefers-reduced-motion:reduce){*{transition:none!important}.overlay{backdrop-filter:none}}
+</style>
+</head>
+<body>
+<main class="app" aria-label="Dual-Reality Maze game">
+ <section class="stage" id="stage" aria-label="The Crystal Abyss">
+  <canvas id="world" width="1672" height="941" tabindex="0" aria-label="Maze. Use WASD or arrow keys to move, or click a floor tile to walk there. Q and E select a control; Space toggles it; R reveals a route."></canvas>
+  <h1 class="sr">Dual-Reality Maze</h1>
+  <aside aria-label="The Architect — control the maze between realities" id="architect"></aside>
+  <output class="readout" id="time" aria-label="Time remaining">02:00</output>
+  <output class="readout" id="keyCount" aria-label="Keys collected"><b>0</b> / 1</output>
+  <div class="parchment"><span class="quest" id="quest">The Crystal Abyss</span><button class="primary" id="start" disabled>Awakening…</button><small id="objective">One key. Two realities. One way home.</small></div>
+  <div class="toast" id="toast" aria-hidden="true"></div>
+  <div class="overlay" id="help" hidden role="dialog" aria-modal="true" aria-labelledby="helpTitle"><div class="dialog"><h2 id="helpTitle">Two realities. One escape.</h2><p>You are the Explorer and the Architect. Collect the golden key, align the passages, and reach the glowing portal before time runs out.</p><dl><dt>W A S D / Arrows</dt><dd>Move the Explorer</dd><dt>Click / tap a floor</dt><dd>Walk along an available route</dd><dt>Q / E · Space</dt><dd>Select · toggle a maze element</dd><dt>Gate ON</dt><dd>Open the passage</dd><dt>Bridge ON</dt><dd>Extend the crossing</dd><dt>R / Reveal</dt><dd>Show a route for 3 seconds</dd><dt>P / Escape</dt><dd>Pause / resume</dd></dl><p class="fine">A glowing barrier means a gate is sealed. The lock east of the maze requires the key. Your timer pauses while this guide is open.</p><button id="closeHelp">Return to the maze</button></div></div>
+  <div class="overlay" id="ending" hidden role="dialog" aria-modal="true" aria-labelledby="endingTitle"><div class="dialog"><h2 id="endingTitle"></h2><p id="endingText"></p><button id="again">Enter again</button></div></div>
+  <div class="loading" id="loading">Awakening the Crystal Abyss…</div>
+ </section>
+ <footer class="footer"><p id="message" role="status" aria-live="polite">Find the key. Align the realities. Reach the portal.</p><nav class="tools" aria-label="Game tools"><button id="pause">Pause</button><button id="reveal">Reveal · R</button><button id="sound" aria-pressed="false">Sound off</button><button id="guide">How to play</button><button id="fullscreen" aria-label="Toggle fullscreen">⛶</button></nav></footer>
+</main>
+<script>
+/* ENGINE */
+const ASSETS = /* ASSETS */;
+const canvas=document.getElementById('world'), ctx=canvas.getContext('2d');
+ctx.imageSmoothingEnabled=false;
+const $=id=>document.getElementById(id);
+const reduced=matchMedia('(prefers-reduced-motion: reduce)').matches;
+const state={player:{...START},visual:{...START},open:[false,false,false,true,true],selected:0,key:false,remaining:120,mode:'ready',path:[],revealUntil:0,steps:0};
+let previous=0,accumulator=0,toastTimer,helpMode='ready',audioContext,soundOn=false,heroBounds=null,loaded=false,lastMove=0;
+const keys=new Set();
+const images={};
+const uiControls=ELEMENTS.map((e,i)=>{
+ const group=document.createElement('div');group.className='switch';group.style.top=(31.1+i*6.75)+'%';group.style.setProperty('--color',e.color);group.setAttribute('role','group');group.setAttribute('aria-label',e.name);
+ for(const [j,label] of ['OFF','ON'].entries()){const b=document.createElement('button');b.textContent=label;b.setAttribute('aria-label',`${e.name} ${j?'open':'closed'}`);b.addEventListener('click',()=>setElement(i,!!j));group.append(b)}
+ $('architect').append(group);return group;
+});
+function message(text,toast=false){$('message').textContent=text;if(toast){$('toast').textContent=text;$('toast').classList.add('show');clearTimeout(toastTimer);toastTimer=setTimeout(()=>$('toast').classList.remove('show'),2600)}}
+function note(hz=440,duration=.1){if(!soundOn)return;try{audioContext??=new (window.AudioContext||window.webkitAudioContext)();audioContext.resume();const o=audioContext.createOscillator(),g=audioContext.createGain();o.type='sine';o.frequency.setValueAtTime(hz,audioContext.currentTime);g.gain.setValueAtTime(.035,audioContext.currentTime);g.gain.exponentialRampToValueAtTime(.0001,audioContext.currentTime+duration);o.connect(g).connect(audioContext.destination);o.start();o.stop(audioContext.currentTime+duration)}catch{}}
+function updateUI(){
+ const s=Math.max(0,Math.ceil(state.remaining));$('time').textContent=String(Math.floor(s/60)).padStart(2,'0')+':'+String(s%60).padStart(2,'0');$('time').classList.toggle('urgent',s<=20);
+ $('keyCount').innerHTML=`<b>${state.key?1:0}</b> / 1`;
+ uiControls.forEach((g,i)=>{g.classList.toggle('selected',state.selected===i);[...g.children].forEach((b,j)=>b.setAttribute('aria-pressed',String(state.open[i]===!!j)))});
+ $('pause').textContent=state.mode==='paused'?'Resume':'Pause';
+ $('quest').textContent=state.mode==='ready'?'The Crystal Abyss':state.key?'The portal awaits':'Seek the golden key';
+ $('objective').textContent=state.mode==='ready'?'One key. Two realities. One way home.':state.key?'Follow the passage to the east.':'Open Gate A to leave the chamber.';
+ $('start').textContent=state.mode==='ready'?'Enter the maze':'Restart';
+}
+function setElement(i,open){
+ if(!loaded || ['won','lost'].includes(state.mode) || !$('help').hidden)return;
+ if(state.mode==='paused'){message('Resume the maze to change its passages.',true);return}
+ const e=ELEMENTS[i];
+ if(!open&&(inside(state.player.x,state.player.y,e.barrier)||inside(state.visual.x,state.visual.y,e.barrier))){message(`Move clear of ${e.name} before closing it.`,true);return}
+ state.selected=i;state.open[i]=open;state.path=[];note(open?540:260);
+ message(`${e.name} ${e.type==='gate'?(open?'opened.':'sealed.'):(open?'extended.':'retracted.')}`,true);updateUI();
+}
+function restart(){if(!loaded)return;Object.assign(state,{player:{...START},visual:{...START},open:[false,false,false,true,true],selected:0,key:false,remaining:120,mode:'playing',path:[],revealUntil:0,steps:0});keys.clear();$('ending').hidden=true;$('help').hidden=true;message('Open Gate A, then find the golden key.',true);updateUI();canvas.focus();note(420,.25)}
+function finish(won){state.mode=won?'won':'lost';state.path=[];keys.clear();$('endingTitle').textContent=won?'The realities are aligned.':'The maze has fallen silent.';$('endingText').textContent=won?`You found the key and escaped with ${Math.ceil(state.remaining)} seconds to spare.`:'Your time has run out. The Architect can open another path.';$('ending').hidden=false;$('again').focus();message(won?'You escaped the Crystal Abyss!':'Time has run out.');note(won?880:180,.5)}
+function visit(){
+ if(!state.key&&Math.hypot(state.player.x-KEY.x,state.player.y-KEY.y)<24){state.key=true;message('Golden key found. The eastern lock is open!',true);note(880,.3);updateUI()}
+ if(Math.hypot(state.player.x-EXIT.x,state.player.y-EXIT.y)<30){if(state.key)finish(true);else message('The portal needs the golden key.',true)}
+}
+function step(dx,dy){const x=state.player.x+dx*STEP,y=state.player.y+dy*STEP;if(!walkable(x,y,state.open,state.key))return false;state.player={x,y};state.steps++;visit();return true}
+function reveal(){if(state.mode!=='playing')return;state.revealUntil=performance.now()+3000;const target=state.key?EXIT:KEY;const p=route(state.player,target,state.open,state.key);if(!p.length)message('No open route. Align the gates and bridges first.',true);else message(state.key?'Follow the runes to the portal.':'Follow the runes to the key.',true);note(660,.2)}
+function pause(){if(!['playing','paused'].includes(state.mode)||!$('help').hidden)return;state.mode=state.mode==='playing'?'paused':'playing';keys.clear();message(state.mode==='paused'?'Paused. Press P to continue.':'The dungeon awakens.');updateUI()}
+function showHelp(){if(!$('help').hidden)return;helpMode=state.mode;if(state.mode==='playing')state.mode='paused';keys.clear();$('help').hidden=false;$('closeHelp').focus();updateUI()}
+function hideHelp(){$('help').hidden=true;state.mode=helpMode;updateUI();canvas.focus()}
+function imageRect(image,r){ctx.drawImage(image,r[0]*image.width/1672,r[1]*image.height/941,r[2]*image.width/1672,r[3]*image.height/941,...r)}
+function drawPassage(){
+ // The concept painting encloses its key room. Build one narrow stone doorway
+ // from the clean floor texture so the visible opening and collision map agree.
+ for(let y=248;y<336;y+=22)ctx.drawImage(images.clean,707*images.clean.width/1672,213*images.clean.height/941,27*images.clean.width/1672,22*images.clean.height/941,705,y,27,22);
+ ctx.save();ctx.strokeStyle='#130e31';ctx.lineWidth=3;ctx.beginPath();ctx.moveTo(703,261);ctx.lineTo(703,321);ctx.moveTo(733,264);ctx.lineTo(733,321);ctx.stroke();ctx.restore();
+}
+const torches=[[77,448],[245,382],[276,172],[486,98],[644,98],[738,133],[693,317],[1030,173],[1232,346],[1113,506],[1236,539],[393,607],[59,804],[305,798],[376,903],[1021,805],[939,909]];
+function glow(x,y,r,color,alpha){ctx.save();ctx.globalAlpha=alpha;const g=ctx.createRadialGradient(x,y,0,x,y,r);g.addColorStop(0,color);g.addColorStop(1,'transparent');ctx.fillStyle=g;ctx.fillRect(x-r,y-r,r*2,r*2);ctx.restore()}
+function drawKey(t){if(state.key)return;const bob=reduced?0:Math.sin(t/420)*2;ctx.save();ctx.translate(0,bob);imageRect(images.reference,[772,190,41,60]);ctx.restore();glow(791,221+bob,29,'#ffd052',.08+.03*Math.sin(t/400))}
+function drawElements(t){
+ ELEMENTS.forEach((e,i)=>{
+  if(e.type==='gate'&&state.open[i]){
+   imageRect(images.clean,e.rect);ctx.save();ctx.globalAlpha=.65;ctx.strokeStyle=e.color;ctx.lineWidth=2;
+   const [x,y,w,h]=e.rect;ctx.strokeRect(x+2,y+2,w-4,h-4);ctx.restore();
+  }else if(e.type==='bridge'&&!state.open[i]){
+   const [x,y,w,h]=e.rect;ctx.save();ctx.fillStyle='#032b43';ctx.fillRect(x,y,w,h);
+   ctx.drawImage(images.reference,794*images.reference.width/1672,534*images.reference.height/941,55*images.reference.width/1672,39*images.reference.height/941,x+3,y+2,w-6,h-4);
+   ctx.strokeStyle=e.color;ctx.lineWidth=2;ctx.strokeRect(x+1,y+1,w-2,h-2);ctx.restore();
+  }
+  if(state.mode==='playing'&&i===state.selected){const [x,y,w,h]=e.rect;glow(x+w/2,y+h/2,Math.max(w,h)*.66,e.color,.1+.03*Math.sin(t/450))}
+ });
+}
+function drawHero(t){const p=state.visual,moving=Math.hypot(p.x-state.player.x,p.y-state.player.y)>1;
+ const bob=moving&&!reduced?Math.sin(t/55)*1.5:0;
+ ctx.save();ctx.fillStyle='#02041077';ctx.beginPath();ctx.ellipse(p.x,p.y+1,17,5,0,0,Math.PI*2);ctx.fill();
+ if(heroBounds){const b=heroBounds;const h=65,w=h*b.w/b.h;ctx.drawImage(images.hero,b.x,b.y,b.w,b.h,Math.round(p.x-w/2),Math.round(p.y-h+bob),w,h)}
+ ctx.restore();
+}
+function drawRoute(t){if(t>state.revealUntil||state.mode!=='playing')return;const p=route(state.player,state.key?EXIT:KEY,state.open,state.key);ctx.save();ctx.strokeStyle='#99eeff';ctx.lineWidth=2;ctx.shadowColor='#31caff';ctx.shadowBlur=12;ctx.setLineDash([2,11]);ctx.beginPath();ctx.moveTo(state.player.x,state.player.y);for(const point of p)ctx.lineTo(point.x,point.y);ctx.stroke();ctx.restore()}
+function render(t){
+ const dt=Math.min((t-previous)/1000||0,.05);previous=t;
+ if(loaded){
+  if(state.mode==='playing'){
+   state.remaining=Math.max(0,state.remaining-dt);accumulator+=dt;if(accumulator>.15){updateUI();accumulator=0}if(state.remaining<=0)finish(false);
+   if(state.mode==='playing'&&t-lastMove>70){
+    const d=keys.has('w')||keys.has('arrowup')?[0,-1]:keys.has('s')||keys.has('arrowdown')?[0,1]:keys.has('a')||keys.has('arrowleft')?[-1,0]:keys.has('d')||keys.has('arrowright')?[1,0]:null;
+    if(d){state.path=[];step(...d);lastMove=t}else if(state.path.length){const next=state.path.shift();if(walkable(next.x,next.y,state.open,state.key)){state.player=next;state.steps++;visit()}else state.path=[];lastMove=t}
+   }
+  }
+  const lerp=1-Math.exp(-dt*24);state.visual.x+=(state.player.x-state.visual.x)*lerp;state.visual.y+=(state.player.y-state.visual.y)*lerp;
+  ctx.drawImage(images.reference,0,0,1672,941);
+  imageRect(images.clean,[472,141,65,79]);imageRect(images.clean,[769,186,48,66]);
+  drawPassage();drawElements(t);drawRoute(t);drawKey(t);
+  if(!reduced){for(let i=0;i<torches.length;i++){const [x,y]=torches[i];glow(x,y,35,'#ff7b24',.06+Math.sin(t/130+i*3)*.025)}
+   glow(1184,479,51,'#574bff',.09+.05*Math.sin(t/430));
+   ctx.save();ctx.globalCompositeOperation='screen';for(let i=0;i<29;i++){const x=53+(i*163.47)%1210,y=110+((i*77.31-t*.009)%700+700)%700;ctx.globalAlpha=.25+.25*Math.sin(t/800+i);ctx.fillStyle=i%3?'#44baff':'#b593ff';ctx.fillRect(x,y,2,2)}ctx.restore();
+  }
+  drawHero(t);
+  if(state.mode==='paused'&&$('help').hidden){ctx.fillStyle='#03061766';ctx.fillRect(0,0,1303,941);ctx.textAlign='center';ctx.fillStyle='#ffe3a3';ctx.font='36px Georgia';ctx.fillText('PAUSED',650,455);ctx.font='19px Georgia';ctx.fillStyle='#cbc3dc';ctx.fillText('Press P to return',650,490)}
+ }
+ requestAnimationFrame(render);
+}
+canvas.addEventListener('pointerdown',e=>{
+ if(!loaded||state.mode!=='playing')return;const r=canvas.getBoundingClientRect(),target={x:(e.clientX-r.left)*1672/r.width,y:(e.clientY-r.top)*941/r.height};if(target.x>1300)return;
+ let best=target;if(!walkable(snap(best.x),snap(best.y),state.open,state.key)){
+  let distance=32;for(let dx=-24;dx<=24;dx+=8)for(let dy=-24;dy<=24;dy+=8){const x=snap(target.x+dx),y=snap(target.y+dy),d=Math.hypot(x-target.x,y-target.y);if(d<distance&&walkable(x,y,state.open,state.key)){best={x,y};distance=d}}
+ }
+ state.path=route(state.player,best,state.open,state.key);if(!state.path.length)message('That path is sealed. Try another passage or open a control.',true);canvas.focus();
+});
+document.addEventListener('keydown',e=>{
+ const k=e.key.toLowerCase();
+ if(!$('help').hidden||!$('ending').hidden){
+  if(k==='escape'&&!$('help').hidden){e.preventDefault();hideHelp()}
+  if(k==='tab'){const modal=!$('help').hidden?$('help'):$('ending');const focus=modal.querySelector('button');e.preventDefault();focus.focus()}
+  return;
+ }
+ if(e.target.tagName==='BUTTON'&&(k===' '||k==='enter'))return;
+ if(['arrowup','arrowdown','arrowleft','arrowright',' '].includes(k))e.preventDefault();
+ if(['w','a','s','d','arrowup','arrowdown','arrowleft','arrowright'].includes(k))keys.add(k);
+ if(e.repeat)return;if(k==='enter'&&state.mode==='ready')restart();if(k==='p'||k==='escape')pause();if(k==='r')reveal();
+ if(k==='q'||k==='e'){state.selected=(state.selected+(k==='q'?4:1))%5;updateUI()}
+ if(k===' ')setElement(state.selected,!state.open[state.selected]);
+});
+document.addEventListener('keyup',e=>keys.delete(e.key.toLowerCase()));
+window.addEventListener('blur',()=>{keys.clear();if(state.mode==='playing')pause()});
+document.addEventListener('visibilitychange',()=>{if(document.hidden&&state.mode==='playing')pause()});
+$('start').onclick=restart;$('again').onclick=restart;$('pause').onclick=pause;$('reveal').onclick=reveal;$('guide').onclick=showHelp;$('closeHelp').onclick=hideHelp;
+$('sound').onclick=()=>{soundOn=!soundOn;$('sound').setAttribute('aria-pressed',String(soundOn));$('sound').textContent=soundOn?'Sound on':'Sound off';note(440,.2)};
+$('fullscreen').onclick=async()=>{try{if(document.fullscreenElement)await document.exitFullscreen();else await document.documentElement.requestFullscreen()}catch{message('Fullscreen is unavailable in this browser.',true)}};
+function loadImage(src){return new Promise((resolve,reject)=>{const img=new Image();img.onload=()=>resolve(img);img.onerror=reject;img.src=src})}
+async function init(){try{
+ [images.reference,images.clean,images.hero]=await Promise.all([loadImage(ASSETS.reference),loadImage(ASSETS.clean),loadImage(ASSETS.hero)]);
+ const c=document.createElement('canvas');c.width=images.hero.width;c.height=images.hero.height;const g=c.getContext('2d');g.drawImage(images.hero,0,0);const d=g.getImageData(0,0,c.width,c.height).data;
+ let left=c.width,top=c.height,right=0,bottom=0;for(let y=0;y<c.height;y++)for(let x=0;x<c.width;x++)if(d[(y*c.width+x)*4+3]>80){left=Math.min(left,x);right=Math.max(right,x);top=Math.min(top,y);bottom=Math.max(bottom,y)}
+ heroBounds={x:left,y:top,w:right-left+1,h:bottom-top+1};loaded=true;$('loading').hidden=true;$('start').disabled=false;updateUI();
+ }catch(err){$('loading').textContent='The artwork could not load. Reopen the complete HTML file.';console.error(err)}
+ requestAnimationFrame(render);
+}
+// Read-only diagnostics for local verification; no network or external libraries.
+window.mazeDiagnostics=()=>({loaded,mode:state.mode,player:{...state.player},open:[...state.open],key:state.key,remaining:state.remaining,heroBounds});
+init();
+</script>
+</body>
+</html>

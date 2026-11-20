@@ -1,0 +1,96 @@
+{
+  "scope": "Nominal CAD study geometry only; no fit or release qualification. Private STL test files are not manufacturing deliverables.",
+  "checks": [
+    {
+      "role": "explorer",
+      "part": "base",
+      "watertight": true,
+      "positive_volume": true,
+      "bounds_mm": [
+        214.0,
+        138.0,
+        50.0
+      ],
+      "faces": 1580,
+      "physical_fit_verified": false
+    },
+    {
+      "role": "explorer",
+      "part": "lid",
+      "watertight": true,
+      "positive_volume": true,
+      "bounds_mm": [
+        214.0,
+        138.0,
+        8.0
+      ],
+      "faces": 1764,
+      "physical_fit_verified": false
+    },
+    {
+      "role": "architect",
+      "part": "base",
+      "watertight": true,
+      "positive_volume": true,
+      "bounds_mm": [
+        214.0,
+        138.0,
+        50.0
+      ],
+      "faces": 1600,
+      "physical_fit_verified": false
+    },
+    {
+      "role": "architect",
+      "part": "lid",
+      "watertight": true,
+      "positive_volume": true,
+      "bounds_mm": [
+        214.0,
+        138.0,
+        19.8
+      ],
+      "faces": 2024,
+      "physical_fit_verified": false
+    },
+    {
+      "role": "main",
+      "part": "base",
+      "watertight": true,
+      "positive_volume": true,
+      "bounds_mm": [
+        160.0,
+        120.0,
+        44.0
+      ],
+      "faces": 1040,
+      "physical_fit_verified": false
+    },
+    {
+      "role": "main",
+      "part": "lid",
+      "watertight": true,
+      "positive_volume": true,
+      "bounds_mm": [
+        160.0,
+        120.0,
+        8.0
+      ],
+      "faces": 908,
+      "physical_fit_verified": false
+    },
+    {
+      "role": "architect",
+      "part": "guard",
+      "watertight": true,
+      "positive_volume": true,
+      "bounds_mm": [
+        58.0,
+        33.0,
+        29.0
+      ],
+      "faces": 692,
+      "physical_fit_verified": false
+    }
+  ]
+}

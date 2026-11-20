@@ -1,0 +1,17 @@
+import FreeCAD as App
+import FreeCADGui as Gui
+from pathlib import Path
+root=Path(__file__).resolve().parent
+shown_components={'Joystick_Mechanism','Bronze_Knob_Envelope','LCD_Display_Envelope','Bare_Light_Sensor'}
+for role in ['explorer','architect','main']:
+    d=App.openDocument(str(root/'cad'/(role+'-revision05.FCStd')))
+    for o in d.getObject('PrintedParts').Group:
+        o.ViewObject.Visibility=True
+        o.ViewObject.ShapeColor=(0.48,0.28,0.12)
+        if o.Name=='Emblem_Diffuser':o.ViewObject.ShapeColor={'explorer':(0.10,0.48,0.90),'architect':(0.95,0.53,0.10),'main':(0.45,0.20,0.85)}[role]
+    for o in d.getObject('ComponentEnvelopes').Group:
+        o.ViewObject.Visibility=o.Name in shown_components
+        o.ViewObject.ShapeColor=(0.15,0.20,0.23)
+        if o.Name=='LCD_Display_Envelope':o.ViewObject.ShapeColor=(0.14,0.40,0.20)
+    Gui.activeDocument().activeView().viewAxonometric()
+    Gui.activeDocument().activeView().fitAll()

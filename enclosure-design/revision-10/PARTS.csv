@@ -1,0 +1,87 @@
+﻿Assembly,Printed part,Quantity,STL,Notes
+explorer,Battery_Door,1,explorer-Battery_Door—Soham-Basanwar.stl,Two leading tabs plus recessed cantilever latch. Trial fit coupon before use.
+explorer,Breadboard_X_Jaw,1,explorer-Breadboard_X_Jaw—Soham-Basanwar.stl,"Indexed edge jaw; +/-3 mm from nominal, 3 mm increments. Lift top retention lip slightly for insertion; do not force PCB."
+explorer,Breadboard_X_Lock_Key,1,explorer-Breadboard_X_Lock_Key—Soham-Basanwar.stl,Pull sideways to release; slide jaw; fully insert cross key. Split-tip detent is a prototype. Positive cross engagement carries slide load.
+explorer,Breadboard_Y_Jaw,1,explorer-Breadboard_Y_Jaw—Soham-Basanwar.stl,Captured edge jaw. Breadth settings: nominal or 3 mm smaller; nominal is the largest permitted setting.
+explorer,Breadboard_Y_Lock_Key,1,explorer-Breadboard_Y_Lock_Key—Soham-Basanwar.stl,Pull sideways to release; slide jaw; fully insert cross key. Split-tip detent is a prototype. Positive cross engagement carries slide load.
+explorer,Breadboard_Height_Insert,1,explorer-Breadboard_Height_Insert—Soham-Basanwar.stl,One-piece keyed 1.2 mm nominal height insert. Alternative 0.6 / 1.8 mm inserts adjust supported thickness by +/-0.6 mm; use one only.
+explorer,UNO_X_Jaw,1,explorer-UNO_X_Jaw—Soham-Basanwar.stl,"Indexed edge jaw; +/-3 mm from nominal, 3 mm increments. Lift top retention lip slightly for insertion; do not force PCB."
+explorer,UNO_X_Lock_Key,1,explorer-UNO_X_Lock_Key—Soham-Basanwar.stl,Pull sideways to release; slide jaw; fully insert cross key. Split-tip detent is a prototype. Positive cross engagement carries slide load.
+explorer,UNO_Y_Jaw,1,explorer-UNO_Y_Jaw—Soham-Basanwar.stl,Captured edge jaw. Breadth settings: nominal or 3 mm smaller; nominal is the largest permitted setting.
+explorer,UNO_Y_Lock_Key,1,explorer-UNO_Y_Lock_Key—Soham-Basanwar.stl,Pull sideways to release; slide jaw; fully insert cross key. Split-tip detent is a prototype. Positive cross engagement carries slide load.
+explorer,UNO_Height_Insert,1,explorer-UNO_Height_Insert—Soham-Basanwar.stl,One-piece keyed 1.2 mm nominal height insert. Alternative 0.6 / 1.8 mm inserts adjust supported thickness by +/-0.6 mm; use one only.
+explorer,I2C_Rear_Shutter,1,explorer-I2C_Rear_Shutter—Soham-Basanwar.stl,18 x 12 mm aperture; slide 21 mm to open. Close only after cable removal. Not a strain clamp.
+explorer,I2C_Rear_Keeper,1,explorer-I2C_Rear_Keeper—Soham-Basanwar.stl,Top-inserted stop; lid prevents full withdrawal. Service by removing lid.
+explorer,RGB_LED_Keeper,1,explorer-RGB_LED_Keeper—Soham-Basanwar.stl,"Insert the two tabs through the Y keyways, then rotate 90 degrees. Captures the LED flange; leads pass through centre. Verify physical fit."
+explorer,Emblem_Diffuser,1,explorer-Emblem_Diffuser—Soham-Basanwar.stl,Separate translucent sheet/print; opaque bronze cannot transmit light.
+explorer,Emblem_Mask,1,explorer-Emblem_Mask—Soham-Basanwar.stl,
+explorer,Joystick_X_Jaw,1,explorer-Joystick_X_Jaw—Soham-Basanwar.stl,"Indexed edge jaw; +/-3 mm from nominal, 3 mm increments. Lift top retention lip slightly for insertion; do not force PCB."
+explorer,Joystick_X_Lock_Key,1,explorer-Joystick_X_Lock_Key—Soham-Basanwar.stl,Pull sideways to release; slide jaw; fully insert cross key. Split-tip detent is a prototype. Positive cross engagement carries slide load.
+explorer,Joystick_Y_Jaw,1,explorer-Joystick_Y_Jaw—Soham-Basanwar.stl,"Indexed edge jaw; +/-3 mm from nominal, 3 mm increments. Lift top retention lip slightly for insertion; do not force PCB."
+explorer,Joystick_Y_Lock_Key,1,explorer-Joystick_Y_Lock_Key—Soham-Basanwar.stl,Pull sideways to release; slide jaw; fully insert cross key. Split-tip detent is a prototype. Positive cross engagement carries slide load.
+explorer,Joystick_Height_Insert,1,explorer-Joystick_Height_Insert—Soham-Basanwar.stl,One-piece keyed 1.2 mm nominal height insert. Alternative 0.6 / 1.8 mm inserts adjust supported thickness by +/-0.6 mm; use one only.
+explorer,Joystick_Carrier,1,explorer-Joystick_Carrier—Soham-Basanwar.stl,Replaceable snap-in edge carrier. Width/depth/clip parameters provisional; exact mounting-hole pins deferred.
+explorer,Reveal_Dome,1,explorer-Reveal_Dome—Soham-Basanwar.stl,"Raised half-dome, quarter-turn removable. Default 0.4 mm printed roof is an optical TEST, not guaranteed transparent. Alternate roofs and open frame supplied separately."
+explorer,Base,1,explorer-Base—Soham-Basanwar.stl,"Cradles, battery bay, strap anchors and cable saddles are integral. No screw bosses."
+explorer,Lid,1,explorer-Lid—Soham-Basanwar.stl,Rear locating tabs + two press-release side latches. All fits require coupons.
+architect,Battery_Door,1,architect-Battery_Door—Soham-Basanwar.stl,Two leading tabs plus recessed cantilever latch. Trial fit coupon before use.
+architect,Breadboard_X_Jaw,1,architect-Breadboard_X_Jaw—Soham-Basanwar.stl,"Indexed edge jaw; +/-3 mm from nominal, 3 mm increments. Lift top retention lip slightly for insertion; do not force PCB."
+architect,Breadboard_X_Lock_Key,1,architect-Breadboard_X_Lock_Key—Soham-Basanwar.stl,Pull sideways to release; slide jaw; fully insert cross key. Split-tip detent is a prototype. Positive cross engagement carries slide load.
+architect,Breadboard_Y_Jaw,1,architect-Breadboard_Y_Jaw—Soham-Basanwar.stl,Captured edge jaw. Breadth settings: nominal or 3 mm smaller; nominal is the largest permitted setting.
+architect,Breadboard_Y_Lock_Key,1,architect-Breadboard_Y_Lock_Key—Soham-Basanwar.stl,Pull sideways to release; slide jaw; fully insert cross key. Split-tip detent is a prototype. Positive cross engagement carries slide load.
+architect,Breadboard_Height_Insert,1,architect-Breadboard_Height_Insert—Soham-Basanwar.stl,One-piece keyed 1.2 mm nominal height insert. Alternative 0.6 / 1.8 mm inserts adjust supported thickness by +/-0.6 mm; use one only.
+architect,UNO_X_Jaw,1,architect-UNO_X_Jaw—Soham-Basanwar.stl,"Indexed edge jaw; +/-3 mm from nominal, 3 mm increments. Lift top retention lip slightly for insertion; do not force PCB."
+architect,UNO_X_Lock_Key,1,architect-UNO_X_Lock_Key—Soham-Basanwar.stl,Pull sideways to release; slide jaw; fully insert cross key. Split-tip detent is a prototype. Positive cross engagement carries slide load.
+architect,UNO_Y_Jaw,1,architect-UNO_Y_Jaw—Soham-Basanwar.stl,Captured edge jaw. Breadth settings: nominal or 3 mm smaller; nominal is the largest permitted setting.
+architect,UNO_Y_Lock_Key,1,architect-UNO_Y_Lock_Key—Soham-Basanwar.stl,Pull sideways to release; slide jaw; fully insert cross key. Split-tip detent is a prototype. Positive cross engagement carries slide load.
+architect,UNO_Height_Insert,1,architect-UNO_Height_Insert—Soham-Basanwar.stl,One-piece keyed 1.2 mm nominal height insert. Alternative 0.6 / 1.8 mm inserts adjust supported thickness by +/-0.6 mm; use one only.
+architect,I2C_Rear_Shutter,1,architect-I2C_Rear_Shutter—Soham-Basanwar.stl,18 x 12 mm aperture; slide 21 mm to open. Close only after cable removal. Not a strain clamp.
+architect,I2C_Rear_Keeper,1,architect-I2C_Rear_Keeper—Soham-Basanwar.stl,Top-inserted stop; lid prevents full withdrawal. Service by removing lid.
+architect,RGB_LED_Keeper,1,architect-RGB_LED_Keeper—Soham-Basanwar.stl,"Insert the two tabs through the Y keyways, then rotate 90 degrees. Captures the LED flange; leads pass through centre. Verify physical fit."
+architect,Emblem_Diffuser,1,architect-Emblem_Diffuser—Soham-Basanwar.stl,Separate translucent sheet/print; opaque bronze cannot transmit light.
+architect,Emblem_Mask,1,architect-Emblem_Mask—Soham-Basanwar.stl,
+architect,Potentiometer_Keeper,1,architect-Potentiometer_Keeper—Soham-Basanwar.stl,Quarter-turn lower retainer. Terminal geometry and body antirotation lug remain unmeasured; tune this replaceable part.
+architect,Servo_Retainer,1,architect-Servo_Retainer—Soham-Basanwar.stl,"Separate push-in bridge captures the servo housing from above. Two flexible beams engage cassette side pockets. Release both beams to remove; no reliance on unmeasured servo mounting holes. Nominal 0.3 mm top clearance, fit test required."
+architect,Servo_Fit_Insert,1,architect-Servo_Fit_Insert—Soham-Basanwar.stl,Keyed removable servo-body liner. Alternative side thicknesses 0.7 / 1.3 mm fit nominal body width +/-0.6 mm while preserving the shaft centre. Ear slots and actual shaft datum still require fit testing.
+architect,Servo_Cassette,1,architect-Servo_Cassette—Soham-Basanwar.stl,"Body-capture cassette with separate snap-in top bridge, keyed foot and lower push-in latches. Slots accommodate provisional SG90 ears; no guessed hole pins. Insert servo, latch bridge, then install cartridge."
+architect,Gate_Frame,1,architect-Gate_Frame—Soham-Basanwar.stl,
+architect,Gate_Panel,1,architect-Gate_Panel—Soham-Basanwar.stl,"Scotch-yoke concept: 7 mm crank, +/-60 degrees, nominal lift 12.12 mm. Drive yoke is below the roof; visible bars start above the sill. Load and horn fit unverified."
+architect,Gate_Drive_Pin,1,architect-Gate_Drive_Pin—Soham-Basanwar.stl,Nominal headed pin with rear keeper groove. Tiny FDM fit unverified; a matching nylon push-rivet is an alternative without screws.
+architect,Gate_Pin_Keeper,1,architect-Gate_Pin_Keeper—Soham-Basanwar.stl,C-shaped keeper fits the pin groove behind the horn. Small feature requires a real fit test; not a proven production fastening.
+architect,Gate_Shroud,1,architect-Gate_Shroud—Soham-Basanwar.stl,"Removable guard and axial keeper concept; check pinch access, slot widths and full servo sweep physically."
+architect,Button_Contact_Shoe,1,architect-Button_Contact_Shoe—Soham-Basanwar.stl,Keyed removable contact shoe with split snap tabs. Remove guide and pinch tabs through stem windows to release; physical fit test required.
+architect,Button_Cap,1,architect-Button_Cap—Soham-Basanwar.stl,"Long guided stem with replaceable keyed contact shoe; nominal rest tip Z26.65, free gap 0.15 mm, stroke 0.45 mm. Check installed switch and select reach insert."
+architect,Button_Stem_Guide,1,architect-Button_Stem_Guide—Soham-Basanwar.stl,Removable snap-in guide with two stem bearings and a cap-flange stop. Releases from below. Stop travel is nominal 0.45 mm; real switch travel and return must be checked.
+architect,Base,1,architect-Base—Soham-Basanwar.stl,"Cradles, battery bay, strap anchors and cable saddles are integral. No screw bosses."
+architect,Lid,1,architect-Lid—Soham-Basanwar.stl,Rear locating tabs + two press-release side latches. All fits require coupons.
+main,Battery_Door,1,main-Battery_Door—Soham-Basanwar.stl,Two leading tabs plus recessed cantilever latch. Trial fit coupon before use.
+main,Breadboard_X_Jaw,1,main-Breadboard_X_Jaw—Soham-Basanwar.stl,"Indexed edge jaw; +/-3 mm from nominal, 3 mm increments. Lift top retention lip slightly for insertion; do not force PCB."
+main,Breadboard_X_Lock_Key,1,main-Breadboard_X_Lock_Key—Soham-Basanwar.stl,Pull sideways to release; slide jaw; fully insert cross key. Split-tip detent is a prototype. Positive cross engagement carries slide load.
+main,Breadboard_Y_Jaw,1,main-Breadboard_Y_Jaw—Soham-Basanwar.stl,"Indexed edge jaw; +/-3 mm from nominal, 3 mm increments. Lift top retention lip slightly for insertion; do not force PCB."
+main,Breadboard_Y_Lock_Key,1,main-Breadboard_Y_Lock_Key—Soham-Basanwar.stl,Pull sideways to release; slide jaw; fully insert cross key. Split-tip detent is a prototype. Positive cross engagement carries slide load.
+main,Breadboard_Height_Insert,1,main-Breadboard_Height_Insert—Soham-Basanwar.stl,One-piece keyed 1.2 mm nominal height insert. Alternative 0.6 / 1.8 mm inserts adjust supported thickness by +/-0.6 mm; use one only.
+main,UNO_X_Jaw,1,main-UNO_X_Jaw—Soham-Basanwar.stl,"Indexed edge jaw; +/-3 mm from nominal, 3 mm increments. Lift top retention lip slightly for insertion; do not force PCB."
+main,UNO_X_Lock_Key,1,main-UNO_X_Lock_Key—Soham-Basanwar.stl,Pull sideways to release; slide jaw; fully insert cross key. Split-tip detent is a prototype. Positive cross engagement carries slide load.
+main,UNO_Y_Jaw,1,main-UNO_Y_Jaw—Soham-Basanwar.stl,"Indexed edge jaw; +/-3 mm from nominal, 3 mm increments. Lift top retention lip slightly for insertion; do not force PCB."
+main,UNO_Y_Lock_Key,1,main-UNO_Y_Lock_Key—Soham-Basanwar.stl,Pull sideways to release; slide jaw; fully insert cross key. Split-tip detent is a prototype. Positive cross engagement carries slide load.
+main,UNO_Height_Insert,1,main-UNO_Height_Insert—Soham-Basanwar.stl,One-piece keyed 1.2 mm nominal height insert. Alternative 0.6 / 1.8 mm inserts adjust supported thickness by +/-0.6 mm; use one only.
+main,I2C_Left_Shutter,1,main-I2C_Left_Shutter—Soham-Basanwar.stl,18 x 12 mm aperture; slide 21 mm to open. Close only after cable removal. Not a strain clamp.
+main,I2C_Left_Keeper,1,main-I2C_Left_Keeper—Soham-Basanwar.stl,Top-inserted stop; lid prevents full withdrawal. Service by removing lid.
+main,I2C_Right_Shutter,1,main-I2C_Right_Shutter—Soham-Basanwar.stl,18 x 12 mm aperture; slide 21 mm to open. Close only after cable removal. Not a strain clamp.
+main,I2C_Right_Keeper,1,main-I2C_Right_Keeper—Soham-Basanwar.stl,Top-inserted stop; lid prevents full withdrawal. Service by removing lid.
+main,RGB_LED_Keeper,1,main-RGB_LED_Keeper—Soham-Basanwar.stl,"Insert the two tabs through the Y keyways, then rotate 90 degrees. Captures the LED flange; leads pass through centre. Verify physical fit."
+main,Emblem_Diffuser,1,main-Emblem_Diffuser—Soham-Basanwar.stl,Separate translucent sheet/print; opaque bronze cannot transmit light.
+main,Emblem_Mask,1,main-Emblem_Mask—Soham-Basanwar.stl,
+main,Button_Cap,1,main-Button_Cap—Soham-Basanwar.stl,"Short captured power-control actuator; requires a load-switch circuit, not direct battery switching."
+main,Switch_Cassette,1,main-Switch_Cassette—Soham-Basanwar.stl,
+main,LCD_X_Jaw,1,main-LCD_X_Jaw—Soham-Basanwar.stl,"Indexed edge jaw; +/-3 mm from nominal, 3 mm increments. Lift top retention lip slightly for insertion; do not force PCB."
+main,LCD_X_Lock_Key,1,main-LCD_X_Lock_Key—Soham-Basanwar.stl,Pull sideways to release; slide jaw; fully insert cross key. Split-tip detent is a prototype. Positive cross engagement carries slide load.
+main,LCD_Y_Jaw,1,main-LCD_Y_Jaw—Soham-Basanwar.stl,"Indexed edge jaw; +/-3 mm from nominal, 3 mm increments. Lift top retention lip slightly for insertion; do not force PCB."
+main,LCD_Y_Lock_Key,1,main-LCD_Y_Lock_Key—Soham-Basanwar.stl,Pull sideways to release; slide jaw; fully insert cross key. Split-tip detent is a prototype. Positive cross engagement carries slide load.
+main,LCD_Height_Insert,1,main-LCD_Height_Insert—Soham-Basanwar.stl,One-piece keyed 1.2 mm nominal height insert. Alternative 0.6 / 1.8 mm inserts adjust supported thickness by +/-0.6 mm; use one only.
+main,LCD_Carrier,1,main-LCD_Carrier—Soham-Basanwar.stl,"Replaceable PCB edge-capture carrier. Flat reference LCD stack, 0.2 mm vertical edge clearance. No fixed mounting-hole pins; measure actual LCD and backpack before printing."
+main,Buzzer_Keeper,1,main-Buzzer_Keeper—Soham-Basanwar.stl,Lower bayonet ring leaves room for leads. Actual buzzer and lead spacing require verification.
+main,USB_Shutter,1,main-USB_Shutter—Soham-Basanwar.stl,Captive sliding cover: 35 mm travel. Open before inserting cable; close only when unplugged. Fit/retention prototype.
+main,USB_Shutter_Keeper,1,main-USB_Shutter_Keeper—Soham-Basanwar.stl,Keyed end stop installed from above; its head is trapped below the closed Main lid. Remove lid for service. Coupon fit required.
+main,Base,1,main-Base—Soham-Basanwar.stl,"Cradles, battery bay, strap anchors and cable saddles are integral. No screw bosses."
+main,Lid,1,main-Lid—Soham-Basanwar.stl,Rear locating tabs + two press-release side latches. All fits require coupons.
