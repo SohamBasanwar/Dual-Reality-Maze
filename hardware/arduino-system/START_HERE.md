@@ -1,6 +1,6 @@
 # Dual-Reality Maze: three-board hardware system
 
-13 November 2026. Explorer UNO R3 + Architect UNO R3 + Main UNO R4 WiFi.
+21 November 2026. Explorer UNO R3 + Architect UNO R3 + Main UNO R4 WiFi.
 The game remains authoritative for collisions, chapters, gate permissions and timing.
 See VERIFICATION.txt for bench results.
 
@@ -9,7 +9,7 @@ See VERIFICATION.txt for bench results.
 - Open Explorer/Explorer.ino, Architect/Architect.ino and Main/Main.ino separately in Arduino IDE.
 - Select Arduino UNO for each R3, Arduino UNO R4 WiFi for Main. Select each board's actual port before Upload.
 - Libraries: Servo (Arduino, tested 1.3.0), hd44780 (Bill Perry, tested 1.3.2). WiFiS3 and Wire come with the board packages. Tested packages: AVR 1.8.8, Renesas UNO 1.6.0.
-- Keep the Protocol.h tab beside each sketch. It is copied identically into all three folders.
+- Keep all supplied header tabs beside each sketch: Protocol.h for all boards and CountdownBuzzer.h for Main.
 - Main also compiles for an UNO R3 as a USB-only fallback; its Wi-Fi code is excluded automatically.
 - Read WIRING.md and the CSV charts before powering anything. This replaces the earlier standalone ZIP test wiring where noted.
 
@@ -39,9 +39,9 @@ The local bridge binds only to 127.0.0.1. It serves the game, input/feedback rou
 
 Explorer joystick moves/navigates. Its click confirms menus/comics, picks fruit where appropriate, or opens pause. Architect potentiometer selects one of five controls; its button confirms/toggles. Both retain the existing game scene locks and two-button pause gesture. Covering the LDR triggers reveal on an edge, subject to game restrictions.
 
-The physical servo represents the **currently selected** passage's accepted open/closed state, rather than every button press. It closes outside active gameplay or if laptop feedback is absent for 1.5 seconds. The Architect uses CLOSED_US=1200 and OPEN_US=1800 and releases pulses after 700 ms.
+The physical servo represents the **currently selected** passage's accepted open/closed state, rather than every button press. It closes outside active gameplay or if laptop feedback is absent for 1.5 seconds. The Architect initializes closed at startup and commands 0 degrees closed / 90 degrees open. It follows the currently selected mechanism, holds position during healthy gameplay, and releases pulses after settling closed for 900 ms at idle or on communication loss. These are nominal servo commands; verify actual travel unloaded before fitting the gate. Use a separate regulated 5V servo supply with common ground.
 
-Only Main carries an RGB LED. Red indicates startup, a missing board, failed LCD or access-point initialization, or loss of Wi-Fi game feedback for two seconds. Green means the hardware is connected and waiting for the game. Blue means the loaded game is exchanging feedback over Wi-Fi. Main LCD shows controller connectivity and game time. Four optional green LEDs breathe together from one transistor-controlled channel. The buzzer gives a startup tone. Elaborate game sound cues are not yet routed to this buzzer. Main D2 is reserved, not a working master power switch.
+Only Main carries an RGB LED: red D9, green D5, blue D3 (680 ohms per color). Main A4 is SDA and A5 is SCL; the LCD may stay on the duplicate SDA/SCL header. Red indicates startup, a missing board, failed LCD or access-point initialization (USB can still operate without Wi-Fi). Green means the hardware is connected and waiting for the game. Blue means the game is exchanging feedback over USB or Wi-Fi. After feedback stops for 1.5 seconds, healthy hardware returns to green and the servo closes. Main LCD shows controller connectivity and game time. Four optional green LEDs breathe together from one transistor-controlled channel. The buzzer gives short 660 Hz / 85 ms countdown warnings: 300, 180, 120, 60, 50, 40, 30, 25, 20, 15, then 10 through 1 seconds remaining. All current chapters last 600 seconds. Pause, idle, expiry and stale feedback silence it; duplicate updates do not repeat a warning. Main D2 is reserved, not a working master power switch.
 
 Packets: Explorer 0x10, Architect 0x11, 12 bytes with version, sequence, three 10-bit ADC readings, 16-bit press count, button level and XOR checksum. Main polls at 100 kHz every 25 ms. Sequence changes establish freshness; 500 ms without change marks a controller offline. The laptop releases movement on lost input. Button counters prevent duplicate polling from repeating presses. Feedback uses `S,gate,mode,seconds` over USB, or the same command through the local Wi-Fi bridge. Mode: 0 idle, 1 gameplay, 2 paused. I2C feedback is a separate four-byte checked packet; callbacks do not move the servo or read analog pins.
 
@@ -74,3 +74,17 @@ Download diagnostic log captures connection events, readings, and player coordin
 - Servo library: https://github.com/arduino-libraries/Servo
 
 Use WIRING.md as the connection reference for these sketches, rather than older project architecture documents.
+
+## Response and USB update (21 November 2026)
+
+The browser now attempts one combined input/feedback exchange every 50 ms, with no overlapping requests. Main writes one buffered HTTP response and only redraws changed LCD lines. This is a maximum polling cadence, not a guaranteed 20 Hz over Wi-Fi. The panel reports measured round-trip time.
+
+USB requests its device picker in the click gesture, explicitly sets DTR/RTS, and can switch from Wi-Fi. Open the local game in Chrome or Edge, choose Main UNO R4 WiFi (currently COM5), and close Serial Monitor first. USB feedback no longer immediately expires due to an older loop timestamp.
+
+With Ethernet Internet connected, Wi-Fi can stay on DualRealityMaze. Without Ethernet, that local network provides no Internet.
+
+## Onboard maze animation and fault light
+
+The built-in R4 matrix animates an Explorer dot and portal. The selected passage opens the pixel gate. During a detected fault the matrix displays an exclamation mark when the matrix itself is available. The connection panel names the affected controller, LCD backpack, matrix initialization or access point. The LCD backpack is checked every half second after discovery. Power loss on Main itself extinguishes its indicators.
+
+For an individual sensor, turn the knob, cover and uncover the light sensor, move the joystick, or press the button while watching its reading. A stationary input or an open analog wire can give plausible readings. The servo provides no position feedback.

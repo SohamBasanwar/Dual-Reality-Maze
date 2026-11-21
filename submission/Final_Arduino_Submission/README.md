@@ -1,9 +1,8 @@
 # Dual-Reality Maze - Arduino submission
 
 Course: CS 362  
-Team Number: [TEAM NUMBER REQUIRED]
+Team Number:
 
-Replace the team-number placeholder in all three headers before submission.
 
 | Member | NetID |
 | --- | --- |
@@ -14,7 +13,7 @@ Replace the team-number placeholder in all three headers before submission.
 Each .ino begins with the team number, every member's name and NetID,
 project name, and the same 100-word abstract. The submission instructions
 do not require working code; these files also include the project's current
-implementation. Keep each Protocol.h next to its .ino if compiling.
+implementation. Keep each Protocol.h next to its .ino; Main also needs CountdownBuzzer.h and MazeMatrix.h.
 
 | Sketch | Board selection | Role |
 | --- | --- | --- |
@@ -31,11 +30,11 @@ The laptop game and launcher remain in the main project folder; they are not
 required dependencies for compiling these sketches and are not duplicated here.
 The game's Reveal threshold is configured in the laptop adapter, not the Explorer
 sketch: A2 below 1000 activates Reveal, and 1000 or above releases it.
-The buzzer currently provides a startup beep; it does not play the game soundtrack.
+The buzzer provides short countdown warnings at halfway, 3 and 2 minutes, then increasingly frequent warnings in the final minute.
 
 Communication: Main polls both R3s over a shared wired I2C bus using different
-addresses. The LCD shares that bus at its own address. Each R3 A4 goes to Main SDA,
-each R3 A5 to Main SCL, and both grounds go to Main GND. Main's built-in Wi-Fi
+addresses. The LCD shares that bus at its own address. Each R3 A4 goes to Main A4 (SDA),
+each R3 A5 to Main A5 (SCL), and both grounds go to Main GND. Main's built-in Wi-Fi
 connects to the laptop running the local game bridge.
 
 Compilation and software checks do not verify wiring or mechanical operation.

@@ -10,7 +10,7 @@
    select DualRealityMaze in Windows Wi-Fi and enter MazeDemo362, then click the game button.
 4. Windows may say No Internet. Stay connected: the game runs locally and Main is the access point.
 5. Check Explorer OK and Architect OK, live raw readings, and Main's RGB status.
-   Red means startup/fault; green means hardware ready; blue means fresh Wi-Fi game feedback.
+   Red means startup/fault; green means hardware ready; blue means fresh USB or Wi-Fi game feedback.
 6. Center the joystick, calibrate if needed, fold the panel, and select Begin adventure
    or Skip the prologue · Play. The latter starts Chapter I directly.
 
@@ -23,9 +23,9 @@ Node.js is required; no npm install is needed. Chrome or Edge is required for US
   Light below 1000 activates Reveal. Readings of 1000 or above release it for the next
   cover. Reveal still follows the game's charge/cooldown and scene rules.
 - Architect: turn the knob to select passages, then press D2 to toggle an allowed
-  passage. Show the game state and physical servo agreeing. Closed/open pulse widths
-  are 1200/1800 microseconds; confirm these fit the actual gate before adding a load.
-- Main: show the LCD timer/status and RGB readiness. The buzzer beeps at startup.
+  passage. Show the game state and physical servo agreeing. Closed/open commands
+  are 0/90 degrees; confirm travel with the actual mechanism before adding a load.
+- Main: show the LCD timer/status and RGB readiness. The buzzer gives short countdown warnings; see START_HERE.md for the schedule.
 - Use an early, familiar puzzle rather than spending the demonstration in story screens.
 - Rehearse once using the same laptop, USB hub, cables, and power arrangement as the demo.
 
@@ -42,8 +42,8 @@ Node.js is required; no npm install is needed. Chrome or Edge is required for US
 | Reveal never activates | Confirm raw A2 crosses below 1000 when covered and back to at least 1000 uncovered. Check the 10 kOhm resistor and actual connected breadboard strips, not just wire proximity. |
 | Servo jitters or boards reset | Check the power source and common ground. Use a suitable regulated servo supply for the loaded mechanism; USB hub power may not support servo peaks. Do not tie separately powered board 5V rails together. |
 | LCD is blank | Check 5V/GND and SDA/SCL, backpack contrast, and bus wiring. Use Main's 5V SDA/SCL header, not Qwiic. |
-| Red after a Wi-Fi loss | Movement stops; keep the joystick centered while reconnecting. Enabled automatic retries are limited to one every 15 seconds while the game tab is visible. |
-| USB connection fails | Close Serial Monitor and other port users. Select Main, not an R3. USB upload/serial trouble was observed previously on this laptop; verify this fallback before relying on it. |
+| Connection loss | Movement stops and healthy hardware returns to green after 1.5 seconds. Keep the joystick centered during reconnect. Red indicates a hardware fault. Automatic retries remain limited to one every 15 seconds. |
+| USB connection fails | Close Serial Monitor and other port users. Select Main, not an R3. Use Chrome or Edge at http://127.0.0.1:8080 and select UNO R4 WiFi (COM5). The updated button can switch from Wi-Fi. |
 
 Wi-Fi records previously showed driver-reported disconnections. They did not identify
 the underlying hardware/driver/power cause. Auto-rejoin mitigates the interruption;
@@ -54,5 +54,4 @@ Download diagnostic log in the game panel after a failure. It records readings,
 connection events, and player coordinates. The bridge startup log is at
 %LOCALAPPDATA%\DualRealityMaze\bridge.log. Disconnect stops further automatic join requests.
 
-The November 20 checks cover software and compilation. No Arduino hardware was
-detected at the start of that session; a fresh physical run is still required.
+The November 21 live USB test passed both controller connections, all 20 countdown milestones, repeated-command deduplication and blue-to-green idle recovery. Browser USB picker verification remains a user check.

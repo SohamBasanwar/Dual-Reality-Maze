@@ -1,0 +1,10 @@
+﻿From,Connect to
+R3 5V,Joystick VCC / +5V
+R3 GND,Joystick GND
+R3 A0,Joystick VRx
+R3 A1,Joystick VRy
+R3 D2,Joystick SW
+R3 5V,One photoresistor leg
+Other photoresistor leg,A2 AND one 10k resistor leg
+Other 10k resistor leg,R3 GND
+R3 A4 / A5 / GND,Main A4 / A5 / GND

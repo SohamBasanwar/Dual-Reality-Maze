@@ -46,14 +46,17 @@ async function handle(req,res){
  const hosts=[`localhost:${port}`,`127.0.0.1:${port}`];
  if(!hosts.includes(req.headers.host)||req.headers.origin&&!hosts.some(h=>req.headers.origin===`http://${h}`))return json(res,403,{error:'Local game requests only.'});
  try{
-  if(req.url==='/hub/health'&&req.method==='GET')return json(res,200,{service:'dual-reality-maze',version:2,board,root});
+  if(req.url==='/hub/health'&&req.method==='GET')return json(res,200,{service:'dual-reality-maze',version:3,board,root});
   if(req.url==='/hub/network'&&req.method==='GET')return json(res,200,await network());
   if(req.url==='/hub/connect'&&req.method==='POST')return json(res,200,await joinNetwork());
   if(req.url==='/hub/input'&&req.method==='GET')return json(res,200,await boardRequest('/input'));
-  if(req.url==='/hub/state'&&req.method==='POST'){
+  if((req.url==='/hub/state'||req.url==='/hub/exchange')&&req.method==='POST'){
    let s='';for await(const b of req){s+=b;if(s.length>80)return json(res,413,{error:'Feedback too large.'});}
    if(!/^S,[01],[012],\d{1,5}$/.test(s))return json(res,400,{error:'Invalid game feedback.'});
-   return json(res,200,await boardRequest('/state?cmd='+s));
+   if(Number(s.split(',')[3])>36000)return json(res,400,{error:'Invalid timer value.'});
+   const started=performance.now();
+   const reply=await boardRequest((req.url==='/hub/exchange'?'/exchange?cmd=':'/state?cmd=')+s);
+   return json(res,200,{...reply,bridgeMs:Math.round(performance.now()-started)});
   }
   if((req.url==='/'||req.url==='/game.html')&&req.method==='GET'){
    res.writeHead(200,{'Content-Type':'text/html; charset=utf-8','Cache-Control':'no-store'});

@@ -31,9 +31,9 @@ roles = {
                   'Servo signal=D9; SDA=A4; SCL=A5; common GND.\n'
                   'Use a regulated servo supply with common ground for a loaded gate.'),
     'Main': ('Arduino UNO R4 WiFi', 'I2C controller; Wi-Fi access point and laptop bridge',
-             'LCD=5V/GND/SDA/SCL headers; RGB R=D3, G=D5, B=D9,\n'
+             'LCD=5V/GND/SDA/SCL; controller bus=A4/A5; RGB R=D9, G=D5, B=D3,\n'
              'one resistor per color; buzzer=D6; optional LED driver=D10.\n'
-             'Use 5V SDA/SCL headers, not the 3.3V Qwiic connector.')
+             'A4=SDA and A5=SCL on the same 5V bus; not the 3.3V Qwiic connector.')
 }
 for role, (board, function, pins) in roles.items():
     source = root / 'hardware/arduino-system' / role
@@ -44,7 +44,7 @@ for role, (board, function, pins) in roles.items():
         body = body.split(' */', 1)[1].lstrip('\r\n')
     lines = [
         'CS 362 - Project Submission Header',
-        f"Team Number: {metadata['team_number']}",
+        f"Team Number: {metadata['team_number']}".rstrip(),
         f"Project Name: {metadata['project']}",
         'Team Members (Name - NetID):',
         *[f"  {m['name']} - {m['netid']}" for m in metadata['members']],
@@ -60,13 +60,15 @@ for role, (board, function, pins) in roles.items():
     folder.mkdir(exist_ok=True)
     shutil.copy2(ino, folder / ino.name)
     shutil.copy2(source / 'Protocol.h', folder / 'Protocol.h')
+    for extra in source.glob('*.h'):
+        if extra.name != 'Protocol.h': shutil.copy2(extra, folder / extra.name)
 
 number_note = ('Replace the team-number placeholder in all three headers before submission.\n'
                if metadata['team_number'].startswith('[') else '')
 readme = f'''# {metadata['project']} - Arduino submission
 
 Course: CS 362  
-Team Number: {metadata['team_number']}
+Team Number:{(' ' + metadata['team_number']) if metadata['team_number'] else ''}
 
 {number_note}
 | Member | NetID |
@@ -76,7 +78,7 @@ Team Number: {metadata['team_number']}
 Each .ino begins with the team number, every member's name and NetID,
 project name, and the same 100-word abstract. The submission instructions
 do not require working code; these files also include the project's current
-implementation. Keep each Protocol.h next to its .ino if compiling.
+implementation. Keep each Protocol.h next to its .ino; Main also needs CountdownBuzzer.h and MazeMatrix.h.
 
 | Sketch | Board selection | Role |
 | --- | --- | --- |
@@ -93,11 +95,11 @@ The laptop game and launcher remain in the main project folder; they are not
 required dependencies for compiling these sketches and are not duplicated here.
 The game's Reveal threshold is configured in the laptop adapter, not the Explorer
 sketch: A2 below 1000 activates Reveal, and 1000 or above releases it.
-The buzzer currently provides a startup beep; it does not play the game soundtrack.
+The buzzer provides short countdown warnings at halfway, 3 and 2 minutes, then increasingly frequent warnings in the final minute.
 
 Communication: Main polls both R3s over a shared wired I2C bus using different
-addresses. The LCD shares that bus at its own address. Each R3 A4 goes to Main SDA,
-each R3 A5 to Main SCL, and both grounds go to Main GND. Main's built-in Wi-Fi
+addresses. The LCD shares that bus at its own address. Each R3 A4 goes to Main A4 (SDA),
+each R3 A5 to Main A5 (SCL), and both grounds go to Main GND. Main's built-in Wi-Fi
 connects to the laptop running the local game bridge.
 
 Compilation and software checks do not verify wiring or mechanical operation.
@@ -106,6 +108,7 @@ diagnostics, and the final physical check before demonstrating.
 '''
 (destination / 'README.md').write_text(readme, encoding='utf-8')
 expected = {'README.md'} | {f'{r}/{name}' for r in roles for name in [f'{r}.ino', 'Protocol.h']}
+expected.update({'Main/CountdownBuzzer.h','Main/MazeMatrix.h'})
 actual = {p.relative_to(destination).as_posix() for p in destination.rglob('*') if p.is_file()}
 assert actual == expected, f'Unexpected submission contents: {actual ^ expected}'
 for file in destination.rglob('*'):

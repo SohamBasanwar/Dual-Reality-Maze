@@ -1,0 +1,6 @@
+﻿From,Connect to
+Main 5V,One 330-ohm resistor per green LED anode (four branches)
+Four LED cathodes,MOSFET drain
+MOSFET source,Main GND
+Main D10,1k-ohm resistor to MOSFET gate
+MOSFET gate,100k-ohm pull-down to Main GND

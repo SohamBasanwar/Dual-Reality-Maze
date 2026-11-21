@@ -1,0 +1,10 @@
+﻿From,Connect to
+R3 5V,Pot outer terminal
+R3 A0,Pot center / wiper
+R3 GND,Pot other outer terminal
+R3 D2,Button electrical side A
+R3 GND,Button electrical side B
+R3 D9,Servo signal
+External +5V,Servo positive
+External GND + servo GND,Join R3 GND
+R3 A4 / A5 / GND,Main A4 / A5 / GND

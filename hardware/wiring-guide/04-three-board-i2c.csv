@@ -1,0 +1,11 @@
+﻿From,Connect to
+Architect R3 A4,Main R4 SDA
+Architect R3 A5,Main R4 SCL
+Architect R3 GND,Main R4 GND
+Explorer R3 A4,Main R4 SDA (same bus)
+Explorer R3 A5,Main R4 SCL (same bus)
+Explorer R3 GND,Main R4 GND
+LCD SDA / SCL,Main A4 (SDA) / SCL
+LCD VCC / GND,Main 5V / GND
+If pull-ups absent: SDA,4.7k ohm to Main 5V
+If pull-ups absent: SCL,4.7k ohm to Main 5V

@@ -1,0 +1,10 @@
+﻿From,Connect to
+R4 5V / GND,LCD VCC / GND
+R4 SDA / SCL,LCD SDA / SCL
+R4 D9 -> 680 ohm,RGB red anode
+R4 D5 -> 680 ohm,RGB green anode
+R4 D3 -> 680 ohm,RGB blue anode
+RGB common cathode,R4 GND
+R4 D6 -> 1k ohm,Small passive piezo +
+Piezo -,R4 GND
+R4 SDA / SCL / GND,Both R3 controllers

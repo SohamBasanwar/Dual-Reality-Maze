@@ -1,6 +1,6 @@
 /*
  * CS 362 - Project Submission Header
- * Team Number: [TEAM NUMBER REQUIRED]
+ * Team Number:
  * Project Name: Dual-Reality Maze
  * Team Members (Name - NetID):
  *   Soham Basanwar - sbasan3

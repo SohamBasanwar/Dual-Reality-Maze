@@ -9,7 +9,7 @@ async function health(){
  try{
   const r=await fetch(url+'/hub/health',{signal:AbortSignal.timeout(800)});
   const p=await r.json().catch(()=>({}));
-  if(p.service!=='dual-reality-maze'||p.version!==2||path.resolve(p.root||'').toLowerCase()!==root.toLowerCase())throw Error('Port 8080 is occupied by another or older bridge. Close that bridge and launch again.');
+  if(p.service!=='dual-reality-maze'||p.version!==3||path.resolve(p.root||'').toLowerCase()!==root.toLowerCase())throw Error('Port 8080 is occupied by another or older bridge. Close that bridge and launch again.');
   return true;
  }catch(e){if(e.message.startsWith('Port 8080'))throw e;return false;}
 }

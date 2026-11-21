@@ -41,6 +41,7 @@ dist/
 *.tmp
 *.bak
 /.task-tools/
+/tmp/
 /.presentation-build/
 /task-notes/
 /hardware/verification/

@@ -2,7 +2,7 @@
 (()=>{
  const cfg={cx:499,cy:527,dead:150,invertX:false,invertY:false,dark:1000,darkLow:true,lightFitted:true,potFitted:true};
  let active='',port,reader,writer,busy=false,last=0,prior=null,latest=null,session=0,reconnectAt=0,joining=false,failures=0;
- const history=[],events=[];
+ const history=[],events=[];let usbDone=Promise.resolve(),rttMs=0,paintedAt=-Infinity;
  const ui=document.createElement('details');ui.open=true;ui.id='mazeHub';
  ui.style.cssText='position:fixed;bottom:12px;left:12px;z-index:10000;background:#142031f5;color:#f4efdf;padding:12px;border:1px solid #b9a46d;border-radius:12px;width:min(470px,calc(100vw - 48px));max-height:70vh;overflow:auto;box-shadow:0 8px 32px #0008;font:14px/1.45 system-ui';
  ui.innerHTML=`<summary style="cursor:pointer;color:#e1c98b;font-weight:700">Main Arduino connection</summary>
@@ -36,10 +36,12 @@
   }else{stopMovement();controllerState.lightActive=false;}
   if(p.aOK){if(cfg.potFitted)controllerPot(p.pot);if(prior?.aOK&&p.ap!==prior.ap&&((p.ap-prior.ap)&65535)<20)controllerPress('architect');}
   prior=p;history.push({time:new Date().toISOString(),...p,feedback:feedback(),player:{...(forest.active?forest:campaign.active?campaign:state).player}});if(history.length>1200)history.shift();
-  note(`${active||'Input'} | Explorer ${p.eOK?'OK':'OFFLINE'} | Architect ${p.aOK?'OK':'OFFLINE'}\nX ${p.x} Y ${p.y} light ${p.light} pot ${p.pot}\nPresses E ${p.ep} A ${p.ap} | LED ${p.led||'--'}\nReveal ${cfg.lightFitted&&(cfg.darkLow?p.light<cfg.dark:p.light>cfg.dark)?'ON':'OFF'} | Explorer position ${Math.round(history.at(-1).player.x)}, ${Math.round(history.at(-1).player.y)}`);
+  if(performance.now()-paintedAt>=150){paintedAt=performance.now();
+   const faults=['Explorer I2C','Architect I2C','LCD backpack','Matrix startup','Wi-Fi startup'].filter((name,index)=>(p.faults||0)&(1<<index));
+   note(`${active||'Input'} | Explorer ${p.eOK?'OK':'OFFLINE'} | Architect ${p.aOK?'OK':'OFFLINE'}\nX ${p.x} Y ${p.y} light ${p.light} pot ${p.pot}\nPresses E ${p.ep} A ${p.ap} | LED ${p.led||'--'} | ${active==='Wi-Fi'?'Round trip '+rttMs+' ms':'USB serial'}\nReveal ${cfg.lightFitted&&(cfg.darkLow?p.light<cfg.dark:p.light>cfg.dark)?'ON':'OFF'}\nHardware faults ${faults.join(', ')||'none reported'} | Explorer position ${Math.round(history.at(-1).player.x)}, ${Math.round(history.at(-1).player.y)}`);}
   return true;
  }
- async function stop(){active='';session++;prior=null;last=0;failures=0;stopMovement();controllerState.lightActive=false;setControllerMode(false);if(reader)await reader.cancel().catch(()=>{});note('Disconnected; movement released.');el('hubNetwork').textContent='Automatic reconnection stopped.';event('Disconnected by player.');}
+ async function stop(){active='';session++;prior=null;last=0;failures=0;stopMovement();controllerState.lightActive=false;setControllerMode(false);if(reader)await reader.cancel().catch(()=>{});await usbDone;note('Disconnected; movement released.');el('hubNetwork').textContent='Automatic reconnection stopped.';event('Disconnected by player.');}
  async function joinWiFi(token){
   if(joining||token!==session||active!=='Wi-Fi')return;
   joining=true;reconnectAt=performance.now()+15000;
@@ -53,19 +55,25 @@
   finally{joining=false;}
  }
  el('hubUSB').onclick=async()=>{
-  if(active)return;
-  if(!navigator.serial){note('USB requires Chrome or Edge. Wi-Fi works through this launcher.');return;}
-  await disconnectControllers();const token=++session;
+  if(!navigator.serial){note('USB requires Chrome or Edge. Open http://127.0.0.1:8080 there; this browser does not expose Web Serial.');return;}
+  // Keep the device picker directly in the click gesture, before any awaited cleanup.
+  let selected;try{selected=await navigator.serial.requestPort();}catch(e){note('USB selection: '+e.message);return;}
+  await stop();await disconnectControllers();const token=++session;let finishUSB;
   try{
-   port=await navigator.serial.requestPort();if(token!==session)return;
-   await port.open({baudRate:115200});if(token!==session){await port.close();return;}
-   active='USB';prior=null;setControllerMode(true);stopMovement();reader=port.readable.getReader();writer=port.writable.getWriter();let partial='';const dec=new TextDecoder();
-   while(active==='USB'&&token===session){const r=await reader.read();if(r.done)break;if(token!==session)break;partial+=dec.decode(r.value,{stream:true});const lines=partial.split('\n');partial=lines.pop();if(partial.length>1024)partial='';for(const line of lines){try{accept(JSON.parse(line));}catch{}}}
-  }catch(e){note('USB: '+e.message);}
-  finally{if(token===session){active='';stopMovement();}try{reader?.releaseLock();writer?.releaseLock();await port?.close();}catch{}reader=writer=port=null;}
+   port=selected;await port.open({baudRate:115200});
+   await port.setSignals({dataTerminalReady:true,requestToSend:true});
+   if(token!==session){await port.close();return;}
+   active='USB';prior=null;last=0;failures=0;setControllerMode(true);stopMovement();
+   note('USB connected; waiting for Main telemetry. Select UNO R4 WiFi / COM5, not either R3.');
+   reader=port.readable.getReader();writer=port.writable.getWriter();
+   usbDone=new Promise(resolve=>finishUSB=resolve);
+   let partial='';const dec=new TextDecoder();
+   while(active==='USB'&&token===session){const r=await reader.read();if(r.done)break;if(token!==session)break;partial+=dec.decode(r.value,{stream:true});const lines=partial.split('\n');partial=lines.pop();if(partial.length>2048)partial='';for(const line of lines){try{accept(JSON.parse(line));}catch{}}}
+  }catch(e){note('USB: '+e.message+' Close Arduino Serial Monitor and select Main UNO R4 WiFi.');}
+  finally{if(token===session){active='';stopMovement();}try{reader?.releaseLock();writer?.releaseLock();await port?.close();}catch{}reader=writer=port=null;finishUSB?.();}
  };
  el('hubWiFi').onclick=async()=>{
-  if(active)return;await disconnectControllers();active='Wi-Fi';const token=++session;prior=null;last=0;failures=0;setControllerMode(true);stopMovement();note('Connecting to Main…');event('Wi-Fi selected.');await joinWiFi(token);
+  if(active==='Wi-Fi')return;await stop();await disconnectControllers();active='Wi-Fi';const token=++session;prior=null;last=0;failures=0;setControllerMode(true);stopMovement();note('Connecting to Main…');event('Wi-Fi selected.');await joinWiFi(token);
  };
  el('hubStop').onclick=stop;el('hubFold').onclick=()=>ui.open=false;
  el('hubCentre').onclick=()=>{if(latest?.eOK){cfg.cx=latest.x;cfg.cy=latest.y;stopMovement();}};
@@ -81,15 +89,14 @@
   try{
    if(active==='USB'&&writer)await writer.write(new TextEncoder().encode(feedback()+'\n'));
    else if(active==='Wi-Fi'){
-    const r=await fetch('/hub/input',{signal:AbortSignal.timeout(1800),cache:'no-store'});
+    const started=performance.now();
+    const safeToPlay=!document.hidden&&story.ready&&splash.artReady;
+    const r=await fetch('/hub/exchange',{method:'POST',body:safeToPlay?feedback():'S,0,0,0',signal:AbortSignal.timeout(1800),cache:'no-store'});
     const p=await r.json();if(token!==session||active!=='Wi-Fi')return;
+    rttMs=Math.round(performance.now()-started);
     if(!r.ok)throw Error(p.error||'Main is not reachable.');
+    if(!p.exchange)throw Error('Update Main firmware for the combined Wi-Fi exchange.');
     if(!accept(p))throw Error('Unexpected Main board data.');
-    if(!document.hidden&&story.ready&&splash.artReady){
-     const ack=await fetch('/hub/state',{method:'POST',body:feedback(),signal:AbortSignal.timeout(1800)});
-     const reply=await ack.json();if(token!==session)return;
-     if(!ack.ok||!reply.ok)throw Error('Game feedback was not acknowledged.');
-    }
     if(failures)event('Main connection recovered.');failures=0;
    }
   }catch(e){
@@ -97,6 +104,6 @@
     if(active==='Wi-Fi'&&failures>=2&&el('hubRecover').checked&&!document.hidden&&performance.now()>=reconnectAt)void joinWiFi(token);
    }
   }finally{busy=false;}
- },100);
+ },50);
  window.mazeHardware={accept,feedback,config:cfg,disconnect:stop,log:()=>history.slice()};
 })();

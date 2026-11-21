@@ -5,6 +5,6 @@ A0,Joystick VRx,Raw horizontal input
 A1,Joystick VRy,Raw vertical input
 D2,Joystick SW,Switch to GND; INPUT_PULLUP
 A2,Light-sensor node,Bare LDR: 5V → LDR → A2 → 10 kΩ → GND
-A4 / SDA,Main header SDA,Same signal; do not connect twice
-A5 / SCL,Main header SCL,Same signal; do not connect twice
+A4 / SDA,Main A4 (SDA),Same signal; do not connect twice
+A5 / SCL,Main A5 (SCL),Same signal; do not connect twice
 GND,Main GND,Third conductor in the controller cable

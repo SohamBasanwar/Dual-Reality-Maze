@@ -2,6 +2,8 @@
 
 All three large breadboards can be used; this is a breadboard wiring plan, not a custom PCB fabrication layout. Component pin order varies by module. Follow the printed terminal labels, not wire colour or a guessed photograph.
 
+For illustrated board pin locators, circuit sheets and assembly checklists, open [the wiring guide](../wiring-guide/index.html). The printable version is [the five-page PDF](../../output/pdf/Dual-Reality-Maze-Wiring-Guide.pdf).
+
 ## Power and breadboard rails
 
 Start with USB-powered boards for debugging. Each board's own 5V goes to its own red + rail; GND goes to its own blue/− rail. Join the ground rails between boards. **Do not join their separately USB-powered +5V rails.** Some full-size breadboard power rails split halfway: verify continuity and bridge the two halves of the same rail if required. The two sides of the centre trench are isolated; each five-hole row on one side is connected internally. Neither colour printing nor physical proximity proves continuity.
@@ -18,8 +20,8 @@ The Architect servo has a separate regulated 5V supply rated for at least 1A, wi
 | A1 | Joystick VRy | Raw vertical input |
 | D2 | Joystick SW | Switch to GND; INPUT_PULLUP |
 | A2 | Light-sensor node | Bare LDR: 5V → LDR → A2 → 10 kΩ → GND |
-| A4 / SDA | Main header SDA | Same signal; do not connect twice |
-| A5 / SCL | Main header SCL | Same signal; do not connect twice |
+| A4 / SDA | Main A4 (SDA) | Same signal; do not connect twice |
+| A5 / SCL | Main A5 (SCL) | Same signal; do not connect twice |
 | GND | Main GND | Third conductor in the controller cable |
 
 For a light-sensor module instead of a bare LDR: VCC→5V, GND→GND, AO→A2; DO unused. Do not add the bare-LDR divider on top of the module's existing divider. Use the game's polarity setting if needed.
@@ -37,7 +39,7 @@ On the small breadboard in this build, use three separate five-hole strips on th
 | A0 | Potentiometer centre/wiper | Not an outer terminal |
 | D2 | One electrical side of pushbutton | Other side goes to GND |
 | D9 | Servo signal | Usually orange/yellow; check servo labels |
-| A4/A5/GND | Main SDA/SCL/GND | Three-wire controller cable |
+| A4/A5/GND | Main A4/A5/GND | Three-wire controller cable |
 | NO Arduino power pin | Servo positive | External regulated +5V only |
 | Common GND | Servo negative + external-supply negative | Signal reference must be shared |
 
@@ -52,18 +54,20 @@ The handheld controllers do not require RGB wiring.
 | Main pin | Connect to | Details |
 |---|---|---|
 | USB-C | Laptop USB data port | 115200 serial + power for initial test |
-| Header SDA (A4 equivalent) | Explorer A4, Architect A4, LCD SDA | 5V header bus; NOT Qwiic |
-| Header SCL (A5 equivalent) | Explorer A5, Architect A5, LCD SCL | 5V header bus; NOT Qwiic |
+| A4 (same signal as SDA header) | Explorer A4, Architect A4, LCD SDA | 5V header bus; NOT Qwiic |
+| A5 (same signal as SCL header) | Explorer A5, Architect A5, LCD SCL | 5V header bus; NOT Qwiic |
 | GND | Both R3 grounds; LCD GND; buzzer − | All signal grounds common |
 | 5V | LCD VCC; Main local + rail | LCD backpack must be a 5V-compatible model |
-| D3 | 330 Ω → RGB red | RGB common cathode to GND |
-| D5 | 330 Ω → RGB green | Separate resistor |
-| D9 | 330 Ω → RGB blue | Main RGB common lead goes to GND |
-| D6 | Small passive piezo + | Piezo −→GND; use a driver for high-current/active buzzers |
-| D10 | 100 Ω → logic-level N-MOSFET gate | Four green LEDs, optional channel below |
+| D9 | 680 Ω → RGB red | RGB common cathode to GND |
+| D5 | 680 Ω → RGB green | Separate resistor |
+| D3 | 680 Ω → RGB blue | Main RGB common lead goes to GND |
+| D6 | 1 kΩ → small passive piezo + | Piezo −→GND; use a driver for high-current/active buzzers |
+| D10 | 1 kΩ → logic-level N-MOSFET gate | Four green LEDs, optional channel below |
 | D2 | Reserved, unconnected | No physical master-power switching implemented |
 
-For the four green LEDs: Main +5V → **one 330 Ω resistor per LED** → LED anode. Join the four cathodes at the MOSFET drain. Source→Main GND. Gate→D10 through 100 Ω; gate→GND through 100 kΩ. Use a logic-level MOSFET specified to turn on at a 5V gate and verify its G/D/S pinout. Do not drive the four LEDs directly from one GPIO. The four LEDs fade together; there are not four separate animation channels.
+**Resistor correction:** the [official UNO R4 WiFi specifications](https://github.com/arduino/docs-content/blob/main/content/hardware/uno/boards/uno-r4-wifi/tech-specs.md) limit GPIO current to 8 mA per pin. Use 680 Ω per RGB color instead of the earlier 330 Ω recommendation. The 1 kΩ series resistor also limits current in the small passive piezo branch; its volume may be lower. A higher-current buzzer needs a separate transistor driver.
+
+For the four green LEDs: Main +5V → **one 330 Ω resistor per LED** → LED anode. Join the four cathodes at the MOSFET drain. Source→Main GND. Gate→D10 through 1 kΩ; gate→GND through 100 kΩ. Use a logic-level MOSFET specified to turn on at a 5V gate and verify its G/D/S pinout. Do not drive the four LEDs directly from one GPIO. The four LEDs fade together; there are not four separate animation channels.
 
 For a common-anode RGB LED, common→local +5V and set RGB_COMMON_ANODE=true in that board's Protocol.h. Do not assume the longest pin or colour order without checking the specific LED. Modules with built-in resistors differ from bare LEDs.
 
@@ -73,7 +77,7 @@ Main is the bus controller. Explorer is address 0x10, Architect 0x11. The hd4478
 
 Use each 30 cm cable for SDA, SCL and GND. Label both ends. Route SDA beside ground, keep the two branches short, and keep motor-power wiring separate. This length is reasonable to test at 100 kHz, but reliable operation must be checked on the assembled circuit.
 
-One pull-up network belongs on the bus near Main: SDA→4.7 kΩ→Main +5V and SCL→4.7 kΩ→Main +5V **if equivalent pull-ups are not already fitted on the LCD backpack**. Check the backpack before adding them; multiple pull-ups in parallel lower the effective resistance. Do not add a pair at every board. This is not a connection between the boards' positive power rails. Use Main's labelled 5V SDA/SCL headers; the R4 Qwiic socket is a separate 3.3V bus and is unsuitable for this wiring.
+One pull-up network belongs on the bus near Main: SDA→4.7 kΩ→Main +5V and SCL→4.7 kΩ→Main +5V **if equivalent pull-ups are not already fitted on the LCD backpack**. Check the backpack before adding them; multiple pull-ups in parallel lower the effective resistance. Do not add a pair at every board. This is not a connection between the boards' positive power rails. Use Main A4 (SDA) and A5 (SCL) for controller cables; the LCD can remain on the SDA/SCL headers, which share this bus; the R4 Qwiic socket is a separate 3.3V bus and is unsuitable for this wiring.
 
 Connect ground first while power is off, then SDA and SCL. Power all bus participants together for testing; avoid powering one board through another board's I2C pull-ups. If the LCD does not initialise, run the hd44780 library's I2CexpDiag example on Main with the controllers disconnected before restoring the complete circuit.
 

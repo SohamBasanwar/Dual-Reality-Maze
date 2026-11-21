@@ -1,0 +1,11 @@
+{
+  "pinouts": [
+    "https://content.arduino.cc/assets/A000066-full-pinout.pdf",
+    "https://docs.arduino.cc/resources/pinouts/ABX00087-full-pinout.pdf"
+  ],
+  "r4_limits": "https://github.com/arduino/docs-content/blob/main/content/hardware/uno/boards/uno-r4-wifi/tech-specs.md",
+  "checked": "2026-11-20",
+  "rgb_series_ohms": 680,
+  "piezo_series_ohms": 1000,
+  "not_a_simulation": true
+}

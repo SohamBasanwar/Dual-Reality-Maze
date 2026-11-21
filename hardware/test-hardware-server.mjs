@@ -1,8 +1,8 @@
 import {spawn} from 'node:child_process';
 import http from 'node:http';
 import assert from 'node:assert/strict';
-let active=0,maxActive=0,stall=false;
-const board=http.createServer((req,res)=>{active++;maxActive=Math.max(active,maxActive);res.on('close',()=>active--);if(stall)return;setTimeout(()=>{res.setHeader('Content-Type','application/json');res.end(JSON.stringify(req.url==='/input'?{v:1,ms:42}:{ok:true}));},60);});
+let active=0,maxActive=0,stall=false;const routes=[];
+const board=http.createServer((req,res)=>{routes.push(req.url);active++;maxActive=Math.max(active,maxActive);res.on('close',()=>active--);if(stall)return;setTimeout(()=>{res.setHeader('Content-Type','application/json');res.end(JSON.stringify(req.url==='/input'||req.url.startsWith('/exchange?cmd=')?{v:1,ms:42,exchange:true}:{ok:true}));},60);});
 await new Promise(r=>board.listen(18089,'127.0.0.1',r));
 const child=spawn(process.execPath,['hardware/arduino-system/server.mjs','--port=18088','--board=127.0.0.1','--board-port=18089'],{stdio:['ignore','pipe','pipe']});
 const request=(url,options={})=>fetch('http://127.0.0.1:18088'+url,{...options,signal:AbortSignal.timeout(5000)});
@@ -15,6 +15,12 @@ try{
  assert.equal((await request('/hub/state',{method:'POST',body:'X'.repeat(81)})).status,413);
  const responses=await Promise.all([request('/hub/input'),request('/hub/state',{method:'POST',body:'S,0,0,100'}),request('/hub/input')]);
  assert(responses.every(r=>r.status===200));assert.equal(maxActive,1,'Main requests must be serialized');
+ const before=routes.length;
+ const exchange=await request('/hub/exchange',{method:'POST',body:'S,0,1,300'});
+ assert.equal(exchange.status,200);assert.equal((await exchange.json()).exchange,true);
+ assert.equal(routes.length-before,1,'input and feedback must take one board request');
+ assert.equal(routes.at(-1),'/exchange?cmd=S,0,1,300');
+ assert.equal((await request('/hub/exchange',{method:'POST',body:'S,0,1,99999'})).status,400);
  stall=true;const timed=await request('/hub/input');assert.equal(timed.status,502);assert.match((await timed.json()).error,/respond/);
  stall=false;assert.equal((await request('/hub/input')).status,200,'bridge must recover after a timeout');
  const game=await request('/');assert.equal(game.status,200);assert((await game.arrayBuffer()).byteLength>1000000);
