@@ -37,7 +37,7 @@
   if(p.aOK){if(cfg.potFitted)controllerPot(p.pot);if(prior?.aOK&&p.ap!==prior.ap&&((p.ap-prior.ap)&65535)<20)controllerPress('architect');}
   prior=p;history.push({time:new Date().toISOString(),...p,feedback:feedback(),player:{...(forest.active?forest:campaign.active?campaign:state).player}});if(history.length>1200)history.shift();
   if(performance.now()-paintedAt>=150){paintedAt=performance.now();
-   const faults=['Explorer I2C','Architect I2C','LCD backpack','Matrix startup','Wi-Fi startup'].filter((name,index)=>(p.faults||0)&(1<<index));
+   const faults=['Explorer I2C','Architect I2C','LCD backpack',null,'Wi-Fi startup'].filter((name,index)=>name && ((p.faults||0)&(1<<index)));
    note(`${active||'Input'} | Explorer ${p.eOK?'OK':'OFFLINE'} | Architect ${p.aOK?'OK':'OFFLINE'}\nX ${p.x} Y ${p.y} light ${p.light} pot ${p.pot}\nPresses E ${p.ep} A ${p.ap} | LED ${p.led||'--'} | ${active==='Wi-Fi'?'Round trip '+rttMs+' ms':'USB serial'}\nReveal ${cfg.lightFitted&&(cfg.darkLow?p.light<cfg.dark:p.light>cfg.dark)?'ON':'OFF'}\nHardware faults ${faults.join(', ')||'none reported'} | Explorer position ${Math.round(history.at(-1).player.x)}, ${Math.round(history.at(-1).player.y)}`);}
   return true;
  }

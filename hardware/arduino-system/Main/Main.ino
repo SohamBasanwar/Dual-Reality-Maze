@@ -36,11 +36,6 @@
 #include "CountdownBuzzer.h"
 #if defined(ARDUINO_UNOR4_WIFI)
 #include <WiFiS3.h>
-#include <Arduino_LED_Matrix.h>
-#include "MazeMatrix.h"
-ArduinoLEDMatrix matrix;
-uint8_t matrixPixels[8][12];
-uint32_t lastMatrix=0;
 #define HUB_WIFI 1
 const char AP_NAME[]="DualRealityMaze";
 const char AP_PASSWORD[]="MazeDemo362"; // Change locally if desired (8+ characters).
@@ -50,7 +45,6 @@ WiFiServer server(80);WiFiClient client;String requestLine;uint32_t requestStart
 #endif
 hd44780_I2Cexp lcd;
 bool lcdOK=false;uint8_t e[PACKET_SIZE]={},a[PACKET_SIZE]={};
-bool matrixOK=true;
 uint8_t lcdAddress=0,faults=0;
 uint32_t lastLCDProbe=0;
 char oldTop[17]={},oldBottom[17]={};
@@ -69,7 +63,7 @@ LinkStatus linkStatus=START_OR_FAULT;
 const uint8_t RGB_RED_PIN=9, RGB_GREEN_PIN=5, RGB_BLUE_PIN=3;
 void updateStatus(){
  bool freshGame=lastCommand && millis()-lastCommand<1500;
- faults=(!online(eSeen)?1:0)|(!online(aSeen)?2:0)|(!lcdOK?4:0)|(!matrixOK?8:0)|(!apOK && !(freshGame&&gameTransport==1)?16:0);
+ faults=(!online(eSeen)?1:0)|(!online(aSeen)?2:0)|(!lcdOK?4:0)|(!apOK && !(freshGame&&gameTransport==1)?16:0);
  if(faults)linkStatus=START_OR_FAULT;
  else linkStatus=freshGame?WIFI_GAME_READY:CONTROLLERS_CONNECTED;
  digitalWrite(RGB_RED_PIN,(linkStatus==START_OR_FAULT)^RGB_COMMON_ANODE);
@@ -84,7 +78,7 @@ void pollBoard(uint8_t addr,uint8_t* out,uint32_t &seen){uint8_t b[PACKET_SIZE],
 void commandBoard(uint8_t addr){uint8_t b[4]={0xA5,gateOpen,uint8_t(mode | (linkStatus!=START_OR_FAULT?4:0) | (linkStatus==WIFI_GAME_READY?8:0)),0};b[3]=checksum(b,3);Wire.beginTransmission(addr);Wire.write(b,4);Wire.endTransmission();}
 size_t inputJSON(char* buffer,size_t capacity){
  int n=snprintf(buffer,capacity,
-  "{\"v\":1,\"ms\":%lu,\"fw\":\"2026-11-21-maze-matrix\",\"exchange\":true,\"faults\":%u,\"lcdOK\":%s,\"apOK\":%s,\"gateRequested\":%u,\"mode\":%u,\"eOK\":%s,\"aOK\":%s,\"x\":%u,\"y\":%u,\"light\":%u,\"ep\":%u,\"pot\":%u,\"ap\":%u,\"beeps\":%lu,\"beepSecond\":%u,\"led\":\"%s\"}\n",
+  "{\"v\":1,\"ms\":%lu,\"fw\":\"2026-11-21-countdown-r2\",\"exchange\":true,\"faults\":%u,\"lcdOK\":%s,\"apOK\":%s,\"gateRequested\":%u,\"mode\":%u,\"eOK\":%s,\"aOK\":%s,\"x\":%u,\"y\":%u,\"light\":%u,\"ep\":%u,\"pot\":%u,\"ap\":%u,\"beeps\":%lu,\"beepSecond\":%u,\"led\":\"%s\"}\n",
   (unsigned long)millis(),faults,lcdOK?"true":"false",apOK?"true":"false",gateOpen,mode,
   online(eSeen)?"true":"false",online(aSeen)?"true":"false",
   wordAt(e,2),wordAt(e,4),wordAt(e,6),wordAt(e,8),wordAt(a,2),wordAt(a,8),
@@ -111,7 +105,6 @@ void setup(){Serial.begin(115200);Wire.begin();Wire.setClock(100000);
  if(lcdOK)lcdAddress=lcd.getProp(hd44780_I2Cexp::Prop_addr);
  tone(BUZZER_PIN,440,80);
  #if HUB_WIFI
- matrixOK=matrix.begin();
  apOK=WiFi.status()!=WL_NO_MODULE && WiFi.beginAP(AP_NAME,AP_PASSWORD)==WL_AP_LISTENING;
  if(apOK){server.begin();Serial.print("# AP IP: ");Serial.println(WiFi.localIP());}
  #endif
@@ -138,7 +131,6 @@ void loop(){uint32_t now=millis();
   if(strcmp(bottom,oldBottom)){lcd.setCursor(0,1);lcd.print(bottom);strcpy(oldBottom,bottom);}
  }
  #if HUB_WIFI
- if(matrixOK && now-lastMatrix>=140){lastMatrix=now;mazeMatrixFrame(matrixPixels,now/140,mode==1&&gateOpen,faults!=0);matrix.renderBitmap(matrixPixels,8,12);}
  if(!client){client=server.available();if(client){requestStart=now;requestLine="";}}
  if(client){bool ready=false;while(client.available()){char c=client.read();if(c=='\n'){ready=true;break;}if(c!='\r'&&requestLine.length()<160)requestLine+=c;}
   if(ready){

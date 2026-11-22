@@ -78,7 +78,7 @@ Team Number:{(' ' + metadata['team_number']) if metadata['team_number'] else ''}
 Each .ino begins with the team number, every member's name and NetID,
 project name, and the same 100-word abstract. The submission instructions
 do not require working code; these files also include the project's current
-implementation. Keep each Protocol.h next to its .ino; Main also needs CountdownBuzzer.h and MazeMatrix.h.
+implementation. Keep each Protocol.h next to its .ino; Main also needs CountdownBuzzer.h.
 
 | Sketch | Board selection | Role |
 | --- | --- | --- |
@@ -108,7 +108,7 @@ diagnostics, and the final physical check before demonstrating.
 '''
 (destination / 'README.md').write_text(readme, encoding='utf-8')
 expected = {'README.md'} | {f'{r}/{name}' for r in roles for name in [f'{r}.ino', 'Protocol.h']}
-expected.update({'Main/CountdownBuzzer.h','Main/MazeMatrix.h'})
+expected.add('Main/CountdownBuzzer.h')
 actual = {p.relative_to(destination).as_posix() for p in destination.rglob('*') if p.is_file()}
 assert actual == expected, f'Unexpected submission contents: {actual ^ expected}'
 for file in destination.rglob('*'):
